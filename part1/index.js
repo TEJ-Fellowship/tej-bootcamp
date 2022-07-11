@@ -1,11 +1,7 @@
-console.log('this is index.js')
-const Myh1 = () => {
-    return React.createElement("h1", {}, "This is from REACT H1 Component")
-}
+import ReactDOM from "react-dom/client";
+import App from "./components/App";
 
+console.log("this is index.js");
 
-const App = () => {
-    return React.createElement("div", {}, [Myh1(), Myh1(), Myh1(), Myh1()])
-}
-
-ReactDOM.render(App()  ,document.querySelector("#root"))
+// ReactDOM.render(App(), document.querySelector("#root"));
+ReactDOM.createRoot(document.querySelector("#root")).render(<App />);
