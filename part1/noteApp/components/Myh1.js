@@ -1,7 +1,7 @@
 import React from "react";
 
 const Myh1 = ({ name, lastName }) => {
-  newName = `new Name is ${name}`;
+  const newName = `new Name is ${name}`;
 
   console.log(name);
   return (
