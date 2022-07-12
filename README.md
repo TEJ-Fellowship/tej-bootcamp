@@ -54,8 +54,8 @@ HTTP call, pure react, modern react dev setup, component, state, event handler, 
 
 **_LECTURE-RECORDING_**
 
-- [Pure react](https://us06web.zoom.us/rec/share/ltSEEzXJFc9ZOLOaU1B8s1a3HkfV7JWKgR2ZKZboKzpqXKujJPhzjzA2lK7B6YtG.Iog7Fq52rb0iRFBo)
-- [Components with props, dev setup, JSX](https://us06web.zoom.us/rec/share/jmwgPbShcpiOGE3ePLms7tyx-GqI7CvnYUSq4d8PSN4mn1DBx_tdLRHKNG2_R4Iw.XnFtPXQ4dBpH5nkP)
+- [Pure react](https://youtu.be/Pzkcxt9j23U)
+- [Components with props, dev setup, JSX](https://youtu.be/xBJBrULUm0E)
 
 **_TO-DO:_**
 
@@ -88,9 +88,10 @@ _Instructions for TO-DO_
 
 **_LECTURE-RECORDING_**
 
-- [Starting a react project](https://us06web.zoom.us/rec/share/4F_R0AkSiTcHZg_wi5AXJxpDNYtG0PMVuH0_CSNmI0FXDQj6-6HHKDKXrMpnAvmQ.VzlVgSfkRQXxhtiS)
-- [Component manual re-render](https://us06web.zoom.us/rec/play/9M7IcMr2KZ6V_YnDYZD-SRRdo3ILUGgsG5Jnp6HKDN9PWy4E4OVxOiNMDVFb20lAEuaqLhpMKSE2b4kI.eZwpn7WBnLDnE5kE)
-- [State & event handler](https://us06web.zoom.us/rec/share/HHW7I3vCDD-vrzXFka41Rm7a9hPJ5pBd_3vNxY-75PsdRsK1ed4_kq02rPU7T6M-.0Pyng46GIkY0RJvh)
+- [Starting a react project](https://youtu.be/BGrie4SO-88)
+- [Component manual re-render](https://youtu.be/6RCRVL7Z-Nc)
+- [React state](https://youtu.be/uCGdWjuhhg4)
+- [React event handling](https://youtu.be/x0vodxNdm0c)
 
 **_TO-DO:_**
 
