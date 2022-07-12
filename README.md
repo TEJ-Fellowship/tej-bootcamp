@@ -86,6 +86,10 @@ _Instructions for TO-DO_
 
 - [PART 1-c: Component state, event handlers](https://fullstackopen.com/en/part1/component_state_event_handlers)
 
+**_LECTURE-RECORDING_**
+
+- [Component manual re-render](https://us06web.zoom.us/rec/share/iQNVxg2pm-drW9RmqDZB-fZV4cIxxhR2pWxFmPxQb6NQJQBBy7nYhJDrfF6W-jjl.DOfjwgtmXS8Lv3dz) Access Passcode: #Zv+#0?k
+
 **_TO-DO:_**
 
 - [1.6-1.14](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14)
