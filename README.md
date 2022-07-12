@@ -52,6 +52,11 @@ HTTP call, pure react, modern react dev setup, component, state, event handler, 
 - [PART 1-a: Intro to React](https://fullstackopen.com/en/part1/introduction_to_react)
 - [PART 1-b: Javascript](https://fullstackopen.com/en/part1/java_script)
 
+**_LECTURE-RECORDING_**
+
+- [Pure react](https://us06web.zoom.us/rec/share/7RO-KkqcSOSUm_5nKS6ekkZ48Lh24Z_Y5FMSatLxlBrOvmMdNDFjz9Fl8dAe0T1_.dHW9dUtkUMQr6LmV) Access Passcode: +Yjm3NTO
+- [Components with props, dev setup, JSX](https://us06web.zoom.us/rec/share/K3reQ5oXyW7F2GSKAtdny3evcLXX3GZdw9fcAq0JZ6kXjspGMMddD7RXAYfD6E-0.OoxaUGQzO5aQQpA1) Access Passcode: ?QiWJ5TW
+
 **_TO-DO:_**
 
 - [1.1-1.2](https://fullstackopen.com/en/part1/introduction_to_react#exercises-1-1-1-2)
@@ -297,6 +302,8 @@ Validation and ESLint
 **_TO-DO:_**
 
 - [.-.]()
+
+**_LECTURE-RECORDING_**
 
 **_TO-HAVE-LEARNT:_**
 
