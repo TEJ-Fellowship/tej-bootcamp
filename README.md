@@ -54,8 +54,8 @@ HTTP call, pure react, modern react dev setup, component, state, event handler, 
 
 **_LECTURE-RECORDING_**
 
-- [Pure react](https://us06web.zoom.us/rec/share/7RO-KkqcSOSUm_5nKS6ekkZ48Lh24Z_Y5FMSatLxlBrOvmMdNDFjz9Fl8dAe0T1_.dHW9dUtkUMQr6LmV) Access Passcode: +Yjm3NTO
-- [Components with props, dev setup, JSX](https://us06web.zoom.us/rec/share/K3reQ5oXyW7F2GSKAtdny3evcLXX3GZdw9fcAq0JZ6kXjspGMMddD7RXAYfD6E-0.OoxaUGQzO5aQQpA1) Access Passcode: ?QiWJ5TW
+- [Pure react](https://us06web.zoom.us/rec/share/ltSEEzXJFc9ZOLOaU1B8s1a3HkfV7JWKgR2ZKZboKzpqXKujJPhzjzA2lK7B6YtG.Iog7Fq52rb0iRFBo)
+- [Components with props, dev setup, JSX](https://us06web.zoom.us/rec/share/jmwgPbShcpiOGE3ePLms7tyx-GqI7CvnYUSq4d8PSN4mn1DBx_tdLRHKNG2_R4Iw.XnFtPXQ4dBpH5nkP)
 
 **_TO-DO:_**
 
@@ -88,7 +88,9 @@ _Instructions for TO-DO_
 
 **_LECTURE-RECORDING_**
 
-- [Component manual re-render](https://us06web.zoom.us/rec/share/iQNVxg2pm-drW9RmqDZB-fZV4cIxxhR2pWxFmPxQb6NQJQBBy7nYhJDrfF6W-jjl.DOfjwgtmXS8Lv3dz) Access Passcode: #Zv+#0?k
+- [Starting a react project](https://us06web.zoom.us/rec/share/4F_R0AkSiTcHZg_wi5AXJxpDNYtG0PMVuH0_CSNmI0FXDQj6-6HHKDKXrMpnAvmQ.VzlVgSfkRQXxhtiS)
+- [Component manual re-render](https://us06web.zoom.us/rec/play/9M7IcMr2KZ6V_YnDYZD-SRRdo3ILUGgsG5Jnp6HKDN9PWy4E4OVxOiNMDVFb20lAEuaqLhpMKSE2b4kI.eZwpn7WBnLDnE5kE)
+- [State & event handler](https://us06web.zoom.us/rec/share/HHW7I3vCDD-vrzXFka41Rm7a9hPJ5pBd_3vNxY-75PsdRsK1ed4_kq02rPU7T6M-.0Pyng46GIkY0RJvh)
 
 **_TO-DO:_**
 
