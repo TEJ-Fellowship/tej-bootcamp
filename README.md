@@ -131,6 +131,8 @@ _Instructions for TO-DO_
 
 - [2.1-2.5](https://fullstackopen.com/en/part2/rendering_a_collection_modules#exercises-2-1-2-5)
 
+---
+
 **DAY 5: PART 2-b**
 
 **_TO-LEARN_**
