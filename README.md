@@ -68,8 +68,10 @@ _Instructions for TO-DO_
 1. create a repository in github to push your local `fullstackopen`
 1. create a folder called `part1` inside `fullstackopen`
 1. create folder called `courseinfo` inside of `part1` to put your code for exercise 1.1-1.5
-   - You can create `courseinfo` project either by using `parcel`, as we did for the class today
+   - You can create `courseinfo` project either by using `parcel`, as we did for the class today.  You can clone this [starter kit](https://github.com/TEJ-Fellowship/react-start-kit)
    - Or you can create `courseinfo` project using `create-react-app` as described in the [`introduction to react`](https://fullstackopen.com/en/part1/introduction_to_react) section of the course
+
+*note*: You will need to delete the `.git` directory inside the clone
 
 ---
 
