@@ -116,6 +116,8 @@ _Instructions for TO-DO_
 
 - [Using array in state](https://youtu.be/2F7NNlAe68g)
 - [Conditional rendering in component](https://youtu.be/uCGdWjuhhg4)
+- [React Class, debugging, and notes on hooks](https://youtu.be/a6VNdOtzd8w)
+- [Exercise 1.1 to 1.14 guide](https://youtu.be/H18zHpNDKwg)
 
 **_TO-DO:_**
 
