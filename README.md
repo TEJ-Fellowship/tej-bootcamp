@@ -104,7 +104,7 @@ _Instructions for TO-DO_
 **_TO-LEARN_**
 
 - a more complex state
-  - array, object in state
+  - array, object in state: don't mutate state!
 - conditional rendering of component
 - debugging React apps
 
@@ -127,10 +127,21 @@ _Instructions for TO-DO_
 
 **DAY 4: PART 2-a**
 
+**_PRE-WORK:_**
+
+- [watch at least first 3 parts of this youtube playlist](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+
 **_TO-LEARN_**
 
-- rendering a collection
-- modules
+- rendering collection [Array or Object]
+  - don't mutate state! especially if state is Array or Object
+- Array.map
+- Array.reduce
+- debugging React apps
+  - use console through all components & calls
+  - most common problems
+      - the props are expected to be of a different type, 
+      - or called with a different name than they actually are, and destructuring fails as a result
 
 **_TO-STUDY_**
 
@@ -151,6 +162,11 @@ _Instructions for TO-DO_
 **_TO-LEARN_**
 
 - controlled forms
+- form onSubmit event handler needs event.preventDefault()
+- form in App
+- controlled component: using onChange
+- ternary expression
+- Map.filter
 
 **_TO-STUDY_**
 
