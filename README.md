@@ -52,7 +52,7 @@ HTTP call, pure react, modern react dev setup, component, state, event handler, 
 - [PART 1-a: Intro to React](https://fullstackopen.com/en/part1/introduction_to_react)
 - [PART 1-b: Javascript](https://fullstackopen.com/en/part1/java_script)
 
-**_LECTURE-RECORDING_**
+**_LECTURE-VIDEO_**
 
 - [Pure react](https://youtu.be/Pzkcxt9j23U)
 - [Components with props, dev setup, JSX](https://youtu.be/xBJBrULUm0E)
@@ -86,7 +86,7 @@ _Instructions for TO-DO_
 
 - [PART 1-c: Component state, event handlers](https://fullstackopen.com/en/part1/component_state_event_handlers)
 
-**_LECTURE-RECORDING_**
+**_LECTURE-VIDEO_**
 
 - [Starting a react project](https://youtu.be/BGrie4SO-88)
 - [Component manual re-render](https://youtu.be/6RCRVL7Z-Nc)
@@ -112,6 +112,11 @@ _Instructions for TO-DO_
 
 - [PART 1-d: A more complex state, debugging React apps](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps)
 
+**_LECTURE-VIDEO_**
+
+- [Using array in state](https://youtu.be/2F7NNlAe68g)
+- [Conditional rendering in component](https://youtu.be/uCGdWjuhhg4)
+
 **_TO-DO:_**
 
 - [1.6-1.14](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14)
@@ -129,6 +134,10 @@ _Instructions for TO-DO_
 
 - [PART 2-a: Rendering a collection, modules](https://fullstackopen.com/en/part2/rendering_a_collection_modules)
 
+**_LECTURE-VIDEO_**
+
+- []()
+
 **_TO-DO:_**
 
 - [2.1-2.5](https://fullstackopen.com/en/part2/rendering_a_collection_modules#exercises-2-1-2-5)
@@ -144,6 +153,10 @@ _Instructions for TO-DO_
 **_TO-STUDY_**
 
 - [PART 2-b: Forms](https://fullstackopen.com/en/part2/forms)
+
+**_LECTURE-VIDEO_**
+
+- []()
 
 **_TO-DO:_**
 
@@ -177,6 +190,10 @@ Getting data from server, altering data in server, programming a server with Nod
 
 - [PART 2-c: Getting data from server](https://fullstackopen.com/en/part2/getting_data_from_server)
 
+**_LECTURE-VIDEO_**
+
+- []()
+
 **_TO-DO:_**
 
 - [2.11-2.14](https://fullstackopen.com/en/part2/getting_data_from_server#exercises-2-11-2-14)
@@ -193,6 +210,10 @@ Getting data from server, altering data in server, programming a server with Nod
 
 - [PART 2-d: Altering data in server](https://fullstackopen.com/en/part2/altering_data_in_server)
 
+**_LECTURE-VIDEO_**
+
+- []()
+
 **_TO-DO:_**
 
 - [2.15-2.18](https://fullstackopen.com/en/part2/altering_data_in_server#exercises-2-15-2-18)
@@ -208,6 +229,10 @@ Getting data from server, altering data in server, programming a server with Nod
 **_TO-STUDY_**
 
 - [PART 2-e: Adding styles to React app](https://fullstackopen.com/en/part2/adding_styles_to_react_app)
+
+**_LECTURE-VIDEO_**
+
+- []()
 
 **_TO-DO:_**
 
@@ -228,6 +253,10 @@ Getting data from server, altering data in server, programming a server with Nod
 
 - [PART 3-a: Node.js and Express](https://fullstackopen.com/en/part3/node_js_and_express)
 
+**_LECTURE-VIDEO_**
+
+- []()
+
 **_TO-DO:_**
 
 - [3.1-3.6](https://fullstackopen.com/en/part3/node_js_and_express#exercises-3-1-3-6)
@@ -244,6 +273,10 @@ Getting data from server, altering data in server, programming a server with Nod
 **_TO-STUDY_**
 
 - [PART 3-b: Deploying app to internet](https://fullstackopen.com/en/part3/deploying_app_to_internet)
+
+**_LECTURE-VIDEO_**
+
+- []()
 
 **_TO-DO:_**
 
@@ -272,6 +305,10 @@ Saving data to MongoDB
 
 - [PART 3-c: Saving data to MongoDB](https://fullstackopen.com/en/part3/saving_data_to_mongo_db)
 
+**_LECTURE-VIDEO_**
+
+- []()
+
 **_TO-DO:_**
 
 - [3.12](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#exercise-3-12)
@@ -288,6 +325,10 @@ Validation and ESLint
 **_TO-STUDY_**
 
 - [PART 3-d: Validation and ESLint](https://fullstackopen.com/en/part3/validation_and_es_lint)
+
+**_LECTURE-VIDEO_**
+
+- []()
 
 **_TO-DO:_**
 
@@ -316,7 +357,9 @@ Validation and ESLint
 
 - [.-.]()
 
-**_LECTURE-RECORDING_**
+**_LECTURE-VIDEO_**
+
+- []()
 
 **_TO-HAVE-LEARNT:_**
 
