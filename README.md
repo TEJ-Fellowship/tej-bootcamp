@@ -104,6 +104,8 @@ _Instructions for TO-DO_
 **_TO-LEARN_**
 
 - a more complex state
+  - array, object in state
+- conditional rendering of component
 - debugging React apps
 
 **_TO-STUDY_**
