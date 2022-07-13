@@ -8,6 +8,10 @@ const App = () => {
   const [myCount, setMyCount] = useState(1);
   const [clickButtonHistory, setClickButtonHistory] = useState([]);
 
+  // const Adisplay = () => {
+  //   return <h3>Do not create component inside component</h3>;
+  // };
+
   console.log("calling");
   const increaseCountFromApp = () => {
     setMyCount(myCount + 1);
