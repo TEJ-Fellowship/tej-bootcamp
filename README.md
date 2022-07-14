@@ -149,7 +149,8 @@ _Instructions for TO-DO_
 
 **_LECTURE-VIDEO_**
 
-- []()
+- [Using Array.map to show data in React](https://youtu.be/Mpk_FVc8A0Q)
+- [Using key in React lists, and further debugging notes](https://youtu.be/-Qg0t48bWNA)
 
 **_TO-DO:_**
 
