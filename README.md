@@ -68,10 +68,10 @@ _Instructions for TO-DO_
 1. create a repository in github to push your local `fullstackopen`
 1. create a folder called `part1` inside `fullstackopen`
 1. create folder called `courseinfo` inside of `part1` to put your code for exercise 1.1-1.5
-   - You can create `courseinfo` project either by using `parcel`, as we did for the class today.  You can clone this [starter kit](https://github.com/TEJ-Fellowship/react-start-kit)
+   - You can create `courseinfo` project either by using `parcel`, as we did for the class today. You can clone this [starter kit](https://github.com/TEJ-Fellowship/react-start-kit)
    - Or you can create `courseinfo` project using `create-react-app` as described in the [`introduction to react`](https://fullstackopen.com/en/part1/introduction_to_react) section of the course
 
-*note*: You will need to delete the `.git` directory inside the clone
+_note_: You will need to delete the `.git` directory inside the clone
 
 ---
 
@@ -140,8 +140,8 @@ _Instructions for TO-DO_
 - debugging React apps
   - use console through all components & calls
   - most common problems
-      - the props are expected to be of a different type, 
-      - or called with a different name than they actually are, and destructuring fails as a result
+    - the props are expected to be of a different type,
+    - or called with a different name than they actually are, and destructuring fails as a result
 
 **_TO-STUDY_**
 
@@ -156,9 +156,22 @@ _Instructions for TO-DO_
 
 - [2.1-2.5](https://fullstackopen.com/en/part2/rendering_a_collection_modules#exercises-2-1-2-5)
 
+</details>
+
 ---
 
-**DAY 5: PART 2-b**
+## Week 2
+
+Getting data from server, altering data in server, programming a server with NodeJS and Express
+
+1. [PART 2: Communicating with server](https://fullstackopen.com/en/part2)
+2. [PART 3: Programming a server with NodeJS and Express](https://fullstackopen.com/en/part3)
+
+<details><summary>Daily schedule</summary>
+
+---
+
+**DAY 1: PART 2-b**
 
 **_TO-LEARN_**
 
@@ -181,22 +194,9 @@ _Instructions for TO-DO_
 
 - [2.6-2.10](https://fullstackopen.com/en/part2/forms#exercises-2-6-2-10)
 
-</details>
-
 ---
 
-## Week 2
-
-Getting data from server, altering data in server, programming a server with NodeJS and Express
-
-1. [PART 2: Communicating with server](https://fullstackopen.com/en/part2)
-2. [PART 3: Programming a server with NodeJS and Express](https://fullstackopen.com/en/part3)
-
-<details><summary>Daily schedule</summary>
-
----
-
-**DAY 1: PART 2-c**
+**DAY 2: PART 2-c**
 
 **_TO-LEARN_**
 
@@ -219,7 +219,7 @@ Getting data from server, altering data in server, programming a server with Nod
 
 ---
 
-**DAY 2: PART 2-d**
+**DAY 3: PART 2-d**
 
 **_TO-LEARN_**
 
@@ -239,7 +239,7 @@ Getting data from server, altering data in server, programming a server with Nod
 
 ---
 
-**DAY 3: PART 2-e**
+**DAY 4: PART 2-e**
 
 **_TO-LEARN_**
 
@@ -259,7 +259,7 @@ Getting data from server, altering data in server, programming a server with Nod
 
 ---
 
-**DAY 4: PART 3-a**
+**DAY 5: PART 3-a**
 
 **_TO-LEARN_**
 
@@ -281,9 +281,21 @@ Getting data from server, altering data in server, programming a server with Nod
 - [3.1-3.6](https://fullstackopen.com/en/part3/node_js_and_express#exercises-3-1-3-6)
 - [3.7-3.8](https://fullstackopen.com/en/part3/node_js_and_express#exercises-3-7-3-8)
 
+</details>
+
 ---
 
-**DAY 5: PART 3-b**
+## Week 3
+
+programming a server with NodeJS and Express
+
+1. [PART 3: Programming a server with NodeJS and Express](https://fullstackopen.com/en/part3)
+
+<details><summary>Daily schedule</summary>
+
+---
+
+**DAY 1: PART 3-b**
 
 **_TO-LEARN_**
 
@@ -301,21 +313,9 @@ Getting data from server, altering data in server, programming a server with Nod
 
 - [3.9-3.11](https://fullstackopen.com/en/part3/deploying_app_to_internet#exercises-3-9-3-11)
 
-</details>
-
 ---
 
-## Week 3
-
-programming a server with NodeJS and Express
-
-1. [PART 3: Programming a server with NodeJS and Express](https://fullstackopen.com/en/part3)
-
-<details><summary>Daily schedule</summary>
-
----
-
-**DAY 1 / 2: PART 3-c**
+**DAY 2 / 3: PART 3-c**
 
 **_TO-LEARN_**
 Saving data to MongoDB
@@ -336,7 +336,7 @@ Saving data to MongoDB
 
 ---
 
-**DAY 3: PART 3-d**
+**DAY 4: PART 3-d**
 
 **_TO-LEARN_**
 Validation and ESLint
