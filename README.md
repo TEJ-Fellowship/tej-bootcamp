@@ -175,7 +175,13 @@ Getting data from server, altering data in server, programming a server with Nod
 
 **_TO-LEARN_**
 
-- controlled forms
+**Main concepts**
+
+- controlled component
+- filtering displayed elements
+
+**side notes**
+
 - form onSubmit event handler needs event.preventDefault()
 - form in App
 - controlled component: using onChange
