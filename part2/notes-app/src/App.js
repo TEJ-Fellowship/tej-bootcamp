@@ -4,6 +4,7 @@ import Note from "./components/Note";
 const App = (props) => {
   const [notes, setNotes] = useState(props.notes);
   const [note, setNote] = useState("Type a note");
+  const [showAll, setShowAll] = useState(true);
 
   const addNote = (event) => {
     event.preventDefault();
@@ -23,11 +24,24 @@ const App = (props) => {
     console.log(note);
   };
 
+  const toggleShowAll = () => {
+    setShowAll(!showAll);
+  };
+
+  const filterFunction = (note) => note.important === true;
+
+  const filteredItems = notes.filter(filterFunction);
+
+  const notesToShow = showAll ? notes : filteredItems;
+
   return (
     <div>
       <h1>Notes</h1>
+      <button onClick={toggleShowAll}>
+        Show {showAll ? "important" : "all"}
+      </button>
       <ul>
-        {notes.map((note) => (
+        {notesToShow.map((note) => (
           <Note key={note.id} note={note} />
         ))}
       </ul>
