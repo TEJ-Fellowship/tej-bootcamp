@@ -207,9 +207,10 @@ Getting data from server, altering data in server, programming a server with Nod
 **_TO-LEARN_**
 
 - getting data from server
-- Axios
-- promises
-- effect hooks
+  - using [JSON Server](https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d) to simulate server
+- understanding [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+- using [Axios](https://axios-http.com/docs/intro) to call server
+- [effect hooks](https://reactjs.org/docs/hooks-effect.html)
 
 **_TO-STUDY_**
 
