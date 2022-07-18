@@ -1,6 +1,20 @@
+import { useState } from "react";
 import Note from "./components/Note";
 
-const App = ({ notes }) => {
+const App = (props) => {
+  const [notes, setNotes] = useState(props.notes);
+  const [note, setNote] = useState("Type a note");
+
+  const addNote = (event) => {
+    event.preventDefault();
+    console.dir(event.target);
+  };
+
+  const handleOnChange = (event) => {
+    setNote(event.target.value);
+    console.log(note);
+  };
+
   return (
     <div>
       <h1>Notes</h1>
@@ -9,6 +23,10 @@ const App = ({ notes }) => {
           <Note key={note.id} note={note} />
         ))}
       </ul>
+      <form onSubmit={addNote}>
+        <input value={note} onChange={handleOnChange} />
+        <button>hello</button>
+      </form>
     </div>
   );
 };
