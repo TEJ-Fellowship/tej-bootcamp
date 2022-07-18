@@ -180,7 +180,7 @@ Getting data from server, altering data in server, programming a server with Nod
 - controlled component
 - filtering displayed elements
 
-**side notes**
+**Side notes**
 
 - form onSubmit event handler needs event.preventDefault()
 - form in App
