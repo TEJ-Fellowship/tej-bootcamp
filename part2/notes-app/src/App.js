@@ -8,6 +8,14 @@ const App = (props) => {
   const addNote = (event) => {
     event.preventDefault();
     console.dir(event.target);
+    const newNote = {
+      id: notes.length + 1,
+      content: note,
+      date: new Date().toISOString(),
+      important: Math.random() < 0.5 ? true : false,
+    };
+    setNotes([...notes, newNote]);
+    setNote("");
   };
 
   const handleOnChange = (event) => {
@@ -25,7 +33,7 @@ const App = (props) => {
       </ul>
       <form onSubmit={addNote}>
         <input value={note} onChange={handleOnChange} />
-        <button>hello</button>
+        <button>Add note</button>
       </form>
     </div>
   );
