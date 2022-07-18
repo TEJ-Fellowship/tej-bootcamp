@@ -194,7 +194,10 @@ Getting data from server, altering data in server, programming a server with Nod
 
 **_LECTURE-VIDEO_**
 
-- []()
+- [Getting started with create react app to part2-a](https://youtu.be/JM0sv09GIwc)
+- [Controlled component](https://youtu.be/KDzgcoe4KUg)
+- [From controlled component to add to list](https://youtu.be/DCcOnuY9a-o)
+- [Filtering notes](https://youtu.be/GtgBC_bUMYI)
 
 **_TO-DO:_**
 
