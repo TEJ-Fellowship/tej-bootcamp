@@ -23,9 +23,13 @@ import axios from "axios";
 //   },
 // ];
 
-axios.get("http://localhost:3001/notes").then((response) => {
-  console.dir(response.data);
-  ReactDOM.createRoot(document.getElementById("root")).render(
-    <App notes={response.data} />
-  );
-});
+// axios.get("http://localhost:3001/notes1").then(successCallBackFunction).catch(failureCallbackfunction)
+axios
+  .get("http://localhost:3001/notes")
+  .then((response) => {
+    console.log(response);
+    ReactDOM.createRoot(document.getElementById("root")).render(
+      <App notes={response.data} />
+    );
+  })
+  .catch((error) => console.log(error));
