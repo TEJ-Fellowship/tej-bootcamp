@@ -1,8 +1,19 @@
 import { useState } from "react";
 import Note from "./components/Note";
 
-const App = (props) => {
-  const [notes, setNotes] = useState(props.notes);
+const App = () => {
+  //1. we need to get data from server
+  // 2. const [notes, setNotes] = useState( this source will be the data we get from server);
+
+  /**
+   * Things we need to setup
+   * 1. backend server: will create fake backend server
+   * 2. in the frontend code, read the data from backend server
+   *  2.1 npm library that provides technology to call backend server
+   *  2.2 where and how to call this library from React code
+   */
+
+  // const [notes, setNotes] = useState(props.notes);
   const [note, setNote] = useState("Type a note");
   const [showAll, setShowAll] = useState(true);
 
