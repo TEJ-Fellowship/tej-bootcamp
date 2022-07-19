@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Note from "./components/Note";
+import axios from "axios";
 
-const App = (props) => {
+const App = () => {
   //1. we need to get data from server
   // 2. const [notes, setNotes] = useState( this source will be the data we get from server);
 
@@ -13,9 +14,17 @@ const App = (props) => {
    *  2.2 where and how to call this library from React code
    */
 
-  const [notes, setNotes] = useState(props.notes);
+  const [notes, setNotes] = useState([]);
   const [note, setNote] = useState("Type a note");
   const [showAll, setShowAll] = useState(true);
+
+  useEffect(() => {
+    axios.get("http://localhost:3001/notes").then((result) => {
+      setNotes(result.data);
+      console.log("in useEffect: notes are ", notes);
+      // console.log("in useEffect: note is ", note);
+    });
+  }, []);
 
   const addNote = (event) => {
     event.preventDefault();
@@ -32,7 +41,6 @@ const App = (props) => {
 
   const handleOnChange = (event) => {
     setNote(event.target.value);
-    console.log(note);
   };
 
   const toggleShowAll = () => {
@@ -44,6 +52,8 @@ const App = (props) => {
   const filteredItems = notes.filter(filterFunction);
 
   const notesToShow = showAll ? notes : filteredItems;
+
+  // console.log("line 56: notes has", notes);
 
   return (
     <div>
