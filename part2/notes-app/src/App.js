@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Note from "./components/Note";
 
-const App = () => {
+const App = (props) => {
   //1. we need to get data from server
   // 2. const [notes, setNotes] = useState( this source will be the data we get from server);
 
@@ -13,7 +13,7 @@ const App = () => {
    *  2.2 where and how to call this library from React code
    */
 
-  // const [notes, setNotes] = useState(props.notes);
+  const [notes, setNotes] = useState(props.notes);
   const [note, setNote] = useState("Type a note");
   const [showAll, setShowAll] = useState(true);
 
