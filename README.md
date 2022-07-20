@@ -297,8 +297,22 @@ Getting data from server, altering data in server, programming a server with Nod
 
 **_TO-LEARN_**
 
-- Node.js
-- Express
+- creating a simple Node project that runs in Node environment
+- running a simple web server
+- using Express library to build a more developer friendly web server
+- using nodemon to run node
+- defining routes in Express
+  - CRUD functionality in Express routes
+- Middleware
+  - writing our own middleware
+
+**Side notes**
+
+- [difference between ES6 modules vs CommonJS syntax](https://www.freecodecamp.org/news/modules-in-javascript/)
+- [what is JSON?](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+- [what does the version number in npm library mean?](https://fullstackopen.com/en/part3/node_js_and_express#express)
+- [VSCode REST client](https://fullstackopen.com/en/part3/node_js_and_express#the-visual-studio-code-rest-client)
+- [Math.max](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
 
 **_PRE-WORK:_**
 
