@@ -223,7 +223,7 @@ Getting data from server, altering data in server, programming a server with Nod
 
 - [Changing data source in frontend to come from backend](https://youtu.be/JM0sv09GIwc)
 - [Setting up json server](https://youtu.be/D6ClUvVAkrk)
-- [Using axios in frontend to access data from backend](https://youtu.be/wSGw6JUFcPU)
+- [Using Axios in frontend to access data from backend](https://youtu.be/wSGw6JUFcPU)
 - [Understanding promises and async nature of axios](https://youtu.be/olCyK-TXO34)
 - [Using useEffect to call axios from React component](https://youtu.be/izc1acO3eUc)
 
@@ -237,7 +237,21 @@ Getting data from server, altering data in server, programming a server with Nod
 
 **_TO-LEARN_**
 
-- altering data in server
+- understanding [REST](https://www.codecademy.com/article/what-is-crud)
+  - routes
+  - CRUD (Create, Read, Update, Delete) actions on REST routes
+  - [Axios methods corresponding to CRUD actions](https://www.freecodecamp.org/news/axios-react-how-to-make-get-post-and-delete-api-requests/)
+- Sending data to the Backend Server
+  - [creating new data](https://fullstackopen.com/en/part2/altering_data_in_server#sending-data-to-the-server)
+  - [updating existing data using Axios.put](https://fullstackopen.com/en/part2/altering_data_in_server#changing-the-importance-of-notes)
+  - [handling Error in Promise using Promise.catch](https://fullstackopen.com/en/part2/altering_data_in_server#promises-and-errors)
+
+**Side notes**
+
+- Array.find
+- Review
+  - Array.map
+  - Array.filter
 
 **_TO-STUDY_**
 
