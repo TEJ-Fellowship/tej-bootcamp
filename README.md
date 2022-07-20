@@ -271,7 +271,13 @@ Getting data from server, altering data in server, programming a server with Nod
 
 **_TO-LEARN_**
 
-- Adding styles to React app
+- adding styles to React app
+  - importing style file into JS project
+  - CSS rules = selector + declerations
+  - class selectors in JSX
+- error message in it's own React component
+  - activating error component by setting error message
+- adding inline style in JSX
 
 **_TO-STUDY_**
 
