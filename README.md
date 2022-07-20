@@ -221,7 +221,11 @@ Getting data from server, altering data in server, programming a server with Nod
 
 **_LECTURE-VIDEO_**
 
-- []()
+- [Changing data source in frontend to come from backend](https://youtu.be/JM0sv09GIwc)
+- [Setting up json server](https://youtu.be/D6ClUvVAkrk)
+- [Using axios in frontend to access data from backend](https://youtu.be/wSGw6JUFcPU)
+- [Understanding promises and async nature of axios](https://youtu.be/olCyK-TXO34)
+- [Using useEffect to call axios from React component](https://youtu.be/izc1acO3eUc)
 
 **_TO-DO:_**
 
