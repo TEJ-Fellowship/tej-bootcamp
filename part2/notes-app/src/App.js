@@ -67,7 +67,28 @@ const App = () => {
       </button>
       <ul>
         {notesToShow.map((note) => (
-          <Note key={note.id} note={note} />
+          <Note
+            key={note.id}
+            note={note}
+            toggleImportance={() => {
+              console.log(
+                `button is clicked by function passed from App for id ${note.id}`
+              );
+              //1. make new object from current note with toggled important field
+              const updatedNote = { ...note, important: !note.important };
+              axios
+                //2. update backend server with the updated object
+                .put(`http://localhost:3001/notes/${note.id}`, updatedNote)
+                .then((response) => {
+                  console.log(response.data);
+                  //3. now, also update the frontend state with the updated note
+                  setNotes(
+                    notes.map((x) => (x.id !== note.id ? x : response.data))
+                  );
+                  setNote("");
+                });
+            }}
+          />
         ))}
       </ul>
       <form onSubmit={addNote}>
