@@ -81,12 +81,18 @@ const App = () => {
               const updatedNote = { ...note, important: !note.important };
               //2. update backend server with the updated object
               // axios.put(`http://localhost:3001/notes/${note.id}`, updatedNote)
-              noteService.update(note.id, updatedNote).then((data) => {
-                // console.log(data);
-                //3. now, also update the frontend state with the updated note
-                setNotes(notes.map((x) => (x.id !== note.id ? x : data)));
-                setNote("");
-              });
+              noteService
+                .update(note.id, updatedNote)
+                .then((data) => {
+                  // console.log(data);
+                  //3. now, also update the frontend state with the updated note
+                  setNotes(notes.map((x) => (x.id !== note.id ? x : data)));
+                  setNote("");
+                })
+                .catch((error) => {
+                  console.log("caught the error");
+                  setNotes(notes.filter((x) => x.id !== note.id));
+                });
             }}
           />
         ))}
