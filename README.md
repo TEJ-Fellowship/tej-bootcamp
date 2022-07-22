@@ -259,7 +259,11 @@ Getting data from server, altering data in server, programming a server with Nod
 
 **_LECTURE-VIDEO_**
 
-- []()
+- [Using axios post to create note in backend](https://youtu.be/8ioBv5Rfo3A)
+- [Using axios put to update note in backend](https://youtu.be/UuOC69taFxo)
+- [Refactoring axios services](https://youtu.be/W3sTMbbTMkw)
+- [Handling axios errors in catch block](https://youtu.be/AOgQXnk1LzE)
+- [Debugging openweather map api key](https://youtu.be/aByLiib_Zks)
 
 **_TO-DO:_**
 
