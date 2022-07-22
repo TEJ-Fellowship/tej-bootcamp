@@ -30,13 +30,17 @@ const App = () => {
     event.preventDefault();
     console.dir(event.target);
     const newNote = {
-      id: notes.length + 1,
+      // id: notes.length + 1,
       content: note,
       date: new Date().toISOString(),
       important: Math.random() < 0.5 ? true : false,
     };
-    setNotes([...notes, newNote]);
-    setNote("");
+
+    axios.post("http://localhost:3001/notes", newNote).then((response) => {
+      console.log(response.data);
+      setNotes([...notes, response.data]);
+      setNote("");
+    });
   };
 
   const handleOnChange = (event) => {
