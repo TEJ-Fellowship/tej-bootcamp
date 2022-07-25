@@ -20,6 +20,7 @@ const App = () => {
   const [notes, setNotes] = useState([]);
   const [note, setNote] = useState("Type a note");
   const [showAll, setShowAll] = useState(true);
+  const [message, setMessage] = useState(null);
 
   useEffect(() => {
     // axios.get("http://localhost:3001/notes")
@@ -67,7 +68,7 @@ const App = () => {
   return (
     <div>
       <h1>Notes</h1>
-      <Notification message="this is a message" />
+      <Notification message={message} />
       <button onClick={toggleShowAll}>
         Show {showAll ? "important" : "all"}
       </button>
@@ -93,7 +94,8 @@ const App = () => {
                   setNote("");
                 })
                 .catch((error) => {
-                  console.log("caught the error");
+                  setMessage("The note does not exist anymore");
+                  setTimeout(() => setMessage(null), 2000);
                   setNotes(notes.filter((x) => x.id !== note.id));
                 });
             }}
