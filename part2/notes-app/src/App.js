@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Note from "./components/Note";
+import Footer from "./components/Footer";
 import axios from "axios";
 import noteService from "./services/notes";
 
@@ -101,6 +102,7 @@ const App = () => {
         <input value={note} onChange={handleOnChange} />
         <button>Add note</button>
       </form>
+      <Footer />
     </div>
   );
 };
