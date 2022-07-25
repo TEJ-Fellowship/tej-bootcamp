@@ -54,11 +54,13 @@ HTTP call, pure react, modern react dev setup, component, state, event handler, 
 
 **_LECTURE-VIDEO_**
 
+- [Exercise web sequence diagrams](https://youtu.be/ycQnptR5qj8)
 - [Pure react](https://youtu.be/Pzkcxt9j23U)
 - [Components with props, dev setup, JSX](https://youtu.be/xBJBrULUm0E)
 
 **_TO-DO:_**
 
+- [0.4-0.6](https://fullstackopen.com/en/part0/fundamentals_of_web_apps#exercises-0-1-0-6)
 - [1.1-1.2](https://fullstackopen.com/en/part1/introduction_to_react#exercises-1-1-1-2)
 - [1.3-1.5](https://fullstackopen.com/en/part1/java_script#exercises-1-3-1-5)
 
@@ -289,7 +291,9 @@ Getting data from server, altering data in server, programming a server with Nod
 
 **_LECTURE-VIDEO_**
 
-- []()
+- [Inline styles](https://youtu.be/_YD5VllKoXg)
+- [Using a css file to style Notification component](https://youtu.be/knzBgD0vqwg)
+- [Creating dynamic error message from catch block](https://youtu.be/hGK0Cx0Kbjk)
 
 **_TO-DO:_**
 
