@@ -3,6 +3,7 @@ import Note from "./components/Note";
 import Footer from "./components/Footer";
 import axios from "axios";
 import noteService from "./services/notes";
+import Notification from "./components/Notification";
 
 const App = () => {
   //1. we need to get data from server
@@ -66,6 +67,7 @@ const App = () => {
   return (
     <div>
       <h1>Notes</h1>
+      <Notification message="this is a message" />
       <button onClick={toggleShowAll}>
         Show {showAll ? "important" : "all"}
       </button>
