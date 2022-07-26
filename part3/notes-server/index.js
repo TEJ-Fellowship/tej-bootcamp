@@ -3,6 +3,7 @@ const cors = require("cors");
 
 const App = express();
 App.use(cors());
+App.use(express.json());
 
 let notes = [
   {
@@ -48,6 +49,14 @@ App.delete("/notes/:id", (request, response) => {
   notes = notes.filter((note) => note.id !== currentId);
 
   response.status(204).end();
+});
+
+App.post("/notes", (request, response) => {
+  let myIncomingData = request.body;
+  myIncomingData.id = notes.length + 1;
+  notes.push(myIncomingData);
+
+  response.status(201).json(myIncomingData);
 });
 
 App.listen("3001", () => {
