@@ -330,31 +330,31 @@ Getting data from server, altering data in server, programming a server with Nod
 
 **_LECTURE-VIDEO_**
 
-- [creating a simple express server]()
+- [creating a simple express server](https://youtu.be/fpo5GhzII5k)
   1. create new project `node-server`
   2. convert it to git repo and commit to github
   3. create an npm project inside by `npm init -y1
   4. create express server, serving on root url '/', listening on port 3001
-- [serving on the '/notes' route for a 'get' method request]()
+- [serving on the '/notes' route for a 'get' method request](https://youtu.be/hPoKXqRGzOY)
   1. install nodemon as dev dependency to run node server by hot reload on code changes
   2. install cors to serve requests coming from different urls
   3. create an express route on `/notes` url for `get` request and serve it an array of notes in json format
-- [side note on REST and JSON]()
-- [creating the '/notes/:id' route for a 'get' method request]()
+- [side note on REST and JSON](https://youtu.be/wWBL98cfhLg)
+- [creating the '/notes/:id' route for a 'get' method request](https://youtu.be/ibURgdt3CiA)
   1. create a new get route at `/notes/:id`
   2. respond with the json object of the note at that id
   3. if no notes are available at the id, then set status to 404 and return a friendly error message
-- [creating the '/notes/:id' route for a 'delete' method request]()
+- [creating the '/notes/:id' route for a 'delete' method request](https://youtu.be/ty3a-9HDW9s)
   1. create a new delete route at `/notes/:id`
   2. respond with 204 status code, and no body
   3. install `REST Client` extension
   4. create file `requests/my_requests.rest` to store the REST requests
-- [creating the '/notes' route for a 'post' method request]
+- [creating the '/notes' route for a 'post' method request](https://youtu.be/N_JiJhyo84Q)
   1. create a new post route at `/notes`
   2. use express.json() to read json objects in the request
   3. use the json object in request to create a new post in the backend
   4. respond with status 201 created and return the newly created note object
-- [creating middleware]()
+- [creating middleware](https://youtu.be/CtN_ckGzifk)
   1. create a middleware at the top of the express server to log method, path, and body
   2. creat a middleware at the end of the express server (just before app.listen) to send a 404 not found to all paths that are not handled by the app
 
