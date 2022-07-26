@@ -339,6 +339,11 @@ Getting data from server, altering data in server, programming a server with Nod
   1. install nodemon as dev dependency to run node server by hot reload on code changes
   2. install cors to serve requests coming from different urls
   3. create an express route on `notes` url for `get` request and serve it an array of notes in json format
+- [side note on REST and JSON]()
+- [serting the 'notes/:id' route for a 'get' method request]()
+  1. create a new route in index at `notes/:id`
+  2. respond with the json object of the note at that id
+  3. if no notes are available at the id, then set status to 404 and return a friendly error message
 
 **_TO-DO:_**
 

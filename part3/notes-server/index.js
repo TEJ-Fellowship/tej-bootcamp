@@ -33,6 +33,16 @@ App.get("/notes", (request, response) => {
   response.json(notes);
 });
 
+App.get("/notes/:id", (request, response) => {
+  const currentId = Number(request.params.id);
+  const thisNote = notes.find((note) => note.id === currentId);
+  if (thisNote) response.json(thisNote);
+  else
+    response
+      .status(404)
+      .json({ error: 404, message: `there is no note with id ${currentId}` });
+});
+
 App.listen("3001", () => {
   console.log("server listening on 3001");
 });
