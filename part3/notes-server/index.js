@@ -5,6 +5,16 @@ const App = express();
 App.use(cors());
 App.use(express.json());
 
+App.use((request, response, next) => {
+  console.log("Method:", request.method);
+  console.log("Path:  ", request.path);
+  console.log("Body:  ", request.body);
+  console.log("---");
+  next();
+});
+
+// App.use(express.json());
+
 let notes = [
   {
     id: 1,
@@ -57,6 +67,10 @@ App.post("/notes", (request, response) => {
   notes.push(myIncomingData);
 
   response.status(201).json(myIncomingData);
+});
+
+App.use((request, response, next) => {
+  response.status(404).send("<h1>No routes found for this request</h1>");
 });
 
 App.listen("3001", () => {

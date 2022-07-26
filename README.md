@@ -354,6 +354,9 @@ Getting data from server, altering data in server, programming a server with Nod
   2. use express.json() to read json objects in the request
   3. use the json object in request to create a new post in the backend
   4. respond with status 201 created and return the newly created note object
+- [creating middleware]()
+  1. create a middleware at the top of the express server to log method, path, and body
+  2. creat a middleware at the end of the express server (just before app.listen) to send a 404 not found to all paths that are not handled by the app
 
 **_TO-DO:_**
 
