@@ -335,7 +335,10 @@ Getting data from server, altering data in server, programming a server with Nod
   2. convert it to git repo and commit to github
   3. create an npm project inside by `npm init -y1
   4. create express server, serving on root url '/', listening on port 3001
-- []()
+- [serving on the 'notes' route for a 'get' method request]()
+  1. install nodemon as dev dependency to run node server by hot reload on code changes
+  2. install cors to serve requests coming from different urls
+  3. create an express route on `notes` url for `get` request and serve it an array of notes in json format
 
 **_TO-DO:_**
 
