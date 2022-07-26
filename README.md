@@ -340,10 +340,15 @@ Getting data from server, altering data in server, programming a server with Nod
   2. install cors to serve requests coming from different urls
   3. create an express route on `notes` url for `get` request and serve it an array of notes in json format
 - [side note on REST and JSON]()
-- [serting the 'notes/:id' route for a 'get' method request]()
-  1. create a new route in index at `notes/:id`
+- [creating the 'notes/:id' route for a 'get' method request]()
+  1. create a new get route at `notes/:id`
   2. respond with the json object of the note at that id
   3. if no notes are available at the id, then set status to 404 and return a friendly error message
+- [creating the 'notes/:id' route for a 'delete' method request]()
+  1. create a new delte route in at `notes/:id`
+  2. respond with 204 status code, and no body
+  3. install `REST Client` extension
+  4. create file `requests/my_requests.rest` to store the REST requests
 
 **_TO-DO:_**
 
