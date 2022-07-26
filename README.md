@@ -330,6 +330,11 @@ Getting data from server, altering data in server, programming a server with Nod
 
 **_LECTURE-VIDEO_**
 
+- [creating a simple express server]()
+  1. create new project `node-server`
+  2. convert it to git repo and commit to github
+  3. create an npm project inside by `npm init -y1
+  4. create express server, serving on root url '/', listening on port 3001
 - []()
 
 **_TO-DO:_**
