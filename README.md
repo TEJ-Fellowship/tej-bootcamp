@@ -33,11 +33,11 @@ HTTP call
 
 - [PART 0: Read only the 'HTTP GET' section](https://fullstackopen.com/en/part0/fundamentals_of_web_apps)
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART 0-b: HTTP request](https://fullstackopen.com/en/part0/fundamentals_of_web_apps#http-get)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - [Exercise web sequence diagrams](https://youtu.be/ycQnptR5qj8)
 
@@ -75,13 +75,13 @@ pure react, modern react dev setup, component, state, event handler
 
 - [watch this video on eventloop](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [Complete Intro to React v7: Pure react](https://btholt.github.io/complete-intro-to-react-v7/lessons/no-frills-react/pure-react)
 - [Complete Intro to React v7: JS tools](https://btholt.github.io/complete-intro-to-react-v7/lessons/js-tools/npm)
 - [PART 1-a: Intro to React](https://fullstackopen.com/en/part1/introduction_to_react)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - [Pure react](https://youtu.be/Pzkcxt9j23U)
 
@@ -110,11 +110,11 @@ _note_: You will need to delete the `.git` directory inside the clone
 
 - master these Array methods: [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce), [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach), [Includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes), [Some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some), [Every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART 1-b: Javascript](https://fullstackopen.com/en/part1/java_script)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - [Components with props, dev setup, JSX](https://youtu.be/xBJBrULUm0E)
 
@@ -135,11 +135,11 @@ _Instructions for TO-DO_
 - stateful component
 - event handler
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART 1-c: Component state, event handlers](https://fullstackopen.com/en/part1/component_state_event_handlers)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - [Starting a react project](https://youtu.be/BGrie4SO-88)
 - [Component manual re-render](https://youtu.be/6RCRVL7Z-Nc)
@@ -161,11 +161,11 @@ _Instructions for TO-DO_
 - conditional rendering of component
 - debugging React apps
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART 1-d: A more complex state, debugging React apps](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - [Using array in state](https://youtu.be/2F7NNlAe68g)
 - [Conditional rendering in component](https://youtu.be/uCGdWjuhhg4)
@@ -206,11 +206,11 @@ Modules, forms, getting data from server, altering data in server
     - the props are expected to be of a different type,
     - or called with a different name than they actually are, and destructuring fails as a result
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART 2-a: Rendering a collection, modules](https://fullstackopen.com/en/part2/rendering_a_collection_modules)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - [Using Array.map to show data in React](https://youtu.be/Mpk_FVc8A0Q)
 - [Using key in React lists, and further debugging notes](https://youtu.be/-Qg0t48bWNA)
@@ -238,11 +238,11 @@ Modules, forms, getting data from server, altering data in server
 - ternary expression
 - Map.filter
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART 2-b: Forms](https://fullstackopen.com/en/part2/forms)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - [Getting started with create react app to part2-a](https://youtu.be/JM0sv09GIwc)
 - [Controlled component](https://youtu.be/KDzgcoe4KUg)
@@ -265,11 +265,11 @@ Modules, forms, getting data from server, altering data in server
 - using [Axios](https://axios-http.com/docs/intro) to call server
 - [effect hooks](https://reactjs.org/docs/hooks-effect.html)
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART 2-c: Getting data from server](https://fullstackopen.com/en/part2/getting_data_from_server)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - [Changing data source in frontend to come from backend](https://youtu.be/JM0sv09GIwc)
 - [Setting up json server](https://youtu.be/D6ClUvVAkrk)
@@ -303,11 +303,11 @@ Modules, forms, getting data from server, altering data in server
   - Array.map
   - Array.filter
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART 2-d: Altering data in server](https://fullstackopen.com/en/part2/altering_data_in_server)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - [Using axios post to create note in backend](https://youtu.be/8ioBv5Rfo3A)
 - [Using axios put to update note in backend](https://youtu.be/UuOC69taFxo)
@@ -333,11 +333,11 @@ Modules, forms, getting data from server, altering data in server
   - activating error component by setting error message
 - adding inline style in JSX
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART 2-e: Adding styles to React app](https://fullstackopen.com/en/part2/adding_styles_to_react_app)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - [Inline styles](https://youtu.be/_YD5VllKoXg)
 - [Using a css file to style Notification component](https://youtu.be/knzBgD0vqwg)
@@ -380,11 +380,11 @@ Modules, forms, getting data from server, altering data in server
 
 **_PRE-WORK:_**
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART 3-a: Node.js and Express](https://fullstackopen.com/en/part3/node_js_and_express)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - [creating a simple express server](https://youtu.be/fpo5GhzII5k)
   1. create new project `node-server`
@@ -427,11 +427,11 @@ Modules, forms, getting data from server, altering data in server
 
 - Deploying app to internet
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART 3-b: Deploying app to internet](https://fullstackopen.com/en/part3/deploying_app_to_internet)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - []()
 
@@ -447,11 +447,11 @@ Modules, forms, getting data from server, altering data in server
 
 Saving data to MongoDB
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART 3-c: Saving data to MongoDB](https://fullstackopen.com/en/part3/saving_data_to_mongo_db)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - []()
 
@@ -469,11 +469,11 @@ Saving data to MongoDB
 
 Validation and ESLint
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART 3-d: Validation and ESLint](https://fullstackopen.com/en/part3/validation_and_es_lint)
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - []()
 
