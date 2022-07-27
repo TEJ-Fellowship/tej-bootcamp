@@ -17,11 +17,57 @@ The junior phase will comprise of 10 sections, with each section taking roughly 
 
 ---
 
-## Week 1
+## Part 0
 
-HTTP call, pure react, modern react dev setup, component, state, event handler, modules, forms
+HTTP call
 
 1. [PART 0: Fundamentals of web apps](https://fullstackopen.com/en/part0/fundamentals_of_web_apps)
+
+<details><summary>Daily schedule</summary>
+
+---
+
+**PART 0-b**
+
+<details><summary>Click to expand</summary>
+
+**_TO-LEARN_**
+
+- HTTP call
+
+**_PRE-WORK:_**
+
+- [PART 0: Read only the 'HTTP GET' section](https://fullstackopen.com/en/part0/fundamentals_of_web_apps)
+
+**_TO-STUDY_**
+
+- [PART 0-b: HTTP request](https://fullstackopen.com/en/part0/fundamentals_of_web_apps#http-get)
+
+**_LECTURE-VIDEO_**
+
+- [Exercise web sequence diagrams](https://youtu.be/ycQnptR5qj8)
+
+**_TO-DO:_**
+
+- [0.4-0.6](https://fullstackopen.com/en/part0/fundamentals_of_web_apps#exercises-0-1-0-6)
+
+_Instructions for TO-DO_
+
+1. create a new git repository called `fullstackopen` in your local computer
+1. create a repository in github to push your local `fullstackopen`
+1. create a folder called `part0` inside `fullstackopen`
+1. create separate files to put your sequence diagrams for exercises 0.4 to 0.6
+
+</details>
+
+</details>
+
+---
+
+## Week 1
+
+pure react, modern react dev setup, component, state, event handler, modules, forms
+
 1. [PART 1: Introduction to react](https://fullstackopen.com/en/part1)
 1. [PART 2: Communicating with server](https://fullstackopen.com/en/part2)
 
@@ -33,20 +79,17 @@ HTTP call, pure react, modern react dev setup, component, state, event handler, 
 
 **_TO-LEARN_**
 
-- HTTP call
 - pure react
 - modern react dev setup
 - React concepts: component, JSX, props
 
 **_PRE-WORK:_**
 
-- [PART 0: Read only the 'HTTP GET' section](https://fullstackopen.com/en/part0/fundamentals_of_web_apps)
 - [watch this video on eventloop](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 - master these Array methods: [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce), [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach), [Includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes), [Some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some), [Every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
 **_TO-STUDY_**
 
-- [PART 0-b: HTTP request](https://fullstackopen.com/en/part0/fundamentals_of_web_apps#http-get)
 - [Complete Intro to React v7: Pure react](https://btholt.github.io/complete-intro-to-react-v7/lessons/no-frills-react/pure-react)
 - [Complete Intro to React v7: JS tools](https://btholt.github.io/complete-intro-to-react-v7/lessons/js-tools/npm)
 - [PART 1-a: Intro to React](https://fullstackopen.com/en/part1/introduction_to_react)
@@ -54,21 +97,17 @@ HTTP call, pure react, modern react dev setup, component, state, event handler, 
 
 **_LECTURE-VIDEO_**
 
-- [Exercise web sequence diagrams](https://youtu.be/ycQnptR5qj8)
 - [Pure react](https://youtu.be/Pzkcxt9j23U)
 - [Components with props, dev setup, JSX](https://youtu.be/xBJBrULUm0E)
 
 **_TO-DO:_**
 
-- [0.4-0.6](https://fullstackopen.com/en/part0/fundamentals_of_web_apps#exercises-0-1-0-6)
 - [1.1-1.2](https://fullstackopen.com/en/part1/introduction_to_react#exercises-1-1-1-2)
 - [1.3-1.5](https://fullstackopen.com/en/part1/java_script#exercises-1-3-1-5)
 
 _Instructions for TO-DO_
 
-1. create a new git repository called `fullstackopen` in your local computer
-1. create a repository in github to push your local `fullstackopen`
-1. create a folder called `part1` inside `fullstackopen`
+1. in the `fullstackopen` repository, create a folder called `part1` inside `fullstackopen`
 1. create folder called `courseinfo` inside of `part1` to put your code for exercise 1.1-1.5
    - You can create `courseinfo` project either by using `parcel`, as we did for the class today. You can clone this [starter kit](https://github.com/TEJ-Fellowship/react-start-kit)
    - Or you can create `courseinfo` project using `create-react-app` as described in the [`introduction to react`](https://fullstackopen.com/en/part1/introduction_to_react) section of the course
