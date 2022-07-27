@@ -21,15 +21,11 @@ The junior phase will comprise of 10 sections, with each section taking roughly 
 
 HTTP call
 
-<details><summary>Daily schedule</summary>
+<details><summary><h3 style="display:inline">Chapters</h3></summary>
 
----
+<details><summary>Part 0-b</summary>
 
-**PART 0-b**
-
-<details><summary>Click to expand</summary>
-
-**_TO-LEARN_**
+**_TO-LEARN:_**
 
 - HTTP call
 
@@ -66,13 +62,11 @@ _Instructions for TO-DO_
 
 pure react, modern react dev setup, component, state, event handler
 
-<details><summary>Daily schedule</summary>
+<details><summary><h3 style="display:inline">Chapters</h3></summary>
 
----
+<details><summary>Part 1-a</summary>
 
-**PART 1-a**
-
-**_TO-LEARN_**
+**_TO-LEARN:_**
 
 - pure react
 - modern react dev setup
@@ -104,11 +98,11 @@ _Instructions for TO-DO_
 
 _note_: You will need to delete the `.git` directory inside the clone
 
----
+</details>
 
-**PART 1-b**
+<details><summary>Part 1-b</summary>
 
-**_TO-LEARN_**
+**_TO-LEARN:_**
 
 - React concepts: component, JSX, props
 
@@ -132,11 +126,11 @@ _Instructions for TO-DO_
 
 1. in the `fullstackopen/part1/courseinfo` repository, continue to put your code for exercise 1.3-1.5
 
----
+</details>
 
-**PART 1-c**
+<details><summary>Part 1-c</summary>
 
-**_TO-LEARN_**
+**_TO-LEARN:_**
 
 - stateful component
 - event handler
@@ -156,11 +150,11 @@ _Instructions for TO-DO_
 
 - [1.6-1.14](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14)
 
----
+</details>
 
-**PART 1-d**
+<details><summary>Part 1-d</summary>
 
-**_TO-LEARN_**
+**_TO-LEARN:_**
 
 - a more complex state
   - array, object in state: don't mutate state!
@@ -184,23 +178,23 @@ _Instructions for TO-DO_
 
 </details>
 
+</details>
+
 ---
 
 ## [PART 2: Communicating with server](https://fullstackopen.com/en/part2)
 
 Modules, forms, getting data from server, altering data in server
 
-<details><summary>Daily schedule</summary>
+<details><summary><h3 style="display:inline">Chapters</h3></summary>
 
----
-
-**PART 2-a**
+<details><summary>Part 2-a</summary>
 
 **_PRE-WORK:_**
 
 - [watch at least first 3 parts of this youtube playlist](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
 
-**_TO-LEARN_**
+**_TO-LEARN:_**
 
 - rendering collection [Array or Object]
   - don't mutate state! especially if state is Array or Object
@@ -225,11 +219,11 @@ Modules, forms, getting data from server, altering data in server
 
 - [2.1-2.5](https://fullstackopen.com/en/part2/rendering_a_collection_modules#exercises-2-1-2-5)
 
----
+</details>
 
-**PART 2-b**
+<details><summary>Part 2-b</summary>
 
-**_TO-LEARN_**
+**_TO-LEARN:_**
 
 **Main concepts**
 
@@ -259,11 +253,11 @@ Modules, forms, getting data from server, altering data in server
 
 - [2.6-2.10](https://fullstackopen.com/en/part2/forms#exercises-2-6-2-10)
 
----
+</details>
 
-**PART 2-c**
+<details><summary>Part 2-c</summary>
 
-**_TO-LEARN_**
+**_TO-LEARN:_**
 
 - getting data from server
   - using [JSON Server](https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d) to simulate server
@@ -287,11 +281,11 @@ Modules, forms, getting data from server, altering data in server
 
 - [2.11-2.14](https://fullstackopen.com/en/part2/getting_data_from_server#exercises-2-11-2-14)
 
----
+</details>
 
-**PART 2-d**
+<details><summary>Part 2-d</summary>
 
-**_TO-LEARN_**
+**_TO-LEARN:_**
 
 - understanding [REST](https://www.codecademy.com/article/what-is-crud)
   - routes
@@ -325,11 +319,11 @@ Modules, forms, getting data from server, altering data in server
 
 - [2.15-2.18](https://fullstackopen.com/en/part2/altering_data_in_server#exercises-2-15-2-18)
 
----
+</details>
 
-**PART 2-e**
+<details><summary>Part 2-e</summary>
 
-**_TO-LEARN_**
+**_TO-LEARN:_**
 
 - adding styles to React app
   - importing style file into JS project
@@ -355,17 +349,17 @@ Modules, forms, getting data from server, altering data in server
 
 </details>
 
+</details>
+
 ---
 
 ## [PART 3: Programming a server with NodeJS and Express](https://fullstackopen.com/en/part3)
 
-<details><summary>Daily schedule</summary>
+<details><summary><h3 style="display:inline">Chapters</h3></summary>
 
----
+<details><summary>Part 3-a</summary>
 
-**PART 3-a**
-
-**_TO-LEARN_**
+**_TO-LEARN:_**
 
 - creating a simple Node project that runs in Node environment
 - running a simple web server
@@ -425,11 +419,11 @@ Modules, forms, getting data from server, altering data in server
 - [3.1-3.6](https://fullstackopen.com/en/part3/node_js_and_express#exercises-3-1-3-6)
 - [3.7-3.8](https://fullstackopen.com/en/part3/node_js_and_express#exercises-3-7-3-8)
 
----
+</details>
 
-**PART 3-b**
+<details><summary>Part 3-b</summary>
 
-**_TO-LEARN_**
+**_TO-LEARN:_**
 
 - Deploying app to internet
 
@@ -445,11 +439,12 @@ Modules, forms, getting data from server, altering data in server
 
 - [3.9-3.11](https://fullstackopen.com/en/part3/deploying_app_to_internet#exercises-3-9-3-11)
 
----
+</details>
 
-**PART 3-c**
+<details><summary>Part 3-c</summary>
 
-**_TO-LEARN_**
+**_TO-LEARN:_**
+
 Saving data to MongoDB
 
 **_TO-STUDY_**
@@ -466,11 +461,12 @@ Saving data to MongoDB
 - [3.13-3.14](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#exercises-3-13-3-14)
 - [3.15-3.18](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#exercises-3-15-3-18)
 
----
+</details>
 
-**PART 3-d**
+<details><summary>Part 3-d</summary>
 
-**_TO-LEARN_**
+**_TO-LEARN:_**
+
 Validation and ESLint
 
 **_TO-STUDY_**
@@ -488,6 +484,8 @@ Validation and ESLint
 
 </details>
 
+</details>
+
 ---
 
 <details><summary>TEMPLATE</summary>
@@ -496,11 +494,11 @@ Validation and ESLint
 
 **PART -**
 
-**_TO-LEARN_**
+**_TO-LEARN:_**
 
 **_PRE-WORK:_**
 
-**_TO-STUDY_**
+**_TO-STUDY:_**
 
 - [PART -: ]()
 
@@ -508,7 +506,7 @@ Validation and ESLint
 
 - [.-.]()
 
-**_LECTURE-VIDEO_**
+**_LECTURE-VIDEO:_**
 
 - []()
 
