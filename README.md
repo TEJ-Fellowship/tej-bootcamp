@@ -17,11 +17,9 @@ The junior phase will comprise of 10 sections, with each section taking roughly 
 
 ---
 
-## Part 0
+## [PART 0: Fundamentals of web apps](https://fullstackopen.com/en/part0/fundamentals_of_web_apps)
 
 HTTP call
-
-1. [PART 0: Fundamentals of web apps](https://fullstackopen.com/en/part0/fundamentals_of_web_apps)
 
 <details><summary>Daily schedule</summary>
 
@@ -64,51 +62,43 @@ _Instructions for TO-DO_
 
 ---
 
-## Week 1
+## [PART 1: Introduction to react](https://fullstackopen.com/en/part1)
 
-pure react, modern react dev setup, component, state, event handler, modules, forms
-
-1. [PART 1: Introduction to react](https://fullstackopen.com/en/part1)
-1. [PART 2: Communicating with server](https://fullstackopen.com/en/part2)
+pure react, modern react dev setup, component, state, event handler
 
 <details><summary>Daily schedule</summary>
 
 ---
 
-**DAY 1: PART 1-a,b**
+**PART 1-a**
 
 **_TO-LEARN_**
 
 - pure react
 - modern react dev setup
-- React concepts: component, JSX, props
 
 **_PRE-WORK:_**
 
 - [watch this video on eventloop](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
-- master these Array methods: [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce), [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach), [Includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes), [Some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some), [Every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
 **_TO-STUDY_**
 
 - [Complete Intro to React v7: Pure react](https://btholt.github.io/complete-intro-to-react-v7/lessons/no-frills-react/pure-react)
 - [Complete Intro to React v7: JS tools](https://btholt.github.io/complete-intro-to-react-v7/lessons/js-tools/npm)
 - [PART 1-a: Intro to React](https://fullstackopen.com/en/part1/introduction_to_react)
-- [PART 1-b: Javascript](https://fullstackopen.com/en/part1/java_script)
 
 **_LECTURE-VIDEO_**
 
 - [Pure react](https://youtu.be/Pzkcxt9j23U)
-- [Components with props, dev setup, JSX](https://youtu.be/xBJBrULUm0E)
 
 **_TO-DO:_**
 
 - [1.1-1.2](https://fullstackopen.com/en/part1/introduction_to_react#exercises-1-1-1-2)
-- [1.3-1.5](https://fullstackopen.com/en/part1/java_script#exercises-1-3-1-5)
 
 _Instructions for TO-DO_
 
 1. in the `fullstackopen` repository, create a folder called `part1` inside `fullstackopen`
-1. create folder called `courseinfo` inside of `part1` to put your code for exercise 1.1-1.5
+1. create folder called `courseinfo` inside of `part1` to put your code for exercise 1.1-1.2
    - You can create `courseinfo` project either by using `parcel`, as we did for the class today. You can clone this [starter kit](https://github.com/TEJ-Fellowship/react-start-kit)
    - Or you can create `courseinfo` project using `create-react-app` as described in the [`introduction to react`](https://fullstackopen.com/en/part1/introduction_to_react) section of the course
 
@@ -116,7 +106,35 @@ _note_: You will need to delete the `.git` directory inside the clone
 
 ---
 
-**DAY 2: PART 1-c**
+**PART 1-b**
+
+**_TO-LEARN_**
+
+- React concepts: component, JSX, props
+
+**_PRE-WORK:_**
+
+- master these Array methods: [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce), [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach), [Includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes), [Some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some), [Every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+
+**_TO-STUDY_**
+
+- [PART 1-b: Javascript](https://fullstackopen.com/en/part1/java_script)
+
+**_LECTURE-VIDEO_**
+
+- [Components with props, dev setup, JSX](https://youtu.be/xBJBrULUm0E)
+
+**_TO-DO:_**
+
+- [1.3-1.5](https://fullstackopen.com/en/part1/java_script#exercises-1-3-1-5)
+
+_Instructions for TO-DO_
+
+1. in the `fullstackopen/part1/courseinfo` repository, continue to put your code for exercise 1.3-1.5
+
+---
+
+**PART 1-c**
 
 **_TO-LEARN_**
 
@@ -140,7 +158,7 @@ _note_: You will need to delete the `.git` directory inside the clone
 
 ---
 
-**DAY 3: PART 1-d**
+**PART 1-d**
 
 **_TO-LEARN_**
 
@@ -164,9 +182,19 @@ _note_: You will need to delete the `.git` directory inside the clone
 
 - [1.6-1.14](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14)
 
+</details>
+
 ---
 
-**DAY 4: PART 2-a**
+## [PART 2: Communicating with server](https://fullstackopen.com/en/part2)
+
+Modules, forms, getting data from server, altering data in server
+
+<details><summary>Daily schedule</summary>
+
+---
+
+**PART 2-a**
 
 **_PRE-WORK:_**
 
@@ -197,22 +225,9 @@ _note_: You will need to delete the `.git` directory inside the clone
 
 - [2.1-2.5](https://fullstackopen.com/en/part2/rendering_a_collection_modules#exercises-2-1-2-5)
 
-</details>
-
 ---
 
-## Week 2
-
-Getting data from server, altering data in server, programming a server with NodeJS and Express
-
-1. [PART 2: Communicating with server](https://fullstackopen.com/en/part2)
-2. [PART 3: Programming a server with NodeJS and Express](https://fullstackopen.com/en/part3)
-
-<details><summary>Daily schedule</summary>
-
----
-
-**DAY 1: PART 2-b**
+**PART 2-b**
 
 **_TO-LEARN_**
 
@@ -246,7 +261,7 @@ Getting data from server, altering data in server, programming a server with Nod
 
 ---
 
-**DAY 2: PART 2-c**
+**PART 2-c**
 
 **_TO-LEARN_**
 
@@ -274,7 +289,7 @@ Getting data from server, altering data in server, programming a server with Nod
 
 ---
 
-**DAY 3: PART 2-d**
+**PART 2-d**
 
 **_TO-LEARN_**
 
@@ -312,7 +327,7 @@ Getting data from server, altering data in server, programming a server with Nod
 
 ---
 
-**DAY 4: PART 2-e**
+**PART 2-e**
 
 **_TO-LEARN_**
 
@@ -338,9 +353,17 @@ Getting data from server, altering data in server, programming a server with Nod
 
 - [2.19-2.20](https://fullstackopen.com/en/part2/adding_styles_to_react_app#exercises-2-19-2-20)
 
+</details>
+
 ---
 
-**DAY 5: PART 3-a**
+## [PART 3: Programming a server with NodeJS and Express](https://fullstackopen.com/en/part3)
+
+<details><summary>Daily schedule</summary>
+
+---
+
+**PART 3-a**
 
 **_TO-LEARN_**
 
@@ -402,21 +425,9 @@ Getting data from server, altering data in server, programming a server with Nod
 - [3.1-3.6](https://fullstackopen.com/en/part3/node_js_and_express#exercises-3-1-3-6)
 - [3.7-3.8](https://fullstackopen.com/en/part3/node_js_and_express#exercises-3-7-3-8)
 
-</details>
-
 ---
 
-## Week 3
-
-programming a server with NodeJS and Express
-
-1. [PART 3: Programming a server with NodeJS and Express](https://fullstackopen.com/en/part3)
-
-<details><summary>Daily schedule</summary>
-
----
-
-**DAY 1: PART 3-b**
+**PART 3-b**
 
 **_TO-LEARN_**
 
@@ -436,7 +447,7 @@ programming a server with NodeJS and Express
 
 ---
 
-**DAY 2 / 3: PART 3-c**
+**PART 3-c**
 
 **_TO-LEARN_**
 Saving data to MongoDB
@@ -457,7 +468,7 @@ Saving data to MongoDB
 
 ---
 
-**DAY 4: PART 3-d**
+**PART 3-d**
 
 **_TO-LEARN_**
 Validation and ESLint
@@ -483,7 +494,7 @@ Validation and ESLint
 
 ---
 
-**DAY : PART -**
+**PART -**
 
 **_TO-LEARN_**
 
