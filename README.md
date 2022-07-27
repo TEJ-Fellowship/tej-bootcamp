@@ -423,13 +423,22 @@ Modules, forms, getting data from server, altering data in server
 
 <details><summary>Part 3-b</summary>
 
-**_TO-LEARN:_**
-
-- Deploying app to internet
-
 **_TO-STUDY:_**
 
 - [PART 3-b: Deploying app to internet](https://fullstackopen.com/en/part3/deploying_app_to_internet)
+
+**_TO-LEARN:_**
+
+- [serving static files from server](https://fullstackopen.com/en/part3/deploying_app_to_internet#serving-static-files-from-the-backend)
+- [including frontend code on server](https://fullstackopen.com/en/part3/deploying_app_to_internet#frontend-production-build)
+- [deploying app to a cloud platform (e.g. Heroku)](https://fullstackopen.com/en/part3/deploying_app_to_internet#application-to-the-internet)
+- [streamlining the deployment](https://fullstackopen.com/en/part3/deploying_app_to_internet#streamlining-deploying-of-the-frontend)
+
+**Side notes**
+
+- [CORS](https://fullstackopen.com/en/part3/deploying_app_to_internet#same-origin-policy-and-cors)
+- [setting up proxy on react app](https://fullstackopen.com/en/part3/deploying_app_to_internet#proxy)
+- [how the current set-up after part3-b looks](https://fullstackopen.com/en/part3/deploying_app_to_internet#the-whole-app-to-internet)
 
 **_LECTURE-VIDEO:_**
 
@@ -490,26 +499,26 @@ Validation and ESLint
 
 <details><summary>TEMPLATE</summary>
 
----
-
-**PART -**
-
-**_TO-LEARN:_**
-
-**_PRE-WORK:_**
+<details><summary>Part -</summary>
 
 **_TO-STUDY:_**
 
+**_PRE-WORK:_**
+
 - [PART -: ]()
 
-**_TO-DO:_**
+**_TO-LEARN:_**
 
-- [.-.]()
+**Side notes**
 
 **_LECTURE-VIDEO:_**
 
 - []()
 
-**_TO-HAVE-LEARNT:_**
+**_TO-DO:_**
+
+- [.-.]()
+
+</details>
 
 </details>
