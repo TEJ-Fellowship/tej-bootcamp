@@ -442,21 +442,21 @@ Modules, forms, getting data from server, altering data in server
 
 **_LECTURE-VIDEO:_**
 
-- [serving frontend static files from node server]()
+- [serving frontend static files from node server](https://youtu.be/4mQUK71WaFU)
   1. build react app for serving from web server
   2. include the build folder in your node application
   3. instruct node server to serve the static files from the build folder
-- [modify frontend backend code to run in cloud]()
+- [modify frontend backend code to run in cloud](https://youtu.be/PTlSqtGJHJU)
   1. in react app, change the baseurl to a relative url
   2. in node server, read the PORT value from environment if available
-- [deploy fullstack app to Heroku]()
+- [deploy fullstack app to Heroku](https://youtu.be/iuUGZY7pqsE)
   1. create a Heroku account at https://devcenter.heroku.com/
   2. globally install heroku npm library
   3. if node server is not on its own repository, then create a separate repo for node server
   4. add a Procfile with instructions for Heroku
   5. create Heroku app to deploy your project to
   6. push your code to the Heroku remote git server
-- [streamline deploying frontend and backend code to Heroku]()
+- [streamline deploying frontend and backend code to Heroku](https://youtu.be/qKfxe6uvQ6E)
   1. in node server repository, add npm script to build the react app and copy it to server repo
   2. add npm script to deploy to Heroku
   3. add npm script that combines all steps to build, copy, git commit, and deploy to Heroku
