@@ -456,6 +456,10 @@ Modules, forms, getting data from server, altering data in server
   4. add a Procfile with instructions for Heroku
   5. create Heroku app to deploy your project to
   6. push your code to the Heroku remote git server
+- [streamline deploying frontend and backend code to Heroku]()
+  1. in node server repository, add npm script to build the react app and copy it to server repo
+  2. add npm script to deploy to Heroku
+  3. add npm script that combines all steps to build, copy, git commit, and deploy to Heroku
 
 **_TO-DO:_**
 
