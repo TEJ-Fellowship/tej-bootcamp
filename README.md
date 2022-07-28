@@ -442,7 +442,10 @@ Modules, forms, getting data from server, altering data in server
 
 **_LECTURE-VIDEO:_**
 
-- []()
+- [serving frontend static files from node server]()
+  1. build react app for serving from web server
+  2. include the build folder in your node application
+  3. instruct node server to serve the static files from the build folder
 
 **_TO-DO:_**
 
