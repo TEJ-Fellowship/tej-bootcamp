@@ -449,7 +449,13 @@ Modules, forms, getting data from server, altering data in server
 - [modify frontend backend code to run in cloud]()
   1. in react app, change the baseurl to a relative url
   2. in node server, read the PORT value from environment if available
-  3. create a Heroku account at https://devcenter.heroku.com/
+- [deploy fullstack app to Heroku]()
+  1. create a Heroku account at https://devcenter.heroku.com/
+  2. globally install heroku npm library
+  3. if node server is not on its own repository, then create a separate repo for node server
+  4. add a Procfile with instructions for Heroku
+  5. create Heroku app to deploy your project to
+  6. push your code to the Heroku remote git server
 
 **_TO-DO:_**
 
