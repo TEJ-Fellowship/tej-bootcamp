@@ -460,6 +460,8 @@ Modules, forms, getting data from server, altering data in server
   1. in node server repository, add npm script to build the react app and copy it to server repo
   2. add npm script to deploy to Heroku
   3. add npm script that combines all steps to build, copy, git commit, and deploy to Heroku
+- [add proxy to react-app](https://youtu.be/YptUn1bG1T4)
+  1. configure proxy url to setup node server in the react-app
 
 **_TO-DO:_**
 
