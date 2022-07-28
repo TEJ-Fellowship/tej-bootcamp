@@ -446,6 +446,10 @@ Modules, forms, getting data from server, altering data in server
   1. build react app for serving from web server
   2. include the build folder in your node application
   3. instruct node server to serve the static files from the build folder
+- [modify frontend backend code to run in cloud]()
+  1. in react app, change the baseurl to a relative url
+  2. in node server, read the PORT value from environment if available
+  3. create a Heroku account at https://devcenter.heroku.com/
 
 **_TO-DO:_**
 
