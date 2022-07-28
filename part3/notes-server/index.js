@@ -74,6 +74,8 @@ App.use((request, response, next) => {
   response.status(404).send("<h1>No routes found for this request</h1>");
 });
 
-App.listen("3001", () => {
-  console.log("server listening on 3001");
+const PORT = process.env.PORT || "3001";
+
+App.listen(PORT, () => {
+  console.log(`server listening on ${PORT}`);
 });
