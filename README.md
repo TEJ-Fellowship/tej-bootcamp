@@ -477,32 +477,33 @@ Modules, forms, getting data from server, altering data in server
 
 **_LECTURE-VIDEO:_**
 
-- [setting up mongo database in mongodb.com]()
-  1. create a free account in mongodb.com
+- [introduction to mongodb](https://youtu.be/vgmX9Az-k80)
+- [setting up mongo database in mongodb.com](https://youtu.be/9TZ-nrXNGrs)
+  1. [create a free account in mongodb.com](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#mongo-db)
   2. create database userid and password
   3. set network setting to allow access from anywhere
   4. get the connection string to your database
-- [using mongoose to set up a practice application]()
+- [using mongoose to set up a practice application](https://youtu.be/AxrS9Aq_i3I)
   1. npm install mongoose
   2. create a new mongo.js file in your repo to create practice application
   3. put all the mongodb code using mongoose for `Note`:
-     a. create a schema for Note
-     b. use the schema to create a model for Note
-     c. use the Note model to create and save a Note object into mongodb
-     d. write code to fetch data frome `notes` collection using the `Note` model
-- [connect the notes-server to the database]()
-  1. fetch db connection from environment:
+  - [create a schema for Note](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#schema)
+  - use the schema to create a model for Note
+  - [use the Note model to create and save a Note object into mongodb](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#creating-and-saving-objects)
+  - [write code to fetch data frome `notes` collection using the `Note` model](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#fetching-objects-from-the-database)
+- [connect the notes-server to the database](https://youtu.be/gv2kD-zq5e4)
+  1. [fetch db connection from environment:](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#backend-connected-to-a-database)
   - for localhost: create a .env file to store the db connection string (add it to .gitignore)
   - for heroku: configure db connection string in heroku `Config Vars`
-  2. create separate module to put database configuration
-  3. get data from database in the `/notes` route for `get` method
-- [more node express routes configured through database]()
-  1. rewrite `/notes/:id` route for `get` method
-  2. error handling
-  3. moving error handling to middleware
-  4. rewrite `/notes/:id` route for `delete` method
-  5. write `/notes/:id` route for `put` method
-- []()
+  2. [create separate module to put database configuration](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#database-configuration-into-its-own-module)
+  3. [get data from database in the `/notes` route for `get` method](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#backend-connected-to-a-database)
+- [more node express routes configured through database](https://youtu.be/gsYmmlGrTUw)
+  1. [rewrite `/notes` route for `post` method](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#using-database-in-route-handlers)
+  1. [rewrite `/notes/:id` route for `get` method](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#using-database-in-route-handlers)
+  1. [error handling](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#error-handling)
+  1. [moving error handling to middleware](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#moving-error-handling-into-middleware)
+  1. [rewrite `/notes/:id` route for `delete` method](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#other-operations)
+  1. [write `/notes/:id` route for `put` method](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#other-operations)
 
 **_TO-DO:_**
 
