@@ -90,6 +90,19 @@ App.use((request, response, next) => {
   response.status(404).send("<h1>No routes found for this request</h1>");
 });
 
+const errorHandler = (error, request, response, next) => {
+  console.error(error.message);
+
+  if (error.name === "CastError") {
+    return response.status(400).send({ error: "malformatted id" });
+  }
+
+  next(error);
+};
+
+// this has to be the last loaded middleware.
+App.use(errorHandler);
+
 const PORT = process.env.PORT || "3001";
 
 App.listen(PORT, () => {
