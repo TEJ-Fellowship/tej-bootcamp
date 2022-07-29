@@ -29,29 +29,61 @@ App.get("/notes", (request, response) => {
   // response.json(notes);
 });
 
-App.get("/notes/:id", (request, response) => {
-  const currentId = Number(request.params.id);
-  const thisNote = notes.find((note) => note.id === currentId);
-  if (thisNote) response.json(thisNote);
-  else
-    response
-      .status(404)
-      .json({ error: 404, message: `there is no note with id ${currentId}` });
+App.get("/notes/:id", (request, response, next) => {
+  Note.findById(request.params.id)
+    .then((note) => {
+      if (note) {
+        response.json(note);
+      } else {
+        response.status(404).end();
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+      next(error);
+      // response.status(400).send({ error: "malformatted id" });
+    });
 });
 
-App.delete("/notes/:id", (request, response) => {
-  const currentId = Number(request.params.id);
-  notes = notes.filter((note) => note.id !== currentId);
-
-  response.status(204).end();
+App.delete("/notes/:id", (request, response, next) => {
+  Note.findByIdAndRemove(request.params.id)
+    .then((result) => {
+      response.status(204).end();
+    })
+    .catch((error) => next(error));
 });
 
 App.post("/notes", (request, response) => {
-  let myIncomingData = request.body;
-  myIncomingData.id = notes.length + 1;
-  notes.push(myIncomingData);
+  const body = request.body;
 
-  response.status(201).json(myIncomingData);
+  if (body.content === undefined) {
+    return response.status(400).json({ error: "content missing" });
+  }
+
+  const note = new Note({
+    content: body.content,
+    important: body.important || false,
+    date: new Date(),
+  });
+
+  note.save().then((savedNote) => {
+    response.json(savedNote);
+  });
+});
+
+App.put("/notes/:id", (request, response, next) => {
+  const body = request.body;
+
+  const note = {
+    content: body.content,
+    important: body.important,
+  };
+
+  Note.findByIdAndUpdate(request.params.id, note, { new: true })
+    .then((updatedNote) => {
+      response.json(updatedNote);
+    })
+    .catch((error) => next(error));
 });
 
 App.use((request, response, next) => {

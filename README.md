@@ -469,11 +469,7 @@ Modules, forms, getting data from server, altering data in server
 
 </details>
 
-<details><summary>Part 3-c</summary>
-
-**_TO-LEARN:_**
-
-Saving data to MongoDB
+<details><summary>Part 3-c: Saving data to MongoDB</summary>
 
 **_TO-STUDY:_**
 
@@ -481,6 +477,31 @@ Saving data to MongoDB
 
 **_LECTURE-VIDEO:_**
 
+- [setting up mongo database in mongodb.com]()
+  1. create a free account in mongodb.com
+  2. create database userid and password
+  3. set network setting to allow access from anywhere
+  4. get the connection string to your database
+- [using mongoose to set up a practice application]()
+  1. npm install mongoose
+  2. create a new mongo.js file in your repo to create practice application
+  3. put all the mongodb code using mongoose for `Note`:
+     a. create a schema for Note
+     b. use the schema to create a model for Note
+     c. use the Note model to create and save a Note object into mongodb
+     d. write code to fetch data frome `notes` collection using the `Note` model
+- [connect the notes-server to the database]()
+  1. fetch db connection from environment:
+  - for localhost: create a .env file to store the db connection string (add it to .gitignore)
+  - for heroku: configure db connection string in heroku `Config Vars`
+  2. create separate module to put database configuration
+  3. get data from database in the `/notes` route for `get` method
+- [more node express routes configured through database]()
+  1. rewrite `/notes/:id` route for `get` method
+  2. error handling
+  3. moving error handling to middleware
+  4. rewrite `/notes/:id` route for `delete` method
+  5. write `/notes/:id` route for `put` method
 - []()
 
 **_TO-DO:_**
