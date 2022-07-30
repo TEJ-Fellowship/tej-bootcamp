@@ -471,8 +471,6 @@ Modules, forms, getting data from server, altering data in server
 
 <details><summary>Part 3-c: Saving data to MongoDB</summary>
 
-**_TO-STUDY:_**
-
 - [PART 3-c: Saving data to MongoDB](https://fullstackopen.com/en/part3/saving_data_to_mongo_db)
 
 **_LECTURE-VIDEO:_**
@@ -513,19 +511,29 @@ Modules, forms, getting data from server, altering data in server
 
 </details>
 
-<details><summary>Part 3-d</summary>
-
-**_TO-LEARN:_**
-
-Validation and ESLint
-
-**_TO-STUDY:_**
+<details><summary>Part 3-d: Validation and ESLint</summary>
 
 - [PART 3-d: Validation and ESLint](https://fullstackopen.com/en/part3/validation_and_es_lint)
 
 **_LECTURE-VIDEO:_**
 
-- []()
+- [about environment variables]()
+- [mongoose schema validation]()
+  1. create a mongoose schema validation for `content` field in noteSchema
+  2. in the note post route, catch the error in note.save
+  3. put the error handler in the error handling middleware
+  4. catch and display the error in the notes react app
+- [mongoose schema validation while updating]()
+  1. in the note update route, configure it to also throw schema validation errors
+  2. why schema based validation is better than logical error handling in code
+  3. setting heroku config variables through the command line
+- [linting and prettier setup and configurations]()
+  1. install prettier, eslint, and other dev dependencies for linting and formatting
+  2. setup the VSCode extensions for prettier and eslint
+  3. setup config files for eslint and prettier
+  4. create eslint rule to show warning for console.log
+  5. create eslint ignore config file
+  6. difference between formatting (prettier) vs code linting (eslint)
 
 **_TO-DO:_**
 
