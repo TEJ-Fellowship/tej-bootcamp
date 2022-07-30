@@ -42,11 +42,18 @@ const App = () => {
     };
 
     // axios.post("http://localhost:3001/notes", newNote)
-    noteService.create(newNote).then((result) => {
-      // console.log(data);
-      setNotes([...notes, result]);
-      setNote("");
-    });
+    noteService
+      .create(newNote)
+      .then((result) => {
+        setNotes([...notes, result]);
+        setNote("");
+      })
+      .catch((error) => {
+        setMessage(error.response.data.error);
+        setTimeout(() => {
+          setMessage("");
+        }, 2000);
+      });
   };
 
   const handleOnChange = (event) => {
