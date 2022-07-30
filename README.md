@@ -517,17 +517,17 @@ Modules, forms, getting data from server, altering data in server
 
 **_LECTURE-VIDEO:_**
 
-- [about environment variables]()
-- [mongoose schema validation]()
+- [about environment variables](https://youtu.be/3dw7bmLsXAc)
+- [mongoose schema validation](https://youtu.be/hE4vlHSSFkU)
   1. create a mongoose schema validation for `content` field in noteSchema
   2. in the note post route, catch the error in note.save
   3. put the error handler in the error handling middleware
   4. catch and display the error in the notes react app
-- [mongoose schema validation while updating]()
+- [mongoose schema validation while updating](https://youtu.be/JU4DzgyKIyI)
   1. in the note update route, configure it to also throw schema validation errors
   2. why schema based validation is better than logical error handling in code
   3. setting heroku config variables through the command line
-- [linting and prettier setup and configurations]()
+- [linting and prettier setup and configurations](https://youtu.be/kqR3hAeg6-g)
   1. install prettier, eslint, and other dev dependencies for linting and formatting
   2. setup the VSCode extensions for prettier and eslint
   3. setup config files for eslint and prettier
