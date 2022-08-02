@@ -544,6 +544,8 @@ Modules, forms, getting data from server, altering data in server
 
 </details>
 
+---
+
 ## [PART 4: Testing Express servers, user administration](https://fullstackopen.com/en/part4)
 
 <details><summary><h3 style="display:inline">Chapters</h3></summary>
@@ -553,12 +555,18 @@ Modules, forms, getting data from server, altering data in server
 
 **_LECTURE-VIDEO:_**
 
-- Code refactoring
-- Using express Router
-- Testing Node application
+- [Code refactoring](https://youtu.be/IJytft-UX6Q)
+  1. [refactor config, logger, and middleware to `utils` folder](https://fullstackopen.com/en/part4/structure_of_backend_application_introduction_to_testing#project-structure)
+- [Refactoring Node express Router](https://youtu.be/yrTAJAT-QCw)
+  1. refactor all the `notes` routes to `controllers/notes.js`
+- [Testing Node application](https://youtu.be/WMI7Qu1kqhM)
   1. install jest in dev dependency (npm install --save-dev jest)
   2. define npm script to run jest and specify the execution environment is node
   3. unit testing(use of test(),describe())
+- [Notes on rest parameters, node http module, types of exports, route middleware](https://youtu.be/QI7s6Cm6Msk)
+  - [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+  - [node http module vs express](https://stackoverflow.com/questions/38176214/why-do-some-developer-use-http-and-express-to-create-the-server)
+  - [express router middleware](https://expressjs.com/en/guide/using-middleware.html)
 
 **_TO-DO:_**
 
