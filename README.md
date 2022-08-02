@@ -549,7 +549,7 @@ Modules, forms, getting data from server, altering data in server
 ## [PART 4: Testing Express servers, user administration](https://fullstackopen.com/en/part4)
 
 <details><summary><h3 style="display:inline">Chapters</h3></summary>
-<details><summary>Part 4-a : Structure of backend application, introduction to testing</summary>
+<details><summary>Part 4-a: Structure of backend application, introduction to testing</summary>
 
 - [Part 4-a : Structure of backend application, introduction to testing](https://fullstackopen.com/en/part4/structure_of_backend_application_introduction_to_testing)
 
@@ -575,6 +575,34 @@ Modules, forms, getting data from server, altering data in server
 
 </details>
 
+<details><summary>Part 4-b: Testing the backend</summary>
+
+- [PART 4-b: Testing the backend](https://fullstackopen.com/en/part4/testing_the_backend)
+
+**_LECTURE-VIDEO:_**
+
+- [Setting up test environment]()
+  1. [set up NODE_ENV for different environments](https://fullstackopen.com/en/part4/testing_the_backend#test-environment)
+  2. set up cross-env, if required for windows
+  3. [use supertest node package](https://fullstackopen.com/en/part4/testing_the_backend#supertest)
+  4. [initialize database before test](https://fullstackopen.com/en/part4/testing_the_backend#initializing-the-database-before-tests)
+- [async/await syntax]()
+  1. [write test then change notesRouter get method for '/api/notes' to async/await](https://fullstackopen.com/en/part4/testing_the_backend#async-await-in-the-backend)
+  2. [write test then change notesRouter to create one note to async/await](https://fullstackopen.com/en/part4/testing_the_backend#more-tests-and-refactoring-the-backend)
+  - first create helper function for some common functions required for testing
+- [Error handling in async/await]()
+  1. [continue refactoring getting single note, and deleting note routes to async/await](https://fullstackopen.com/en/part4/testing_the_backend#error-handling-and-async-await)
+- [Optimizing the beforeEach function]()
+  1. [use Promise.all to await for an array of promises to resolve](https://fullstackopen.com/en/part4/testing_the_backend#optimizing-the-before-each-function)
+  2. [refactor tests to use describe block to group tests](https://fullstackopen.com/en/part4/testing_the_backend#refactoring-tests)
+
+**_TO-DO:_**
+
+- [4.8-4.12](https://fullstackopen.com/en/part4/testing_the_backend#exercises-4-8-4-12)
+- [4.13-4.14](https://fullstackopen.com/en/part4/testing_the_backend#exercises-4-13-4-14)
+
+</details>
+
 </details>
 
 ---
@@ -595,6 +623,22 @@ Modules, forms, getting data from server, altering data in server
 
 **_LECTURE-VIDEO:_**
 
+- []()
+
+**_TO-DO:_**
+
+- [.-.]()
+
+</details>
+
+<details><summary>Part : </summary>
+
+- [PART : ]()
+
+**_LECTURE-VIDEO:_**
+
+- []()
+  1.
 - []()
 
 **_TO-DO:_**
