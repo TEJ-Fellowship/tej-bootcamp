@@ -544,6 +544,31 @@ Modules, forms, getting data from server, altering data in server
 
 </details>
 
+## [PART 4: Testing Express servers, user administration](https://fullstackopen.com/en/part4)
+
+<details><summary><h3 style="display:inline">Chapters</h3></summary>
+<details><summary>Part 4-a : Structure of backend application, introduction to testing</summary>
+
+- [Part 4-a : Structure of backend application, introduction to testing](https://fullstackopen.com/en/part4/structure_of_backend_application_introduction_to_testing)
+
+**_LECTURE-VIDEO:_**
+
+- Code refactoring
+- Using express Router
+- Testing Node application
+  1. install jest in dev dependency (npm install --save-dev jest)
+  2. define npm script to run jest and specify the execution environment is node
+  3. unit testing(use of test(),describe())
+
+**_TO-DO:_**
+
+- [4.1-4.2](https://fullstackopen.com/en/part4/structure_of_backend_application_introduction_to_testing#exercises-4-1-4-2)
+- [4.3-4.7](https://fullstackopen.com/en/part4/structure_of_backend_application_introduction_to_testing#exercises-4-3-4-7)
+
+</details>
+
+</details>
+
 ---
 
 <details><summary>TEMPLATE</summary>
