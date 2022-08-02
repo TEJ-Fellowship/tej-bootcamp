@@ -19,3 +19,4 @@ App.use(middleware.unknownEndpoint);
 
 App.use(middleware.errorHandler);
 // this has to be the last loaded middleware.
+module.exports = App;
