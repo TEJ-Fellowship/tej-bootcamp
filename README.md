@@ -614,13 +614,41 @@ Modules, forms, getting data from server, altering data in server
 
 </details>
 
+<details><summary>Part 4-c: User administration</summary>
+
+[PART 4-c: User administration](https://fullstackopen.com/en/part4/user_administration)
+
+**_LECTURE-VIDEO:_**
+
+- []()
+
+**_TO-DO:_**
+
+Nothing!!
+
+</details>
+
+<details><summary>Part 4-d: Token authentication</summary>
+
+[PART 4-d: Token authentication](https://fullstackopen.com/en/part4/token_authentication)
+
+**_LECTURE-VIDEO:_**
+
+- []()
+
+**_TO-DO:_**
+
+- [4.15-4.23](https://fullstackopen.com/en/part4/token_authentication#exercises-4-15-4-23)
+
+</details>
+
 </details>
 
 ---
 
 <details><summary>TEMPLATE</summary>
 
-<details><summary>Part -</summary>
+<details><summary>Part -: </summary>
 
 **_TO-STUDY:_**
 
