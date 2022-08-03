@@ -583,9 +583,9 @@ Modules, forms, getting data from server, altering data in server
 
 - [Setting up test environment]()
   1. [set up NODE_ENV for different environments](https://fullstackopen.com/en/part4/testing_the_backend#test-environment)
-  2. set up cross-env, if required for windows
-  3. [use supertest node package](https://fullstackopen.com/en/part4/testing_the_backend#supertest)
-  4. [initialize database before test](https://fullstackopen.com/en/part4/testing_the_backend#initializing-the-database-before-tests)
+  - set up cross-env, if required for windows
+  2. [use supertest to connect to api without starting node server](https://fullstackopen.com/en/part4/testing_the_backend#supertest)
+  3. [initialize database before test](https://fullstackopen.com/en/part4/testing_the_backend#initializing-the-database-before-tests)
 - [async/await syntax]()
   1. [write test then change notesRouter get method for '/api/notes' to async/await](https://fullstackopen.com/en/part4/testing_the_backend#async-await-in-the-backend)
   2. [write test then change notesRouter to create one note to async/await](https://fullstackopen.com/en/part4/testing_the_backend#more-tests-and-refactoring-the-backend)
