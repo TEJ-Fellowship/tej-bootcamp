@@ -8,6 +8,7 @@
     "lint": "eslint .",
     "prettier": "prettier .",
     "dev": "nodemon index.js",
+    "build:ui": "rm -rf build && cd ../../part2/notes-app/ && npm run build && cp -r build ../../part3/notes-server/",
     "test": "jest --verbose"
   },
   "keywords": [],
