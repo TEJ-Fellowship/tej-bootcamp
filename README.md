@@ -620,7 +620,33 @@ Modules, forms, getting data from server, altering data in server
 
 **_LECTURE-VIDEO:_**
 
-- []()
+- [Setting up Mongo DB for Note to User relationship]()
+  1. [set up Mongoose schema for `User`](https://fullstackopen.com/en/part4/user_administration#mongoose-schema-for-users)
+  2. modify `Note` Mongoose schema to refer to `User` who created the Note
+- [Creating users]()
+  1. [install bcrypt library to create one-way hash of the password](https://fullstackopen.com/en/part4/user_administration#creating-users)
+  2. create new router for `users` that handles REST api requests related to `users`
+  - create `users` router
+  - include `users` router in app.js
+  - in `users` router, write POST method to create new user
+  3. write test case for user creation
+  - first, write `usersInDb` helper function to get all users from DB
+  - write test case for user creation with new username, utilizing `usersInDb` helper function
+  - running the test should pass
+  4. practice Test Drive Development to add functionality to creating new user
+  - write test case for user creation with existing username
+  - running the test should fail, as we expect status code 400, but as of now our code returns 201 created
+  - adjust create new user function to check for existing username
+  - running the test should now pass
+  5. in `users` router, write route handler for GET method for all users
+- [Update new note creation to include user that created the note]()
+  1. [update route handler for POST method for new note](https://fullstackopen.com/en/part4/user_administration#creating-a-new-note)
+  - include user.\_id in the created note's `user` field
+  - append the newly created note.\_id to the user's `notes` field
+  2. [update users and notes route handlers to populate full data](https://fullstackopen.com/en/part4/user_administration#populate)
+  - update GET all users route handler to `populate` the full notes that the user has created
+  - user `populate parameters` to only include the fields that we want
+  - update GET all notes route handler to `populate` required user fields
 
 **_TO-DO:_**
 
