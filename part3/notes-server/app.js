@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const middleware = require("./utils/middleware");
 const notesRouter = require("./controllers/notes");
+const usersRouter = require("./controllers/users");
 
 const Note = require("./models/note");
 
@@ -14,7 +15,7 @@ App.use(middleware.requestLogger);
 
 // App.use(express.json());
 App.use("/api/notes", notesRouter);
-
+App.use("/api/users", usersRouter);
 App.use(middleware.unknownEndpoint);
 
 App.use(middleware.errorHandler);

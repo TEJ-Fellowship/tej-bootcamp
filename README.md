@@ -633,7 +633,7 @@ Modules, forms, getting data from server, altering data in server
   - first, write `usersInDb` helper function to get all users from DB
   - write test case for user creation with new username, utilizing `usersInDb` helper function
   - running the test should pass
-  4. practice Test Drive Development to add functionality to creating new user
+  4. practice Test Driven Development to add functionality to creating new user
   - write test case for user creation with existing username
   - running the test should fail, as we expect status code 400, but as of now our code returns 201 created
   - adjust create new user function to check for existing username
