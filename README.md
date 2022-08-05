@@ -620,10 +620,10 @@ Modules, forms, getting data from server, altering data in server
 
 **_LECTURE-VIDEO:_**
 
-- [Setting up Mongo DB for Note to User relationship]()
+- [Setting up Mongo DB for Note to User relationship](https://youtu.be/HshcFKMxKvs)
   1. [set up Mongoose schema for `User`](https://fullstackopen.com/en/part4/user_administration#mongoose-schema-for-users)
   2. modify `Note` Mongoose schema to refer to `User` who created the Note
-- [Creating users]()
+- [Creating users](https://youtu.be/75b9Yjdid1c)
   1. [install bcrypt library to create one-way hash of the password](https://fullstackopen.com/en/part4/user_administration#creating-users)
   2. create new router for `users` that handles REST api requests related to `users`
   - create `users` router
@@ -639,7 +639,7 @@ Modules, forms, getting data from server, altering data in server
   - adjust create new user function to check for existing username
   - running the test should now pass
   5. in `users` router, write route handler for GET method for all users
-- [Update new note creation to include user that created the note]()
+- [Update new note creation to include user that created the note](https://youtu.be/q_4xcyJ5cNA)
   1. [update route handler for POST method for new note](https://fullstackopen.com/en/part4/user_administration#creating-a-new-note)
   - include user.\_id in the created note's `user` field
   - append the newly created note.\_id to the user's `notes` field
