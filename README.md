@@ -660,7 +660,7 @@ Nothing!!
 
 **_LECTURE-VIDEO:_**
 
-- [Principles of token based authentication]()
+- [Principles of token based authentication](https://youtu.be/CzekTh2A5O8)
   1. [understanding token based authentication sequence diagram](https://fullstackopen.com/en/part4/token_authentication)
   2. implement logging in function
   - npm install jsonwebtoken
@@ -668,14 +668,14 @@ Nothing!!
   - add the `login` router in app.js
   - add `SECRET` value to `.env` file that will be used by jsonwebtoken to sign the token
   - test logging in using VS Code REST-client
-- [Creating new notes with logged in user]()
+- [Creating new notes with logged in user](https://youtu.be/fTohbhJwvg0)
   1. [change the POST new note handler to only allow logged in users](https://fullstackopen.com/en/part4/token_authentication#limiting-creating-new-notes-to-logged-in-users)
   2. test creation of new note with token using VS Code REST-client
   - write VS Code REST-client code to login
   - write VS Code REST-client code to POST new note, including token returned from login
   3. [implement error handling](https://fullstackopen.com/en/part4/token_authentication#error-handling)
   - update `errorHandler` middleware to handle `ValidationError` and `JsonWebTokenError`
-- [Problems of Token-based authentication]()
+- [Problems of Token-based authentication](https://youtu.be/_sVk3vSt0Fw)
   1. [put time limit for the validity period of token](https://fullstackopen.com/en/part4/token_authentication#problems-of-token-based-authentication)
   2. update `errorHandler` middleware to handle `TokenExpiredError`
   3. [end notes](https://fullstackopen.com/en/part4/token_authentication#end-notes)
