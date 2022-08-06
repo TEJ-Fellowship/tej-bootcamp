@@ -690,6 +690,31 @@ Nothing!!
 
 ---
 
+## [PART 5: Testing React apps](https://fullstackopen.com/en/part5)
+
+<details><summary><h3 style="display:inline">Chapters</h3></summary>
+
+<details><summary>Part 5-a: Login in frontend</summary>
+
+- [PARTPart 5-a: Login in frontend](https://fullstackopen.com/en/part5/login_in_frontend)
+
+**_LECTURE-VIDEO:_**
+
+- [Handling login]()
+  1. in App.js, add form for login using controlled input fields for userid and password
+  2.
+- []()
+
+**_TO-DO:_**
+
+- [.-.]()
+
+</details>
+
+</details>
+
+---
+
 <details><summary>TEMPLATE</summary>
 
 <details><summary>Part -: </summary>
