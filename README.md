@@ -701,13 +701,26 @@ Nothing!!
 **_LECTURE-VIDEO:_**
 
 - [Handling login]()
-  1. in App.js, add form for login using controlled input fields for userid and password
-  2.
-- []()
+  1. [in App.js, add a form for login using controlled input fields for userid and password](https://fullstackopen.com/en/part5/login_in_frontend#handling-login)
+  2. write function `handleLogin` to handle `onSubmit` for the login form
+  3. write login service to call login api
+  4. call login service from `handleLogin` App.js
+  5. in App.js, convert login and note posting forms into functions
+  6. conditionally call the forms based on whether user is logged in
+- [Creating new notes]()
+  1. [set up `notes.js` service to use token from login response as the `Authorization` header in the notes creation request header](https://fullstackopen.com/en/part5/login_in_frontend#creating-new-notes)
+  2. in App.js `handleLogin` function, `setToken` after login is sucessful
+  3. the functionality to `add note` from the react app should work again
+- [Saving login information in the browser]()
+  1. [in `handleLogin` call `window.localStorage.setItem` to store user data in local storage](https://fullstackopen.com/en/part5/login_in_frontend#saving-the-token-to-the-browsers-local-storage)
+  - remember to use `JSON.stringify` to convert JS object to string
+  2. in `App.js`, write a useEffect hook that will read user data from local storage if available when application loads
+  - remember to use `JSON.parse` to convert string to JS object
+  3. [possible cross site scripting problems when using local storage](https://fullstackopen.com/en/part5/login_in_frontend#a-note-on-using-local-storage)
 
 **_TO-DO:_**
 
-- [.-.]()
+- [5.1-5.4](https://fullstackopen.com/en/part5/login_in_frontend#exercises-5-1-5-4)
 
 </details>
 
