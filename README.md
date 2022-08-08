@@ -730,17 +730,17 @@ Nothing!!
 
 **_LECTURE-VIDEO:_**
 
-- [Creating a generic Togglable component to control visibility of components]()
-  1. [move login form to it's own component](https://fullstackopen.com/en/part5/props_children_and_proptypes#displaying-the-login-form-only-when-appropriate)
+- [Using props.children to create a generic Togglable component to control visibility of components]()
+  1. [move login form to it's own component, LoginForm](https://fullstackopen.com/en/part5/props_children_and_proptypes#displaying-the-login-form-only-when-appropriate)
   2. modify `loginForm` function in `App.js` to toggle visibility of login component
   - control visibility using inline style
   3. [move the `Togglable` logic into it's own component](https://fullstackopen.com/en/part5/props_children_and_proptypes#the-components-children-aka-props-children)
   - please note how `props.children` is being used
   4. move the Note adding form (`NoteForm`) into it's own component
   5. now use the `Togglable` component to control visibility of `NoteForm`
-- [Using useRef and useImperativeHandle]()
+- [Using useRef, forwardRef, and useImperativeHandle]()
   1. [move new note related state to the `NoteForm` component](https://fullstackopen.com/en/part5/props_children_and_proptypes#state-of-the-forms)
-  2. [use useRef and useImperativeHandle to pass functions in a component which can be invoked from outside of the component](https://fullstackopen.com/en/part5/props_children_and_proptypes#references-to-components-with-ref)
+  2. [use useRef, forwardRef, and useImperativeHandle to pass functions from a component to an outer component](https://fullstackopen.com/en/part5/props_children_and_proptypes#references-to-components-with-ref)
   3. [a note on creating instances of the same component](https://fullstackopen.com/en/part5/props_children_and_proptypes#one-point-about-components)
 - [Using prop-types and eslint]()
   1. [use the prop-types package to declare mandatory props and their data type](https://fullstackopen.com/en/part5/props_children_and_proptypes#prop-types)
