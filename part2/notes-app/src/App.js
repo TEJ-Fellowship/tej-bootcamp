@@ -34,6 +34,15 @@ const App = () => {
     });
   }, []);
 
+  useEffect(() => {
+    const loggedUserJSON = window.localStorage.getItem("loggedNoteappUser");
+    if (loggedUserJSON) {
+      const user = JSON.parse(loggedUserJSON);
+      setUser(user);
+      noteService.setToken(user.token);
+    }
+  }, []);
+
   const addNote = (event) => {
     event.preventDefault();
     console.dir(event.target);
@@ -81,7 +90,9 @@ const App = () => {
         username,
         password,
       });
+      noteService.setToken(user.token);
       setUser(user);
+      window.localStorage.setItem("loggedNoteappUser", JSON.stringify(user));
       setUsername("");
       setPassword("");
     } catch (exception) {
@@ -128,7 +139,15 @@ const App = () => {
       <h1>Notes</h1>
       <Notification message={message} />
 
-      {user === null ? loginForm() : noteForm()}
+      {/* {user === null ? loginForm() : noteForm()} */}
+      {user === null ? (
+        loginForm()
+      ) : (
+        <div>
+          <p>{user.name} logged-in</p>
+          {noteForm()}
+        </div>
+      )}
 
       <button onClick={toggleShowAll}>
         Show {showAll ? "important" : "all"}
