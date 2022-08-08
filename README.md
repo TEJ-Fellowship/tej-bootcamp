@@ -686,6 +686,41 @@ Nothing!!
 
 </details>
 
+<details><summary>Part 5-b: props.children and proptypes</summary>
+
+- [Part 5-b: props.children and proptypes](https://fullstackopen.com/en/part5/props_children_and_proptypes)
+
+**_LECTURE-VIDEO:_**
+
+- [Creating a generic Togglable component to control visibility of components]()
+  1. [move login form to it's own component](https://fullstackopen.com/en/part5/props_children_and_proptypes#displaying-the-login-form-only-when-appropriate)
+  2. modify `loginForm` function in `App.js` to toggle visibility of login component
+  - control visibility using inline style
+  3. [move the `Togglable` logic into it's own component](https://fullstackopen.com/en/part5/props_children_and_proptypes#the-components-children-aka-props-children)
+  - please note how `props.children` is being used
+  4. move the Note adding form (`NoteForm`) into it's own component
+  5. now use the `Togglable` component to control visibility of `NoteForm`
+- [Using useRef and useImperativeHandle]()
+  1. [move new note related state to the `NoteForm` component](https://fullstackopen.com/en/part5/props_children_and_proptypes#state-of-the-forms)
+  2. [use useRef and useImperativeHandle to pass functions in a component which can be invoked from outside of the component](https://fullstackopen.com/en/part5/props_children_and_proptypes#references-to-components-with-ref)
+  3. [a note on creating instances of the same component](https://fullstackopen.com/en/part5/props_children_and_proptypes#one-point-about-components)
+- []()
+  1. [use the prop-types package to declare mandatory props and their data type](https://fullstackopen.com/en/part5/props_children_and_proptypes#prop-types)
+  - declare mandatory props in the `Togglable` and `LoginForm` components
+  2. [configure eslint to ignore test related errors](https://fullstackopen.com/en/part5/props_children_and_proptypes#e-slint)
+  - install the package eslint-plugin-jest as dev dependency
+  - create eslint config file, either `.eslintrc.json` (copy from our previous parcel repo) or `.eslintrc.js` (from this workshop)
+  - add `jest` related env, plugins entries
+  3. create `.eslintignore` file to ignore files where eslint should not check
+  4. give a displayName to the `Togglable` component
+
+**_TO-DO:_**
+
+- [5.5-5.10](https://fullstackopen.com/en/part5/props_children_and_proptypes#exercises-5-5-5-10)
+- [5.11-5.12](https://fullstackopen.com/en/part5/props_children_and_proptypes#exercises-5-11-5-12)
+
+</details>
+
 </details>
 
 ---
