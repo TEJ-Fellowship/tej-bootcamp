@@ -742,7 +742,7 @@ Nothing!!
   1. [move new note related state to the `NoteForm` component](https://fullstackopen.com/en/part5/props_children_and_proptypes#state-of-the-forms)
   2. [use useRef and useImperativeHandle to pass functions in a component which can be invoked from outside of the component](https://fullstackopen.com/en/part5/props_children_and_proptypes#references-to-components-with-ref)
   3. [a note on creating instances of the same component](https://fullstackopen.com/en/part5/props_children_and_proptypes#one-point-about-components)
-- []()
+- [Using prop-types and eslint]()
   1. [use the prop-types package to declare mandatory props and their data type](https://fullstackopen.com/en/part5/props_children_and_proptypes#prop-types)
   - declare mandatory props in the `Togglable` and `LoginForm` components
   2. [configure eslint to ignore test related errors](https://fullstackopen.com/en/part5/props_children_and_proptypes#e-slint)
