@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import Note from "./components/Note";
 import Footer from "./components/Footer";
-import axios from "axios";
 import noteService from "./services/notes";
 import Notification from "./components/Notification";
+import loginService from "./services/login";
 
 const App = () => {
   //1. we need to get data from server
@@ -20,7 +20,10 @@ const App = () => {
   const [notes, setNotes] = useState([]);
   const [note, setNote] = useState("Type a note");
   const [showAll, setShowAll] = useState(true);
-  const [message, setMessage] = useState(null);
+  const [message, setErrorMessage] = useState(null);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     // axios.get("http://localhost:3001/notes")
@@ -49,9 +52,9 @@ const App = () => {
         setNote("");
       })
       .catch((error) => {
-        setMessage(error.response.data.error);
+        setErrorMessage(error.response.data.error);
         setTimeout(() => {
-          setMessage("");
+          setErrorMessage("");
         }, 2000);
       });
   };
@@ -70,12 +73,63 @@ const App = () => {
 
   const notesToShow = showAll ? notes : filteredItems;
 
-  // console.log("line 56: notes has", notes);
+  const handleLogin = async (event) => {
+    event.preventDefault();
+
+    try {
+      const user = await loginService.login({
+        username,
+        password,
+      });
+      setUser(user);
+      setUsername("");
+      setPassword("");
+    } catch (exception) {
+      setErrorMessage("Wrong credentials");
+      setTimeout(() => {
+        setErrorMessage(null);
+      }, 5000);
+    }
+  };
+
+  const loginForm = () => (
+    <form onSubmit={handleLogin}>
+      <div>
+        username
+        <input
+          type="text"
+          value={username}
+          name="Username"
+          onChange={({ target }) => setUsername(target.value)}
+        />
+      </div>
+      <div>
+        password
+        <input
+          type="password"
+          value={password}
+          name="Password"
+          onChange={({ target }) => setPassword(target.value)}
+        />
+      </div>
+      <button type="submit">login</button>
+    </form>
+  );
+
+  const noteForm = () => (
+    <form onSubmit={addNote}>
+      <input value={note} onChange={handleOnChange} />
+      <button>Add note</button>
+    </form>
+  );
 
   return (
     <div>
       <h1>Notes</h1>
       <Notification message={message} />
+
+      {user === null ? loginForm() : noteForm()}
+
       <button onClick={toggleShowAll}>
         Show {showAll ? "important" : "all"}
       </button>
@@ -101,18 +155,14 @@ const App = () => {
                   setNote("");
                 })
                 .catch((error) => {
-                  setMessage("The note does not exist anymore");
-                  setTimeout(() => setMessage(null), 2000);
+                  setErrorMessage("The note does not exist anymore");
+                  setTimeout(() => setErrorMessage(null), 2000);
                   setNotes(notes.filter((x) => x.id !== note.id));
                 });
             }}
           />
         ))}
       </ul>
-      <form onSubmit={addNote}>
-        <input value={note} onChange={handleOnChange} />
-        <button>Add note</button>
-      </form>
       <Footer />
     </div>
   );
