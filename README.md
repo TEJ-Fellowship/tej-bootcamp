@@ -730,19 +730,18 @@ Nothing!!
 
 **_LECTURE-VIDEO:_**
 
-- [Using props.children to create a generic Togglable component to control visibility of components]()
+- [Using props.children to create a generic Togglable component to control visibility of components](https://youtu.be/DvFC83TTwu8)
   1. [move login form to it's own component, LoginForm](https://fullstackopen.com/en/part5/props_children_and_proptypes#displaying-the-login-form-only-when-appropriate)
-  2. modify `loginForm` function in `App.js` to toggle visibility of login component
-  - control visibility using inline style
-  3. [move the `Togglable` logic into it's own component](https://fullstackopen.com/en/part5/props_children_and_proptypes#the-components-children-aka-props-children)
+  2. [move the `Togglable` logic into it's own component, Togglable](https://fullstackopen.com/en/part5/props_children_and_proptypes#the-components-children-aka-props-children)
   - please note how `props.children` is being used
-  4. move the Note adding form (`NoteForm`) into it's own component
-  5. now use the `Togglable` component to control visibility of `NoteForm`
-- [Using useRef, forwardRef, and useImperativeHandle]()
-  1. [move new note related state to the `NoteForm` component](https://fullstackopen.com/en/part5/props_children_and_proptypes#state-of-the-forms)
-  2. [use useRef, forwardRef, and useImperativeHandle to pass functions from a component to an outer component](https://fullstackopen.com/en/part5/props_children_and_proptypes#references-to-components-with-ref)
-  3. [a note on creating instances of the same component](https://fullstackopen.com/en/part5/props_children_and_proptypes#one-point-about-components)
-- [Using prop-types and eslint]()
+  3. modify `App.js > loginForm()` function to call `LoginForm` component within the `Togglable` component to make login form togglable
+- [Move the Note adding form (`NoteForm`) into it's own component](https://youtu.be/1dIckrpr7bQ)
+  1. now use the `Togglable` component to toggle visibility of `NoteForm`
+  2. [move new note related state to the `NoteForm` component](https://fullstackopen.com/en/part5/props_children_and_proptypes#state-of-the-forms)
+- [Using useRef, forwardRef, and useImperativeHandle](https://youtu.be/bzFsomL6yxQ)
+  1. [use useRef, forwardRef, and useImperativeHandle to pass functions from inner component to outer component](https://fullstackopen.com/en/part5/props_children_and_proptypes#references-to-components-with-ref)
+  2. [a note on creating instances of the same component](https://fullstackopen.com/en/part5/props_children_and_proptypes#one-point-about-components)
+- [Using prop-types and eslint](https://youtu.be/FC04ezeV7FY)
   1. [use the prop-types package to declare mandatory props and their data type](https://fullstackopen.com/en/part5/props_children_and_proptypes#prop-types)
   - declare mandatory props in the `Togglable` and `LoginForm` components
   2. [configure eslint to ignore test related errors](https://fullstackopen.com/en/part5/props_children_and_proptypes#e-slint)
