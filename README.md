@@ -758,6 +758,47 @@ Nothing!!
 
 </details>
 
+<details><summary>Part 5-c: Testing React apps</summary>
+
+- [Part 5-c: Testing React apps](https://fullstackopen.com/en/part5/testing_react_apps)
+
+**_LECTURE-VIDEO:_**
+
+- [Setup initial jest test for Note component]()
+  1. npm install --save-dev @testing-library/react @testing-library/jest-dom
+  2. make sure `Note` component has className `note`
+  3. [write Note component test in the file src/components/Note.test.js](https://fullstackopen.com/en/part5/testing_react_apps#searching-for-content-in-a-component)
+  4. run the test
+  5. modify the test to also check by selecting the element by class name in the rendered container
+  6. [use `screen.debug()` to see html output of render and of screen.getByText](https://fullstackopen.com/en/part5/testing_react_apps#debugging-tests)
+- [Clicking buttons in test]()
+  1. [set up test for button click](https://fullstackopen.com/en/part5/testing_react_apps#clicking-buttons-in-tests)
+  - npm install --save-dev @testing-library/user-event
+  - npm install -D --exact jest-watch-typeahead@0.6.5
+  2. write test case for button click
+  3. [write tests for the Togglable component](https://fullstackopen.com/en/part5/testing_react_apps#tests-for-the-togglable-component)
+  - set up Togglable component for testing by adding className="togglableContent"
+  - now write the tests
+- [Testing the forms]()
+  1. [write test for form submit](https://fullstackopen.com/en/part5/testing_react_apps#testing-the-forms)
+  2. more options for finding elements
+  - [note if there are two input fields](https://fullstackopen.com/en/part5/testing_react_apps#about-finding-the-elements)
+    - use `screen.getByPlaceholderText` to be more precise to get right text input field, or use `container.querySelector`
+  - using `{ exact: false }` option in the `screen.getByText` method
+  - using `screen.findByText`; note it returns a promise
+  - using `screen.queryByText`; note it does not cause an exception if the element is not found
+- [More notes on tests]()
+  1. [finding test coverage](https://fullstackopen.com/en/part5/testing_react_apps#test-coverage)
+  - by running `CI=true npm test -- --coverage`
+  2. [frontend integration tests](https://fullstackopen.com/en/part5/testing_react_apps#frontend-integration-tests)
+  3. [snapshot testing](https://fullstackopen.com/en/part5/testing_react_apps#snapshot-testing)
+
+**_TO-DO:_**
+
+- [5.13-5.16](https://fullstackopen.com/en/part5/testing_react_apps#exercises-5-13-5-16)
+
+</details>
+
 </details>
 
 ---
