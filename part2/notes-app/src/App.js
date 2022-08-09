@@ -5,6 +5,7 @@ import noteService from "./services/notes";
 import Notification from "./components/Notification";
 import Togglable from "./components/Togglable";
 import LoginForm from "./components/LoginForm";
+import NoteForm from "./components/NoteForm";
 import loginService from "./services/login";
 
 const App = () => {
@@ -20,7 +21,6 @@ const App = () => {
    */
 
   const [notes, setNotes] = useState([]);
-  const [note, setNote] = useState("Type a note");
   const [showAll, setShowAll] = useState(true);
   const [message, setErrorMessage] = useState(null);
   const [username, setUsername] = useState("");
@@ -45,33 +45,10 @@ const App = () => {
     }
   }, []);
 
-  const addNote = (event) => {
-    event.preventDefault();
-    console.dir(event.target);
-    const newNote = {
-      // id: notes.length + 1,
-      content: note,
-      date: new Date().toISOString(),
-      important: Math.random() < 0.5 ? true : false,
-    };
-
-    // axios.post("http://localhost:3001/notes", newNote)
-    noteService
-      .create(newNote)
-      .then((result) => {
-        setNotes([...notes, result]);
-        setNote("");
-      })
-      .catch((error) => {
-        setErrorMessage(error.response.data.error);
-        setTimeout(() => {
-          setErrorMessage("");
-        }, 2000);
-      });
-  };
-
-  const handleOnChange = (event) => {
-    setNote(event.target.value);
+  const addNote = (noteObject) => {
+    noteService.create(noteObject).then((returnedNote) => {
+      setNotes(notes.concat(returnedNote));
+    });
   };
 
   const toggleShowAll = () => {
@@ -118,10 +95,9 @@ const App = () => {
   );
 
   const noteForm = () => (
-    <form onSubmit={addNote}>
-      <input value={note} onChange={handleOnChange} />
-      <button>Add note</button>
-    </form>
+    <Togglable buttonLabel="new note">
+      <NoteForm createNote={addNote} />
+    </Togglable>
   );
 
   return (
@@ -161,7 +137,6 @@ const App = () => {
                   // console.log(data);
                   //3. now, also update the frontend state with the updated note
                   setNotes(notes.map((x) => (x.id !== note.id ? x : data)));
-                  setNote("");
                 })
                 .catch((error) => {
                   setErrorMessage("The note does not exist anymore");
