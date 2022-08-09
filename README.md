@@ -775,7 +775,7 @@ Nothing!!
   1. [set up test for button click](https://fullstackopen.com/en/part5/testing_react_apps#clicking-buttons-in-tests)
   - npm install --save-dev @testing-library/user-event
   - npm install -D --exact jest-watch-typeahead@0.6.5
-  2. write test case for button click
+  2. write test case for button click on the `Note` component
   3. [write tests for the Togglable component](https://fullstackopen.com/en/part5/testing_react_apps#tests-for-the-togglable-component)
   - set up Togglable component for testing by adding className="togglableContent"
   - now write the tests
