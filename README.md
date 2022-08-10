@@ -762,16 +762,25 @@ Nothing!!
 
 - [Part 5-c: Testing React apps](https://fullstackopen.com/en/part5/testing_react_apps)
 
+**_WE-WILL-LEARN:_**
+
+We will learn unit testing a React component. We will learn to test:
+
+- a component will render what we expect it to render
+- a component will call the correct function passed as a prop when a button is clicked
+- a component will re-render correctly when a button is clicked
+- a component will call a function with the correct argument when a button is clicked
+
 **_LECTURE-VIDEO:_**
 
-- [Setup initial jest test for Note component]()
+- [Setup initial jest test for Note component](https://youtu.be/NfCUIp1Gihk)
   1. npm install --save-dev @testing-library/react @testing-library/jest-dom
   2. make sure `Note` component has className `note`
   3. [write Note component test in the file src/components/Note.test.js](https://fullstackopen.com/en/part5/testing_react_apps#searching-for-content-in-a-component)
   4. run the test
   5. modify the test to also check by selecting the element by class name in the rendered container
   6. [use `screen.debug()` to see html output of render and of screen.getByText](https://fullstackopen.com/en/part5/testing_react_apps#debugging-tests)
-- [Clicking buttons in test]()
+- [Clicking buttons in test](https://youtu.be/XPYLtXHi4MM)
   1. [set up test for button click](https://fullstackopen.com/en/part5/testing_react_apps#clicking-buttons-in-tests)
   - npm install --save-dev @testing-library/user-event
   - npm install -D --exact jest-watch-typeahead@0.6.5
@@ -779,7 +788,7 @@ Nothing!!
   3. [write tests for the Togglable component](https://fullstackopen.com/en/part5/testing_react_apps#tests-for-the-togglable-component)
   - set up Togglable component for testing by adding className="togglableContent"
   - now write the tests
-- [Testing the forms]()
+- [Testing the forms](https://youtu.be/C6GzDq6W_UA)
   1. [write test for form submit](https://fullstackopen.com/en/part5/testing_react_apps#testing-the-forms)
   2. more options for finding elements
   - [note if there are two input fields](https://fullstackopen.com/en/part5/testing_react_apps#about-finding-the-elements)
@@ -787,7 +796,7 @@ Nothing!!
   - using `{ exact: false }` option in the `screen.getByText` method
   - using `screen.findByText`; note it returns a promise
   - using `screen.queryByText`; note it does not cause an exception if the element is not found
-- [More notes on tests]()
+- [More notes on tests](https://youtu.be/RGVPQTNyEgM)
   1. [finding test coverage](https://fullstackopen.com/en/part5/testing_react_apps#test-coverage)
   - by running `CI=true npm test -- --coverage`
   2. [frontend integration tests](https://fullstackopen.com/en/part5/testing_react_apps#frontend-integration-tests)
@@ -830,6 +839,8 @@ Nothing!!
 <details><summary>Part : </summary>
 
 - [PART : ]()
+
+**_WE-WILL-LEARN:_**
 
 **_LECTURE-VIDEO:_**
 
