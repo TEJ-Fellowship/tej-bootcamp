@@ -1,9 +1,9 @@
 const Note = ({ note, toggleImportance }) => {
   return (
-    <li>
-      {note.content} ({note.important.toString()}){" "}
+    <>
+      <li className="note">{note.content}</li>
       <button onClick={toggleImportance}>change importance</button>
-    </li>
+    </>
   );
 };
 
