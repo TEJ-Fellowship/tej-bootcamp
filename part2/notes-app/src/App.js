@@ -140,7 +140,7 @@ const App = () => {
                   //3. now, also update the frontend state with the updated note
                   setNotes(notes.map((x) => (x.id !== note.id ? x : data)));
                 })
-                .catch((error) => {
+                .catch(() => {
                   setErrorMessage("The note does not exist anymore");
                   setTimeout(() => setErrorMessage(null), 2000);
                   setNotes(notes.filter((x) => x.id !== note.id));
