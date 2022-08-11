@@ -808,8 +808,6 @@ We will learn unit testing a React component. We will learn to test:
 
 </details>
 
-</details>
-
 <details>
 <summary>Part 5-d: End to end Testing</summary>
 
@@ -872,6 +870,8 @@ We will learn unit testing a React component. We will learn to test:
 - [5.17-5.22](https://fullstackopen.com/en/part5/end_to_end_testing#exercises-5-17-5-22)
 
 </details>
+</details>
+
 
 ---
 
