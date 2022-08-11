@@ -816,17 +816,17 @@ We will learn unit testing a React component. We will learn to test:
 **_LECTURE-VIDEO:_**
 
 - [Initial setup for cypress](https://www.youtube.com/watch?v=-OKjjM8Y9Os)
-  1. [install cypress to the frontend as development dependency (npm install --save-dev cypress)]((https://fullstackopen.com/en/part5/end_to_end_testing#cypress))
+  1. [install cypress to the frontend as development dependency (npm install --save-dev cypress)](<(https://fullstackopen.com/en/part5/end_to_end_testing#cypress)>)
   2. add an npm-script to run it `{"cypress:open": "cypress open"}`
   3. add an npm-script to the backend which starts it in test mode `{"start:test": "cross-env NODE_ENV=test node index.js"}`
   4. start cypress with command `{npm run cypress:open}`
   5. Create a new test file i.e `notes.app.spec.cy.js` inside the cypress/e2e folder
-  6. Write the first test for the front page 
+  6. Write the first test for the front page
 - [Writing to a form](https://www.youtube.com/watch?v=hdv3rS3NWeU)
-1. [extend our tests so that the test tries to log in to our application](https://fullstackopen.com/en/part5/end_to_end_testing#writing-to-a-form)
-    - type the username and password in the login form using `{cy.type}` for the test
-    - `{cy.get}` command allows for searching elements by CSS selectors
-    - use `id` to get the value from input fields and use # to select id
+  1. [extend our tests so that the test tries to log in to our application](https://fullstackopen.com/en/part5/end_to_end_testing#writing-to-a-form)
+  - type the username and password in the login form using `{cy.type}` for the test
+  - `{cy.get}` command allows for searching elements by CSS selectors
+  - use `id` to get the value from input fields and use # to select id
 - Some things to note
   1. to avoid name conflicts, we gave the submit button the id login-button we can use to access it
   2. if you are getting eslint errors on cy `{npm install eslint-plugin-cypress --save-dev}`
@@ -838,40 +838,39 @@ We will learn unit testing a React component. We will learn to test:
 - [Controlling the state of the database](https://www.youtube.com/watch?v=Dts2-btCrXA)
   1. challenge with E2E tests is that they do not have access to the database
   2. [create API endpoints to the backend for the test](https://fullstackopen.com/en/part5/end_to_end_testing#controlling-the-state-of-the-database)
-    - create a new router for the tests `{testingRouter}` at backend
-    - add it to the backend only if the application is run on test-mode
-    - the test does HTTP requests to the backend with `{cy.request}`
-    - write the test for changing the importance of notes
-    - [make a test to ensure that a login attempt fails if the password is wrong](https://fullstackopen.com/en/part5/end_to_end_testing#failed-login-test)
-    - check error mesage `{  cy.get(className).contains(message))}`
-    - note : css class selector starts with . `{.className}`
-    - for more diverse tests than contains which works based on text content only
-    - `Should` should always be chained with get (or another chainable command) 
-    - cypress requires the colors to be given as rgb
-    - if the test are for same component we can chain `should;` with `and`
+  - create a new router for the tests `{testingRouter}` at backend
+  - add it to the backend only if the application is run on test-mode
+  - the test does HTTP requests to the backend with `{cy.request}`
+  3. write the test for changing the importance of notes
+  4. [make a test to ensure that a login attempt fails if the password is wrong](https://fullstackopen.com/en/part5/end_to_end_testing#failed-login-test)
+  - check error mesage `{ cy.get(className).contains(message))}`
+  - note : css class selector starts with . `{.className}`
+  5. for more diverse tests than contains which works based on text content only
+  - `Should` should always be chained with get (or another chainable command)
+  - cypress requires the colors to be given as rgb
+  - if the test are for same component we can chain `should;` with `and`
 - [Bypassing the UI](https://www.youtube.com/watch?v=U6UBYY8Jv5M)
-  1. note :  [Fully test the login flow – but only once!](https://docs.cypress.io/guides/end-to-end-testing/testing-your-app#Logging-in)
+  1. note : [Fully test the login flow – but only once!](https://docs.cypress.io/guides/end-to-end-testing/testing-your-app#Logging-in)
   2. [bypass the UI](https://fullstackopen.com/en/part5/end_to_end_testing#bypassing-the-ui)
   3. [Custom command](https://docs.cypress.io/api/cypress-api/custom-commands)
-  - create a cy command for login 
+  - create a cy command for login
   - create a cy command for adding new note
-  3. chaining contains with contains
-  4. When coding tests, you should check in the test runner that the tests use the right components!
-  5. use of `parent()` and  `find` and `as` in  cy
+  4. chaining contains with contains
+  5. When coding tests, you should check in the test runner that the tests use the right components!
+  6. use of `parent()` and `find` and `as` in cy
 - [Running and debugging the tests](https://www.youtube.com/watch?v=U6UBYY8Jv5M)
   1. cypress commands always return undefined
   2. Cypress commands are like promises
   3. we can run the test using cli with command `{"test:e2e": "cypress run"}`
-  4. videos of the test execution will be saved to cypress/videos/ 
-  5. gitignore the directory videos
+  4. videos of the test execution will be saved to cypress/videos/
+  5. gitignore the videos directory
 
-  **_TO-DO:_**
+**_TO-DO:_**
 
 - [5.17-5.22](https://fullstackopen.com/en/part5/end_to_end_testing#exercises-5-17-5-22)
 
 </details>
 </details>
-
 
 ---
 
