@@ -883,6 +883,9 @@ We will learn unit testing a React component. We will learn to test:
 
 **_WE-WILL-LEARN:_**
 
+- create redux store
+- pass the redux store to app via provider
+
 **_LECTURE-VIDEO:_**
 
 - [Create a counter app that uses redux]()
