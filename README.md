@@ -874,6 +874,84 @@ We will learn unit testing a React component. We will learn to test:
 
 ---
 
+## [PART 6: State management with Redux](https://fullstackopen.com/en/part6)
+
+<details><summary><h3 style="display:inline">Chapters</h3></summary>
+<details><summary>Part 6-a: Flux-architecture and Redux</summary>
+
+- [Part 6-a: Flux-architecture and Redux](https://fullstackopen.com/en/part6/flux_architecture_and_redux)
+
+**_WE-WILL-LEARN:_**
+
+- **_LECTURE-VIDEO:_**
+
+- [Create a counter app that uses redux]()
+  1. setup the applition
+  - npx create-react-app redux-counter
+  - delete all files except index.html and index.js
+  - cd redux-counter
+  - npm install redux
+  2. setup redux in index.js for simple counter
+  - create a reducer, `counterReducer` in this case. the reducer does the work similar to `setState`
+  - create a store, by using `createStore` and passing it the reducer
+  - use `store.getState()` to get the store (like the `state`)
+  - use `store.dispatch(action)` to modify the store (like calling `setState`)
+    - `action` is an object with `type` key, and optionally `data` key
+  - use `store.subscribe(React Component)` to rerender component when store changes
+- [Create a note app that uses redux]()
+  1. setup the applition
+  - npx create-react-app redux-note
+  - delete all files except index.html and index.js
+  - cd redux-note
+  - npm install redux
+  2. setup redux in index.js for note app
+  - create a reducer, `noteReducer` in this case. the reducer does the work similar to `setState`
+  - create a store, by using `createStore` and passing it the reducer
+  - use `store.getState()` to get the store (like the `state`)
+  - use `store.dispatch(action)` to modify the store (like calling `setState`)
+    - `action` is an object with `type` key, and `data` key
+  - use `store.subscribe(React Component)` to rerender component when store changes
+  3. add functionality to add new note
+  - add form to add note
+  - add `onSubmit` handler that calls `store.dispatch` for adding note
+  4. fix the problem with `NEW_NOTE` in the reducer
+  - state is immutable
+  5. add functionality to toggle importance
+  - add `onClick` call to `toggleImportance` function from each note display
+  - write the function `toggleImportance` to call `store.dispatch`
+  - write a separate `action creator` called `toggleImportanceOf` that creates the action to dispatch
+  2. put redux actions for create note, and toggle importance into their own functions
+  3. use redux hook to get access to redux `store` from any component
+  - npm install react-redux
+  - move app component to App.js
+  - move the action creators to reducers/noteReducer.js
+  - modify index.js using react-redux to pass the `store` to App via `Provider`
+  4. modify App.js to access the `store` from `Provider`
+  - `useSelector` to get access to the `store`
+  - `useDispatch` to send actions to redux
+  5. put note creation form into its own `NewNote` component
+  6. put notes list display and single note into a separate `Notes` component
+- [refactor note app to use Provider]()
+  1. put the reducer in the `reducers/noteReducer.js` file
+  2. also move the action creators to `reducers/noteReducer.js`
+  3. move the app component to `App.js`
+  4. npm install react-redux
+  5. modify the store related code in `index.js` to wrap it around `Provider` to pass to `App`
+  - in `index.js`, import `Provider`
+  - wrap `App` with `Provider` with `store`
+  6. modify `App` to read `store` from `Provider`
+  7. now even if we further refactor add new note form to its own component, we don't need to pass the store from App; the store can be directly accessed by all the components
+
+**_TO-DO:_**
+
+- [6.1-6.2](https://fullstackopen.com/en/part6/flux_architecture_and_redux#exercises-6-1-6-2)
+- [6.3-6.8](https://fullstackopen.com/en/part6/flux_architecture_and_redux#exercises-6-3-6-8)
+
+</details>
+</details>
+
+---
+
 <details><summary>TEMPLATE</summary>
 
 <details><summary>Part -: </summary>
