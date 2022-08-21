@@ -923,27 +923,18 @@ We will learn unit testing a React component. We will learn to test:
   - add `onClick` call to `toggleImportance` function from each note display
   - write the function `toggleImportance` to call `store.dispatch`
   - write a separate `action creator` called `toggleImportanceOf` that creates the action to dispatch
-  2. put redux actions for create note, and toggle importance into their own functions
-  3. use redux hook to get access to redux `store` from any component
-  - npm install react-redux
-  - move app component to App.js
-  - move the action creators to reducers/noteReducer.js
-  - modify index.js using react-redux to pass the `store` to App via `Provider`
-  4. modify App.js to access the `store` from `Provider`
-  - `useSelector` to get access to the `store`
-  - `useDispatch` to send actions to redux
-  5. put note creation form into its own `NewNote` component
-  6. put notes list display and single note into a separate `Notes` component
 - [refactor note app to use Provider]()
   1. put the reducer in the `reducers/noteReducer.js` file
   2. also move the action creators to `reducers/noteReducer.js`
   3. move the app component to `App.js`
   4. npm install react-redux
-  5. modify the store related code in `index.js` to wrap it around `Provider` to pass to `App`
-  - in `index.js`, import `Provider`
+  5. modify the store related code in `index.js`, pass the store to `Provider` and wrap the `App` with it
+  - in `index.js` import `Provider`
   - wrap `App` with `Provider` with `store`
   6. modify `App` to read `store` from `Provider`
-  7. now even if we further refactor add new note form to its own component, we don't need to pass the store from App; the store can be directly accessed by all the components
+  - `useSelector` to get access to the `store`
+  - `useDispatch` to send actions to redux
+  7. now even if we refactor `add new note` form to its own component, we don't need to pass the store from App; the store can be directly accessed by all the components
 
 **_TO-DO:_**
 
