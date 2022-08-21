@@ -883,7 +883,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_WE-WILL-LEARN:_**
 
-- **_LECTURE-VIDEO:_**
+**_LECTURE-VIDEO:_**
 
 - [Create a counter app that uses redux]()
   1. setup the applition
