@@ -951,7 +951,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Add a visibility filter by putting it in another reducer using Combined reducers]()
+- [Add state for visibility filter by putting it in another reducer using Combined reducers]()
   - note that `NewNote` and `Notes` components have been refactored from `App` component
   1. initialize `notes` state with two notes
   2. create visibility filter to show all / important notes
