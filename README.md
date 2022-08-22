@@ -923,7 +923,7 @@ We will learn unit testing a React component. We will learn to test:
   - add `onClick` call to `toggleImportance` function from each note display
   - write the function `toggleImportance` to call `store.dispatch`
   - write a separate `action creator` called `toggleImportanceOf` that creates the action to dispatch
-- [refactor note app to use Provider]()
+- [Refactor note app to use Provider]()
   1. put the reducer in the `reducers/noteReducer.js` file
   2. also move the action creators to `reducers/noteReducer.js`
   3. move the app component to `App.js`
@@ -940,6 +940,49 @@ We will learn unit testing a React component. We will learn to test:
 
 - [6.1-6.2](https://fullstackopen.com/en/part6/flux_architecture_and_redux#exercises-6-1-6-2)
 - [6.3-6.8](https://fullstackopen.com/en/part6/flux_architecture_and_redux#exercises-6-3-6-8)
+
+</details>
+
+<details><summary>Part 6-b: Many reducers</summary>
+
+- [Part 6-b: Many reducers](https://fullstackopen.com/en/part6/many_reducers)
+
+**_WE-WILL-LEARN:_**
+
+**_LECTURE-VIDEO:_**
+
+- [Add a visibility filter by putting it in another reducer using Combined reducers]()
+  1. initialize `notes` state with two notes
+  2. create visibility filter to show all / important notes
+  - note that `NewNote` and `Notes` components have been refactored from `App` component
+  3. create new reducer `filterReducer` to store value of filter
+  - put the reducer function `filterReducer`
+  - create action creator `filterChange`
+  4. modify index.js to combine the reducers `filterReducer` and `noteReducer`
+  - import `combineReducers` from `redux`
+  - use `combineReducers` to combine the two reducers
+  - change `createStore` to take the combined reducer
+  5. modify `Notes.js` to now only read the `notes` key from the state
+  6. create separate component for `VisibilityFilter`
+  - in `App` use the `VisibilityFilter` component to display the filter
+  7. modify `Notes.js` to filter notes based on the visibility filter
+- [Using Redux Toolkit]()
+  1. install the Redux Toolkit
+  - npm install @reduxjs/toolkit
+  2. modify `index.js` to use toolkit
+  - import and use `configureStore` to create store, which will replace `combineReducers` and `createStore`
+  3. modify `noteReducer.js` to use toolkit
+  - use `createSlice` to refactor the reducer and action creators
+  - use export using toolkit
+- [Using Redux devtool]()
+  1. install devtool from https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+  2. open the Redux devtool window
+  3. dispatch an action from the toolkit
+  4. see the change in state for all the actions
+
+**_TO-DO:_**
+
+- [6.9-6.12](https://fullstackopen.com/en/part6/many_reducers#exercises-6-9-6-12)
 
 </details>
 </details>
