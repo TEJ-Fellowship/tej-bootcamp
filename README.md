@@ -949,6 +949,10 @@ We will learn unit testing a React component. We will learn to test:
 
 **_WE-WILL-LEARN:_**
 
+- using `Combined reducers` to combine multiple reducers
+- using Redux toolkit to simplify and streamline the use of Redux stores
+- using Redux devtool to debug and help develop redux
+
 **_LECTURE-VIDEO:_**
 
 - [Add state for visibility filter by putting it in another reducer using Combined reducers]()
