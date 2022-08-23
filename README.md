@@ -989,6 +989,58 @@ We will learn unit testing a React component. We will learn to test:
 - [6.9-6.12](https://fullstackopen.com/en/part6/many_reducers#exercises-6-9-6-12)
 
 </details>
+
+<details><summary>Part 6-c: Communicating with server in a redux application</summary>
+
+- [Part 6-c: Communicating with server in a redux application](https://fullstackopen.com/en/part6/communicating_with_server_in_a_redux_application)
+
+**_WE-WILL-LEARN:_**
+
+**_LECTURE-VIDEO:_**
+
+- [Storing notes to the backend while using Redux]()
+  1. create `db.json` file in root folder, and put some data
+  2. install and run json server
+  - npm install json-server --save-dev
+  - in `package.json` add script to run json-server
+  - npm run server
+  3. create service to fetch data from backend
+  - npm install axios
+  - create file `services/notes.js` to fetch data using axios from the backend
+  4. get initial data from backend
+  - in `noteReducer` change initial state to empty array
+  - in `noteReducer` add an action to append a single note
+  - in `noteReducer` add an action to set all the notes
+  - in `App`, create a `useEffect` to load the initial data from json-server
+  5. when creating note, add functionality to also add the new note to backend
+  - in `services/notes.js`, add function to create note in backend
+  - `NewNote` component, modify to call the service to backend
+  - modify `createNote` reducer as it will receive the full note, not just the content
+  6. you can also change the `toggle importance` functionality to also update backend
+- [Using thunk to move backend logic to Redux action creator]()
+  1. install `redux-thunk`
+  - npm install redux-thunk
+  2. modify the `createNote` functionality to move backend communication to a `thunk`
+  - change `NewNote` component back to just dispatching return value of `createNote` function
+  - in `noteReducer`, replace the `createNote` action creator with `createNote` thunk that will:
+    1. create a note in the backend
+    2. then dispatch the new note to Redux store
+  3. modify the initial notes loading functionality to move backend communication to a `thunk`
+  - change `App` useEffect to just dispatching return value of `initializeNotes` function
+  - in `noteReducer`, create a new thunk `initializeNotes` that will:
+    1. get all notes from the backend
+    2. then dispatch the notes to Redux store
+  4. refactor Redux store creation
+  - create `store.js` in root folder
+  - move all Redux store creation code from `index.js` to `store.js`
+  - in `index.js` import the store to pass to `App`
+
+**_TO-DO:_**
+
+- [6.13-6.14](https://fullstackopen.com/en/part6/communicating_with_server_in_a_redux_application#exercises-6-13-6-14)
+- [6.15-6.18](https://fullstackopen.com/en/part6/communicating_with_server_in_a_redux_application#exercises-6-15-6-18)
+
+</details>
 </details>
 
 ---
