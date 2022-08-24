@@ -14,6 +14,11 @@
       "content": "new note to backend",
       "important": false,
       "id": 3
+    },
+    {
+      "content": "from thunk",
+      "important": false,
+      "id": 4
     }
   ]
 }
