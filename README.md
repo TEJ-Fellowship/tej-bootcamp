@@ -888,7 +888,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Create a counter app that uses redux]()
+- [Create a counter app that uses redux](https://youtu.be/j7GdVmjjBzQ)
   1. setup the applition
   - npx create-react-app redux-counter
   - delete all files except index.html and index.js
@@ -901,7 +901,7 @@ We will learn unit testing a React component. We will learn to test:
   - use `store.dispatch(action)` to modify the store (like calling `setState`)
     - `action` is an object with `type` key, and optionally `data` key
   - use `store.subscribe(React Component)` to rerender component when store changes
-- [Create a note app that uses redux]()
+- [Create a note app that uses redux](https://youtu.be/YRPXQ-ytTOw)
   1. setup the applition
   - npx create-react-app redux-note
   - delete all files except index.html and index.js
@@ -923,7 +923,7 @@ We will learn unit testing a React component. We will learn to test:
   - add `onClick` call to `toggleImportance` function from each note display
   - write the function `toggleImportance` to call `store.dispatch`
   - write a separate `action creator` called `toggleImportanceOf` that creates the action to dispatch
-- [Refactor note app to use Provider]()
+- [Refactor note app to use Provider](https://youtu.be/8rIl5mEhkiU)
   1. put the reducer in the `reducers/noteReducer.js` file
   2. also move the action creators to `reducers/noteReducer.js`
   3. move the app component to `App.js`
@@ -955,7 +955,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Add state for visibility filter by putting it in another reducer using Combined reducers]()
+- [Add state for visibility filter by putting it in another reducer using Combined reducers](https://youtu.be/bCaJ1NCH6CQ)
   - note that `NewNote` and `Notes` components have been refactored from `App` component
   1. initialize `notes` state with two notes
   2. create visibility filter to show all / important notes
@@ -970,7 +970,7 @@ We will learn unit testing a React component. We will learn to test:
   6. create separate component for `VisibilityFilter`
   - in `App` use the `VisibilityFilter` component to display the filter
   7. modify `Notes.js` to filter notes based on the visibility filter
-- [Using Redux Toolkit]()
+- [Using Redux Toolkit](https://www.youtube.com/watch?v=oWXDq4edkWw)
   1. install the Redux Toolkit
   - npm install @reduxjs/toolkit
   2. modify `index.js` to use toolkit
@@ -978,7 +978,7 @@ We will learn unit testing a React component. We will learn to test:
   3. modify `noteReducer.js` to use toolkit
   - use `createSlice` to refactor the reducer and action creators
   - use export using toolkit
-- [Using Redux devtool]()
+- [Using Redux devtool](https://youtu.be/oWXDq4edkWw?t=593)
   1. install devtool from https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
   2. open the Redux devtool window
   3. dispatch an action from the toolkit
@@ -998,7 +998,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Storing notes to the backend while using Redux]()
+- [Getting notes from the backend while using Redux](https://youtu.be/PQK5dO5v0eo)
   1. create `db.json` file in root folder, and put some data
   2. install and run json server
   - npm install json-server --save-dev
@@ -1012,12 +1012,13 @@ We will learn unit testing a React component. We will learn to test:
   - in `noteReducer` add an action to append a single note
   - in `noteReducer` add an action to set all the notes
   - in `App`, create a `useEffect` to load the initial data from json-server
-  5. when creating note, add functionality to also add the new note to backend
+- [Storing a note to the backend while using Redux](https://youtu.be/Elh7lqLF5G8)
+  1. when creating note, add functionality to also add the new note to backend
   - in `services/notes.js`, add function to create note in backend
-  - `NewNote` component, modify to call the service to backend
+  - in `NewNote` component, modify to call the service to backend
   - modify `createNote` reducer as it will receive the full note, not just the content
-  6. you can also change the `toggle importance` functionality to also update backend
-- [Using thunk to move backend logic to Redux action creator]()
+  2. you can also change the `toggle importance` functionality to also update backend
+- [Using thunk to move backend logic to Redux action creator](https://youtu.be/uN5_5lej87s)
   1. install `redux-thunk`
   - npm install redux-thunk
   2. modify the `createNote` functionality to move backend communication to a `thunk`
