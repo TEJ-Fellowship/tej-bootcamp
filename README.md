@@ -1046,6 +1046,46 @@ We will learn unit testing a React component. We will learn to test:
 
 ---
 
+## [PART 7: React router, custom hooks, styling app with CSS and webpack](https://fullstackopen.com/en/part7)
+
+<details><summary><h3 style="display:inline">Chapters</h3></summary>
+<details><summary>Part 7-a: React-router</summary>
+
+- [Part 7-a: React-router](https://fullstackopen.com/en/part7/react_router)
+
+**_WE-WILL-LEARN:_**
+
+**_LECTURE-VIDEO:_**
+
+- [Implement react router]()
+  1. create new project
+  - npx create-react-app react-router
+  - remove all files except App.js, index.js, index.html
+  2. install react router
+  - cd react-router
+  - npm install react-router-dom
+  3. write code to use simple react router
+  - use BrowserRouter, Routes, Route, Link components from react-router-dom
+  4. add parameterized route for `notes` with `useParams`
+  - hardcode `notes` array with some notes
+  - update `Notes` component that creates `Link` to the notes
+  - create `Note` component with `useParams` that will display individual note
+  5. add `login` route that uses `useNavigate` hook
+  6. use `Navigate` component in `users` route to conditionally redirect to `login` route when not logged in
+  7. using `useMatch` for finer grain parameterized route
+  - move `Router` component to `index`
+  - in `App`, use `useMatch` to get the `notes/:id` parameter to find the note
+  - pass and read the single `note` object to the `Note` component
+
+**_TO-DO:_**
+
+- [7.1-7.3](https://fullstackopen.com/en/part7/react_router#exercises-7-1-7-3)
+
+</details>
+</details>
+
+---
+
 <details><summary>TEMPLATE</summary>
 
 <details><summary>Part -: </summary>
