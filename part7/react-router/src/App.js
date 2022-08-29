@@ -4,6 +4,9 @@ import {
   Route,
   Link,
   useParams,
+  useNavigate,
+  Navigate,
+  useMatch,
 } from "react-router-dom";
 import { useState } from "react";
 
@@ -34,9 +37,7 @@ const Users = () => (
   </div>
 );
 
-const Note = ({ notes }) => {
-  const id = useParams().id;
-  const note = notes.find((n) => n.id === Number(id));
+const Note = ({ note }) => {
   return (
     <div>
       <h2>{note.content}</h2>
@@ -48,7 +49,34 @@ const Note = ({ notes }) => {
   );
 };
 
+const Login = (props) => {
+  const navigate = useNavigate();
+
+  const onSubmit = (event) => {
+    event.preventDefault();
+    props.onLogin("mluukkai");
+    navigate("/");
+  };
+
+  return (
+    <div>
+      <h2>login</h2>
+      <form onSubmit={onSubmit}>
+        <div>
+          username: <input />
+        </div>
+        <div>
+          password: <input type="password" />
+        </div>
+        <button type="submit">login</button>
+      </form>
+    </div>
+  );
+};
+
 const App = () => {
+  const match = useMatch("/notes/:id");
+
   const [notes, setNotes] = useState([
     {
       id: 1,
@@ -70,13 +98,20 @@ const App = () => {
     },
   ]);
 
+  const note = match
+    ? notes.find((note) => note.id === Number(match.params.id))
+    : null;
+
   const [user, setUser] = useState(null);
+  const login = (user) => {
+    setUser(user);
+  };
 
   const padding = {
     padding: 5,
   };
   return (
-    <Router>
+    <div>
       <div>
         <Link style={padding} to="/">
           home
@@ -87,14 +122,26 @@ const App = () => {
         <Link style={padding} to="/users">
           users
         </Link>
+        {user ? (
+          <em>{user} logged in</em>
+        ) : (
+          <Link style={padding} to="/login">
+            login
+          </Link>
+        )}
       </div>
       <Routes>
-        <Route path="/notes/:id" element={<Note notes={notes} />} />
+        <Route path="/notes/:id" element={<Note note={note} />} />
         <Route path="/notes" element={<Notes notes={notes} />} />
-        <Route path="/users" element={<Users />} />
+        {/* <Route path="/users" element={<Users />} /> */}
+        <Route
+          path="/users"
+          element={user ? <Users /> : <Navigate replace to="/login" />}
+        />
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login onLogin={login} />} />
       </Routes>
-    </Router>
+    </div>
   );
 };
 
