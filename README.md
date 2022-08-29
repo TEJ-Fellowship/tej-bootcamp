@@ -1072,9 +1072,10 @@ We will learn unit testing a React component. We will learn to test:
   - hardcode `notes` array with some notes
   - update `Notes` component that creates `Link` to the notes
   - create `Note` component with `useParams` that will display individual note
-  5. add `login` route that uses `useNavigate` hook
-  6. use `Navigate` component in `users` route to conditionally redirect to `login` route when not logged in
-  7. use `useMatch` for finer grain parameterized route
+- [Add useNavigate and useMatch to add functionality to react router]()
+  1. add `login` route that uses `useNavigate` hook
+  2. use `Navigate` component in `users` route to conditionally redirect to `login` route when not logged in
+  3. use `useMatch` for better parameterized route
   - move `Router` component to `index`
   - in `App`, use `useMatch` to get the `notes/:id` parameter to find the note
   - pass and read the single `note` object to the `Note` component
