@@ -1059,7 +1059,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Implement react router]()
+- [Implement react router](https://youtu.be/zzQsI_QvvEo)
   1. create new project
   - npx create-react-app react-router
   - remove all files except App.js, index.js, index.html
@@ -1075,20 +1075,39 @@ We will learn unit testing a React component. We will learn to test:
   - create a new `Route` to handle `note/:id` route
   - update `Notes` component that creates `Link` to the notes
   - create `Note` component with `useParams` that will display individual note
-- [Add useNavigate and useMatch to add functionality to react router]()
+- [Add useNavigate and useMatch to add functionality to react router](https://youtu.be/f5f_FBQwZgc)
   1. add `login` route that uses `useNavigate` hook
   2. use `Navigate` component in `users` route to conditionally redirect to `login` route when not logged in
   3. use `useMatch` for better parameterized route
   - move `Router` component to `index`
   - in `App`, use `useMatch` to get the `notes/:id` parameter to find the note
   - pass and read the single `note` object to the `Note` component
-- [build and deploy the react router app to node server]()
+- [build and deploy the react router app to node server](https://youtu.be/CPqpOFMA8WY)
 
 **_TO-DO:_**
 
 - [7.1-7.3](https://fullstackopen.com/en/part7/react_router#exercises-7-1-7-3)
 
 </details>
+
+<details><summary>Part 7-b: Custom hooks</summary>
+
+- [Part 7-b: Custom hooks](https://fullstackopen.com/en/part7/custom_hooks)
+
+**_WE-WILL-LEARN:_**
+
+- creating and using custom hooks
+
+- **_LECTURE-VIDEO:_**
+
+- []()
+
+**_TO-DO:_**
+
+- [7.4-7.8](https://fullstackopen.com/en/part7/custom_hooks#exercises-7-4-7-8)
+
+</details>
+
 </details>
 
 ---
