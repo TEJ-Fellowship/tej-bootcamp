@@ -1080,7 +1080,7 @@ We will learn unit testing a React component. We will learn to test:
   - move `Router` component to `index`
   - in `App`, use `useMatch` to get the `notes/:id` parameter to find the note
   - pass and read the single `note` object to the `Note` component
-  4. build and deploy the react app to node server
+- [build and deploy the react router app to node server]()
 
 **_TO-DO:_**
 
