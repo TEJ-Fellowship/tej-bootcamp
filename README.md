@@ -1056,6 +1056,7 @@ We will learn unit testing a React component. We will learn to test:
 **_WE-WILL-LEARN:_**
 
 - How to use react router for client side routes
+- [Code reference](https://github.com/fullstack-hy2020/misc/blob/master/router-app-v2.js)
 
 **_LECTURE-VIDEO:_**
 
