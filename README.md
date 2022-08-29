@@ -1070,6 +1070,7 @@ We will learn unit testing a React component. We will learn to test:
   - use `Routes` and `Route` to handle the links to components
   4. add parameterized route for `note/:id` with `useParams`
   - hardcode `notes` array with some notes
+  - create a new `Route` to handle `note/:id` route
   - update `Notes` component that creates `Link` to the notes
   - create `Note` component with `useParams` that will display individual note
 - [Add useNavigate and useMatch to add functionality to react router]()
