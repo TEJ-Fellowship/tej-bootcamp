@@ -1098,9 +1098,10 @@ We will learn unit testing a React component. We will learn to test:
 
 - creating and using custom hooks
 
-- **_LECTURE-VIDEO:_**
+**_LECTURE-VIDEO:_**
 
-- []()
+- [Create custom hook for counter application]()
+  1. start with simple counter application
 
 **_TO-DO:_**
 
