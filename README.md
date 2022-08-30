@@ -1098,6 +1098,8 @@ We will learn unit testing a React component. We will learn to test:
 **_WE-WILL-LEARN:_**
 
 - creating and using custom hooks
+  1. custom hooks follow the same [rules](https://reactjs.org/docs/hooks-rules.html) as react hooks
+  2. create custom hooks when you need complicated logic with react hooks that can be re-used
 
 **_LECTURE-VIDEO:_**
 
@@ -1107,6 +1109,7 @@ We will learn unit testing a React component. We will learn to test:
   - remove all files except App.js, index.js, index.html
   2. create simple counter application
   3. move counter logic to custom hook `useCounter`
+  - make sure the name of custom hook always starts with `use`
   4. use `useCounter` for two different counters in the same `App` component
 - [Using custom hook for forms]()
   1. create an App with forms
