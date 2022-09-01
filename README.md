@@ -1133,7 +1133,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Readymade UI Libraries]
+- [Readymade UI Libraries](https://youtu.be/su9u1rgSgHg)
 
   1. [React Bootstrap](https://fullstackopen.com/en/part7/more_about_styles#react-bootstrap)
 
@@ -1146,7 +1146,7 @@ We will learn unit testing a React component. We will learn to test:
   - stlye notification message using alert component
   - Navigation Structure
 
-- [Material UI]
+- [Material UI](https://youtu.be/sLwIblgrlWE)
 
   1. [Material UI](https://fullstackopen.com/en/part7/more_about_styles#material-ui)
 
@@ -1155,8 +1155,10 @@ We will learn unit testing a React component. We will learn to test:
   - use `Material UI` to make the same changes that were made using `react-bootstrap`
   - each component has to be imported separately
 
-  2. [Other UI frameworks](https://fullstackopen.com/en/part7/more_about_styles#other-ui-frameworks)
-  3. [Styled Components](https://fullstackopen.com/en/part7/more_about_styles#styled-components)
+- [Styled Components](https://youtu.be/tamH3IV80wA)
+
+  1. [Other UI frameworks](https://fullstackopen.com/en/part7/more_about_styles#other-ui-frameworks)
+  2. [Styled Components](https://fullstackopen.com/en/part7/more_about_styles#styled-components)
 
   - `npm install styled-components`
 
