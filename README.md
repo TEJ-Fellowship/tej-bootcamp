@@ -1170,6 +1170,88 @@ We will learn unit testing a React component. We will learn to test:
 
 ---
 
+## [PART 13: Using relational databases](https://fullstackopen.com/en/part13)
+
+<details><summary><h3 style="display:inline">Chapters</h3></summary>
+<details><summary>Part 13-a: Using relational databases with Sequelize</summary>
+
+- [Part 13-a: Using relational databases with Sequelize](https://fullstackopen.com/en/part13/using_relational_databases_with_sequelize)
+
+**_WE-WILL-LEARN:_**
+
+- using Relational Database (Postgres) instead of mongoDB for the notes app
+- using `Sequelize` ORM to create JS Model for Postgres tables
+
+**_USEFUL-SQL-COMMANDS:_**
+
+- create a table called `notes`
+
+```
+CREATE TABLE notes (
+    id SERIAL PRIMARY KEY,
+    content text NOT NULL,
+    important boolean,
+    date time
+);
+```
+
+- insert a row into `notes` table
+
+```
+insert into notes (content, important) values ('Relational databases rule the world', true);
+```
+
+- read rows from `notes` table
+
+```
+select * from notes;
+```
+
+- remove the table `notes`
+
+```
+drop table notes;
+```
+
+**_LECTURE-VIDEO:_**
+
+- [Create a notes-server app to use relational database]()
+  1. create `part13/notes-server`
+  2. `npm init -y` to create a new npm project
+  3. create a Postgres DB in heroku
+  - run `heroku create` to create a heroku project
+  - run `heroku addons:create heroku-postgresql:hobby-dev -a <app-name>` to create DB in heroku
+  - run `heroku config -a <app-name>` to get the DB connection string
+  4. add the DB connection string to `.env` file
+  5. install `Postgresql` extension by Chris Kolkman
+  6. create table `notes`
+  7. insert a few rows into the table
+  8. write api to read all notes from db
+  - npm install express dotenv pg sequelize
+  - create `index.js`
+  - write the `api/notes` for `get` method to read all notes from DB using `select` query
+  9. use `Sequelize` ORM to rewrite `api/notes`
+  - create a `Model` for `Note`
+  - use the `Note` model to get all notes from DB
+  10. add api to create a single note with simple error handling
+- [Additional notes on relational database]()
+  1. creating database tables automatically using the `Sequelize` model
+  2. add api to read a single note
+  3. add api to modify a note
+  4. printing the objects returned by `Sequelize` to the console
+  - using `toJSON`
+  - using `JSON.stringify`
+
+**_TO-DO:_**
+
+- [13.1-13.3](https://fullstackopen.com/en/part13/using_relational_databases_with_sequelize#tasks-13-1-13-3)
+- [13.4](https://fullstackopen.com/en/part13/using_relational_databases_with_sequelize#task-13-4)
+
+</details>
+</details>
+
+---
+
 <details><summary>TEMPLATE</summary>
 
 <details><summary>Part -: </summary>
