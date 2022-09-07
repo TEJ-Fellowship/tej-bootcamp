@@ -1262,7 +1262,7 @@ drop table notes;
   - create `config.js` to read configurations from environment
   - create `db.js` to put DB boilerplate code
   2. refactor models
-  - move `Note` class to `models/note.js`
+  - move `Note` model to `models/note.js`
   - create `models/index.js` to centralize all models related code
   3. refactor route handling to controllers
   - move notes routes to `controllers/notes.js`
@@ -1272,7 +1272,31 @@ drop table notes;
   5. refactor notes controller
   - put repetitive code to middleware
   - call middleware in the routes where required
-- []()
+- [Create user management]()
+  1. create `User` model
+  - create `models/user.js` for `User` model
+  - include the `User` model to `models/index.js`
+  2. create routes for user management
+  - create `controllers/users.js`
+  - create `controllers/login.js`
+  - add `SECRET` in `.env` and `util/config.js`
+  - npm install jsonwebtoken
+  - include the routes in `index.js`
+  3. add relation between `User` and `Note`
+  - in `models/index.js` add the foreign key from `User` to `Note`
+  4. modify note post route to also insert logged in userId
+  - in `controllers/notes.js`, add `tokenExtractor` middleware
+  - user `tokenExtractor` to decode the the userId from token
+  - include the userId while inserting a new note into the DB
+  5. use `REST Client` to test login and note creation using token
+  - create `requests/my_requests.rest` file
+  - include request to create user
+  - login with user
+  - create note
+- [Cleaning up & more queries]()
+  1. modify get notes to return the full user
+  2. modify get users to return notes created by user
+  3. modify get notes to use query parameters to fine tune sequelize query
 
 **_TO-DO:_**
 
