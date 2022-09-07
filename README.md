@@ -1248,6 +1248,40 @@ drop table notes;
 - [13.4](https://fullstackopen.com/en/part13/using_relational_databases_with_sequelize#task-13-4)
 
 </details>
+
+<details><summary>Part 13-b: Join tables and queries</summary>
+
+- [PART 13-b: Join tables and queries](https://fullstackopen.com/en/part13/join_tables_and_queries)
+
+**_WE-WILL-LEARN:_**
+
+**_LECTURE-VIDEO:_**
+
+- [Refactoring the code]()
+  1. start with `util` directory
+  - create `config.js` to read configurations from environment
+  - create `db.js` to put DB boilerplate code
+  2. refactor models
+  - move `Note` class to `models/note.js`
+  - create `models/index.js` to centralize all models related code
+  3. refactor route handling to controllers
+  - move notes routes to `controllers/notes.js`
+  4. modify `index.js`
+  - remove imports that are not required
+  - add `app.use(express.json())`
+  5. refactor notes controller
+  - put repetitive code to middleware
+  - call middleware in the routes where required
+- []()
+
+**_TO-DO:_**
+
+- [13.5-13.7](https://fullstackopen.com/en/part13/join_tables_and_queries#tasks-13-5-13-7)
+- [13.8-13.12](https://fullstackopen.com/en/part13/join_tables_and_queries#tasks-13-8-13-12)
+- [13.13-13.16](https://fullstackopen.com/en/part13/join_tables_and_queries#tasks-13-13-13-16)
+
+</details>
+
 </details>
 
 ---
