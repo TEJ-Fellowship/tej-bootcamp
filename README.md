@@ -1215,7 +1215,7 @@ drop table notes;
 
 **_LECTURE-VIDEO:_**
 
-- [Create a notes-server app to use relational database]()
+- [Create a notes-server app to use relational database](https://youtu.be/2R8mKOr9tA0)
   1. create `part13/notes-server`
   2. `npm init -y` to create a new npm project
   3. create a Postgres DB in heroku
@@ -1234,7 +1234,7 @@ drop table notes;
   - create a `Model` for `Note`
   - use the `Note` model to get all notes from DB
   10. add api to create a single note with simple error handling
-- [Additional notes on relational database]()
+- [Additional notes on relational database](https://youtu.be/XiIvn-XMCdQ)
   1. creating database tables automatically using the `Sequelize` model
   2. add api to read a single note
   3. add api to modify a note
