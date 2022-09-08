@@ -1261,7 +1261,7 @@ drop table notes;
 
 **_LECTURE-VIDEO:_**
 
-- [Refactoring the code]()
+- [Refactoring the code](https://youtu.be/B4oTY6X4ZNo)
   1. start with `util` directory
   - create `config.js` to read configurations from environment
   - create `db.js` to put DB boilerplate code
@@ -1276,7 +1276,7 @@ drop table notes;
   5. refactor notes controller
   - put repetitive code to middleware
   - call middleware in the routes where required
-- [Create user management]()
+- [Create user management](https://youtu.be/oy27SQg7BCQ)
   1. create `User` model
   - create `models/user.js` for `User` model
   - include the `User` model to `models/index.js`
@@ -1297,7 +1297,7 @@ drop table notes;
   - include request to create user
   - login with user
   - create note
-- [Cleaning up & more queries]()
+- [Cleaning up & more queries](https://youtu.be/73czM86pILc)
   1. modify get notes to return the full user
   2. modify get users to return notes created by user
   3. modify get notes to use query parameters to fine tune sequelize query
