@@ -1255,6 +1255,10 @@ drop table notes;
 
 **_WE-WILL-LEARN:_**
 
+- user management in sequelize
+- joining data from two tables in sequelize
+- using query parameters in REST API
+
 **_LECTURE-VIDEO:_**
 
 - [Refactoring the code]()
