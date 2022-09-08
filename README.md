@@ -1318,6 +1318,7 @@ drop table notes;
 
 - how to properly migrate database (create / update database schema)
 - through table, and many-to-many relations
+- other sequelize functionalities
 
 **_LECTURE-VIDEO:_**
 
