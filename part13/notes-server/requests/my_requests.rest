@@ -5,11 +5,11 @@ DELETE http://localhost:3001/notes/1
 ###
 POST http://localhost:3001/api/notes/
 content-type: application/json
-authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlamZlbGxvdyIsImlkIjoxLCJpYXQiOjE2NjI2NTcyMDN9.xbWdwpRSCeTmmJEtz1bbH0MM02K5Frf02tKeCwRJYdE
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlaiIsImlkIjoxLCJpYXQiOjE2NjI2OTY1MzN9.vqpXShInLf7DQx0tZ0iyfkwFXLbVf2AoaRa50SEP_Q8
 
 {
     "content": "another note 4",
-    "important": true
+    "important": false
 }
 
 ###
@@ -17,9 +17,9 @@ POST http://localhost:3001/api/users/
 content-type: application/json
 
 {
-    "username": "third",
+    "username": "sixth",
     "name": "tej fellow",
-    "disabled": false
+    "disabled": true
 }
 
 ###
@@ -27,14 +27,14 @@ POST http://localhost:3001/api/login/
 content-type: application/json
 
 {
-    "username": "secondUser",
+    "username": "tej",
     "password": "secret"
 }
 ###
-PUT http://localhost:3001/api/users/secondUser
+PUT http://localhost:3001/api/users/third
 content-type: application/json
-authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlamZlbGxvdyIsImlkIjoxLCJpYXQiOjE2NjI2NTg3NTZ9.OcKDVcCbhfgVSUYs-BFP-T3dy3qos8iN5iJnUO5Wg_8
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlaiIsImlkIjoxLCJpYXQiOjE2NjI2OTc4MzV9.y8CfYgG7a7l4rrxsTrecKpr1x_OIRtatkJwBaTZXGKc
 
 {
-    "disabled": false
+    "disabled": true
 }
