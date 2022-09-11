@@ -1417,6 +1417,30 @@ drop table notes;
 
 ---
 
+## [PART 11: CI/CD](https://fullstackopen.com/en/part11)
+
+<details><summary><h3 style="display:inline">Chapters</h3></summary>
+<details><summary>Part 11-a: Introduction to CI/CD</summary>
+
+- [Part 11-a: Introduction to CI/CD](https://fullstackopen.com/en/part11/introduction_to_ci_cd)
+
+**_WE-WILL-LEARN:_**
+
+**_LECTURE-VIDEO:_**
+
+- []()
+  1.
+- []()
+
+**_TO-DO:_**
+
+- [11.1](https://fullstackopen.com/en/part11/introduction_to_ci_cd#exercise-11-1)
+
+</details>
+</details>
+
+---
+
 <details><summary>TEMPLATE</summary>
 
 <details><summary>Part -: </summary>
