@@ -1322,7 +1322,7 @@ drop table notes;
 
 **_LECTURE-VIDEO:_**
 
-- [Data migration the proper way]()
+- [Data migration the proper way](https://youtu.be/prlMOesbfik)
   1. create the initial data migration script
   - create the file `migrations/20220909_00_initialize_notes_and_users.js`
   2. write code to run migrations
@@ -1332,7 +1332,7 @@ drop table notes;
   3. run the first migration
   - drop all existing tables
   - start the node server
-- [Admin user and user disabling]()
+- [Admin user and user disabling](https://youtu.be/qTSmknqD4UQ)
   1. create a user
   2. create a few notes
   3. stop the server
@@ -1361,7 +1361,7 @@ drop table notes;
   - modify `util/db` to put rollback function
   - create `util/rollback.js` that calls the rollback function
   - add script in package.json to run the rollback file
-- [Creating many-to-many relationship to allow users to be part of multiple teams]()
+- [Creating many-to-many relationship to allow users to be part of multiple teams](https://youtu.be/JSLG9b16hqY)
 
   1. create migration for `teams` and `memberships` tables
   2. make models form `Team` and `Membership` to reflect updated schema
@@ -1385,7 +1385,7 @@ drop table notes;
 
   8. creating new return object when required shape is different from object returned by database
 
-- [Revisiting many-to-many relationships]()
+- [Revisiting many-to-many relationships](https://youtu.be/8q6XPXAFsos)
   1. create migration for `user_notes` through table to associate many users with many notes
   2. create `user_note` model
   3. modify `models/index` for the many to many relation
