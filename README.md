@@ -1426,11 +1426,39 @@ drop table notes;
 
 **_WE-WILL-LEARN:_**
 
+- Software development life cycle
+- Meaning of CI / CD
+
 **_LECTURE-VIDEO:_**
 
-- []()
-  1.
-- []()
+- [Software journey from development to production]()
+  1. Follow the [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) for software development
+  - create a feature branch
+  - complete coding and testing the feature
+  - create a `Pull request` to the main branch
+    - another user checks the code, and merges to the main branch
+  2. Build the application to make it ready for `deploying` to server
+  3. `Deploy` the code to production
+- [CI / CD]()
+  1. CI: `Continuous Integration` refers to merging developer changes to the main branch. This involves:
+  - `merging` feature branch to main branch
+  - `lint`
+  - `build`: e.g. build the frontend code and put it in static folder of backend repository
+  - `test`: run all frontend/backend jest, cypress tests to make sure they pass
+  - `package`: e.g. create a zip file of part3/notes-server with `ALL` required code files including `node_modules`
+  - `deploy`: e.g. ftp the zip file to production server, unzip it, and restart the node server
+  2. CD: could mean `Continuous Delivery` or `Continuous Deployment`
+  - the practice where the main branch is kept deployable at all times
+  - automated deployments triggered from merges into the main branch
+  3. `Important principals`: The goal is better, faster software development with fewer preventable bugs and better team cooperation
+  - How to make sure that tests run on all code that will be deployed?
+  - How to make sure that the main branch is deployable at all times?
+  - How to ensure that builds will be consistent and will always work on the platform it'd be deploying to?
+  - How to make sure that the changes don't overwrite each other?
+  - How to make deployments happen at the click of a button or automatically when one merges to the main branch?
+  4. Types of CI Setup
+  - Self hosted setup, e.g. Jenkins
+  - Cloud based solution, e.g. GitHub Actions
 
 **_TO-DO:_**
 
