@@ -32,7 +32,8 @@ router.get("/", async (req, res) => {
       },
     ],
   });
-  res.json(users);
+  let usersWithNotes = await User.with_notes(0);
+  res.json({ ...users, usersWithNotes });
 });
 
 router.post("/", async (req, res) => {
@@ -58,7 +59,8 @@ router.get("/:id", async (req, res) => {
         joinTableAttributes: [],
       });
     }
-    res.json({ ...user.toJSON(), teams });
+    let noteNumber = await user.number_of_notes();
+    res.json({ ...user.toJSON(), noteNumber, teams });
   } else {
     res.status(404).end();
   }
