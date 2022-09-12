@@ -1465,6 +1465,51 @@ drop table notes;
 - [11.1](https://fullstackopen.com/en/part11/introduction_to_ci_cd#exercise-11-1)
 
 </details>
+
+<details><summary>Part 11-b: Getting started with GitHub Actions</summary>
+
+- [Part 11-b: Getting started with GitHub Actions](https://fullstackopen.com/en/part11/getting_started_with_git_hub_actions)
+
+**_WE-WILL-LEARN:_**
+
+- How to create GitHub Action
+
+**_LECTURE-VIDEO:_**
+
+- [Creating a GitHub Action]()
+  1. be aware of the [basic needs](https://fullstackopen.com/en/part11/getting_started_with_git_hub_actions#basic-needs) required to create CI operation
+  2. create the folder `.github/workflows` in the root of the repository
+  3. create a `workflow` file `hello.yml` inside `.github/workflows` directory
+  4. put the workflow code in [YAML](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html) with the following elements:
+  - **name**: identifier for the workflow
+  - **on**: the [event that will trigger the workflow](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows) to be executed
+  - **jobs**: one or more `jobs` (series of steps) to be executed in the workflow
+  5. commit & push
+  6. check the `Actions` tab in GiHub to see the workflow
+  7. add step to list the files
+  - you can configure a GitHub action workflow to start once:
+    - An event on GitHub occurs such as when someone pushes a commit to a repository or when an issue or pull request is created
+    - A scheduled event, that is specified using the cron-syntax, happens
+    - An external event occurs, for example, a command is performed in an external application such as Slack or Discord messaging app
+- [Setting up lint, test and build steps]()
+  1. create new workflow file `pipeline.yml`
+  2. add new workflow code
+  3. create a job
+  - setup environment to run the job
+  - add step to checkout the code
+  - add step to setup node
+  - add step to run npm install (you can set working-directory if required)
+  - add step to run linting (you can set working-directory if required)
+  4. commit and push code
+
+**_TO-DO:_**
+
+- [11.2](https://fullstackopen.com/en/part11/getting_started_with_git_hub_actions#exercise-11-2)
+- [11.3-11.4](https://fullstackopen.com/en/part11/getting_started_with_git_hub_actions#exercises-11-3-11-4)
+- [11.5-11.9](https://fullstackopen.com/en/part11/getting_started_with_git_hub_actions#exercises-11-5-11-9)
+
+</details>
+
 </details>
 
 ---
