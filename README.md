@@ -1431,7 +1431,7 @@ drop table notes;
 
 **_LECTURE-VIDEO:_**
 
-- [Software journey from development to production]()
+- [Software journey from development to production](https://youtu.be/lur5tfxqJT4)
   1. Follow the [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) for software development
   - create a feature branch
   - complete coding and testing the feature
@@ -1439,7 +1439,7 @@ drop table notes;
     - another user checks the code, and merges to the main branch
   2. Build the application to make it ready for `deploying` to server
   3. `Deploy` the code to production
-- [CI / CD]()
+- [CI / CD](https://youtu.be/lur5tfxqJT4)
   1. CI: `Continuous Integration` refers to merging developer changes to the main branch. This involves:
   - `merging` feature branch to main branch
   - `lint`
