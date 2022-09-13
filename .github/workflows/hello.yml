@@ -12,8 +12,6 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
-    steps:
       - name: Listing the files
         run: |
           ls -l
-          
