@@ -1476,7 +1476,7 @@ drop table notes;
 
 **_LECTURE-VIDEO:_**
 
-- [Creating a GitHub Action]()
+- [Creating a GitHub Action](https://youtu.be/O4DycKA88kI)
   1. be aware of the [basic needs](https://fullstackopen.com/en/part11/getting_started_with_git_hub_actions#basic-needs) required to create CI operation
   2. create the folder `.github/workflows` in the root of the repository
   3. create a `workflow` file `hello.yml` inside `.github/workflows` directory
@@ -1491,7 +1491,7 @@ drop table notes;
     - An event on GitHub occurs such as when someone pushes a commit to a repository or when an issue or pull request is created
     - A scheduled event, that is specified using the cron-syntax, happens
     - An external event occurs, for example, a command is performed in an external application such as Slack or Discord messaging app
-- [Setting up lint, test and build steps]()
+- [Setting up lint, test and build steps](https://youtu.be/uWrCIJZc3T4)
   1. create new workflow file `pipeline.yml`
   2. add new workflow code
   3. create a job
@@ -1507,6 +1507,27 @@ drop table notes;
 - [11.2](https://fullstackopen.com/en/part11/getting_started_with_git_hub_actions#exercise-11-2)
 - [11.3-11.4](https://fullstackopen.com/en/part11/getting_started_with_git_hub_actions#exercises-11-3-11-4)
 - [11.5-11.9](https://fullstackopen.com/en/part11/getting_started_with_git_hub_actions#exercises-11-5-11-9)
+
+</details>
+
+<details><summary>Part 11-c: Deployment</summary>
+
+- [Part 11-c: Deployment](https://fullstackopen.com/en/part11/deployment)
+
+**_WE-WILL-LEARN:_**
+
+**_LECTURE-VIDEO:_**
+
+- []()
+  1. good rules for CI / CD
+  - expect anything that can go wrong to go wrong
+  - silent failures are very bad
+  2. read what a [good deployment system should do](https://fullstackopen.com/en/part11/deployment#what-does-a-good-deployment-system-do)
+- []()
+
+**_TO-DO:_**
+
+- [11.10-11.12](https://fullstackopen.com/en/part11/deployment#exercises-11-10-11-12)
 
 </details>
 
