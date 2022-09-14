@@ -1533,6 +1533,57 @@ drop table notes;
 
 </details>
 
+<details><summary>Part 11-d: Keeping green</summary>
+
+- [Part 11-d: Keeping green](https://fullstackopen.com/en/part11/keeping_green)
+
+**_WE-WILL-LEARN:_**
+
+- Put conditions for executing Github Actions
+- Versioning git repositories
+
+**_LECTURE-VIDEO:_**
+
+- [Workflow in Pull Requests]()
+  1. keep the main branch green
+  2. usage of pull requests
+  - for code review
+  - automate trigger of tasks in the CI pipeline
+  3. configure GitHub action to trigger on PR
+  - NOTE!! make sure your `PR` is from your feature branch to YOUR main branch
+  4. put condition on `deploy` step to only execute on certain `github.event_name` condition
+- [About versioning]()
+  1. types of versioning
+  - semantic versioning: {major}.{minor}.{patch} (e.g. 1.2.23)
+  - hash versioning: is the hash from the commit point
+  2. ways to keep track of versions
+  - something in the code itself (e.g. a file in the repo with version number)
+  - something in the repo or repo metadata (e.g. `tags` or `releases` in git)
+  - something completely outside the repo (e.g. a spreadsheet that lists the Semantic Version and the commit it points to)
+  3. best versioning workflow:
+  - CI system keeps track of development by hash versioning
+  - once code is successfully merged to main branch, then CI system gives a semantic version
+  4. use [anothrNick/github-tag-action](https://github.com/anothrNick/github-tag-action) for automating semantic versioning in GitHub Actions
+  - put it in a separate job
+  - use the `needs` keyword to make this job depend on the previous job, `simple_deployment_pipeline`
+  - only run this job on PR merge
+  - checkout the code in the first step
+  - in the tag step
+    - change the default bump to `patch`
+    - add token for authentication in your repository, as the action is third-party which needs authentication
+    - only run the step if the commit message does not contain `#skip`
+- [Final notes]()
+  1. when using third party actions, e.g. github-tag-action, it might be a good idea to specify the used version with hash instead of using a version number
+  2. keep the main branch protected
+
+**_TO-DO:_**
+
+- [11.13-11.14](https://fullstackopen.com/en/part11/keeping_green#exercises-11-13-11-14)
+- [11.15-11.16](https://fullstackopen.com/en/part11/keeping_green#exercises-11-15-11-16)
+- [11.17](https://fullstackopen.com/en/part11/keeping_green#exercise-11-17)
+
+</details>
+
 </details>
 
 ---
