@@ -1516,6 +1516,8 @@ drop table notes;
 
 **_WE-WILL-LEARN:_**
 
+- deployment
+
 **_LECTURE-VIDEO:_**
 
 - []()
