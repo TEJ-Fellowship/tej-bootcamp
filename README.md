@@ -1520,7 +1520,7 @@ drop table notes;
 
 **_LECTURE-VIDEO:_**
 
-- []()
+- [How to deploy in CI / CD](https://youtu.be/V6-LolcWCuA)
   1. good rules for CI / CD
   - expect anything that can go wrong to go wrong
   - silent failures are very bad
