@@ -1584,17 +1584,37 @@ drop table notes;
 
 </details>
 
-<details><summary>Part-e: Expanding Further</summary>
+<details><summary>Part 11-e: Expanding Further</summary>
 
-- [Part-e: Expanding Further](https://fullstackopen.com/en/part11/expanding_further)
+- [Part 11-e: Expanding Further](https://fullstackopen.com/en/part11/expanding_further)
 
 **_WE-WILL-LEARN:_**
 
 **_LECTURE-VIDEO:_**
 
-- []()
-  1.
-- []()
+- [Additional usage of CI pipelines]()
+  1. use commit comments to automate bug tracking systems
+  2. automate communications based on CI status
+  3. steps to build discord success/failure notification to discord
+  - use GitHub action [discord-webhook-notify](https://github.com/marketplace/actions/discord-webhook-notify) to send notification to [University of Helsinki discord channel - fullstack_webhook](https://study.cs.helsinki.fi/discord/join/fullstack) using [their webhook](https://discord.com/api/webhooks/905102634300637195/G6o7r15r3rO5PO7IFw0xaiJ79oYO0QttiXFU9Ab5hr_McBWZDXjJCoAJSkH4VRj3V3uC)
+    - a success indication if a new version gets deployed
+    - an error indication if a build fails
+  4. **regarding metrics** - keep metrics of build time so that you can
+  - project future build times
+  - see if there are any sudden build time changes
+  5. **periodic tasks** - automate with either commonly available tools, or, if not available, build automation yourself. you can schedule through GitHub Actions
+  6. **building vs buying** - it's almost always better to use a tool that already does the job than to roll your own solution
+  7. creating your own pipeline
+  - create a new repo
+  - includ phonebook server code into `server` folder
+  - put phonebook frontend into `client` folder
+  - make sure that `MONGODB_URI` env is entered into heroku `config vars`
+  - make sure `HEROKU_API_KEY` is entered as github actions secret
+  - make sure that the build script in `package.json` is named `build`
+    - it should build to a folder that is referred from the backend's `express.static`
+  8. protect your `main` branch
+  - require a pull request. make sure approval is required
+  - do not allow bypassing even for administrators
 
 **_TO-DO:_**
 
