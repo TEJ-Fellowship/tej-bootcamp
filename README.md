@@ -1584,6 +1584,25 @@ drop table notes;
 
 </details>
 
+<details><summary>Part-e: Expanding Further</summary>
+
+- [Part-e: Expanding Further](https://fullstackopen.com/en/part11/expanding_further)
+
+**_WE-WILL-LEARN:_**
+
+**_LECTURE-VIDEO:_**
+
+- []()
+  1.
+- []()
+
+**_TO-DO:_**
+
+- [11.18](https://fullstackopen.com/en/part11/expanding_further#exercise-11-18)
+- [11.19-11.21](https://fullstackopen.com/en/part11/expanding_further#exercises-11-19-11-21)
+
+</details>
+
 </details>
 
 ---
