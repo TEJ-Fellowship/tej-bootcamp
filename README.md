@@ -1544,7 +1544,7 @@ drop table notes;
 
 **_LECTURE-VIDEO:_**
 
-- [Workflow in Pull Requests]()
+- [Workflow in Pull Requests](https://youtu.be/Ibit4QxIF_c)
   1. keep the main branch green
   2. usage of pull requests
   - for code review
@@ -1552,7 +1552,7 @@ drop table notes;
   3. configure GitHub action to trigger on PR
   - NOTE!! make sure your `PR` is from your feature branch to YOUR main branch
   4. put condition on `deploy` step to only execute on certain `github.event_name` condition
-- [About versioning]()
+- [About versioning](https://youtu.be/vNb-0_FDa0A)
   1. types of versioning
   - semantic versioning: {major}.{minor}.{patch} (e.g. 1.2.23)
   - hash versioning: is the hash from the commit point
@@ -1572,7 +1572,7 @@ drop table notes;
     - change the default bump to `patch`
     - add token for authentication in your repository, as the action is third-party which needs authentication
     - only run the step if the commit message does not contain `#skip`
-- [Final notes]()
+- [Final notes](https://youtu.be/vNb-0_FDa0A?t=1083)
   1. when using third party actions, e.g. github-tag-action, it might be a good idea to specify the used version with hash instead of using a version number
   2. keep the main branch protected
 
