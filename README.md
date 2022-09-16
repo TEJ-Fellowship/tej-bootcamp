@@ -1592,7 +1592,7 @@ drop table notes;
 
 **_LECTURE-VIDEO:_**
 
-- [Additional usage of CI pipelines]()
+- [Additional usage of CI pipelines](https://youtu.be/AOUNtGhznR4)
   1. use commit comments to automate bug tracking systems
   2. automate communications based on CI status
   3. steps to build discord success/failure notification to discord
