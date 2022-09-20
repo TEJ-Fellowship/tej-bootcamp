@@ -1627,29 +1627,86 @@ drop table notes;
 
 ---
 
-<details><summary>TEMPLATE</summary>
+## 💚 Senior Phase
 
-<details><summary>Part -: </summary>
+The senior phase will focus on alrogithms and projects
 
-**_TO-STUDY:_**
+## WEEK 1
 
-**_PRE-WORK:_**
+<details><summary><h3 style="display:inline">Days</h3></summary>
+<details><summary>Day 1</summary>
 
-- [PART -: ]()
+**_WE-WILL-LEARN:_**
 
-**_TO-LEARN:_**
+- Algorithms
+  - Linear search
+  - Binary search algorithm
+  - Two crystal ball
+  - Bubble sort
+- REACTO
+- Big O
+- System design an ATM Machine
 
-**Side notes**
+**_INTERVIEWING USING REACTO_**
 
-**_LECTURE-VIDEO:_**
+- Read
+  - ask clarifying questions
+  - confirm your assumptions with the interviewer
+- Example
+  - write down example
+  - happy case
+  - edge case
+  - for arrays, always ask
+  1. is it sorted
+  2. can there be duplicates
+- Analyze
+  - talk to interviewer about happy case / edge case and analyze solving the happy case first, which most likely will be the naive solution
+  - talk about the Big(O) of the solution
+    - time complexity
+    - space complexity
+- Code it completely
+- Test it using the simple example
+- Optimize it if possible. but since you have done naive solution already, there isn't pressure to complete it
 
-- []()
+**_BIG O NOTATION_**
+
+[Big O](https://theprimeagen.github.io/fem-algos/lessons/algorithms-and-time-space-complexity/time-and-space-complexity) is a way to categorize your algorithms time or memory requirements based on input. It is not meant to be an exact measurement. It will not tell you how many CPU cycles it takes, instead it is meant to generalize the growth of your algorithm.
+
+1. Big O of time
+
+- O(N) - if there is one loop through the input
+- O(N^2) - if there is nested loop through the input
+- O(log N) - if the input is halved in each step
+- O(N log N) - if the input is halved in each step
+
+2. Big O of space
+
+- how much memory is the algorithm going to consume?
+- generally, not much focus will be put on this
+- it only comes into focus when using hashing function
+
+### While calculating Big O
+
+1. look for loops!
+1. growth is with respect to the input
+1. Constants are dropped
+1. Worst case is usually the way we measure
+
+### System design
+
+[System design document]
 
 **_TO-DO:_**
 
-- [.-.]()
+- REACTO interview problems
+- System design the Phonebook
 
 </details>
+</details>
+
+---
+
+<details><summary>TEMPLATE</summary>
 
 <details><summary>Part : </summary>
 
