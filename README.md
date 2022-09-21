@@ -1633,14 +1633,16 @@ The senior phase will focus on alrogithms and projects
 
 ## WEEK 1
 
-<details><summary><h3 style="display:inline">Days</h3></summary>
-<details><summary>Day 1</summary>
+<details>
+<summary><h3 style="display:inline">Days</h3></summary>
+<details>
+<summary>Day 1</summary>
 
 **_WE-WILL-LEARN:_**
 
 - Algorithms
   - Linear search
-  - Binary search algorithm
+  - Binary search
   - Two crystal ball
   - Bubble sort
 - REACTO
@@ -1654,52 +1656,74 @@ The senior phase will focus on alrogithms and projects
   - confirm your assumptions with the interviewer
 - Example
   - write down example
-  - happy case
-  - edge case
+    - one simple case
+    - edge cases (many, if you can think of)
   - for arrays, always ask
-  1. is it sorted
-  2. can there be duplicates
+    - is it sorted
+    - can there be duplicates
 - Analyze
-  - talk to interviewer about happy case / edge case and analyze solving the happy case first, which most likely will be the naive solution
+  - tell your interviewer that you are going to analyze the simpe case first. think aloud to the interviewer as you are analyzing the simple case solution. let her hear all your thoughts; don't just analyze in your mind. come out with the solution that you are able to think of right away, don't try to be clever to come up with the optimal solution in the first go. it is ok if it is a naive solution
   - talk about the Big(O) of the solution
     - time complexity
     - space complexity
 - Code it completely
 - Test it using the simple example
-- Optimize it if possible. but since you have done naive solution already, there isn't pressure to complete it
+  - then test for some of the edge cases, and see if you need to modify code for it
+- Optimize solution if possible. but since you have done naive solution already, there isn't pressure to complete it
 
 **_BIG O NOTATION_**
 
-[Big O](https://theprimeagen.github.io/fem-algos/lessons/algorithms-and-time-space-complexity/time-and-space-complexity) is a way to categorize your algorithms time or memory requirements based on input. It is not meant to be an exact measurement. It will not tell you how many CPU cycles it takes, instead it is meant to generalize the growth of your algorithm.
+[Big O](https://theprimeagen.github.io/fem-algos/lessons/algorithms-and-time-space-complexity/time-and-space-complexity) is a way to categorize your algorithm's time or memory requirements based on input. It is not meant to be an exact measurement. It will not tell you how many CPU cycles it takes, instead it is meant to generalize the growth of your algorithm.
 
-1. Big O of time
-
-- O(N) - if there is one loop through the input
-- O(N^2) - if there is nested loop through the input
-- O(log N) - if the input is halved in each step
-- O(N log N) - if the input is halved in each step
-
-2. Big O of space
-
-- how much memory is the algorithm going to consume?
-- generally, not much focus will be put on this
-- it only comes into focus when using hashing function
+- Big O of time
+  - O(N) - if there is one loop through the input
+  - O(N^2) - if there is nested loop through the input
+  - O(log N) - if the input is halved in each step
+  - O(N log N) - if the input is halved in each step
+- Big O of space
+  - how much memory is the algorithm going to consume?
+  - generally, not much focus will be put on this
+  - it only comes into focus when using hashing function
 
 ### While calculating Big O
 
 1. look for loops!
 1. growth is with respect to the input
-1. Constants are dropped
-1. Worst case is usually the way we measure
+1. constants are dropped
+1. worst case is usually the way we measure
 
-### System design
+**_WEB APP DESIGN_**
 
-[System design document]
+1. requirements, user stories
+
+- As a `<persona>`, I want to `<do something>` so that `<reason>`
+  - example: as a `phonebook owner`, I want to see all of my contacts, so that I can see their phone number
+
+2. implementation detail
+
+- How you will actually fulfill a user story
+- Split each story into specific, bite-size tasks (implementation detail)
+  - Should always serve a user story
+- examples:
+  - an Express route on the backend
+    (GET `/api/contacts`) should serve up the name,
+    phone number of all the contacts from our Postgres database. access should be restricted to only the owner of the contact.
+  - a React component on the frontend should call `/api/contacts` on first load, save it on redux, and use contacts from redux to display them on the screen
+
+3. models
+
+- list all the different models you will need, e.g. `users`, `contacts`
+- write down all the fields for the models
+- draw connections between models, e.g. one-to-one, one-to-many etc
+
+4. wireframes
+
+- rough mockups for all the frontend screens
 
 **_TO-DO:_**
 
 - REACTO interview problems
-- System design the Phonebook
+- Web app design for Blogslist
 
 </details>
 </details>
