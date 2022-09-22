@@ -1726,6 +1726,24 @@ The senior phase will focus on alrogithms and projects
 - Web app design for Blogslist
 
 </details>
+
+<details><summary>Day 2</summary>
+
+[Grace Shopper](./e-commerce/grace_shopper.pdf)
+
+**_WE-WILL-LEARN:_**
+
+- Getting started with e-commerce project
+
+**_TO-DO:_**
+
+- gather user stories
+- models
+- implementation details
+- wireframes
+
+</details>
+
 </details>
 
 ---
