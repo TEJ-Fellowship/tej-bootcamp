@@ -63,10 +63,11 @@ _Instructions for TO-DO_
 pure react, modern react dev setup, component, state, event handler
 
 <details><summary><h3 style="display:inline">Chapters</h3></summary>
+<details><summary>Part 1-a: Introduction to React</summary>
 
-<details><summary>Part 1-a</summary>
+- [Part 1-a: Introduction to React](https://fullstackopen.com/en/part1/introduction_to_react)
 
-**_TO-LEARN:_**
+**_WE-WILL-LEARN:_**
 
 - pure react
 - modern react dev setup
@@ -84,6 +85,22 @@ pure react, modern react dev setup, component, state, event handler
 **_LECTURE-VIDEO:_**
 
 - [Pure react](https://youtu.be/Pzkcxt9j23U)
+  1. Create folder structure and files
+  - mkdir pure-react
+
+_Instructions for the `workshops` shown in the `LECTURE-VIDEO`s_
+
+1. Create a new repository called `fullstackopen-workshops`
+   - create the repository in your local computer
+   - create a repository in github to push your local `fullstackopen-workshops`
+   - create a folder called `part1` inside `fullstackopen-workshops`
+2. Please do the workshop at least once by yourself
+   - read notes under `LECTURE-VIDEO` section
+   - watch the lecture-video (if required)
+   - read the material (if required)
+   - then put today's workshop inside the `part1` folder
+   - look at source code from lecture in [`part1-a` branch]
+   - continue future workshops under appropriate folder structures
 
 **_TO-DO:_**
 
@@ -93,10 +110,11 @@ _Instructions for TO-DO_
 
 1. in the `fullstackopen` repository, create a folder called `part1` inside `fullstackopen`
 1. create folder called `courseinfo` inside of `part1` to put your code for exercise 1.1-1.2
-   - You can create `courseinfo` project either by using `parcel`, as we did for the class today. You can clone this [starter kit](https://github.com/TEJ-Fellowship/react-start-kit)
+   - You can create `courseinfo` project either by using `vite`, as we did for the class today. You can clone this [starter kit](https://github.com/TEJ-Fellowship/react-start-kit)
    - Or you can create `courseinfo` project using `create-react-app` as described in the [`introduction to react`](https://fullstackopen.com/en/part1/introduction_to_react) section of the course
 
-_note_: You will need to delete the `.git` directory inside the clone
+_note-1_: If you are cloning the starter kit, delete the `.git` directory inside the clone.
+_note-2_: See this [example exercise repository](https://github.com/fullstack-hy2020/example-submission-repository) for folder structure. Further details can be found with the [exercise instructions](https://fullstackopen.com/en/part1/introduction_to_react#exercises-1-1-1-2)
 
 </details>
 
