@@ -7,7 +7,7 @@ The junior phase will comprise of 10 sections, with each section taking roughly 
 ### Course material
 
 - Our main curriculum will follow the [Fullstack open curriculum](https://fullstackopen.com/en/) from the University of Helsinki
-- For our intro on pure react & tooling, we will follow the 'No frills react' and 'JS tools' chapters from [Complete Intro to React v7](https://btholt.github.io/complete-intro-to-react-v7) by Brian Holt
+- For our intro on pure react & tooling, we will follow the 'No frills react' and 'JS tools' chapters from [Complete Intro to React v8](https://react-v8.holt.courses/) by Brian Holt
 
 <details><summary>Useful links: Click to open</summary>
 
@@ -77,8 +77,8 @@ pure react, modern react dev setup, component, state, event handler
 
 **_TO-STUDY:_**
 
-- [Complete Intro to React v7: Pure react](https://btholt.github.io/complete-intro-to-react-v7/lessons/no-frills-react/pure-react)
-- [Complete Intro to React v7: JS tools](https://btholt.github.io/complete-intro-to-react-v7/lessons/js-tools/npm)
+- [Complete Intro to React v8: Pure react](https://react-v8.holt.courses/lessons/no-frills-react/pure-react)
+- [Complete Intro to React v8: JS tools](https://react-v8.holt.courses/lessons/js-tools/npm)
 - [PART 1-a: Intro to React](https://fullstackopen.com/en/part1/introduction_to_react)
 
 **_LECTURE-VIDEO:_**
