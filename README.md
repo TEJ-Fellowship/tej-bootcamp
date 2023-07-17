@@ -63,10 +63,11 @@ _Instructions for TO-DO_
 pure react, modern react dev setup, component, state, event handler
 
 <details><summary><h3 style="display:inline">Chapters</h3></summary>
+<details><summary>Part 1-a: Introduction to React</summary>
 
-<details><summary>Part 1-a</summary>
+- [Part 1-a: Introduction to React](https://fullstackopen.com/en/part1/introduction_to_react)
 
-**_TO-LEARN:_**
+**_WE-WILL-LEARN:_**
 
 - pure react
 - modern react dev setup
@@ -84,6 +85,50 @@ pure react, modern react dev setup, component, state, event handler
 **_LECTURE-VIDEO:_**
 
 - [Pure react](https://youtu.be/Pzkcxt9j23U)
+  1. Create folder structure and files
+  - create folder `pure-react`, then `src` inside it
+  2. Create `index.html` inside `src`
+  - add script tag for React, ReactDOM, and index.js
+  3. Create `index.js` inside `src`
+  - use `ReactDOM.createRoot`, `React.createElement`, and `render` to create web application using pure react
+- [Tooling with npm, prettier, eslint, vite]()
+  1. Create folder structure and files
+  - create folder `tooling`, then copy `src` from `pure-react`
+  2. Toolings
+  - create npm project by `npm init -y`
+  - install Dev prettier, eslint, vite
+  - setup config for prettier, eslint, and vite
+  - install react, react-dom
+- [Convert pure react to dev environment running from vite]()
+  1. move react and react-dom libraries to index.js
+  2. use `type="module"` in index.html
+  3. create vite scripts in package.json for `dev`, `build`, and `preview`
+- [Using JSX]()
+  1. move components `App` and `Hello` to individual files
+  - remember to import and export required things
+  - make sure to start component name with `Capital`
+  2. convert `React.createElement` to JSX
+  - rename all files with JSX to `.jsx` extension from `.js`
+  - remove the imports that are not required for JSX
+  3. configure eslint to understand react and JSX
+  - `npm i -D eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react`
+  - update eslint config
+  4. please read [Some notes](https://fullstackopen.com/en/part1/introduction_to_react#some-notes) section for common errors to avoid
+  5. what can you [render](https://fullstackopen.com/en/part1/introduction_to_react#do-not-render-objects) in JSX?
+
+_Instructions for the `workshops` shown in the `LECTURE-VIDEO`s_
+
+1. Create a new repository called `fullstackopen-workshops`
+   - create the repository in your local computer
+   - create a repository in github to push your local `fullstackopen-workshops`
+   - create a folder called `part1` inside `fullstackopen-workshops`
+2. Please do the workshop at least once by yourself
+   - read notes under `LECTURE-VIDEO` section
+   - watch the lecture-video (if required)
+   - read the material (if required)
+   - then put today's workshop inside the `part1` folder
+   - refer to source code from lecture in [`part1-a` branch](https://github.com/TEJ-Fellowship/tej-bootcamp/tree/part1-a/part1/pure-react) if needed
+   - continue future workshops under appropriate folder structures
 
 **_TO-DO:_**
 
@@ -93,10 +138,11 @@ _Instructions for TO-DO_
 
 1. in the `fullstackopen` repository, create a folder called `part1` inside `fullstackopen`
 1. create folder called `courseinfo` inside of `part1` to put your code for exercise 1.1-1.2
-   - You can create `courseinfo` project either by using `parcel`, as we did for the class today. You can clone this [starter kit](https://github.com/TEJ-Fellowship/react-start-kit)
+   - You can create `courseinfo` project either by using `vite`, as we did for the class today. You can clone this [starter kit](https://github.com/TEJ-Fellowship/react-start-kit)
    - Or you can create `courseinfo` project using `create-react-app` as described in the [`introduction to react`](https://fullstackopen.com/en/part1/introduction_to_react) section of the course
 
-_note_: You will need to delete the `.git` directory inside the clone
+_note-1_: If you are cloning the starter kit, delete the `.git` directory inside the clone.
+_note-2_: See this [example exercise repository](https://github.com/fullstack-hy2020/example-submission-repository) for folder structure. Further details can be found with the [exercise instructions](https://fullstackopen.com/en/part1/introduction_to_react#exercises-1-1-1-2)
 
 </details>
 
