@@ -165,10 +165,13 @@ _note-2_: See this [example exercise repository](https://github.com/fullstack-hy
   - copy the `src` files from [part1/tooling/src](https://github.com/TEJ-Fellowship/tej-bootcamp/tree/main/part1/tooling/src)
   2. In `App` create an array of objects of people to say hello to
   3. display hello to each person
-  - check if array is empty
-  - if empty, then display appropriate message
-  - if not empty, then for each element, call `SayHello` component through the `map` method on the array
-  - modify to call `filter` only for people over 23 years of age
+  - for each element in array, call `SayHello` component through the `map` method
+    - pass entire person object to `SayHello`
+    - in `SayHello`, destructure `props`
+  - is array is empty, display appropriate message
+    - use if else condition
+    - user ternary
+  - add `filter` method to say hello only to people with id greater than 2
 
 _Instructions for the `workshop` shown in the `LECTURE-VIDEO`_
 
