@@ -146,23 +146,40 @@ _note-2_: See this [example exercise repository](https://github.com/fullstack-hy
 
 </details>
 
-<details><summary>Part 1-b</summary>
+<details><summary>Part 1-b: Javascript</summary>
 
-**_TO-LEARN:_**
+- [Part 1-b: Javascript](https://fullstackopen.com/en/part1/java_script)
 
-- React concepts: component, JSX, props
+**_WE-WILL-LEARN:_**
 
-**_PRE-WORK:_**
-
-- master these Array methods: [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce), [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach), [Includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes), [Some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some), [Every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+- Javascript concepts
 
 **_TO-STUDY:_**
 
-- [PART 1-b: Javascript](https://fullstackopen.com/en/part1/java_script)
+- master these Array methods: [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce), [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach), [Includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes), [Some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some), [Every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
 **_LECTURE-VIDEO:_**
 
-- [Components with props, dev setup, JSX](https://youtu.be/xBJBrULUm0E)
+- [Array methods in React]()
+  1. Create a react project that displays Fellows
+  - create project `using-array` inside `part1`
+  - create components `App`, `Fellows`, `Fellow`
+  2. From `App` pass an array of objects to `Fellows`
+  3. From `Fellows`, display each `Fellow`
+  - check if array is empty
+  - if empty, then display appropriate message
+  - if not empty, then for each element, call `Fellow` component through the `map` method on the array
+  - modify to call `filter` only for Fellows over 23 years of age
+
+_Instructions for the `workshop` shown in the `LECTURE-VIDEO`_
+
+1. In the `fullstackopen-workshops` repository created in part1-a
+   - create the workshop project `using-array` inside the folder `part1`
+2. Please do the workshop at least once by yourself
+   - read notes under `LECTURE-VIDEO` section
+   - watch the lecture-video (if required)
+   - do today's workshop in the `using-array` folder
+   - refer to source code from lecture in [`part1-b` branch](https://github.com/TEJ-Fellowship/tej-bootcamp/tree/part1-b/part1/using-array) if needed
 
 **_TO-DO:_**
 
