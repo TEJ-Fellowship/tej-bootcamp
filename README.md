@@ -91,7 +91,7 @@ pure react, modern react dev setup, component, state, event handler
   - add script tag for React, ReactDOM, and index.js
   3. Create `index.js` inside `src`
   - use `ReactDOM.createRoot`, `React.createElement`, and `render` to create web application using pure react
-- [Tooling with npm, prettier, eslint, vite]()
+- [Tooling with npm, prettier, eslint, vite](https://youtu.be/wpMwRQcRF4w)
   1. Create folder structure and files
   - create folder `tooling`, then copy `src` from `pure-react`
   2. Toolings
