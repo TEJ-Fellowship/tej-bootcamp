@@ -91,7 +91,7 @@ pure react, modern react dev setup, component, state, event handler
   - add script tag for React, ReactDOM, and index.js
   3. Create `index.js` inside `src`
   - use `ReactDOM.createRoot`, `React.createElement`, and `render` to create web application using pure react
-- [Tooling with npm, prettier, eslint, vite](https://youtu.be/wpMwRQcRF4w)
+- [Tooling with npm, prettier, eslint, vite](https://youtu.be/JXvofCk2_gM)
   1. Create folder structure and files
   - create folder `tooling`, then copy `src` from `pure-react`
   2. Toolings
@@ -99,11 +99,11 @@ pure react, modern react dev setup, component, state, event handler
   - install Dev prettier, eslint, vite
   - setup config for prettier, eslint, and vite
   - install react, react-dom
-- [Convert pure react to dev environment running from vite]()
+- [Convert pure react to dev environment running from vite](https://youtu.be/JXvofCk2_gM?t=1552)
   1. move react and react-dom libraries to index.js
   2. use `type="module"` in index.html
   3. create vite scripts in package.json for `dev`, `build`, and `preview`
-- [Using JSX]()
+- [Using JSX](https://youtu.be/eG7UPaLh5WQ)
   1. move components `App` and `Hello` to individual files
   - remember to import and export required things
   - make sure to start component name with `Capital`
