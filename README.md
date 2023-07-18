@@ -84,7 +84,7 @@ pure react, modern react dev setup, component, state, event handler
 
 **_LECTURE-VIDEO:_**
 
-- [Pure react](https://youtu.be/Pzkcxt9j23U)
+- [Pure react](https://youtu.be/gjPQSF1GvRk)
   1. Create folder structure and files
   - create folder `pure-react`, then `src` inside it
   2. Create `index.html` inside `src`
