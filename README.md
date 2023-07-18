@@ -9,11 +9,10 @@ The junior phase will comprise of 10 sections, with each section taking roughly 
 - Our main curriculum will follow the [Fullstack open curriculum](https://fullstackopen.com/en/) from the University of Helsinki
 - For our intro on pure react & tooling, we will follow the 'No frills react' and 'JS tools' chapters from [Complete Intro to React v8](https://react-v8.holt.courses/) by Brian Holt
 
-<details><summary>Useful links: Click to open</summary>
+### Useful links
 
 - [git basics](https://git-scm.com/book/en/v2)
-
-</details>
+- [React project starter kit](https://github.com/TEJ-Fellowship/react-start-kit)
 
 ---
 
