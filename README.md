@@ -193,23 +193,32 @@ _Instructions for TO-DO_
 
 </details>
 
-<details><summary>Part 1-c</summary>
+<details><summary>Part 1-c: Component state, event handlers</summary>
 
-**_TO-LEARN:_**
-
-- stateful component
-- event handler
-
-**_TO-STUDY:_**
-
-- [PART 1-c: Component state, event handlers](https://fullstackopen.com/en/part1/component_state_event_handlers)
+- [Part 1-c: Component state, event handlers](https://fullstackopen.com/en/part1/component_state_event_handlers)
 
 **_LECTURE-VIDEO:_**
 
-- [Starting a react project](https://youtu.be/BGrie4SO-88)
 - [Component manual re-render](https://youtu.be/6RCRVL7Z-Nc)
+  1. Create a react project that updates the count
+  - create project `counter-app` inside `part1`
+  - create component `App`
+  2. Update the count in some set interval
+  - use `setInterval` to update count, and also call the render manually to re-render the app
 - [React state](https://youtu.be/uCGdWjuhhg4)
+  1. Use `useState` hook to make a stateful component
+  - convert the counter to a state using `useState`
+  - refactor `setInterval` to use the stateful counter
+  - remove the manual call to render
 - [React event handling](https://youtu.be/x0vodxNdm0c)
+  1. add a button to increase the count
+  - add button element
+  - include an `onClick` event handler to the button. The event handler has to be a function, not function execution!
+  2. refactor components for display and button
+  - refactor `Display` component
+  - call `Display` from `App` and also pass it the counter state
+  - refactor `Button` component
+  - call it for plus, minus, and zero by passing appropriate event handlers
 
 **_TO-DO:_**
 
