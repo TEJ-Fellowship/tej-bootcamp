@@ -161,15 +161,15 @@ _note-2_: See this [example exercise repository](https://github.com/fullstack-hy
 **_LECTURE-VIDEO:_**
 
 - [Array methods in React]()
-  1. Create a react project that displays Fellows
+  1. Create a react project that says `hello` to many people
   - create project `using-array` inside `part1`
-  - create components `App`, `Fellows`, `Fellow`
-  2. From `App` pass an array of objects to `Fellows`
-  3. From `Fellows`, display each `Fellow`
+  - copy the `src` files from [part1/tooling/src](https://github.com/TEJ-Fellowship/tej-bootcamp/tree/main/part1/tooling/src)
+  2. In `App` create an array of objects of people to say hello to
+  3. display hello to each person
   - check if array is empty
   - if empty, then display appropriate message
-  - if not empty, then for each element, call `Fellow` component through the `map` method on the array
-  - modify to call `filter` only for Fellows over 23 years of age
+  - if not empty, then for each element, call `SayHello` component through the `map` method on the array
+  - modify to call `filter` only for people over 23 years of age
 
 _Instructions for the `workshop` shown in the `LECTURE-VIDEO`_
 
