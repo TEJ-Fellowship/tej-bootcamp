@@ -164,11 +164,14 @@ _note-2_: See this [example exercise repository](https://github.com/fullstack-hy
   - create project `using-array` inside `part1`
   - copy the `src` files from [part1/tooling/src](https://github.com/TEJ-Fellowship/tej-bootcamp/tree/main/part1/tooling/src)
   2. In `App` create an array of objects of people to say hello to
+  - a person object can have the properties for `firstName`, `lastName`, `id` etc.
   3. display hello to each person
   - for each element in array, call `SayHello` component through the `map` method
     - pass entire person object to `SayHello`
     - in `SayHello`, destructure `props`
-  - is array is empty, display appropriate message
+    - write a component helper function to return combination of `firstName`, `lastName`
+    - use the helper function in the JSX returned by the component
+  - if array is empty, display appropriate message
     - use if else condition
     - user ternary
   - add `filter` method to say hello only to people with id greater than 2
@@ -216,9 +219,9 @@ _Instructions for TO-DO_
   - include an `onClick` event handler to the button. The event handler has to be a function, not function execution!
   2. refactor components for display and button
   - refactor `Display` component
-  - call `Display` from `App` and also pass it the counter state
+    - call `Display` from `App` and also pass it the counter state
   - refactor `Button` component
-  - call it for plus, minus, and zero by passing appropriate event handlers
+    - call it for plus, minus, and zero by passing appropriate event handlers
 
 **_TO-DO:_**
 
