@@ -174,7 +174,20 @@ _note-2_: See this [example exercise repository](https://github.com/fullstack-hy
   - if array is empty, display appropriate message
     - use if else condition
     - user ternary
-  - add `filter` method to say hello only to people with id greater than 2
+
+```jsx
+return (
+  <div>
+    {peopleArray.length > 0 ? (
+      peopleArray.map((value) => <SayHello person={value} key={value.id} />)
+    ) : (
+      <h1>No records found</h1>
+    )}
+  </div>
+);
+```
+
+- add `filter` method to say hello only to people with id greater than 2
 
 _Instructions for the `workshop` shown in the `LECTURE-VIDEO`_
 
