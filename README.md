@@ -173,7 +173,7 @@ _note-2_: See this [example exercise repository](https://github.com/fullstack-hy
     - use the helper function in the JSX returned by the component
   - if array is empty, display appropriate message
     - use if else condition
-    - user ternary
+    - use ternary
 
 ```jsx
 return (
