@@ -218,13 +218,13 @@ _Instructions for TO-DO_
 - [Component manual re-render](https://youtu.be/6RCRVL7Z-Nc)
   1. Create a react project that updates the count
   - create project `counter-app` inside `part1`
-  - create component `App`
+  - create component `App` and jsx file `index.jsx`
   2. Update the count in some set interval
   - use `setInterval` to update count, and also call the render manually to re-render the app
 - [React state](https://youtu.be/uCGdWjuhhg4)
-  1. Use `useState` hook to make a stateful component
+  1. Use `useState` hook to make a stateful component inside `App` component
   - convert the counter to a state using `useState`
-  - refactor `setInterval` to use the stateful counter
+  - use `setTimeout` to call a function after 1 second that changes the value of `counter` state
   - remove the manual call to render
 - [React event handling](https://youtu.be/x0vodxNdm0c)
   1. add a button to increase the count
