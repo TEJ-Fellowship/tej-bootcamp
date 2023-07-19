@@ -159,7 +159,7 @@ _note-2_: See this [example exercise repository](https://github.com/fullstack-hy
 
 **_LECTURE-VIDEO:_**
 
-- [Array methods in React]()
+- [Array methods in React](https://youtu.be/ZlBX5Wh6dBE)
   1. Create a react project that says `hello` to many people
   - create project `using-array` inside `part1`
   - copy the `src` files from [part1/tooling/src](https://github.com/TEJ-Fellowship/tej-bootcamp/tree/main/part1/tooling/src)
