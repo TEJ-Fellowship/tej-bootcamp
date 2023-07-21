@@ -256,7 +256,17 @@ _Instructions for TO-DO_
 **_LECTURE-VIDEO:_**
 
 - [Using object, array in state]()
+  1. Create a copy of `counter-app` in `part1` directory
+  - first delete `node_modules` folder from `counter-app`
+  - `cp -r counter-app double-counter`
+  2. Put two counters
+  - put the state of the left and right counter in an object
+  - put the state of click history in an array
+  - lets put the total number of clicks in a state
 - [Conditional rendering in component]()
+  1. Create a new `History` component that shows the click history
+  2. Conditionally show the history only when there is history
+  - otherwise, show another message
 - [React debugging, and notes on hooks]()
   1. Do the following for debugging
   - console.log
