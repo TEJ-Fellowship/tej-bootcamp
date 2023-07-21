@@ -24,7 +24,7 @@ HTTP call
 
 <details><summary>Part 0-b</summary>
 
-**_TO-LEARN:_**
+**_WE-WILL-LEARN:_**
 
 - HTTP call
 
@@ -246,7 +246,7 @@ _Instructions for TO-DO_
 
 - [Part 1-d: Complex state, debugging React apps](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps)
 
-**_TO-LEARN:_**
+**_WE-WILL-LEARN:_**
 
 - a more complex state
   - array, object in state: don't mutate state!
@@ -295,13 +295,15 @@ Modules, forms, getting data from server, altering data in server
 
 <details><summary><h3 style="display:inline">Chapters</h3></summary>
 
-<details><summary>Part 2-a</summary>
+<details><summary>Part 2-a: Rendering a collection, modules</summary>
+
+- [Part 2-a: Rendering a collection, modules](https://fullstackopen.com/en/part2/rendering_a_collection_modules)
 
 **_PRE-WORK:_**
 
 - [watch at least first 3 parts of this youtube playlist](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
 
-**_TO-LEARN:_**
+**_WE-WILL-LEARN:_**
 
 - rendering collection [Array or Object]
   - don't mutate state! especially if state is Array or Object
@@ -330,7 +332,7 @@ Modules, forms, getting data from server, altering data in server
 
 <details><summary>Part 2-b</summary>
 
-**_TO-LEARN:_**
+**_WE-WILL-LEARN:_**
 
 **Main concepts**
 
@@ -364,7 +366,7 @@ Modules, forms, getting data from server, altering data in server
 
 <details><summary>Part 2-c</summary>
 
-**_TO-LEARN:_**
+**_WE-WILL-LEARN:_**
 
 - getting data from server
   - using [JSON Server](https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d) to simulate server
@@ -392,7 +394,7 @@ Modules, forms, getting data from server, altering data in server
 
 <details><summary>Part 2-d</summary>
 
-**_TO-LEARN:_**
+**_WE-WILL-LEARN:_**
 
 - understanding [REST](https://www.codecademy.com/article/what-is-crud)
   - routes
@@ -430,7 +432,7 @@ Modules, forms, getting data from server, altering data in server
 
 <details><summary>Part 2-e</summary>
 
-**_TO-LEARN:_**
+**_WE-WILL-LEARN:_**
 
 - adding styles to React app
   - importing style file into JS project
@@ -466,7 +468,7 @@ Modules, forms, getting data from server, altering data in server
 
 <details><summary>Part 3-a</summary>
 
-**_TO-LEARN:_**
+**_WE-WILL-LEARN:_**
 
 - creating a simple Node project that runs in Node environment
 - running a simple web server
@@ -534,7 +536,7 @@ Modules, forms, getting data from server, altering data in server
 
 - [PART 3-b: Deploying app to internet](https://fullstackopen.com/en/part3/deploying_app_to_internet)
 
-**_TO-LEARN:_**
+**_WE-WILL-LEARN:_**
 
 - [serving static files from server](https://fullstackopen.com/en/part3/deploying_app_to_internet#serving-static-files-from-the-backend)
 - [including frontend code on server](https://fullstackopen.com/en/part3/deploying_app_to_internet#frontend-production-build)
