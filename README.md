@@ -99,21 +99,21 @@ pure react, modern react dev setup, component, state, event handler
   - setup config for prettier, eslint, and vite
   - install react, react-dom
 - [Convert pure react to dev environment running from vite](https://youtu.be/JXvofCk2_gM?t=1552)
-  1. move react and react-dom libraries to index.js
-  2. use `type="module"` in index.html
-  3. create vite scripts in package.json for `dev`, `build`, and `preview`
+  1. Move react and react-dom libraries to index.js
+  2. Use `type="module"` in index.html
+  3. Create vite scripts in package.json for `dev`, `build`, and `preview`
 - [Using JSX](https://youtu.be/eG7UPaLh5WQ)
-  1. move components `App` and `Hello` to individual files
+  1. Move components `App` and `Hello` to individual files
   - remember to import and export required things
   - make sure to start component name with `Capital`
-  2. convert `React.createElement` to JSX
+  2. Convert `React.createElement` to JSX
   - rename all files with JSX to `.jsx` extension from `.js`
   - remove the imports that are not required for JSX
-  3. configure eslint to understand react and JSX
+  3. Configure eslint to understand react and JSX
   - `npm i -D eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react`
   - update eslint config
-  4. please read [Some notes](https://fullstackopen.com/en/part1/introduction_to_react#some-notes) section for common errors to avoid
-  5. what can you [render](https://fullstackopen.com/en/part1/introduction_to_react#do-not-render-objects) in JSX?
+  4. Please read [Some notes](https://fullstackopen.com/en/part1/introduction_to_react#some-notes) section for common errors to avoid
+  5. What can you [render](https://fullstackopen.com/en/part1/introduction_to_react#do-not-render-objects) in JSX?
 
 _Instructions for the `workshops` shown in the `LECTURE-VIDEO`s_
 
@@ -135,8 +135,8 @@ _Instructions for the `workshops` shown in the `LECTURE-VIDEO`s_
 
 _Instructions for TO-DO_
 
-1. in the `fullstackopen` repository, create a folder called `part1` inside `fullstackopen`
-1. create folder called `courseinfo` inside of `part1` to put your code for exercise 1.1-1.2
+1. In the `fullstackopen` repository, create a folder called `part1` inside `fullstackopen`
+2. Create folder called `courseinfo` inside of `part1` to put your code for exercise 1.1-1.2
    - You can create `courseinfo` project either by using `vite`, as we did for the class today. You can clone this [starter kit](https://github.com/TEJ-Fellowship/react-start-kit)
    - Or you can create `courseinfo` project using `create-react-app` as described in the [`introduction to react`](https://fullstackopen.com/en/part1/introduction_to_react) section of the course
 
@@ -165,13 +165,13 @@ _note-2_: See this [example exercise repository](https://github.com/fullstack-hy
   - copy the `src` files from [part1/tooling/src](https://github.com/TEJ-Fellowship/tej-bootcamp/tree/main/part1/tooling/src)
   2. In `App` create an array of objects of people to say hello to
   - a person object can have the properties for `firstName`, `lastName`, `id` etc.
-  3. display hello to each person
+  3. Display hello to each person
   - for each element in array, call `SayHello` component through the `map` method
     - pass entire person object to `SayHello`
     - in `SayHello`, destructure `props`
     - write a component helper function to return combination of `firstName`, `lastName`
     - use the helper function in the JSX returned by the component
-  - if array is empty, display appropriate message
+  - If array is empty, display appropriate message
     - use if else condition
     - use ternary
 
@@ -205,7 +205,7 @@ _Instructions for the `workshop` shown in the `LECTURE-VIDEO`_
 
 _Instructions for TO-DO_
 
-1. in the `fullstackopen/part1/courseinfo` repository, continue to put your code for exercise 1.3-1.5
+1. In the `fullstackopen/part1/courseinfo` repository, continue to put your code for exercise 1.3-1.5
 
 </details>
 
@@ -230,7 +230,7 @@ _Instructions for TO-DO_
   1. add a button to increase the count
   - add button element
   - include an `onClick` event handler to the button. The event handler has to be a function, not function execution!
-  2. refactor components for display and button
+  2. Refactor components for display and button
   - refactor `Display` component
     - call `Display` from `App` and also pass it the counter state
   - refactor `Button` component
@@ -242,7 +242,9 @@ _Instructions for TO-DO_
 
 </details>
 
-<details><summary>Part 1-d</summary>
+<details><summary>Part 1-d: Complex state, debugging React apps</summary>
+
+- [Part 1-d: Complex state, debugging React apps](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps)
 
 **_TO-LEARN:_**
 
@@ -251,15 +253,20 @@ _Instructions for TO-DO_
 - conditional rendering of component
 - debugging React apps
 
-**_TO-STUDY:_**
-
-- [PART 1-d: A more complex state, debugging React apps](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps)
-
 **_LECTURE-VIDEO:_**
 
-- [Using array in state](https://youtu.be/2F7NNlAe68g)
-- [Conditional rendering in component](https://youtu.be/uCGdWjuhhg4)
-- [React Class, debugging, and notes on hooks](https://youtu.be/a6VNdOtzd8w)
+- [Using object, array in state]()
+- [Conditional rendering in component]()
+- [React debugging, and notes on hooks]()
+  1. Do the following for debugging
+  - console.log
+  - debugger
+  - [React developer tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+  2. Rules of hooks (useState, useEffect etc.)
+  - only call hooks inside functional components
+  - do not call hooks from
+    - inside of a loop
+    - a conditional expression
 - [Exercise 1.1 to 1.14 guide](https://youtu.be/H18zHpNDKwg)
 
 **_TO-DO:_**
