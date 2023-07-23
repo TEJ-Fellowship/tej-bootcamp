@@ -293,6 +293,8 @@ _Instructions for TO-DO_
 
 Modules, forms, getting data from server, altering data in server
 
+You can refer to the workshop code solutions [here](https://github.com/fullstack-hy2020/part2-notes)
+
 <details><summary><h3 style="display:inline">Chapters</h3></summary>
 
 <details><summary>Part 2-a: Rendering a collection, modules</summary>
@@ -309,6 +311,8 @@ Modules, forms, getting data from server, altering data in server
   - don't mutate state! especially if state is Array or Object
 - Array.map
 - Array.reduce
+  - [lecture notes from foundations](https://github.com/TEJ-Fellowship/js-foundations/blob/main/lecture-notes/testfirst-part-2.js)
+  - [mdn documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 - most common problems in React up to this point
   - the props are expected to be of a different type,
   - or called with a different name than they actually are, and destructuring fails as a result
@@ -330,6 +334,7 @@ Modules, forms, getting data from server, altering data in server
   - destructure the props
   - create the `components` directory inside `src`
   - refactor components and put them in `components` directory
+    - note that the `key` attribute is now required in the component
 
 **_TO-DO:_**
 
