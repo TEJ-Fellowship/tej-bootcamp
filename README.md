@@ -309,20 +309,27 @@ Modules, forms, getting data from server, altering data in server
   - don't mutate state! especially if state is Array or Object
 - Array.map
 - Array.reduce
-- debugging React apps
-  - use console through all components & calls
-  - most common problems
-    - the props are expected to be of a different type,
-    - or called with a different name than they actually are, and destructuring fails as a result
-
-**_TO-STUDY:_**
-
-- [PART 2-a: Rendering a collection, modules](https://fullstackopen.com/en/part2/rendering_a_collection_modules)
+- most common problems in React up to this point
+  - the props are expected to be of a different type,
+  - or called with a different name than they actually are, and destructuring fails as a result
 
 **_LECTURE-VIDEO:_**
 
-- [Using Array.map to show data in React](https://youtu.be/Mpk_FVc8A0Q)
-- [Using key in React lists, and further debugging notes](https://youtu.be/-Qg0t48bWNA)
+- [Using Array.map to show data in React]()
+  1. Create react project `notes-app`
+  - create directory `part2`
+  - create react project `notes-app` inside `part2`
+  - pass array of notes from `index.jsx` to `App.jsx`
+  - in `App.jsx` access the array data using indices
+  2. Access the array using map method
+- [Using key in React lists, and further debugging notes]()
+  1. Use the `key` attribute when rendering array
+  - understand how map method is working
+  - using index vs id for `key` attribute
+  2. Refactor the code
+  - destructure the props
+  - create the `components` directory inside `src`
+  - refactor components and put them in `components` directory
 
 **_TO-DO:_**
 
