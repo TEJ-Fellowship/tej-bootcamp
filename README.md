@@ -350,31 +350,31 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **Main concepts**
 
-- controlled component
+- controlled HTML input component
 - filtering displayed elements
 
 **Side notes**
 
 - form onSubmit event handler needs event.preventDefault()
 - form in App
-- controlled component: using onChange
+- controlled HTML component: using onChange
 - ternary expression
 - Map.filter
 
 **_LECTURE-VIDEO:_**
 
-- [Adding a controlled component to add notes]()
+- [Adding a controlled HTML input component to add notes]()
   1. Create a state to keep track of notes array
   2. Add a form in JSX to add a note
   3. Put an `onSubmit` event handler to the form
-  4. Add to a [controlled component](https://react.dev/reference/react-dom/components/input#controlling-an-input-with-a-state-variable) to capture the entry into input element
+  4. Add a [controlled HTML input component](https://react.dev/reference/react-dom/components/input#controlling-an-input-with-a-state-variable) to capture the entry of a new note
   - add a new state to store the new note
   - use the state as the input `value`
   - add an `onChange` event handler on the input
   5. Complete `onSubmit` to add new note to notes array
 - [Filtering displayed notes]()
   1. Add state to keep track of `showAll`
-  2. Add a `notesToShow` variable to store notes to show based on `showAll` state
+  2. Add a `notesToShow` variable to keep notes to show based on `showAll` state
   - if `showAll` is true, then `notesToShow` is same as `notes`
   - else, `notesToShow` only has importants `notes`
   3. Add functionality to toggle between `all` and `important`
