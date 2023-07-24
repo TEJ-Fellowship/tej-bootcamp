@@ -387,7 +387,9 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 </details>
 
-<details><summary>Part 2-c</summary>
+<details><summary>Part 2-c: Getting data from server</summary>
+
+- [Part 2-c: Getting data from server](https://fullstackopen.com/en/part2/getting_data_from_server)
 
 **_WE-WILL-LEARN:_**
 
@@ -397,15 +399,15 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 - using [Axios](https://axios-http.com/docs/intro) to call server
 - [effect hooks](https://reactjs.org/docs/hooks-effect.html)
 
-**_TO-STUDY:_**
-
-- [PART 2-c: Getting data from server](https://fullstackopen.com/en/part2/getting_data_from_server)
-
 **_LECTURE-VIDEO:_**
 
-- [Changing data source in frontend to come from backend](https://youtu.be/JM0sv09GIwc)
-- [Setting up json server](https://youtu.be/D6ClUvVAkrk)
-- [Using Axios in frontend to access data from backend](https://youtu.be/wSGw6JUFcPU)
+- [Setting up json server as our backend server]()
+  1. Create the `db.json` file with array of notes
+  2. Install `json-server`
+  3. Start the json-server
+  - view the output on web browser
+  - if required, install the [JSONVue](https://chrome.google.com/webstore/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc) extension
+- [Using Axios in frontend to access data from backend]()
 - [Understanding promises and async nature of axios](https://youtu.be/olCyK-TXO34)
 - [Using useEffect to call axios from React component](https://youtu.be/izc1acO3eUc)
 
