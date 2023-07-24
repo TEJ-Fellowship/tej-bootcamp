@@ -359,7 +359,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 - form in App
 - controlled HTML component: using onChange
 - ternary expression
-- Map.filter
+- Array.filter
 
 **_LECTURE-VIDEO:_**
 
