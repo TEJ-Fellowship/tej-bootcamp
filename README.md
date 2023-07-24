@@ -342,7 +342,9 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 </details>
 
-<details><summary>Part 2-b</summary>
+<details><summary>Part 2-b: Forms</summary>
+
+- [Part 2-b: Forms](https://fullstackopen.com/en/part2/forms)
 
 **_WE-WILL-LEARN:_**
 
@@ -359,16 +361,25 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 - ternary expression
 - Map.filter
 
-**_TO-STUDY:_**
-
-- [PART 2-b: Forms](https://fullstackopen.com/en/part2/forms)
-
 **_LECTURE-VIDEO:_**
 
-- [Getting started with create react app to part2-a](https://youtu.be/JM0sv09GIwc)
-- [Controlled component](https://youtu.be/KDzgcoe4KUg)
-- [From controlled component to add to list](https://youtu.be/DCcOnuY9a-o)
-- [Filtering notes](https://youtu.be/GtgBC_bUMYI)
+- [Adding a controlled component to add notes]()
+  1. Create a state to keep track of notes array
+  2. Add a form in JSX to add a note
+  3. Put an `onSubmit` event handler to the form
+  4. Add to a [controlled component](https://react.dev/reference/react-dom/components/input#controlling-an-input-with-a-state-variable) to capture the entry into input element
+  - add a new state to store the new note
+  - use the state as the input `value`
+  - add an `onChange` event handler on the input
+  5. Complete `onSubmit` to add new note to notes array
+- [Filtering displayed notes]()
+  1. Add state to keep track of `showAll`
+  2. Add a `notesToShow` variable to store notes to show based on `showAll` state
+  - if `showAll` is true, then `notesToShow` is same as `notes`
+  - else, `notesToShow` only has importants `notes`
+  3. Add functionality to toggle between `all` and `important`
+  - add button with text for action
+  - add `onClick` to button to toggle `showAll` state
 
 **_TO-DO:_**
 
