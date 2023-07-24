@@ -319,14 +319,14 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Using Array.map to show data in React](https://youtu.be/gjPQSF1GvRk)
+- [Using Array.map to show data in React](https://youtu.be/bb2Jp2aAFac?t=2)
   1. Create react project `notes-app`
   - create directory `part2`
   - create react project `notes-app` inside `part2`
   - pass array of notes from `index.jsx` to `App.jsx`
   - in `App.jsx` access the array data using indices
   2. Access the array using map method
-- [Using key in React lists, and further debugging notes](https://youtu.be/bb2Jp2aAFac?t=1125)
+- [Using key in React lists, and further debugging notes](https://youtu.be/bb2Jp2aAFac?t=1114)
   1. Use the `key` attribute when rendering array
   - understand how map method is working
   - using index vs id for `key` attribute
