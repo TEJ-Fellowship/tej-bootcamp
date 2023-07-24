@@ -326,7 +326,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   - pass array of notes from `index.jsx` to `App.jsx`
   - in `App.jsx` access the array data using indices
   2. Access the array using map method
-- [Using key in React lists, and further debugging notes](https://youtu.be/bb2Jp2aAFac)
+- [Using key in React lists, and further debugging notes](https://youtu.be/gjPQSF1GvRk)
   1. Use the `key` attribute when rendering array
   - understand how map method is working
   - using index vs id for `key` attribute
