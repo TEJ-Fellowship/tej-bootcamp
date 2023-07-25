@@ -363,7 +363,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Adding a controlled HTML input component to add notes]()
+- [Adding a controlled HTML input component to add notes](https://youtu.be/gMdffc85U2M)
   1. Create a state to keep track of notes array
   2. Add a form in JSX to add a note
   3. Put an `onSubmit` event handler to the form
@@ -372,7 +372,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   - use the state as the input `value`
   - add an `onChange` event handler on the input
   5. Complete `onSubmit` to add new note to notes array
-- [Filtering displayed notes]()
+- [Filtering displayed notes](https://youtu.be/YJhQ_6zGgA8)
   1. Add state to keep track of `showAll`
   2. Add a `notesToShow` variable to keep notes to show based on `showAll` state
   - if `showAll` is true, then `notesToShow` is same as `notes`
