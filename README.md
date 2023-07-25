@@ -395,21 +395,36 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 - getting data from server
   - using [JSON Server](https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d) to simulate server
-- understanding [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 - using [Axios](https://axios-http.com/docs/intro) to call server
-- [effect hooks](https://reactjs.org/docs/hooks-effect.html)
+  - understanding [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+- [useEffect hook](https://react.dev/reference/react/useEffect)
 
 **_LECTURE-VIDEO:_**
 
-- [Setting up json server as our backend server]()
+- [Setting up json-server as our backend server]()
   1. Create the `db.json` file with array of notes
-  2. Install `json-server`
+  2. Install `json-server` as dev dependency
+  ```
+  npm install json-server --save-dev
+  ```
   3. Start the json-server
-  - view the output on web browser
+  ```
+  npx json-server --port 3001 --watch db.json
+  ```
+  4. Include json-server start command in package.json scripts
+  5. view the output on web browser
   - if required, install the [JSONVue](https://chrome.google.com/webstore/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc) extension
 - [Using Axios in frontend to access data from backend]()
-- [Understanding promises and async nature of axios](https://youtu.be/olCyK-TXO34)
+  1. Install axios as dependency
+  ```
+  npm install axios
+  ```
+  2. Read the data from json-server from our app using axios
+  - start json-server in one terminal
+  - start the app in another terminal
+  - add code for axios.get in App.jsx
 - [Using useEffect to call axios from React component](https://youtu.be/izc1acO3eUc)
+  1. in App.jsx, put the axios.get code inside `useEffect` hook so that it is only called on first render
 
 **_TO-DO:_**
 
