@@ -12,7 +12,6 @@ const App = (props) => {
     //1. get data from backend server
     let myAxiosPromise = axios.get("http://localhost:3001/notes");
     myAxiosPromise.then((myResult) => {
-      debugger;
       console.log("returned promise");
       console.dir(myResult.data);
       //2. put the data into notes state
