@@ -430,7 +430,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_TO-DO:_**
 
-- [2.11-2.14](https://fullstackopen.com/en/part2/getting_data_from_server#exercises-2-11-2-14)
+- [2.11](https://fullstackopen.com/en/part2/getting_data_from_server#exercise-2-11)
 
 </details>
 
@@ -458,15 +458,31 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Using axios post to create note in backend](https://youtu.be/8ioBv5Rfo3A)
-- [Using axios put to update note in backend](https://youtu.be/UuOC69taFxo)
+- [Using axios.post to create note in backend]()
+  1. Add `axios.post` code inside the event handler responsible for creating new note
+  - remove the `id` from your new note object
+  - update your notes state with the returned note object
+- [Using `axios.put` to update note in backend]()
+  1. Add button to toggle the `important` field of note
+  - in `Note` component, add a button to toggle importance
+  - what will be the `onClick` event handling function on the button?
+  2. In the event handling function, add logic to update the data in server, and in state
+  - first, find the note from our state
+  - then, create a new object with the changed state of the note
+    - don't mutate state directly!
+  - send the new object using axios.put to update data in server
+  - change the state of notes to reflect the updated note
 - [Refactoring axios services](https://youtu.be/W3sTMbbTMkw)
+  - create a `services` folder
+  - create `notes.js` fild inside `services`
+  - create a `getAll`, `create`, and `update` functions specifically only for the server functions
+    - return a promise that returns the destructured data
+    - use these new functions in `App.jsx` to interact with the server
 - [Handling axios errors in catch block](https://youtu.be/AOgQXnk1LzE)
-- [Debugging openweather map api key](https://youtu.be/aByLiib_Zks)
 
 **_TO-DO:_**
 
-- [2.15-2.18](https://fullstackopen.com/en/part2/altering_data_in_server#exercises-2-15-2-18)
+- [2.12-2.15](https://fullstackopen.com/en/part2/altering_data_in_server#exercises-2-12-2-15)
 
 </details>
 
@@ -489,10 +505,12 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 - [Inline styles](https://youtu.be/_YD5VllKoXg)
 - [Using a css file to style Notification component](https://youtu.be/knzBgD0vqwg)
 - [Creating dynamic error message from catch block](https://youtu.be/hGK0Cx0Kbjk)
+- [Debugging openweather map api key](https://youtu.be/aByLiib_Zks)
 
 **_TO-DO:_**
 
-- [2.19-2.20](https://fullstackopen.com/en/part2/adding_styles_to_react_app#exercises-2-19-2-20)
+- [2.16-2.17](https://fullstackopen.com/en/part2/adding_styles_to_react_app#exercises-2-16-2-17)
+- [2.18-2.20](https://fullstackopen.com/en/part2/adding_styles_to_react_app#exercises-2-18-2-20)
 
 </details>
 
