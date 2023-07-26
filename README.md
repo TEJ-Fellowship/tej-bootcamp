@@ -460,8 +460,10 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 - [Using axios.post to create note in backend]()
   1. Add `axios.post` code inside the event handler responsible for creating new note
-  - remove the `id` from your new note object
+  - a brief look at REST API
+  - remove the `id` from your new note object, because now the REST API should create the id
   - update your notes state with the returned note object
+  - now, even if you refresh, the newly added note is still present
 - [Using `axios.put` to update note in backend]()
   1. Add button to toggle the `important` field of note
   - in `Note` component, add a button to toggle importance
@@ -473,12 +475,19 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   - send the new object using axios.put to update data in server
   - change the state of notes to reflect the updated note
 - [Refactoring axios services](https://youtu.be/W3sTMbbTMkw)
-  - create a `services` folder
-  - create `notes.js` fild inside `services`
-  - create a `getAll`, `create`, and `update` functions specifically only for the server functions
-    - return a promise that returns the destructured data
-    - use these new functions in `App.jsx` to interact with the server
+  1. Create a `services` folder inside the `src` folder
+  2. Create `notes.js` fild inside `services`
+  3. Create a `getAll`, `create`, and `update` functions specifically only for the server functions
+  - return a promise that returns the destructured data
+  - use these new functions in `App.jsx` to interact with the server
 - [Handling axios errors in catch block](https://youtu.be/AOgQXnk1LzE)
+  1. In `getAll` note service, add a fake note to the array returned from server
+  2. Add a `catch` block to catch any error to the call to `update`
+  - when we try to update a note in the server that does not exist, json-server will throw an error
+  - print the error in the `catch` block
+  - if the status code is `404`, it means the data does not exist
+    - remove the data from `notes` state if data does not exist in server
+    - show an alert with proper error message
 
 **_TO-DO:_**
 
