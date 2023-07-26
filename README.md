@@ -401,7 +401,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Setting up json-server as our backend server]()
+- [Setting up json-server as our backend server](https://youtu.be/jM5vB4hX8_8)
   1. Create the `db.json` file with array of notes
   2. Install `json-server` as dev dependency
   ```
@@ -414,10 +414,10 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   4. Include json-server start command in package.json scripts
   5. view the output on web browser
   - if required, install the [JSONVue](https://chrome.google.com/webstore/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc) extension
-- [Understanding the useEffect hook]()
+- [Understanding the useEffect hook](https://youtu.be/b_8Wz08L_Oo)
   1. in App.jsx, create a `useEffect` hook so that it is only called on first render
   2. update the `useEffect` hook so that it executes each time the `showAll` state changes
-- [Using Axios in frontend to access data from backend]()
+- [Using Axios in frontend to access data from backend](https://youtu.be/87ZVR9K9M70)
   1. Install axios as dependency
   ```
   npm install axios
