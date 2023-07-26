@@ -393,11 +393,11 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_WE-WILL-LEARN:_**
 
-- getting data from server
-  - using [JSON Server](https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d) to simulate server
+- getting data from backend server
+  - using [JSON Server](https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d) as our backend server
+- [useEffect hook](https://react.dev/reference/react/useEffect)
 - using [Axios](https://axios-http.com/docs/intro) to call server
   - understanding [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
-- [useEffect hook](https://react.dev/reference/react/useEffect)
 
 **_LECTURE-VIDEO:_**
 
@@ -414,6 +414,9 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   4. Include json-server start command in package.json scripts
   5. view the output on web browser
   - if required, install the [JSONVue](https://chrome.google.com/webstore/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc) extension
+- [Understanding the useEffect hook]()
+  1. in App.jsx, create a `useEffect` hook so that it is only called on first render
+  2. update the `useEffect` hook so that it executes each time the `showAll` state changes
 - [Using Axios in frontend to access data from backend]()
   1. Install axios as dependency
   ```
@@ -422,9 +425,8 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   2. Read the data from json-server from our app using axios
   - start json-server in one terminal
   - start the app in another terminal
-  - add code for axios.get in App.jsx
-- [Using useEffect to call axios from React component](https://youtu.be/izc1acO3eUc)
-  1. in App.jsx, put the axios.get code inside `useEffect` hook so that it is only called on first render
+  - add code for axios.get in App.jsx inside the `useEffect` hook
+  - modify `useEffect` so that it is called only on first render of the component
 
 **_TO-DO:_**
 
