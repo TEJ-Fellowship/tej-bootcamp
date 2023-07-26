@@ -434,18 +434,20 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 </details>
 
-<details><summary>Part 2-d</summary>
+<details><summary>Part 2-d: Altering data in server</summary>
+
+- [Part 2-d: Altering data in server](https://fullstackopen.com/en/part2/altering_data_in_server)
 
 **_WE-WILL-LEARN:_**
 
 - understanding [REST](https://www.codecademy.com/article/what-is-crud)
   - routes
   - CRUD (Create, Read, Update, Delete) actions on REST routes
-  - [Axios methods corresponding to CRUD actions](https://www.freecodecamp.org/news/axios-react-how-to-make-get-post-and-delete-api-requests/)
-- Sending data to the Backend Server
-  - [creating new data](https://fullstackopen.com/en/part2/altering_data_in_server#sending-data-to-the-server)
-  - [updating existing data using Axios.put](https://fullstackopen.com/en/part2/altering_data_in_server#changing-the-importance-of-notes)
-  - [handling Error in Promise using Promise.catch](https://fullstackopen.com/en/part2/altering_data_in_server#promises-and-errors)
+  - [axios methods corresponding to CRUD actions](https://www.freecodecamp.org/news/axios-react-how-to-make-get-post-and-delete-api-requests/)
+- sending data to the Backend Server
+  - [creating new data using axios.post](https://fullstackopen.com/en/part2/altering_data_in_server#sending-data-to-the-server)
+  - [updating existing data using axios.put](https://fullstackopen.com/en/part2/altering_data_in_server#changing-the-importance-of-notes)
+  - [handling Error in Promise using promise.catch](https://fullstackopen.com/en/part2/altering_data_in_server#promises-and-errors)
 
 **Side notes**
 
@@ -453,10 +455,6 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 - Review
   - Array.map
   - Array.filter
-
-**_TO-STUDY:_**
-
-- [PART 2-d: Altering data in server](https://fullstackopen.com/en/part2/altering_data_in_server)
 
 **_LECTURE-VIDEO:_**
 
@@ -472,7 +470,9 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 </details>
 
-<details><summary>Part 2-e</summary>
+<details><summary>Part 2-e: Adding styles to React app</summary>
+
+- [Part 2-e: Adding styles to React app](https://fullstackopen.com/en/part2/adding_styles_to_react_app)
 
 **_WE-WILL-LEARN:_**
 
@@ -483,10 +483,6 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 - error message in it's own React component
   - activating error component by setting error message
 - adding inline style in JSX
-
-**_TO-STUDY:_**
-
-- [PART 2-e: Adding styles to React app](https://fullstackopen.com/en/part2/adding_styles_to_react_app)
 
 **_LECTURE-VIDEO:_**
 
