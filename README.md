@@ -511,9 +511,22 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Inline styles](https://youtu.be/_YD5VllKoXg)
-- [Using a css file to style Notification component](https://youtu.be/knzBgD0vqwg)
-- [Creating dynamic error message from catch block](https://youtu.be/hGK0Cx0Kbjk)
+- [Inline styles]()
+  1. In `App.jsx`, define a new variable whose value is an object with css style
+  - note that the CSS properties are written in camelCase, not hyphenated as in css file
+  2. In the `h1` element in the JSX, create a new attribute called `style` and assign it the above variable
+- [Using a css file to define a style]()
+  1. Create a css file `index.css` in the `src` directory
+  2. Define a style for class `.redbackground`
+  3. Import `index.css` in `index.jsx`
+  4. In `App.jsx`, use the `redbackground` class in the `input` html element
+- [Creating dynamic error message from catch block]()
+  1. Create a new component called `Notification`
+  - define an `error` class in css file to use in the Notification component
+  2. Define a new state to put the error message with an initial value of `null`
+  3. In the `catch` block for error handling, add code to display the error message in the Notification component
+  - in the `catch` block, set the error message state with the error message
+  - after a certain amount of time, set the error message back to `null`
 - [Debugging openweather map api key](https://youtu.be/aByLiib_Zks)
 
 **_TO-DO:_**
