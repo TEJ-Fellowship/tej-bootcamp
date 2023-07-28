@@ -512,16 +512,16 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Inline styles]()
+- [Inline styles](https://youtu.be/k5ZeIoaccv4)
   1. In `App.jsx`, define a new variable whose value is an object with css style
   - note that the CSS properties are written in camelCase, not hyphenated as in css file
   2. In the `h1` element in the JSX, create a new attribute called `style` and assign it the above variable
-- [Using a css file to define a style]()
+- [Using a css file to define a style](https://youtu.be/k5ZeIoaccv4?t=542)
   1. Create a css file `index.css` in the `src` directory
   2. Define a style for class `.redbackground`
   3. Import `index.css` in `index.jsx`
   4. In `App.jsx`, use the `redbackground` class in the `input` html element
-- [Creating dynamic error message from catch block]()
+- [Creating dynamic error message from catch block](https://youtu.be/KNDIhALqNP4)
   1. Create a new component called `Notification`
   - define an `error` class in css file to use in the Notification component
   2. Define a new state to put the error message with an initial value of `null`
