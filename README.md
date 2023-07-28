@@ -502,12 +502,13 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 **_WE-WILL-LEARN:_**
 
 - adding styles to React app
-  - importing style file into JS project
+  - 2 methods
+    - importing style file into JS project
+    - inline styles in JSX
   - CSS rules = selector + declerations
   - class selectors in JSX
 - error message in it's own React component
   - activating error component by setting error message
-- adding inline style in JSX
 
 **_LECTURE-VIDEO:_**
 
