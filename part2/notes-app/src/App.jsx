@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import Note from "./components/Note";
 import noteService from "./services/notes";
+import Notification from "./components/Notification";
 
 const App = () => {
   const [notes, setNotes] = useState([]);
   const [newNote, setNewNote] = useState("");
   const [showAll, setShowAll] = useState(true);
+  const [notification, setNotification] = useState("");
 
   useEffect(() => {
     console.log("hello");
@@ -70,7 +72,13 @@ const App = () => {
         console.dir(err);
         if (err.response.status === 404) {
           console.log("this means the id does not exist in the server");
-          alert(`sorry this note "${currentNote.content}" does not exist`);
+          // alert(`sorry this note "${currentNote.content}" does not exist`);
+          setNotification(
+            `sorry this note "${currentNote.content}" does not exist`
+          );
+          setTimeout(() => {
+            setNotification("");
+          }, 2000);
           setNotes(notes.filter((note) => note.id !== currentNote.id));
         } else {
           console.log("this is some other error");
@@ -78,9 +86,14 @@ const App = () => {
       });
   };
 
+  const myStyle = { fontSize: "60px" };
+
   return (
     <>
-      <h1>Notes</h1>
+      <h1 style={myStyle} className="redbackground">
+        Notes
+      </h1>
+      <Notification message={notification} />
       <button onClick={handleShowAll}>
         show {showAll ? "important" : "all"}
       </button>
