@@ -543,9 +543,13 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 ## [PART 3: Programming a server with NodeJS and Express](https://fullstackopen.com/en/part3)
 
+You can refer to the workshop code solutions [here](https://github.com/fullstack-hy2020/part3-notes-backend)
+
 <details><summary><h3 style="display:inline">Chapters</h3></summary>
 
-<details><summary>Part 3-a</summary>
+<details><summary>Part 3-a: Node.js and Express</summary>
+
+- [Part 3-a: Node.js and Express](https://fullstackopen.com/en/part3/node_js_and_express)
 
 **_WE-WILL-LEARN:_**
 
@@ -566,41 +570,43 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 - [VSCode REST client](https://fullstackopen.com/en/part3/node_js_and_express#the-visual-studio-code-rest-client)
 - [Math.max](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
 
-**_PRE-WORK:_**
-
-**_TO-STUDY:_**
-
-- [PART 3-a: Node.js and Express](https://fullstackopen.com/en/part3/node_js_and_express)
-
 **_LECTURE-VIDEO:_**
 
-- [creating a simple express server](https://youtu.be/fpo5GhzII5k)
-  1. create new project `node-server`
-  2. convert it to git repo and commit to github
-  3. create an npm project inside by `npm init -y1
-  4. create express server, serving on root url '/', listening on port 3001
-- [serving on the '/notes' route for a 'get' method request](https://youtu.be/hPoKXqRGzOY)
-  1. install nodemon as dev dependency to run node server by hot reload on code changes
-  2. install cors to serve requests coming from different urls
-  3. create an express route on `/notes` url for `get` request and serve it an array of notes in json format
-- [side note on REST and JSON](https://youtu.be/wWBL98cfhLg)
-- [creating the '/notes/:id' route for a 'get' method request](https://youtu.be/ibURgdt3CiA)
-  1. create a new get route at `/notes/:id`
-  2. respond with the json object of the note at that id
-  3. if no notes are available at the id, then set status to 404 and return a friendly error message
-- [creating the '/notes/:id' route for a 'delete' method request](https://youtu.be/ty3a-9HDW9s)
-  1. create a new delete route at `/notes/:id`
-  2. respond with 204 status code, and no body
-  3. install `REST Client` extension
-  4. create file `requests/my_requests.rest` to store the REST requests
-- [creating the '/notes' route for a 'post' method request](https://youtu.be/N_JiJhyo84Q)
-  1. create a new post route at `/notes`
-  2. use express.json() to read json objects in the request
-  3. use the json object in request to create a new post in the backend
-  4. respond with status 201 created and return the newly created note object
-- [creating middleware](https://youtu.be/CtN_ckGzifk)
-  1. create a middleware at the top of the express server to log method, path, and body
-  2. creat a middleware at the end of the express server (just before app.listen) to send a 404 not found to all paths that are not handled by the app
+- [Creating a simple express server](https://youtu.be/fpo5GhzII5k)
+  1. Create new project `notes-server`
+  - create an npm project inside by `npm init -y`
+  - create an http server that shows the text 'Hello world', listening on port 3001
+  - create a notes variable with the notes array
+  - convert the http response to type `application/json`
+  - JSON.stringify the notes array in the response
+- [Using express for serving on the '/api/notes' route for a 'get' method request](https://youtu.be/hPoKXqRGzOY)
+  1. Install `express` library
+  - modify code to use express library
+  2. Modify to express route to server array of notes on `/api/notes` url for `get` request
+  3. Install nodemon as dev dependency to run node server by hot reload on code changes
+- [Side note on REST and JSON](https://youtu.be/wWBL98cfhLg)
+- [Creating the '/api/notes/:id' route for a 'get' method request](https://youtu.be/ibURgdt3CiA)
+  1. Create a new get route at `/api/notes/:id`
+  2. Respond with the json object of the note at that id
+  - please note that the `request.params` always comes as a string
+  3. If no notes are available at the id, then set status to 404 and return a friendly error message
+- [Creating the '/api/notes/:id' route for a 'delete' method request](https://youtu.be/ty3a-9HDW9s)
+  1. Create a new delete route at `/api/notes/:id`
+  2. Respond with 204 status code, and no body
+  3. Install `REST Client` extension
+  4. Create file `requests/my_requests.rest` to store the REST requests
+  - call the `delete` method on the REST endpoint
+  ```
+  DELETE http://localhost:3001/api/notes/2
+  ```
+- [Creating the '/api/notes' route for a 'post' method request](https://youtu.be/N_JiJhyo84Q)
+  1. Create a new post route at `/api/notes`
+  2. Use express.json() to read json objects in the request
+  3. Use the json object in request to create a new post in the backend
+  4. Respond with status 201 created and return the newly created note object
+- [Creating middleware](https://youtu.be/CtN_ckGzifk)
+  1. Create a middleware at the top of the express server to log method, path, and body
+  2. Creat a middleware at the end of the express server (just before app.listen) to send a 404 not found to all paths that are not handled by the app
 
 **_TO-DO:_**
 
