@@ -572,7 +572,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Creating a simple express server]()
+- [Creating a simple express server](https://youtu.be/raUOxLZiPng)
   1. Create new project `notes-server`
   - create an npm project inside by `npm init -y`
   - create an http server that shows the text 'Hello world', listening on port 3001
