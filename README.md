@@ -580,18 +580,18 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   - create a notes variable with the notes array
   - convert the http response to type `application/json`
   - JSON.stringify the notes array in the response
-- [Using express for serving on the '/api/notes' route for a 'get' method request]()
+- [Using express for serving on the '/api/notes' route for a 'get' method request](https://youtu.be/QgC5oSEB_Tc)
   1. Install `express` library
   - modify code to use express library
   2. Modify to express route to server array of notes on `/api/notes` url for `get` request
   3. Install nodemon as dev dependency to run node server by hot reload on code changes
-- [Side note on REST and JSON](https://youtu.be/wWBL98cfhLg)
-- [Creating the '/api/notes/:id' route for a 'get' method request]()
+- [Side note on REST and JSON](https://youtu.be/GlanBqAtPj8)
+- [Creating the '/api/notes/:id' route for a 'get' method request](https://youtu.be/CPMkmR6eSIU)
   1. Create a new get route at `/api/notes/:id`
   2. Respond with the json object of the note at that id
   - please note that the `request.params` always comes as a string
   3. If no notes are available at the id, then set status to 404 and return a friendly error message
-- [Creating the `/api/notes/:id` route for a `delete` method request]()
+- [Creating the `/api/notes/:id` route for a `delete` method request](https://youtu.be/rO6vsReA3d4)
   1. Create a new delete route at `/api/notes/:id`
   2. Respond with 204 status code, and no body
   3. Install `REST Client` extension
@@ -600,12 +600,12 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   ```
   DELETE http://localhost:3001/api/notes/2
   ```
-- [Creating the '/api/notes' route for a 'post' method request]()
+- [Creating the '/api/notes' route for a 'post' method request](https://youtu.be/51_oufxrDUo)
   1. Create a new post route at `/api/notes`
   2. Use express.json() to read json objects in the request
   3. Use the json object in request to create a new post in the backend
   4. Respond with status 201 created and return the newly created note object
-- [Creating middleware]()
+- [Creating middleware](https://youtu.be/wPZRiwHlz4Y)
   1. Create a middleware at the top of the express server to log method, path, and body
   2. Creat a middleware at the end of the express server (just before app.listen) to send a 404 not found to all paths that are not handled by the app
 
