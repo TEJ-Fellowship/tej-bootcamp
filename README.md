@@ -591,7 +591,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   2. Respond with the json object of the note at that id
   - please note that the `request.params` always comes as a string
   3. If no notes are available at the id, then set status to 404 and return a friendly error message
-- [Creating the '/api/notes/:id' route for a 'delete' method request]()
+- [Creating the `/api/notes/:id` route for a `delete` method request]()
   1. Create a new delete route at `/api/notes/:id`
   2. Respond with 204 status code, and no body
   3. Install `REST Client` extension

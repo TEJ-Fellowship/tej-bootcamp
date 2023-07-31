@@ -9,3 +9,4 @@ cypress/videos/
 part7/react-router/build
 *icloud
 * 2
+package-lock.json
