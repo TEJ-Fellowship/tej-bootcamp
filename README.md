@@ -616,47 +616,60 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 </details>
 
-<details><summary>Part 3-b</summary>
+<details><summary>Part 3-b: Deploying app to internet</summary>
 
-**_TO-STUDY:_**
-
-- [PART 3-b: Deploying app to internet](https://fullstackopen.com/en/part3/deploying_app_to_internet)
+- [Part 3-b: Deploying app to internet](https://fullstackopen.com/en/part3/deploying_app_to_internet)
 
 **_WE-WILL-LEARN:_**
 
 - [serving static files from server](https://fullstackopen.com/en/part3/deploying_app_to_internet#serving-static-files-from-the-backend)
 - [including frontend code on server](https://fullstackopen.com/en/part3/deploying_app_to_internet#frontend-production-build)
-- [deploying app to a cloud platform (e.g. Heroku)](https://fullstackopen.com/en/part3/deploying_app_to_internet#application-to-the-internet)
+- [deploying app to a cloud platform (e.g. Render)](https://fullstackopen.com/en/part3/deploying_app_to_internet#application-to-the-internet)
 - [streamlining the deployment](https://fullstackopen.com/en/part3/deploying_app_to_internet#streamlining-deploying-of-the-frontend)
 
 **Side notes**
 
 - [CORS](https://fullstackopen.com/en/part3/deploying_app_to_internet#same-origin-policy-and-cors)
 - [setting up proxy on react app](https://fullstackopen.com/en/part3/deploying_app_to_internet#proxy)
-- [how the current set-up after part3-b looks](https://fullstackopen.com/en/part3/deploying_app_to_internet#the-whole-app-to-internet)
+- [how the current set-up after part3-b looks](https://fullstackopen.com/en/part3/deploying_app_to_internet#the-whole-app-to-the-internet)
 
 **_LECTURE-VIDEO:_**
 
-- [serving frontend static files from node server](https://youtu.be/4mQUK71WaFU)
-  1. build react app for serving from web server
-  2. include the build folder in your node application
-  3. instruct node server to serve the static files from the build folder
-- [modify frontend backend code to run in cloud](https://youtu.be/PTlSqtGJHJU)
-  1. in react app, change the baseurl to a relative url
-  2. in node server, read the PORT value from environment if available
-- [deploy fullstack app to Heroku](https://youtu.be/iuUGZY7pqsE)
-  1. create a Heroku account at https://devcenter.heroku.com/
-  2. globally install heroku npm library
-  3. if node server is not on its own repository, then create a separate repo for node server
-  4. add a Procfile with instructions for Heroku
-  5. create Heroku app to deploy your project to
-  6. push your code to the Heroku remote git server
-- [streamline deploying frontend and backend code to Heroku](https://youtu.be/qKfxe6uvQ6E)
-  1. in node server repository, add npm script to build the react app and copy it to server repo
-  2. add npm script to deploy to Heroku
-  3. add npm script that combines all steps to build, copy, git commit, and deploy to Heroku
-- [add proxy to react-app](https://youtu.be/YptUn1bG1T4)
-  1. configure proxy url to setup node server in the react-app
+- [Use notes-server instead of json-server]()
+  1. Start `notes-app`
+  2. Start `notes-server`
+  3. Change `baseUrl` in `notes-app` to the url of our `notes-server`
+  4. Configure CORS in `notes-server` so that app and server work from different origins
+  - install `cors` library
+  - use `cors` library in server's `index.js` file
+- [Serving frontend static files from node server]()
+  1. Build react app for serving from web server
+  2. Include the build folder in your node application
+  3. Instruct node server to serve the static files from the build folder
+- [Modify frontend backend code to run in cloud]()
+  1. In react app, change the baseurl to a relative url
+  2. In node server, read the PORT value from environment if available
+- [Deploy fullstack app to Render]()
+  1. Create a render account at https://dashboard.render.com/register
+  - sign up using `GitHub`
+  2. Create a new `Web Service`
+  - connect to the proper github repository
+  - configure `Root Directory`, `Build Command` (npm install), and `Start Command`
+  3. Push your code to GitHub
+- [Streamline deploying frontend and backend code to Render]()
+  1. In node server repository, add npm script to build the react app and copy it to server repo
+  2. Add npm script to deploy to Heroku
+  3. Add npm script that combines all steps to build, copy, git commit, and deploy to Heroku
+  4. Add proxy to vite config
+  ```
+  proxy: {
+      "/api": {
+        target: "http://localhost:3001",
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  ```
 
 **_TO-DO:_**
 
