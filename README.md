@@ -656,11 +656,13 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   - connect to the proper github repository
   - configure `Root Directory`, `Build Command` (npm install), and `Start Command`
   3. Push your code to GitHub
-- [Streamline deploying frontend and backend code to Render]()
-  1. In node server repository, add npm script to build the react app and copy it to server repo
-  2. Add npm script to deploy to Heroku
-  3. Add npm script that combines all steps to build, copy, git commit, and deploy to Heroku
-  4. Add proxy to vite config
+  4. In notes-server, streamline notes-app build and deploy process
+  - add npm script to build the react app and copy it to server repo
+    - remove the existing `dist` folder
+    - cd to notes-app
+    - build notes-app
+    - cp the `dist` folder from notes-app to notes-server
+  5. Add proxy to vite config of notes-app so that we can use relative url in react dev environment
   ```
   proxy: {
       "/api": {
