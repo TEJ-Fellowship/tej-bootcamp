@@ -664,13 +664,15 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
     - cp the `dist` folder from notes-app to notes-server
   5. Add proxy to vite config of notes-app so that we can use relative url in react dev environment
   ```
-  proxy: {
+  server: {
+    proxy: {
       "/api": {
         target: "http://localhost:3001",
         changeOrigin: true,
         secure: false,
       },
     },
+  }
   ```
 
 **_TO-DO:_**
