@@ -635,7 +635,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Use notes-server instead of json-server](https://youtu.be/t7A5C8GAwBM)
+- [Use notes-server instead of json-server](https://youtu.be/t7A5C8GAwBM?t=1)
   1. Start `notes-app`
   2. Start `notes-server`
   3. Change `baseUrl` in `notes-app` to the url of our `notes-server`
