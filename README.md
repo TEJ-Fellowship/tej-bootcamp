@@ -635,21 +635,21 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Use notes-server instead of json-server]()
+- [Use notes-server instead of json-server](https://youtu.be/t7A5C8GAwBM)
   1. Start `notes-app`
   2. Start `notes-server`
   3. Change `baseUrl` in `notes-app` to the url of our `notes-server`
   4. Configure CORS in `notes-server` so that app and server work from different origins
   - install `cors` library
   - use `cors` library in server's `index.js` file
-- [Serving frontend static files from node server]()
+- [Serving frontend static files from node server](https://youtu.be/t7A5C8GAwBM?t=888)
   1. Build react app for serving from web server
   2. Include the build folder in your node application
   3. Instruct node server to serve the static files from the build folder
-- [Modify frontend backend code to run in cloud]()
+- [Modify frontend backend code to run in cloud](https://youtu.be/jt8qR6BI7h0)
   1. In react app, change the baseurl to a relative url
   2. In node server, read the PORT value from environment if available
-- [Deploy fullstack app to Render]()
+- [Deploy fullstack app to Render](https://youtu.be/-xVexhcTjv8)
   1. Create a render account at https://dashboard.render.com/register
   - sign up using `GitHub`
   2. Create a new `Web Service`
