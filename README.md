@@ -687,8 +687,8 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Introduction to mongodb]()
-- [Setting up mongo database in mongodb.com]()
+- [Introduction to mongodb](https://youtu.be/5Cdr5qnw8N4)
+- [Setting up mongo database in mongodb.com](https://youtu.be/EvJJkLZ3RnM)
   1. Create a free account in mongodb.com
   - go to https://www.mongodb.com/cloud/atlas/register
   - you can sign up with google
@@ -702,7 +702,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   - go the 'network access'
   - edit and select 'allow access from anywhere'. note - this is only for development!
   4. Get the connection string to your database
-- [Using mongoose to set up a practice application]()
+- [Using mongoose to set up a practice application](https://youtu.be/WevMzdj7pxg)
   1. `npm install mongoose`
   2. Create a new mongo.js file in your repo to create practice application
   - copy code from fullstackopen for mongo.js
@@ -720,7 +720,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   - in `mongo.js`, comment out the note creation code
   - add code to `get` the data
   - run `node mongo.js password` again
-- [Connect the notes-server to the database]()
+- [Connect the notes-server to the database](https://youtu.be/e0M8bBv_IEA)
   1. Fetch db connection string from environment
   - install npm library `dotenv` that will allow us to convert variables from .env file to `process.env` variables
   - for localhost
@@ -731,7 +731,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   2. Create separate module to put database configuration
   3. Get data from database in the `/api/notes` route for `get` method
   4. Modify the returned data from mongoose to show the `id` field instead of `_id`, and hide the `__v` field
-- [More node express routes configured through database]()
+- [More node express routes configured through database](https://youtu.be/1NNyJnz3q4c)
   1. Rewrite `/api/notes` route for `post` method
   1. Rewrite `/api/notes/:id` route for `get` method
   1. Error handling
