@@ -2,8 +2,9 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-const url = `mongodb+srv://rushilshakya:mypassword@cluster0.hgspszl.mongodb.net/noteApp?retryWrites=true&w=majority`;
+const url = process.env.MONGODB_URI;
 
 mongoose.set("strictQuery", false);
 mongoose.connect(url);
@@ -116,6 +117,5 @@ const errorHandler = (error, request, response, next) => {
 // this has to be the last loaded middleware.
 app.use(errorHandler);
 
-const PORT = process.env.PORT ? process.env.PORT : 3001;
-app.listen(PORT);
-console.log(`Server running on port ${PORT}`);
+app.listen(process.env.PORT);
+console.log(`Server running on port ${process.env.PORT}`);
