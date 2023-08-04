@@ -635,21 +635,21 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Use notes-server instead of json-server]()
+- [Use notes-server instead of json-server](https://youtu.be/t7A5C8GAwBM?t=1)
   1. Start `notes-app`
   2. Start `notes-server`
   3. Change `baseUrl` in `notes-app` to the url of our `notes-server`
   4. Configure CORS in `notes-server` so that app and server work from different origins
   - install `cors` library
   - use `cors` library in server's `index.js` file
-- [Serving frontend static files from node server]()
+- [Serving frontend static files from node server](https://youtu.be/t7A5C8GAwBM?t=888)
   1. Build react app for serving from web server
   2. Include the build folder in your node application
   3. Instruct node server to serve the static files from the build folder
-- [Modify frontend backend code to run in cloud]()
+- [Modify frontend backend code to run in cloud](https://youtu.be/jt8qR6BI7h0)
   1. In react app, change the baseurl to a relative url
   2. In node server, read the PORT value from environment if available
-- [Deploy fullstack app to Render]()
+- [Deploy fullstack app to Render](https://youtu.be/-xVexhcTjv8)
   1. Create a render account at https://dashboard.render.com/register
   - sign up using `GitHub`
   2. Create a new `Web Service`
@@ -664,13 +664,15 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
     - cp the `dist` folder from notes-app to notes-server
   5. Add proxy to vite config of notes-app so that we can use relative url in react dev environment
   ```
-  proxy: {
+  server: {
+    proxy: {
       "/api": {
         target: "http://localhost:3001",
         changeOrigin: true,
         secure: false,
       },
     },
+  }
   ```
 
 **_TO-DO:_**
@@ -685,33 +687,58 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [introduction to mongodb](https://youtu.be/vgmX9Az-k80)
-- [setting up mongo database in mongodb.com](https://youtu.be/9TZ-nrXNGrs)
-  1. [create a free account in mongodb.com](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#mongo-db)
-  2. create database userid and password
-  3. set network setting to allow access from anywhere
-  4. get the connection string to your database
-- [using mongoose to set up a practice application](https://youtu.be/AxrS9Aq_i3I)
-  1. npm install mongoose
-  2. create a new mongo.js file in your repo to create practice application
-  3. put all the mongodb code using mongoose for `Note`:
-  - [create a schema for Note](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#schema)
-  - use the schema to create a model for Note
-  - [use the Note model to create and save a Note object into mongodb](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#creating-and-saving-objects)
-  - [write code to fetch data frome `notes` collection using the `Note` model](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#fetching-objects-from-the-database)
-- [connect the notes-server to the database](https://youtu.be/gv2kD-zq5e4)
-  1. [fetch db connection from environment:](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#backend-connected-to-a-database)
-  - for localhost: create a .env file to store the db connection string (add it to .gitignore)
-  - for heroku: configure db connection string in heroku `Config Vars`
-  2. [create separate module to put database configuration](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#database-configuration-into-its-own-module)
-  3. [get data from database in the `/notes` route for `get` method](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#backend-connected-to-a-database)
-- [more node express routes configured through database](https://youtu.be/gsYmmlGrTUw)
-  1. [rewrite `/notes` route for `post` method](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#using-database-in-route-handlers)
-  1. [rewrite `/notes/:id` route for `get` method](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#using-database-in-route-handlers)
-  1. [error handling](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#error-handling)
-  1. [moving error handling to middleware](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#moving-error-handling-into-middleware)
-  1. [rewrite `/notes/:id` route for `delete` method](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#other-operations)
-  1. [write `/notes/:id` route for `put` method](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#other-operations)
+- [Introduction to mongodb](https://youtu.be/5Cdr5qnw8N4)
+- [Setting up mongo database in mongodb.com](https://youtu.be/EvJJkLZ3RnM)
+  1. Create a free account in mongodb.com
+  - go to https://www.mongodb.com/cloud/atlas/register
+  - you can sign up with google
+  - select the 'free' option
+  2. Create database userid and password
+  - create project
+  - build database using free option
+  - choose the username password option for authentication
+  - finish database creation
+  3. Set network setting to allow access from anywhere
+  - go the 'network access'
+  - edit and select 'allow access from anywhere'. note - this is only for development!
+  4. Get the connection string to your database
+- [Using mongoose to set up a practice application](https://youtu.be/WevMzdj7pxg)
+  1. `npm install mongoose`
+  2. Create a new mongo.js file in your repo to create practice application
+  - copy code from fullstackopen for mongo.js
+  - change the url value to your db connection string
+  - the mongo.js code has the following:
+    - [create a schema for Note](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#schema)
+    - use the schema to create a model for Note
+    - [use the Note model to create and save a Note object into mongodb](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#creating-and-saving-objects)
+  3. Run our code from terminal to create a collection and data in `noteApp` database
+  - run `node mongo.js password`, this will create the note data in `test` database, in `notes` collection
+  - delete the `test` collection
+  - add `noteApp` to the db connection string
+  - run `node mongo.js password` again, this will now create the note data in `noteApp` database
+  4. [Write code to fetch data frome `notes` collection using the `Note` model](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#fetching-objects-from-the-database)
+  - in `mongo.js`, comment out the note creation code
+  - add code to `get` the data
+  - run `node mongo.js password` again
+- [Connect the notes-server to the database](https://youtu.be/e0M8bBv_IEA)
+  1. Fetch db connection string from environment
+  - install npm library `dotenv` that will allow us to convert variables from .env file to `process.env` variables
+  - for localhost
+    - create a .env file to store the db connection string (add .env file to .gitignore)
+    - in .env file, enter db connection string to variable `MONGODB_URI`
+    - in index.js file, use `dotenv` library to read env variables
+  - for render: configure db connection string in render `Environment`
+  2. Create separate module to put database configuration
+  3. Get data from database in the `/api/notes` route for `get` method
+  4. Modify the returned data from mongoose to show the `id` field instead of `_id`, and hide the `__v` field
+- [More node express routes configured through database](https://youtu.be/1NNyJnz3q4c)
+  1. Rewrite `/api/notes` route for `post` method
+  1. Rewrite `/api/notes/:id` route for `get` method
+  1. Error handling
+  1. Moving error handling to middleware
+  - make sure middlewares are loaded in proper order
+  1. Rewrite `/api/notes/:id` route for `delete` method
+  1. Write `/api/notes/:id` route for `put` method
 
 **_TO-DO:_**
 
