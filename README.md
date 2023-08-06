@@ -721,7 +721,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   - add code to `get` the data
   - run `node mongo.js password` again
 - [Connect the notes-server to the database](https://youtu.be/e0M8bBv_IEA)
-  1. Fetch db connection string from environment
+  1. [Fetch db connection string from environment](https://youtu.be/unPjP4sk5mo)
   - install npm library `dotenv` that will allow us to convert variables from .env file to `process.env` variables
   - for localhost
     - create a .env file to store the db connection string (add .env file to .gitignore)
@@ -754,23 +754,26 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [about environment variables](https://youtu.be/3dw7bmLsXAc)
-- [mongoose schema validation](https://youtu.be/hE4vlHSSFkU)
-  1. create a mongoose schema validation for `content` field in noteSchema
-  2. in the note post route, catch the error in note.save
-  3. put the error handler in the error handling middleware
-  4. catch and display the error in the notes react app
-- [mongoose schema validation while updating](https://youtu.be/JU4DzgyKIyI)
-  1. in the note update route, configure it to also throw schema validation errors
-  2. why schema based validation is better than logical error handling in code
-  3. setting heroku config variables through the command line
-- [linting and prettier setup and configurations](https://youtu.be/kqR3hAeg6-g)
-  1. install prettier, eslint, and other dev dependencies for linting and formatting
-  2. setup the VSCode extensions for prettier and eslint
-  3. setup config files for eslint and prettier
-  4. create eslint rule to show warning for console.log
-  5. create eslint ignore config file
-  6. difference between formatting (prettier) vs code linting (eslint)
+- [Mongoose schema validation]()
+  1. Create a mongoose schema validation for `content` field in noteSchema
+  2. In the note post route, catch the error in note.save
+  3. Put the error handler in the error handling middleware
+  4. Catch and display the error in the notes react app
+- [Mongoose schema validation while updating]()
+  1. In the note update route, configure it to also throw schema validation errors
+  2. Why schema based validation is better than logical error handling in code
+- [Linting setup and configurations]()
+  1. Install eslint as a dev dependency
+  2. Setup config file for eslint
+  - change env `browser` to `node`
+  3. Setup the VSCode extensions for eslint
+  4. Create script to run eslint
+  5. Create eslint ignore config file `.eslintignore`
+  - include the `dist` folder
+  6. Create eslint rule for
+  - `eqeqeq`
+  - show warning for console.log
+  7. Difference between formatting (prettier) vs code linting (eslint)
 
 **_TO-DO:_**
 

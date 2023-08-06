@@ -2,12 +2,21 @@ DELETE http://localhost:3001/api/notes/2
 ###
 GET http://localhost:3001/api/notes
 ###
-GET http://localhost:3001/api/notes/1
+GET http://localhost:3001/api/notes/64cfb0b3acf6c111fe8a5b58
 ###
 POST http://localhost:3001/api/notes/
 content-type: application/json
 
 {
     "content": "sample",
+    "important": false
+}
+
+###
+PUT http://localhost:3001/api/notes/64cfb0b3acf6c111fe8a5b58
+content-type: application/json
+
+{
+    "content": "samp",
     "important": false
 }
