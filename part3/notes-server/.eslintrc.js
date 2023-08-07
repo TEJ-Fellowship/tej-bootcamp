@@ -21,6 +21,6 @@ module.exports = {
   },
   rules: {
     eqeqeq: 2,
-    "no-console": 2,
+    "no-console": 0,
   },
 };
