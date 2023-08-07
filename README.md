@@ -721,7 +721,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   - add code to `get` the data
   - run `node mongo.js password` again
 - [Connect the notes-server to the database](https://youtu.be/e0M8bBv_IEA)
-  1. [Fetch db connection string from environment](https://youtu.be/unPjP4sk5mo)
+  1. [Fetch db connection string from environment](https://youtu.be/Aph6jjDb2O8)
   - install npm library `dotenv` that will allow us to convert variables from .env file to `process.env` variables
   - for localhost
     - create a .env file to store the db connection string (add .env file to .gitignore)
