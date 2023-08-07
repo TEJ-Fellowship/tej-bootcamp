@@ -788,6 +788,8 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 ## [PART 4: Testing Express servers, user administration](https://fullstackopen.com/en/part4)
 
+You can refer to the workshop code solutions [here](https://github.com/fullstack-hy2020/part3-notes-backend). Look at the appropriate branch (e.g. look at branch `part4-1` for Part 4-a)
+
 <details><summary><h3 style="display:inline">Chapters</h3></summary>
 <details><summary>Part 4-a: Structure of backend application, introduction to testing</summary>
 
@@ -795,18 +797,25 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Code refactoring](https://youtu.be/IJytft-UX6Q)
-  1. [refactor config, logger, and middleware to `utils` folder](https://fullstackopen.com/en/part4/structure_of_backend_application_introduction_to_testing#project-structure)
-- [Refactoring Node express Router](https://youtu.be/yrTAJAT-QCw)
-  1. refactor all the `notes` routes to `controllers/notes.js`
-- [Testing Node application](https://youtu.be/WMI7Qu1kqhM)
-  1. install jest in dev dependency (npm install --save-dev jest)
-  2. define npm script to run jest and specify the execution environment is node
-  3. unit testing(use of test(),describe())
-- [Notes on rest parameters, node http module, types of exports, route middleware](https://youtu.be/QI7s6Cm6Msk)
-  - [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
-  - [node http module vs express](https://stackoverflow.com/questions/38176214/why-do-some-developer-use-http-and-express-to-create-the-server)
-  - [express router middleware](https://expressjs.com/en/guide/using-middleware.html)
+- [Code refactoring]()
+  1. [Refactor config, logger, and middleware to `utils` folder](https://fullstackopen.com/en/part4/structure_of_backend_application_introduction_to_testing#project-structure)
+  2. Split the app code from `index.js` to `app.js`
+- [Refactoring Node express Router and Note model]()
+  1. Refactor all the `notes` routes to `controllers/notes.js`
+  - use `require('express').Router()`
+  2. Refactor the `notes` schema and model specific code to `models/note.js`
+- [Unit testing Node application]()
+  1. Install jest in dev dependency (npm install --save-dev jest)
+  2. Define npm script to run jest and specify the execution environment is node
+  3. Create a file, `utils/for_testing.js` with simple functions to test
+  4. Create unit testing file `tests/reverse.test.js` with tests for `reverse` function
+  - run it
+  - make one test case fail to analyze the jest error message
+  5. Configure eslint to ignore the jest commands in the test file
+  6. Create unit testing file `tests/average.test.js` with tests for `average` function
+  - run it and analyze the failed test case
+  - fix the failed case
+  - notice the `describe` block
 
 **_TO-DO:_**
 
