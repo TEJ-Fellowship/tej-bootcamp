@@ -1,4 +1,5 @@
-DELETE http://localhost:3001/api/notes/2
+
+DELETE http://localhost:3001/api/notes/64d07149dfc0ef7e666322dd
 ###
 GET http://localhost:3001/api/notes
 ###
@@ -13,10 +14,10 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:3001/api/notes/64cfb00634ca6fb900b3a115
+PUT http://localhost:3001/api/notes/64cca90539337328daf0dcf1
 content-type: application/json
 
 {
-    "content": "sample note",
+    "content": "HTML is easy",
     "important": false
 }
