@@ -3,6 +3,7 @@ module.exports = {
     node: true,
     commonjs: true,
     es2021: true,
+    jest: true,
   },
   extends: "eslint:recommended",
   overrides: [
@@ -21,6 +22,6 @@ module.exports = {
   },
   rules: {
     eqeqeq: 2,
-    "no-console": 0,
+    "no-console": 1,
   },
 };
