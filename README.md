@@ -797,14 +797,14 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Code refactoring]()
+- [Code refactoring](https://youtu.be/Z94SwZLr62I)
   1. [Refactor config, logger, and middleware to `utils` folder](https://fullstackopen.com/en/part4/structure_of_backend_application_introduction_to_testing#project-structure)
   2. Split the app code from `index.js` to `app.js`
-- [Refactoring Node express Router and Note model]()
+- [Refactoring Node express Router and Note model](https://youtu.be/LN0zuzKOFvc)
   1. Refactor all the `notes` routes to `controllers/notes.js`
   - use `require('express').Router()`
   2. Refactor the `notes` schema and model specific code to `models/note.js`
-- [Unit testing Node application]()
+- [Unit testing Node application](https://youtu.be/VzduDvmShas)
   1. Install jest in dev dependency (npm install --save-dev jest)
   2. Define npm script to run jest and specify the execution environment is node
   3. Create a file, `utils/for_testing.js` with simple functions to test
