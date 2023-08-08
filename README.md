@@ -830,31 +830,51 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Setting up test environment](https://youtu.be/iIuu3SSWnGc)
-  1. [set up NODE_ENV for different environments](https://fullstackopen.com/en/part4/testing_the_backend#test-environment)
-  - set up cross-env, if required for windows
-  2. [use supertest to connect to api without starting node server, then write tests for](https://fullstackopen.com/en/part4/testing_the_backend#supertest)
+- [Using supertest](https://fullstackopen.com/en/part4/testing_the_backend#supertest)
+  1. Install supertest
+     `npm i -D supertest`
+  2. Write test cases to connect to api without starting node server, then write tests for
   - get all notes
+    - notice async/await syntax
+    - regex
+    - no port required
+    - using supertest methods for test
   - checking length of notes
+    - using jest methods
   - checking content of one note
-- [initialize database before test](https://youtu.be/o63KJxjzDok)
-  1. [include the `beforeEach` block](https://fullstackopen.com/en/part4/testing_the_backend#initializing-the-database-before-tests)
-  2. modify tests written above to use the database initialization values
-- [async/await syntax](https://youtu.be/Fob_yhLmFIc)
-  1. [refactor notesRouter.get for '/api/notes' to async/await](https://fullstackopen.com/en/part4/testing_the_backend#async-await-in-the-backend)
+  3. Setup the code according to instructions in fullstackopen if timeout type errors seen in console
+  - include a teardown
+  - add Jest timeout
+  - set bufferTimeoutMS
+- [Setting up test environment]()
+  1. [Set up NODE_ENV for different environments](https://fullstackopen.com/en/part4/testing_the_backend#test-environment)
+  - set up cross-env, if required for windows
+  2. Set up test database for MongoDB
+  - create TEST_MONGODB_URI in .env file
+  - in config, setup the db url based on NODE_ENV
+  3. In logger, only conditionally log if NODE_ENV is not test
+- [Initialize test database before test]()
+  1. [Include the `beforeEach` block](https://fullstackopen.com/en/part4/testing_the_backend#initializing-the-database-before-tests)
+  2. Modify tests written above to use the database initialization values
+  3. Running test one at a time
+- [async/await syntax]()
+  1. How does async/await work
+  2. [Refactor notesRouter.get for '/api/notes' to async/await](https://fullstackopen.com/en/part4/testing_the_backend#async-await-in-the-backend)
   - run tests to make sure it is still working correctly
-- [write test then refactor notesRouter.post to async/await](https://youtu.be/bFNIu7d9CqM)
-  1. [write test then refactor notesRouter.post to async/await](https://fullstackopen.com/en/part4/testing_the_backend#more-tests-and-refactoring-the-backend)
+- [Write test then refactor notesRouter.post to async/await]()
+  1. [Write tests for notesRouter.post](https://fullstackopen.com/en/part4/testing_the_backend#more-tests-and-refactoring-the-backend)
   - write the test cases to test different scenario
   - run tests to make sure code is currently working
-  2. create helper functions for some common functions required for testing
+  2. Create helper functions for some common functions required for testing
+  - put helper functions in `tests/test_helper.js`
   - refactor tests to use helper functions
-  - refactor notesRouter.post to use async / await syntax
+  3. Refactor notesRouter.post to use async / await syntax
   - run test to make sure code is still working after refactoring
-  3. [continue refactoring notesRouter.get single note, and notesRouter.delete routes to use async/await](https://fullstackopen.com/en/part4/testing_the_backend#error-handling-and-async-await)
-- [Optimizing the beforeEach function](https://youtu.be/jqVF_NLMsSA)
-  1. [use Promise.all to await for an array of promises to resolve](https://fullstackopen.com/en/part4/testing_the_backend#optimizing-the-before-each-function)
-  2. [refactor tests to use describe block to group tests](https://fullstackopen.com/en/part4/testing_the_backend#refactoring-tests)
+  - put try / catch block for error handling
+  4. [Continue refactoring notesRouter.get single note, and notesRouter.delete routes to use async/await](https://fullstackopen.com/en/part4/testing_the_backend#error-handling-and-async-await)
+- [Optimizing the beforeEach function]()
+  1. [Use Promise.all to await for an array of promises to resolve](https://fullstackopen.com/en/part4/testing_the_backend#optimizing-the-before-each-function)
+  2. [Refactor tests to use describe block to group tests](https://fullstackopen.com/en/part4/testing_the_backend#refactoring-tests)
 
 **_TO-DO:_**
 
