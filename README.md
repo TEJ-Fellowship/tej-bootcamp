@@ -887,6 +887,17 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 [PART 4-c: User administration](https://fullstackopen.com/en/part4/user_administration)
 
+**_WE-WILL-LEARN:_**
+
+- Creating users with passwords in the Mongo DB database
+  - using `bcrypt` for one way hashing of password to store in database
+  - using Test Driven Development (TDD) method
+- Associate a `Note` to a `User`
+  - put a `notes` array field into `User`
+  - put a a `user` field into `Note`
+  - association is enforced by mongoose library, not by Mongo DB
+- Using the mongoose `populate` method
+
 **_LECTURE-VIDEO:_**
 
 - [Setting up Mongo DB for Note to User relationship]()
@@ -906,6 +917,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   - write test case for user creation with existing username
   - running the test should fail, as we expect status code 400, but as of now our code returns 201 created
   - adjust create new user function to check for existing username
+    - use `mongoose-unique-validator` library to validate for unique username
   - running the test should now pass
   5. In `users` router, write route handler for GET method for all users
 - [Update new note creation to include user that created the note]()
