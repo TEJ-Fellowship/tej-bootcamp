@@ -889,30 +889,30 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Setting up Mongo DB for Note to User relationship](https://youtu.be/HshcFKMxKvs)
-  1. [set up Mongoose schema for `User`](https://fullstackopen.com/en/part4/user_administration#mongoose-schema-for-users)
-  2. modify `Note` Mongoose schema to refer to `User` who created the Note
-- [Creating users](https://youtu.be/75b9Yjdid1c)
-  1. [install bcrypt library to create one-way hash of the password](https://fullstackopen.com/en/part4/user_administration#creating-users)
-  2. create new router for `users` that handles REST api requests related to `users`
+- [Setting up Mongo DB for Note to User relationship]()
+  1. [Set up Mongoose schema for `User`](https://fullstackopen.com/en/part4/user_administration#mongoose-schema-for-users)
+  2. Modify `Note` Mongoose schema to refer to `User` who created the Note
+- [Creating users]()
+  1. [Install bcrypt library to create one-way hash of the password](https://fullstackopen.com/en/part4/user_administration#creating-users)
+  2. Create new router for `users` that handles REST api requests related to `users`
   - create `users` router
   - include `users` router in app.js
   - in `users` router, write POST method to create new user
-  3. write test case for user creation
+  3. Write test case for user creation
   - first, write `usersInDb` helper function to get all users from DB
   - write test case for user creation with new username, utilizing `usersInDb` helper function
   - running the test should pass
-  4. practice Test Driven Development to add functionality to creating new user
+  4. Practice Test Driven Development to add functionality to creating new user
   - write test case for user creation with existing username
   - running the test should fail, as we expect status code 400, but as of now our code returns 201 created
   - adjust create new user function to check for existing username
   - running the test should now pass
-  5. in `users` router, write route handler for GET method for all users
-- [Update new note creation to include user that created the note](https://youtu.be/q_4xcyJ5cNA)
-  1. [update route handler for POST method for new note](https://fullstackopen.com/en/part4/user_administration#creating-a-new-note)
+  5. In `users` router, write route handler for GET method for all users
+- [Update new note creation to include user that created the note]()
+  1. [Update route handler for POST method for new note](https://fullstackopen.com/en/part4/user_administration#creating-a-new-note)
   - include user.\_id in the created note's `user` field
   - append the newly created note.\_id to the user's `notes` field
-  2. [update users and notes route handlers to populate full data](https://fullstackopen.com/en/part4/user_administration#populate)
+  2. [Update users and notes route handlers to populate full data](https://fullstackopen.com/en/part4/user_administration#populate)
   - update GET all users route handler to `populate` the full notes that the user has created
   - user `populate parameters` to only include the fields that we want
   - update GET all notes route handler to `populate` required user fields
@@ -930,24 +930,24 @@ Nothing!!
 **_LECTURE-VIDEO:_**
 
 - [Principles of token based authentication](https://youtu.be/CzekTh2A5O8)
-  1. [understanding token based authentication sequence diagram](https://fullstackopen.com/en/part4/token_authentication)
-  2. implement logging in function
+  1. [Understanding token based authentication sequence diagram](https://fullstackopen.com/en/part4/token_authentication)
+  2. Implement logging in function
   - npm install jsonwebtoken
   - create new router for `login` that handles REST api requests related to `login`
   - add the `login` router in app.js
   - add `SECRET` value to `.env` file that will be used by jsonwebtoken to sign the token
   - test logging in using VS Code REST-client
 - [Creating new notes with logged in user](https://youtu.be/fTohbhJwvg0)
-  1. [change the POST new note handler to only allow logged in users](https://fullstackopen.com/en/part4/token_authentication#limiting-creating-new-notes-to-logged-in-users)
-  2. test creation of new note with token using VS Code REST-client
+  1. [Change the POST new note handler to only allow logged in users](https://fullstackopen.com/en/part4/token_authentication#limiting-creating-new-notes-to-logged-in-users)
+  2. Test creation of new note with token using VS Code REST-client
   - write VS Code REST-client code to login
   - write VS Code REST-client code to POST new note, including token returned from login
-  3. [implement error handling](https://fullstackopen.com/en/part4/token_authentication#error-handling)
+  3. [Implement error handling](https://fullstackopen.com/en/part4/token_authentication#error-handling)
   - update `errorHandler` middleware to handle `ValidationError` and `JsonWebTokenError`
 - [Problems of Token-based authentication](https://youtu.be/_sVk3vSt0Fw)
-  1. [put time limit for the validity period of token](https://fullstackopen.com/en/part4/token_authentication#problems-of-token-based-authentication)
-  2. update `errorHandler` middleware to handle `TokenExpiredError`
-  3. [end notes](https://fullstackopen.com/en/part4/token_authentication#end-notes)
+  1. [Put time limit for the validity period of token](https://fullstackopen.com/en/part4/token_authentication#problems-of-token-based-authentication)
+  2. Update `errorHandler` middleware to handle `TokenExpiredError`
+  3. [End notes](https://fullstackopen.com/en/part4/token_authentication#end-notes)
 
 **_TO-DO:_**
 
