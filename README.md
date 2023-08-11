@@ -900,10 +900,10 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Setting up Mongo DB for Note to User relationship]()
+- [Setting up Mongo DB for Note to User relationship](https://youtu.be/aJopS8jIt4E)
   1. [Set up Mongoose schema for `User`](https://fullstackopen.com/en/part4/user_administration#mongoose-schema-for-users)
   2. Modify `Note` Mongoose schema to refer to `User` who created the Note
-- [Creating users]()
+- [Creating users](https://youtu.be/9_SDwFCVtXY)
   1. [Install bcrypt library to create one-way hash of the password](https://fullstackopen.com/en/part4/user_administration#creating-users)
   2. Create new router for `users` that handles REST api requests related to `users`
   - create `users` router
@@ -920,7 +920,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
     - use `mongoose-unique-validator` library to validate for unique username
   - running the test should now pass
   5. In `users` router, write route handler for GET method for all users
-- [Update new note creation to include user that created the note]()
+- [Update new note creation to include user that created the note](https://youtu.be/RBPNYbZUqaA)
   1. [Update route handler for POST method for new note](https://fullstackopen.com/en/part4/user_administration#creating-a-new-note)
   - include user.\_id in the created note's `user` field
   - append the newly created note.\_id to the user's `notes` field
