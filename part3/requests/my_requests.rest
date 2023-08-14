@@ -7,9 +7,10 @@ GET http://localhost:3001/api/notes/64cfb0b3acf6c111fe8a5b58
 ###
 POST http://localhost:3001/api/notes/
 content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InByYWJlc2gzIiwiaWQiOiI2NGQ1Y2E1YWExMzliYTIzZTA4NGY0MmEiLCJpYXQiOjE2OTE5OTExMjcsImV4cCI6MTY5MTk5MTE1N30.SyMx4BdHGlSOUbPdbDJ6AIUmIGGxtGithkwdU7KgqKA
 
 {
-    "content": "sample by prabesh",
+    "content": "note creation using token",
     "important": false,
     "userId": "64d5ca5aa139ba23e084f42a"
 }
@@ -28,6 +29,14 @@ content-type: application/json
 
 {
     "name": "Prabesh Magar",
+    "username": "prabesh3",
+    "password": "password123"
+}
+###
+POST http://localhost:3001/api/login/
+content-type: application/json
+
+{
     "username": "prabesh3",
     "password": "password123"
 }
