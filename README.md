@@ -991,13 +991,18 @@ Nothing!!
 - [Creating new notes](https://youtu.be/iGSjWaOUEDc)
   1. [Set up `notes.js` service to use token from login response as the `Authorization` header in the notes creation request header](https://fullstackopen.com/en/part5/login_in_frontend#creating-new-notes)
   2. In App.js `handleLogin` function, `setToken` after login is sucessful
-  3. The functionality to `add note` from the react app should work again
+  3. In `create note` service, include the `Authorization` header in the correct format with the token
+  4. The functionality to `add note` from the react app should work again
 - [Saving login information in the browser](https://youtu.be/fYX5A3FWI2Q)
   1. [In `handleLogin` call `window.localStorage.setItem` to store user data in local storage](https://fullstackopen.com/en/part5/login_in_frontend#saving-the-token-to-the-browsers-local-storage)
   - remember to use `JSON.stringify` to convert JS object to string
   2. In `App.js`, write a useEffect hook that will read user data from local storage if available when application loads
   - remember to use `JSON.parse` to convert string to JS object
-  3. [Possible cross site scripting problems when using local storage](https://fullstackopen.com/en/part5/login_in_frontend#a-note-on-using-local-storage)
+  3. What happens if saved token is no longer valid? e.g. if token expires?
+  - show the proper error
+  - remove data from local storage
+  - update the user state to null so that the login form appears
+  4. [Possible cross site scripting problems when using local storage](https://fullstackopen.com/en/part5/login_in_frontend#a-note-on-using-local-storage)
 
 **_TO-DO:_**
 
