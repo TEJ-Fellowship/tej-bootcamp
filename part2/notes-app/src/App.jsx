@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Note from "./components/Note";
 import noteService from "./services/notes";
+import loginService from "./services/login";
 import Notification from "./components/Notification";
 
 const App = () => {
@@ -8,6 +9,9 @@ const App = () => {
   const [newNote, setNewNote] = useState("");
   const [showAll, setShowAll] = useState(true);
   const [notification, setNotification] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     console.log("hello");
@@ -21,6 +25,13 @@ const App = () => {
       setNotes(myData);
     });
 
+    //lets get user from localstorage if available
+    let myUser = window.localStorage.getItem("noteUser");
+
+    if (myUser) {
+      setUser(JSON.parse(myUser));
+    }
+
     console.log(myAxiosPromise);
   }, []);
 
@@ -32,13 +43,24 @@ const App = () => {
       content: newNote,
       important: Math.random() > 0.5,
     };
-    let postPromise = noteService.create(myNote);
-    postPromise.then((result) => {
-      console.dir(result);
-      console.log("note created data return", result.data);
-      setNotes(notes.concat(result.data));
-      setNewNote("");
-    });
+    let postPromise = noteService.create(myNote, user.token);
+    postPromise
+      .then((result) => {
+        console.dir(result);
+        console.log("note created data return", result.data);
+        setNotes(notes.concat(result.data));
+        setNewNote("");
+      })
+      .catch((e) => {
+        setNotification(e.response.data.error);
+        setTimeout(() => {
+          setNotification("");
+        }, 2000);
+        if (e.response.data.error === "token expired") {
+          setUser(null);
+          window.localStorage.removeItem("noteUser");
+        }
+      });
     console.log("form has been submitted");
   };
 
@@ -86,7 +108,59 @@ const App = () => {
       });
   };
 
+  const handleLogin = async (event) => {
+    event.preventDefault();
+    console.log("logging in with", username, password);
+    try {
+      let loggedinUser = await loginService.login({
+        username,
+        password,
+      });
+      setUser(loggedinUser);
+      window.localStorage.setItem("noteUser", JSON.stringify(loggedinUser));
+    } catch (error) {
+      setNotification(error.response.data.error);
+      setTimeout(() => {
+        setNotification("");
+      }, 2000);
+    }
+  };
   const myStyle = { fontSize: "60px" };
+
+  const loginForm = () => {
+    return (
+      <form onSubmit={handleLogin}>
+        <div>
+          username
+          <input
+            type="text"
+            value={username}
+            name="Username"
+            onChange={({ target }) => setUsername(target.value)}
+          />
+        </div>
+        <div>
+          password
+          <input
+            type="password"
+            value={password}
+            name="Password"
+            onChange={({ target }) => setPassword(target.value)}
+          />
+        </div>
+        <button type="submit">login</button>
+      </form>
+    );
+  };
+
+  const noteForm = () => {
+    return (
+      <form onSubmit={handleSubmit}>
+        <input value={newNote} onChange={handleChange} />
+        <button>Submit</button>
+      </form>
+    );
+  };
 
   return (
     <>
@@ -94,6 +168,9 @@ const App = () => {
         Notes
       </h1>
       <Notification message={notification} />
+
+      {user === null ? loginForm() : noteForm()}
+
       <button onClick={handleShowAll}>
         show {showAll ? "important" : "all"}
       </button>
@@ -110,10 +187,6 @@ const App = () => {
           );
         })}
       </ul>
-      <form onSubmit={handleSubmit}>
-        <input value={newNote} onChange={handleChange} />
-        <button>Submit</button>
-      </form>
     </>
   );
 };
