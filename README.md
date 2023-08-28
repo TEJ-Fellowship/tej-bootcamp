@@ -1016,18 +1016,18 @@ Nothing!!
 
 **_LECTURE-VIDEO:_**
 
-- [Using props.children to create a generic Togglable component to control visibility of components](https://youtu.be/DvFC83TTwu8)
+- [Using props.children to create a generic Togglable component to control visibility of components]()
   1. [Move login form to it's own component, LoginForm](https://fullstackopen.com/en/part5/props_children_and_proptypes#displaying-the-login-form-only-when-appropriate)
   2. [Move the `Togglable` logic into it's own component, Togglable](https://fullstackopen.com/en/part5/props_children_and_proptypes#the-components-children-aka-props-children)
   - please note how `props.children` is being used
   3. Modify `App.js > loginForm()` function to call `LoginForm` component within the `Togglable` component to make login form togglable
-- [Move the Note adding form (`NoteForm`) into it's own component](https://youtu.be/1dIckrpr7bQ)
+- [Move the Note adding form (`NoteForm`) into it's own component]()
   1. Now use the `Togglable` component to toggle visibility of `NoteForm`
   2. [Move new note related state to the `NoteForm` component](https://fullstackopen.com/en/part5/props_children_and_proptypes#state-of-the-forms)
-- [Using useRef, forwardRef, and useImperativeHandle](https://youtu.be/bzFsomL6yxQ)
+- [Using useRef, forwardRef, and useImperativeHandle]()
   1. [Use useRef, forwardRef, and useImperativeHandle to pass functions from inner component to outer component](https://fullstackopen.com/en/part5/props_children_and_proptypes#references-to-components-with-ref)
   2. [A note on creating instances of the same component](https://fullstackopen.com/en/part5/props_children_and_proptypes#one-point-about-components)
-- [Using prop-types and eslint](https://youtu.be/FC04ezeV7FY)
+- [Using prop-types and eslint]()
   1. [Use the prop-types package to declare mandatory props and their data type](https://fullstackopen.com/en/part5/props_children_and_proptypes#prop-types)
   - declare mandatory props in the `Togglable` and `LoginForm` components
   2. [Configure eslint to ignore test related errors](https://fullstackopen.com/en/part5/props_children_and_proptypes#e-slint)
