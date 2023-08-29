@@ -1059,32 +1059,37 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Setup initial jest test for Note component](https://youtu.be/NfCUIp1Gihk)
+- [Setup initial jest test for Note component]()
   1. Install the required packages
   ```
-  npm install --save-dev @testing-library/react @testing-library/jest-dom jest-environment-jsdom @babel/preset-env @babel/preset-react
+  npm install --save-dev eslint-plugin-react-refresh @testing-library/react @testing-library/jest-dom jest-environment-jsdom @babel/preset-env @babel/preset-react
   ```
-  2. Make sure `Note` component has className `note`
+  2. Make the configurations
+  - in package.json
+  - in .babelrc
+  2. Make sure `Note` component has className `note`, so that we can select by it
   3. [Write Note component test in the file src/components/Note.test.js](https://fullstackopen.com/en/part5/testing_react_apps#searching-for-content-in-a-component)
-  4. Run the test
+  4. Run the test. You might also need to `npm i -D jest` if `jest` is not already installed
   5. Modify the test to also check by selecting the element by class name in the rendered container
   6. [Use `screen.debug()` to see html output of render and of screen.getByText](https://fullstackopen.com/en/part5/testing_react_apps#debugging-tests)
-- [Clicking buttons in test](https://youtu.be/XPYLtXHi4MM)
+- [Clicking buttons in test]()
   1. [Set up test for button click](https://fullstackopen.com/en/part5/testing_react_apps#clicking-buttons-in-tests)
   - npm install --save-dev @testing-library/user-event
   2. Write test case for button click on the `Note` component
   3. [Write tests for the Togglable component](https://fullstackopen.com/en/part5/testing_react_apps#tests-for-the-togglable-component)
   - set up Togglable component for testing by adding className="togglableContent"
   - now write the tests
-- [Testing the forms](https://youtu.be/C6GzDq6W_UA)
+- [Testing the forms]()
   1. [Write test for form submit](https://fullstackopen.com/en/part5/testing_react_apps#testing-the-forms)
+  - add className `formDiv` to `NoteForm`
   2. More options for finding elements
   - [note if there are two input fields](https://fullstackopen.com/en/part5/testing_react_apps#about-finding-the-elements)
     - use `screen.getByPlaceholderText` to be more precise to get right text input field, or use `container.querySelector`
+  - using `container.querySelector`
   - using `{ exact: false }` option in the `screen.getByText` method
   - using `screen.findByText`; note it returns a promise
   - using `screen.queryByText`; note it does not cause an exception if the element is not found
-- [More notes on tests](https://youtu.be/RGVPQTNyEgM)
+- [More notes on tests]()
   1. [Finding test coverage](https://fullstackopen.com/en/part5/testing_react_apps#test-coverage)
   - by running `npm test -- --coverage --collectCoverageFrom='src/**/*.{jsx,js}'`
   2. [Frontend integration tests](https://fullstackopen.com/en/part5/testing_react_apps#frontend-integration-tests)
