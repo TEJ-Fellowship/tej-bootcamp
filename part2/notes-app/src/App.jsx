@@ -9,7 +9,6 @@ import NoteForm from "./components/NoteForm";
 
 const App = () => {
   const [notes, setNotes] = useState([]);
-  const [newNote, setNewNote] = useState("");
   const [showAll, setShowAll] = useState(true);
   const [notification, setNotification] = useState("");
   const [username, setUsername] = useState("");
@@ -42,21 +41,14 @@ const App = () => {
 
   const notesToShow = notes.filter((note) => (showAll ? true : note.important));
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    let myNote = {
-      content: newNote,
-      important: Math.random() > 0.5,
-    };
-
+  const handleSubmit = (newNote) => {
     noteFormRef.current.toggleVisibility();
-    let postPromise = noteService.create(myNote, user.token);
+    let postPromise = noteService.create(newNote, user.token);
     postPromise
       .then((result) => {
         console.dir(result);
         console.log("note created data return", result.data);
         setNotes(notes.concat(result.data));
-        setNewNote("");
       })
       .catch((e) => {
         setNotification(e.response.data.error);
@@ -69,11 +61,6 @@ const App = () => {
         }
       });
     console.log("form has been submitted");
-  };
-
-  const handleChange = (event) => {
-    console.log(event.target.value);
-    setNewNote(event.target.value);
   };
 
   const handleShowAll = () => {
@@ -151,11 +138,7 @@ const App = () => {
   const noteForm = () => {
     return (
       <Togglable buttonLabel="new note" ref={noteFormRef}>
-        <NoteForm
-          onSubmit={handleSubmit}
-          value={newNote}
-          handleChange={handleChange}
-        />
+        <NoteForm onSubmit={handleSubmit} />
       </Togglable>
     );
   };
