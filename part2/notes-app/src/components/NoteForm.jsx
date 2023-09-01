@@ -7,7 +7,7 @@ const NoteForm = ({ onSubmit }) => {
     e.preventDefault();
     onSubmit({
       content: newNote,
-      important: Math.random() > 0.5,
+      important: true,
     });
 
     setNewNote("");
@@ -23,6 +23,7 @@ const NoteForm = ({ onSubmit }) => {
           placeholder="enter something here"
           value={newNote}
           onChange={(e) => setNewNote(e.target.value)}
+          id="inputNote"
         />
         <button type="submit">save</button>
       </form>
