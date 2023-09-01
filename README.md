@@ -1108,7 +1108,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Initial setup for cypress]()
+- [Initial setup for cypress](https://youtu.be/u2DwyqMHM3M)
   1. [Install cypress to the frontend as development dependency (npm i -D cypress)](https://fullstackopen.com/en/part5/end_to_end_testing#cypress)
   2. Add an npm-script to run it `"cypress:open": "cypress open"`
   - also change dev start to `"dev": "vite --host"`
@@ -1116,7 +1116,7 @@ We will learn unit testing a React component. We will learn to test:
   4. Start cypress with command `npm run cypress:open`
   5. Create a new test file `notes_app.cy.js` inside the cypress/e2e folder
   6. Write the first test for the front page
-- [Writing to a form]()
+- [Writing to a form](https://youtu.be/qSgkWSXTzkQ)
   1. [Extend our tests so that the test tries to log in to our application](https://fullstackopen.com/en/part5/end_to_end_testing#writing-to-a-form)
   - type the username and password in the login form using `cy.type` for the test
   - `cy.get` command allows for searching elements by CSS selectors
@@ -1125,25 +1125,25 @@ We will learn unit testing a React component. We will learn to test:
     - to avoid name conflicts, we gave the submit button the id login-button we can use to access it
     - if you are getting eslint errors on cy `npm i -D eslint-plugin-cypress`
     - changing the configuration in `.eslintrc.js`
-- [Testing new note form]()
+- [Testing new note form](https://youtu.be/kBDE6gghwkY)
   1. [Only logged-in users can create new notes, so we add logging in to the application in beforeEach block](https://fullstackopen.com/en/part5/end_to_end_testing#testing-new-note-form)
   2. Give adding note input an id to avoid test failing if there is more than one input
   3. Each test starts a fresh browser state, as if a new browser window was opened
-- [Controlling the state of the database]()
+- [Controlling the state of the database](https://youtu.be/pXA2dsl_iDs)
   1. Challenge with E2E tests is that they do not have access to the database
   2. [Create API endpoints to the backend for the test](https://fullstackopen.com/en/part5/end_to_end_testing#controlling-the-state-of-the-database)
   - create a new router for the tests `testingRouter` at backend
   - add it to the backend only if the application is run on test-mode
   - the test does HTTP requests to the backend with `cy.request`
   3. Write the test for changing the importance of notes
-  4. [Make a test to ensure that a login attempt fails if the password is wrong](https://fullstackopen.com/en/part5/end_to_end_testing#failed-login-test)
+  4. [Make a test to ensure that a login attempt fails if the password is wrong](https://youtu.be/GXz4AzbPdQk)
   - check error mesage `cy.get(.className).contains(message))`
   - note that css class selector starts with a full stop as in `.className`
   5. For more diverse tests than contains which works based on text content only
   - `should` should always be chained with get (or another chainable command)
   - cypress requires the colors to be given as rgb
   - if the test are for same component we can chain `should` with `and`
-- [Bypassing the UI]()
+- [Bypassing the UI](https://youtu.be/9epuXiy7IzE)
   1. Note : [Fully test the login flow – but only once!](https://docs.cypress.io/guides/end-to-end-testing/testing-your-app#Logging-in)
   2. [Bypass the UI](https://fullstackopen.com/en/part5/end_to_end_testing#bypassing-the-ui)
   3. [Custom command](https://docs.cypress.io/api/cypress-api/custom-commands)
@@ -1155,7 +1155,7 @@ We will learn unit testing a React component. We will learn to test:
   - chaining contains with contains
   - when coding tests, you should check in the test runner that the tests use the right components!
   - use of `parent()` and `find` and `as` in cy
-- [Running and debugging the tests]()
+- [Running and debugging the tests](https://youtu.be/Mlzyi-sMwYE)
   1. Cypress commands always return undefined
   2. Cypress commands are like promises
   3. We can run the test using cli with command `"test:e2e": "cypress run"`
