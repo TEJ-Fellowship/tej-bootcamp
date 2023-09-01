@@ -1108,27 +1108,28 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Initial setup for cypress](https://www.youtube.com/watch?v=-OKjjM8Y9Os)
+- [Initial setup for cypress]()
   1. [Install cypress to the frontend as development dependency (npm i -D cypress)](https://fullstackopen.com/en/part5/end_to_end_testing#cypress)
-  2. Add an npm-script to run it `{"cypress:open": "cypress open"}`
-  3. Add an npm-script to the backend which starts it in test mode `{"start:test": "cross-env NODE_ENV=test node index.js"}`
+  2. Add an npm-script to run it `"cypress:open": "cypress open"`
+  - also change dev start to `"dev": "vite --host"`
+  3. Add an npm-script to the backend which starts it in test mode `"start:test": "NODE_ENV=test node index.js"`
   4. Start cypress with command `npm run cypress:open`
-  5. Create a new test file `notes.app.spec.cy.js` inside the cypress/e2e folder
+  5. Create a new test file `notes_app.cy.js` inside the cypress/e2e folder
   6. Write the first test for the front page
-- [Writing to a form](https://www.youtube.com/watch?v=hdv3rS3NWeU)
+- [Writing to a form]()
   1. [Extend our tests so that the test tries to log in to our application](https://fullstackopen.com/en/part5/end_to_end_testing#writing-to-a-form)
   - type the username and password in the login form using `cy.type` for the test
   - `cy.get` command allows for searching elements by CSS selectors
   - use `id` to get the value from input fields and use # to select id
   - some things to note
     - to avoid name conflicts, we gave the submit button the id login-button we can use to access it
-    - if you are getting eslint errors on cy `npm i -d eslint-plugin-cypress`
+    - if you are getting eslint errors on cy `npm i -D eslint-plugin-cypress`
     - changing the configuration in `.eslintrc.js`
-- [Testing new note form](https://www.youtube.com/watch?v=Dts2-btCrXA)
+- [Testing new note form]()
   1. [Only logged-in users can create new notes, so we add logging in to the application in beforeEach block](https://fullstackopen.com/en/part5/end_to_end_testing#testing-new-note-form)
   2. Give adding note input an id to avoid test failing if there is more than one input
-  3. All changes to the browser's state are reversed after each test
-- [Controlling the state of the database](https://www.youtube.com/watch?v=Dts2-btCrXA)
+  3. Each test starts a fresh browser state, as if a new browser window was opened
+- [Controlling the state of the database]()
   1. Challenge with E2E tests is that they do not have access to the database
   2. [Create API endpoints to the backend for the test](https://fullstackopen.com/en/part5/end_to_end_testing#controlling-the-state-of-the-database)
   - create a new router for the tests `testingRouter` at backend
@@ -1142,21 +1143,25 @@ We will learn unit testing a React component. We will learn to test:
   - `should` should always be chained with get (or another chainable command)
   - cypress requires the colors to be given as rgb
   - if the test are for same component we can chain `should` with `and`
-- [Bypassing the UI](https://www.youtube.com/watch?v=U6UBYY8Jv5M)
+- [Bypassing the UI]()
   1. Note : [Fully test the login flow – but only once!](https://docs.cypress.io/guides/end-to-end-testing/testing-your-app#Logging-in)
   2. [Bypass the UI](https://fullstackopen.com/en/part5/end_to_end_testing#bypassing-the-ui)
   3. [Custom command](https://docs.cypress.io/api/cypress-api/custom-commands)
   - create a cy command for login
   - create a cy command for adding new note
-  4. Chaining contains with contains
-  5. When coding tests, you should check in the test runner that the tests use the right components!
-  6. Use of `parent()` and `find` and `as` in cy
-- [Running and debugging the tests](https://www.youtube.com/watch?v=U6UBYY8Jv5M)
+  - config baseUrl
+  - config the env BACKEND
+  4. Revisiting changing the importance of a note
+  - chaining contains with contains
+  - when coding tests, you should check in the test runner that the tests use the right components!
+  - use of `parent()` and `find` and `as` in cy
+- [Running and debugging the tests]()
   1. Cypress commands always return undefined
   2. Cypress commands are like promises
-  3. We can run the test using cli with command `{"test:e2e": "cypress run"}`
-  4. Videos of the test execution will be saved to cypress/videos/
-  5. gitignore the videos directory
+  3. We can run the test using cli with command `"test:e2e": "cypress run"`
+  4. Videos of the test execution can be recorded
+  - in the cypress.config.js add `video: true`; then videos will be saved to cypress/videos/
+  - gitignore the videos directory
 
 **_TO-DO:_**
 
