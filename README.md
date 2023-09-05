@@ -1225,7 +1225,7 @@ We will learn unit testing a React component. We will learn to test:
     - export store and the reducer
   - in the test file `noteReducer.test.js`, put test case for adding a new post
   - add another test to toggle the `important` field
-- [Add functionality to add new note](https://youtu.be/Mlzyi-sMwYE)
+- [Add functionality to add new note](https://youtu.be/y7WYvEL27-U)
   1. Add form to add note
   2. Add `onSubmit` handler that calls `store.dispatch` for adding note
   3. Add frontend for toggling
