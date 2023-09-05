@@ -1207,7 +1207,7 @@ We will learn unit testing a React component. We will learn to test:
   - cd redux-counter
   - rm -rf .git
   - npm i redux
-  2. Setup redux in index.js for note app
+  2. Setup redux in index.jsx for note app
   - create a reducer, `noteReducer` in this case. the reducer does the work similar to `setState`
   - create a store, by using `createStore` and passing it the reducer
   - use `store.getState()` to get the store (like the `state`)
