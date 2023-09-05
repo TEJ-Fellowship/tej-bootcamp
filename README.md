@@ -1186,7 +1186,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Create a counter app that uses redux]()
+- [Create a counter app that uses redux](https://youtu.be/PwaIfWc0Idw)
   1. Setup the application
   - clone the [react starter repo](https://github.com/TEJ-Fellowship/react-start-kit)
   - rename to redux-counter
@@ -1200,7 +1200,7 @@ We will learn unit testing a React component. We will learn to test:
   - use `store.dispatch(action)` to modify the store (like calling `setState`)
     - `action` is an object with `type` key, and optionally `data` key
   - use `store.subscribe(React Component)` to rerender component when store changes
-- [Create a note app that uses redux]()
+- [Create a note app that uses redux](https://youtu.be/5ypUAitqbjQ)
   1. Setup the application
   - clone the [react starter repo](https://github.com/TEJ-Fellowship/react-start-kit)
   - rename to redux-note
@@ -1234,7 +1234,7 @@ We will learn unit testing a React component. We will learn to test:
   4. Write action creators for adding note, and toggling importance
   - write an `action creator` called `toggleImportanceOf` that creates the action to dispatch for toggling importance
   - write an `action creator` called `createNote` that creates the action to dispatch for adding note
-- [Refactor note app to use Provider]()
+- [Refactor note app to use Provider](https://youtu.be/qezPIuply_M)
   1. Put the reducer in the `reducers/noteReducer.js` file
   2. Also move the action creators to `reducers/noteReducer.js`
   3. Move the app component to `App.js`
