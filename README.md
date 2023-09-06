@@ -1267,38 +1267,48 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Add state for visibility filter by putting it in another reducer using Combined reducers](https://youtu.be/bCaJ1NCH6CQ)
+- [Add state for visibility filter by putting it in another reducer using Combined reducers]()
   - note that `NewNote` and `Notes` components have been refactored from `App` component
-  1. initialize `notes` state with two notes
-  2. create visibility filter to show all / important notes
-  3. create new reducer `filterReducer` to store value of filter
+  1. Initialize `notes` state with two notes in `noteReducer`
+  2. Create visibility filter to show all / important notes
+  - put radio buttons with `onChange` event handler
+  - note that `name` is same for the `radio` inputs to form a `button group`
+  - use `useState` to store the state of visibility in `App` component
+  - pass the state as prop to `Notes`
+  - in `Notes` use the prop to show the desired notes
+  3. Create new reducer `filterReducer` to store value of filter
   - put the reducer function `filterReducer`
   - create action creator `filterChange`
-  4. modify index.js to combine the reducers `filterReducer` and `noteReducer`
+  4. Modify index.js to combine the reducers `filterReducer` and `noteReducer`
   - import `combineReducers` from `redux`
   - use `combineReducers` to combine the two reducers
   - change `createStore` to take the combined reducer
-  5. modify `Notes.js` to now only read the `notes` key from the state
-  6. create separate component for `VisibilityFilter`
+  5. Change the code to use redux instead of useState
+  - modify `Notes.js` to now only read the `notes` key from the state
+  - dispatch to the reducer when radio button is clicked
+  - modify `Notes.js` to use filter from redux store instead of useState
+  6. Create separate component for `VisibilityFilter`
   - in `App` use the `VisibilityFilter` component to display the filter
-  7. modify `Notes.js` to filter notes based on the visibility filter
-- [Using Redux Toolkit](https://www.youtube.com/watch?v=oWXDq4edkWw)
-  1. install the Redux Toolkit
+- [Using Redux Toolkit]()
+  1. Install the Redux Toolkit
   - npm install @reduxjs/toolkit
-  2. modify `index.js` to use toolkit
+  2. Modify `index.js` to use toolkit
   - import and use `configureStore` to create store, which will replace `combineReducers` and `createStore`
-  3. modify `noteReducer.js` to use toolkit
+  3. Modify `noteReducer.js` to use toolkit
   - use `createSlice` to refactor the reducer and action creators
   - use export using toolkit
-- [Using Redux devtool](https://youtu.be/oWXDq4edkWw?t=593)
-  1. install devtool from https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
-  2. open the Redux devtool window
-  3. dispatch an action from the toolkit
-  4. see the change in state for all the actions
+  - how is `action.type` derived?
+- [Using Redux devtool]()
+  1. Install devtool from https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+  - this only works if using Redux Toolkit
+  2. Open the Redux devtool window
+  3. See the change in state for all the actions
+  4. Dispatch an action from the toolkit
 
 **_TO-DO:_**
 
-- [6.9-6.12](https://fullstackopen.com/en/part6/many_reducers#exercises-6-9-6-12)
+- [6.9](https://fullstackopen.com/en/part6/many_reducers#exercise-6-9)
+- [6.10-6.13](https://fullstackopen.com/en/part6/many_reducers#exercises-6-10-6-13)
 
 </details>
 
@@ -1311,47 +1321,47 @@ We will learn unit testing a React component. We will learn to test:
 **_LECTURE-VIDEO:_**
 
 - [Getting notes from the backend while using Redux](https://youtu.be/PQK5dO5v0eo)
-  1. create `db.json` file in root folder, and put some data
-  2. install and run json server
+  1. Create `db.json` file in root folder, and put some data
+  2. Install and run json server
   - npm install json-server --save-dev
   - in `package.json` add script to run json-server
   - npm run server
-  3. create service to fetch data from backend
+  3. Create service to fetch data from backend
   - npm install axios
   - create file `services/notes.js` to fetch data using axios from the backend
-  4. get initial data from backend
+  4. Get initial data from backend
   - in `noteReducer` change initial state to empty array
   - in `noteReducer` add an action to append a single note
   - in `noteReducer` add an action to set all the notes
   - in `App`, create a `useEffect` to load the initial data from json-server
 - [Storing a note to the backend while using Redux](https://youtu.be/Elh7lqLF5G8)
-  1. when creating note, add functionality to also add the new note to backend
+  1. When creating note, add functionality to also add the new note to backend
   - in `services/notes.js`, add function to create note in backend
   - in `NewNote` component, modify to call the service to backend
   - modify `createNote` reducer as it will receive the full note, not just the content
-  2. you can also change the `toggle importance` functionality to also update backend
+  2. You can also change the `toggle importance` functionality to also update backend
 - [Using thunk to move backend logic to Redux action creator](https://youtu.be/uN5_5lej87s)
-  1. install `redux-thunk`
+  1. Install `redux-thunk`
   - npm install redux-thunk
-  2. modify the `createNote` functionality to move backend communication to a `thunk`
+  2. Modify the `createNote` functionality to move backend communication to a `thunk`
   - change `NewNote` component back to just dispatching return value of `createNote` function
   - in `noteReducer`, replace the `createNote` action creator with `createNote` thunk that will:
     1. create a note in the backend
     2. then dispatch the new note to Redux store
-  3. modify the initial notes loading functionality to move backend communication to a `thunk`
+  3. Modify the initial notes loading functionality to move backend communication to a `thunk`
   - change `App` useEffect to just dispatching return value of `initializeNotes` function
   - in `noteReducer`, create a new thunk `initializeNotes` that will:
     1. get all notes from the backend
     2. then dispatch the notes to Redux store
-  4. refactor Redux store creation
+  4. Refactor Redux store creation
   - create `store.js` in root folder
   - move all Redux store creation code from `index.js` to `store.js`
   - in `index.js` import the store to pass to `App`
 
 **_TO-DO:_**
 
-- [6.13-6.14](https://fullstackopen.com/en/part6/communicating_with_server_in_a_redux_application#exercises-6-13-6-14)
-- [6.15-6.18](https://fullstackopen.com/en/part6/communicating_with_server_in_a_redux_application#exercises-6-15-6-18)
+- [6.14-6.15](https://fullstackopen.com/en/part6/communicating_with_server_in_a_redux_application#exercises-6-14-6-15)
+- [6.16-6.19](https://fullstackopen.com/en/part6/communicating_with_server_in_a_redux_application#exercises-6-16-6-19)
 
 </details>
 </details>
