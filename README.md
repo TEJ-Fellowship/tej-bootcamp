@@ -1267,7 +1267,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Add state for visibility filter by putting it in another reducer using Combined reducers]()
+- [Add state for visibility filter by putting it in another reducer using Combined reducers](https://youtu.be/uPWEI39HbFc)
   - note that `NewNote` and `Notes` components have been refactored from `App` component
   1. Initialize `notes` state with two notes in `noteReducer`
   2. Create visibility filter to show all / important notes
@@ -1289,7 +1289,7 @@ We will learn unit testing a React component. We will learn to test:
   - modify `Notes.js` to use filter from redux store instead of useState
   6. Create separate component for `VisibilityFilter`
   - in `App` use the `VisibilityFilter` component to display the filter
-- [Using Redux Toolkit]()
+- [Using Redux Toolkit](https://youtu.be/dzJeixwWD8A)
   1. Install the Redux Toolkit
   - npm install @reduxjs/toolkit
   2. Modify `index.js` to use toolkit
@@ -1298,7 +1298,7 @@ We will learn unit testing a React component. We will learn to test:
   - use `createSlice` to refactor the reducer and action creators
   - use export using toolkit
   - how is `action.type` derived?
-- [Using Redux devtool]()
+- [Using Redux devtool](https://youtu.be/kYXq0ajXHmI)
   1. Install devtool from https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
   - this only works if using Redux Toolkit
   2. Open the Redux devtool window
