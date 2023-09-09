@@ -1361,6 +1361,59 @@ We will learn unit testing a React component. We will learn to test:
 - [6.16-6.19](https://fullstackopen.com/en/part6/communicating_with_server_in_a_redux_application#exercises-6-16-6-19)
 
 </details>
+
+<details><summary>Part 6-d: React Query, useReducer and the context</summary>
+
+- [Part 6-d: React Query, useReducer and the context](https://fullstackopen.com/en/part6/react_query_use_reducer_and_the_context)
+
+**_WE-WILL-LEARN:_**
+
+**_LECTURE-VIDEO:_**
+
+- [Using React Query]()
+  1. Setup for using React Query
+  - `npm install @tanstack/react-query`
+  - setup `index.jsx` to use React Query
+  2. Retrieve the notes in the `App` component
+  - start json-server
+  - use `useQuery`
+  3. Refactor the server call to it's own `requests` file
+- [Adding new note via React Query]()
+  1. Add function `createNote` in `requests` to post note to server
+  2. In `App` add `useMutation` code for adding new note
+  - call the `mutate` method to post the new note to server via React Query
+  - invalidate the `notes` result, so that React Query re-fetches the notes
+  3. Add functionality to toggle importance
+  - add toggle function to call server in `requests`
+  - add mutation code in `App` when note is toggled
+- [Optimize React Query code to minimize calls to server]()
+  1. Modify `onSuccess` of new note creation to manually add new note to React Query state
+  - add `newNote` parameter to callback function of `onSuccess`
+  - getQueryData for `notes` (queryKey has to be an array)
+  - manually setQueryData for `notes` adding the `newNote`
+  2. Turn off `refetchOnWindowFocus` where not required
+  3. React Query is server-state library, Redux is a client-state library
+- [useReducer and context]()
+  1. Implement `useReducer` for a simple counter app
+  - create a new `CounterApp` file
+  - render `CounterApp` from `index.jsx`
+  2. Use `context` to pass the state
+  - create a new file `CounterContext`, and use `createContext` to create a context for the counter state
+  - in `CounterApp` use the context provider from `CounterContext` to provide the counter state to `CounterApp`
+  - use `useContext` of `CounterContext` to read the value provided by the context provider in all required components
+  3. Refactor the code
+  - move all counter reducer related code to `CounterContext.jsx` file
+  - in `index.jsx`, wrap the `CounterApp` with `CounterContextProvider`
+  - refactor `useContext` code into `CounterContext` to fetch the state and the dispatch separately
+  - note that `useCounterValue` and `useCounterDispatch` are custom hooks
+- [Choosing the correct state management solution]()
+
+**_TO-DO:_**
+
+- [6.20-6.22](https://fullstackopen.com/en/part6/react_query_use_reducer_and_the_context#exercises-6-20-6-22)
+- [6.23-6.24](https://fullstackopen.com/en/part6/react_query_use_reducer_and_the_context#exercises-6-23-6-24)
+
+</details>
 </details>
 
 ---
