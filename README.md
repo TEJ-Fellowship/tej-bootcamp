@@ -1320,7 +1320,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Getting notes from the backend while using Redux](https://youtu.be/PQK5dO5v0eo)
+- [Getting notes from the backend while using Redux]()
   1. Create `db.json` file in root folder, and put some data
   2. Install and run json server
   - npm install json-server --save-dev
@@ -1334,26 +1334,23 @@ We will learn unit testing a React component. We will learn to test:
   - in `noteReducer` add an action to append a single note
   - in `noteReducer` add an action to set all the notes
   - in `App`, create a `useEffect` to load the initial data from json-server
-- [Storing a note to the backend while using Redux](https://youtu.be/Elh7lqLF5G8)
+- [Storing a note to the backend while using Redux]()
   1. When creating note, add functionality to also add the new note to backend
   - in `services/notes.js`, add function to create note in backend
-  - in `NewNote` component, modify to call the service to backend
-  - modify `createNote` reducer as it will receive the full note, not just the content
+  - in `NoteForm` component, modify to call the service to backend
   2. You can also change the `toggle importance` functionality to also update backend
-- [Using thunk to move backend logic to Redux action creator](https://youtu.be/uN5_5lej87s)
-  1. Install `redux-thunk`
-  - npm install redux-thunk
-  2. Modify the `createNote` functionality to move backend communication to a `thunk`
-  - change `NewNote` component back to just dispatching return value of `createNote` function
-  - in `noteReducer`, replace the `createNote` action creator with `createNote` thunk that will:
-    1. create a note in the backend
-    2. then dispatch the new note to Redux store
-  3. Modify the initial notes loading functionality to move backend communication to a `thunk`
-  - change `App` useEffect to just dispatching return value of `initializeNotes` function
+- [Using thunk to move server connection logic to Redux action creator]()
+  1. Modify the initial notes loading functionality to move server communication to a `thunk`
+  - change `App` useEffect to just dispatching return value of `initializeNotes` action creator
   - in `noteReducer`, create a new thunk `initializeNotes` that will:
-    1. get all notes from the backend
+    1. get all notes from the server
     2. then dispatch the notes to Redux store
-  4. Refactor Redux store creation
+  2. Modify the `createNote` functionality to move server communication to a `thunk`
+  - change `NoteForm` component back to just dispatching return value of `createNote` action creator
+  - in `noteReducer`, replace the `createNote` action creator with `createNote` thunk that will:
+    1. call RestAPI to create a note in the server
+    2. then dispatch the new note to Redux store
+  3. Refactor Redux store creation
   - create `store.js` in root folder
   - move all Redux store creation code from `index.js` to `store.js`
   - in `index.js` import the store to pass to `App`
