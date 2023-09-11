@@ -1318,6 +1318,8 @@ We will learn unit testing a React component. We will learn to test:
 
 **_WE-WILL-LEARN:_**
 
+- `dispatch` can also take a function. if we pass a function to `dispatch`, then `dispatch` will execute that function by passing dispatch as the first argument
+
 **_LECTURE-VIDEO:_**
 
 - [Getting notes from the backend while using Redux]()
