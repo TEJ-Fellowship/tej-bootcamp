@@ -11,14 +11,19 @@
       "id": 2
     },
     {
-      "content": "note to backend",
+      "content": "new note",
       "important": true,
       "id": 3
     },
     {
-      "content": "to thunk",
+      "content": "another note",
       "important": true,
       "id": 4
+    },
+    {
+      "content": "one more",
+      "important": true,
+      "id": 5
     }
   ]
 }
