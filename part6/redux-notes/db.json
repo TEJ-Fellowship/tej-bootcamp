@@ -11,19 +11,9 @@
       "id": 2
     },
     {
-      "content": "new note",
-      "important": true,
-      "id": 3
-    },
-    {
-      "content": "another note",
-      "important": true,
-      "id": 4
-    },
-    {
       "content": "one more",
       "important": true,
-      "id": 5
+      "id": 3
     }
   ]
 }
