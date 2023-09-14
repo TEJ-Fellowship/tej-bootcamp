@@ -1430,34 +1430,41 @@ We will learn unit testing a React component. We will learn to test:
 **_WE-WILL-LEARN:_**
 
 - How to use react router for client side routes
-- [Code reference](https://github.com/fullstack-hy2020/misc/blob/master/router-app-v2.js)
 
 **_LECTURE-VIDEO:_**
 
-- [Implement react router](https://youtu.be/zzQsI_QvvEo)
-  1. create new project
-  - npx create-react-app react-router
-  - remove all files except App.js, index.js, index.html
-  2. install react router
-  - cd react-router
-  - npm install react-router-dom
-  3. write code to use simple react router
+- [Implement react router]()
+  1. Create new project `react-router` using [react-start-kit](https://github.com/TEJ-Fellowship/react-start-kit)
+  2. Create simple SPA with menu
+  3. Install react router
+  4. Write code to use simple react router
   - use `BrowserRouter` to encapsulate all code that will use router
   - create `Link` for the required links
   - use `Routes` and `Route` to handle the links to components
-  4. add parameterized route for `note/:id` with `useParams`
-  - hardcode `notes` array with some notes
+- [Add parameterized route and useParams to read the parameter]()
+  1. Show notes
+  - create a `Notes.jsx` component to show all notes
+  - hardcode `notes` array with some notes in `App.jsx` and pass as props to `Notes.jsx`
+  2. Create parameterized route for `note/:id` with `useParams`
+  - update `Notes` component that creates `Link` to individual notes based on id
   - create a new `Route` to handle `note/:id` route
-  - update `Notes` component that creates `Link` to the notes
   - create `Note` component with `useParams` that will display individual note
-- [Add useNavigate and useMatch to add functionality to react router](https://youtu.be/f5f_FBQwZgc)
-  1. add `login` route that uses `useNavigate` hook
-  2. use `Navigate` component in `users` route to conditionally redirect to `login` route when not logged in
-  3. use `useMatch` for better parameterized route
-  - move `Router` component to `index`
-  - in `App`, use `useMatch` to get the `notes/:id` parameter to find the note
-  - pass and read the single `note` object to the `Note` component
-- [build and deploy the react router app to node server](https://youtu.be/CPqpOFMA8WY)
+- [Add useNavigate to programmatically navigate to a url]()
+  1. Create `login` route
+  - create a `user` useState to keep track of logged in user
+  - if no `user` state, then show link to `login` that is a link to `login` route
+  2. Create `Login` component
+  3. Create a new route in `App.jsx` to direct the `login` path to `Login` component
+  4. Modify `Login` component to handle user login
+  - pass the `setUser` from `App` to `Login`
+  - create a login form that takes a username and sets it to `user` state
+  - use `useNavigate` to navigate to `/` route after logging in
+  - in `App.jsx` use `Navigate` component in `users` route to conditionally redirect to `login` route when not logged in
+- [Use `useMatch` for better parameterized route]()
+  1. Move `BrowserRouter` component to `index`
+  2. In `App`, use `useMatch` to get the `notes/:id` parameter to find the note
+  3. Pass and read the single `note` object to the `Note` component
+- [Build and deploy the react router app to node server](https://youtu.be/CPqpOFMA8WY)
 
 **_TO-DO:_**
 
