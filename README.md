@@ -1478,25 +1478,25 @@ We will learn unit testing a React component. We will learn to test:
 
 **_WE-WILL-LEARN:_**
 
-- creating and using custom hooks
-  1. custom hooks follow the same [rules](https://reactjs.org/docs/hooks-rules.html) as react hooks
-  2. create custom hooks when you need complicated logic with react hooks that can be re-used
+- Creating and using custom hooks
+  1. Custom hooks follow the same [rules](https://reactjs.org/docs/hooks-rules.html) as react hooks
+  2. Create custom hooks when you need complicated logic with react hooks that can be re-used
 
 **_LECTURE-VIDEO:_**
 
-- [Create custom hook for counter application](https://youtu.be/Eose6yNIoKs)
-  1. create new project
-  - npx create-react-app custom-hook-counter
-  - remove all files except App.js, index.js, index.html
-  2. create simple counter application
-  3. move counter logic to custom hook `useCounter`
+- [Create custom hook for counter application]()
+  1. Create new project using [react-start-kit](https://github.com/TEJ-Fellowship/react-start-kit)
+  2. Create simple counter application
+  3. Move counter logic to custom hook `useCounter` in `utils` folder
   - make sure the name of custom hook always starts with `use`
-  4. use `useCounter` for two different counters in the same `App` component
-- [Using custom hook for forms](https://youtu.be/6rbi9zsqBrw)
-  1. create an App with forms
-  2. create `useField` custom hook
-  3. use it in a form field
-  4. use the spread attribute for easier implementation of the custom hook in the form
+  4. Use `useCounter` for two different counters in the same `App` component
+- [Using custom hook for forms]()
+  1. Create an App with forms
+  2. Create `useField` custom hook in `utils` folder
+  3. Use it in a form field
+  4. Use the spread operator
+  - to pass props to component from object with same named keys
+  - to pass attributes to elements from object with same named keys
 
 **_TO-DO:_**
 
