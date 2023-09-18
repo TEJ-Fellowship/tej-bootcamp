@@ -1514,20 +1514,18 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Readymade UI Libraries]()
-  1. [React Bootstrap](https://fullstackopen.com/en/part7/more_about_styles#react-bootstrap)
+- [React Bootstrap]()
   - npm install react-bootstrap
   - add a link for loading the CSS stylesheet for Bootstrap inside of the head tag in the `public/index.html` file
   - container `<div className="container">`
   - import `{ Table,Form,Button }` from 'react-bootstrap'
   - render list of notes as a table
-  - improve the form in the Login view with the help of Bootstrap `forms`
-  - stlye notification message using alert component
+  - improve the form in the Login view with the help of Bootstrap `Form`
+  - stlye notification message using `Alert` component
   - navigation structure
 - [Material UI]()
   1. [Material UI](https://fullstackopen.com/en/part7/more_about_styles#material-ui)
   - install the library with command `{npm install @mui/material @emotion/react @emotion/styled}`
-  - add the link for google font in the the head tag in the `public/index.html` file
   - use `Material UI` to make the same changes that were made using `react-bootstrap`
   - each component has to be imported separately
   2. [Other UI frameworks](https://fullstackopen.com/en/part7/more_about_styles#other-ui-frameworks)
