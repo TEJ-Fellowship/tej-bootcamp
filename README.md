@@ -1528,9 +1528,10 @@ We will learn unit testing a React component. We will learn to test:
   - install the library with command `{npm install @mui/material @emotion/react @emotion/styled}`
   - use `Material UI` to make the same changes that were made using `react-bootstrap`
   - each component has to be imported separately
-  2. [Other UI frameworks](https://fullstackopen.com/en/part7/more_about_styles#other-ui-frameworks)
-  3. [Styled Components](https://fullstackopen.com/en/part7/more_about_styles#styled-components)
+- [Other styling options]()
+  1. [Styled Components](https://fullstackopen.com/en/part7/more_about_styles#styled-components)
   - `npm install styled-components`
+  2. [Other UI frameworks](https://fullstackopen.com/en/part7/more_about_styles#other-ui-frameworks)
 
 **_TO-DO:_**
 
