@@ -1514,7 +1514,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [React Bootstrap]()
+- [React Bootstrap](https://youtu.be/T7OxCk0Tsn8)
   - npm install react-bootstrap
   - add a link for loading the CSS stylesheet for Bootstrap inside of the head tag in the `public/index.html` file
   - container `<div className="container">`
@@ -1523,12 +1523,12 @@ We will learn unit testing a React component. We will learn to test:
   - improve the form in the Login view with the help of Bootstrap `Form`
   - stlye notification message using `Alert` component
   - navigation structure
-- [Material UI]()
+- [Material UI](https://youtu.be/PyRuWEIeakQ)
   1. [Material UI](https://fullstackopen.com/en/part7/more_about_styles#material-ui)
   - install the library with command `{npm install @mui/material @emotion/react @emotion/styled}`
   - use `Material UI` to make the same changes that were made using `react-bootstrap`
   - each component has to be imported separately
-- [Other styling options]()
+- [Other styling options](https://youtu.be/sDBuveNOq0c)
   1. [Styled Components](https://fullstackopen.com/en/part7/more_about_styles#styled-components)
   - `npm install styled-components`
   2. [Other UI frameworks](https://fullstackopen.com/en/part7/more_about_styles#other-ui-frameworks)
