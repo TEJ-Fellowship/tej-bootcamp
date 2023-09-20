@@ -44,6 +44,8 @@ const App = () => {
     padding: 5,
   };
 
+  const footerStyle = { color: "blue", fontSize: "20px" };
+
   return (
     <>
       <div>
@@ -77,7 +79,7 @@ const App = () => {
       </Routes>
 
       <div>
-        <i>Note app, Department of Computer Science 2023</i>
+        <i style={footerStyle}>Note app, Department of Computer Science 2023</i>
       </div>
     </>
   );
