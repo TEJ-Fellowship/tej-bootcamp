@@ -1552,12 +1552,12 @@ We will learn unit testing a React component. We will learn to test:
 
 **_WE-WILL-LEARN:_**
 
-- using Relational Database (Postgres) instead of mongoDB for the notes app
-- using `Sequelize` ORM to create JS Model for Postgres tables
+- Using Relational Database (Postgres) instead of mongoDB for the notes app
+- Using `Sequelize` ORM to create JS Model for Postgres tables
 
 **_USEFUL-SQL-COMMANDS:_**
 
-- create a table called `notes`
+- Create a table called `notes`
 
 ```
 CREATE TABLE notes (
@@ -1568,19 +1568,19 @@ CREATE TABLE notes (
 );
 ```
 
-- insert a row into `notes` table
+- Insert a row into `notes` table
 
 ```
 insert into notes (content, important) values ('Relational databases rule the world', true);
 ```
 
-- read rows from `notes` table
+- Read rows from `notes` table
 
 ```
 select * from notes;
 ```
 
-- remove the table `notes`
+- Remove the table `notes`
 
 ```
 drop table notes;
@@ -1588,30 +1588,36 @@ drop table notes;
 
 **_LECTURE-VIDEO:_**
 
-- [Create a notes-server app to use relational database](https://youtu.be/2R8mKOr9tA0)
-  1. create `part13/notes-server`
-  2. `npm init -y` to create a new npm project
-  3. create a Postgres DB in heroku
-  - run `heroku create` to create a heroku project
-  - run `heroku addons:create heroku-postgresql:hobby-dev -a <app-name>` to create DB in heroku
-  - run `heroku config -a <app-name>` to get the DB connection string
-  4. add the DB connection string to `.env` file
-  5. install `Postgresql` extension by Chris Kolkman
-  6. create table `notes`
-  7. insert a few rows into the table
-  8. write api to read all notes from db
-  - npm install express dotenv pg sequelize
+- [Setup the relational database]()
+  1. Create a Postgres DB in render
+  2. Install `Postgresql` extension by Chris Kolkman to connect to the database
+  - make sure to correctly setup ssl
+  3. Use the `Postgresql` extension
+  - create table `notes` in the database using the extension
+  - insert a few rows into the table
+  - check the table and the inserted rows with the extension
+- [Create notes-server to connect to relational database]()
+  1. Create `part13/notes-server`
+  - make the folder `notes-server`
+  - `npm init -y` to create a new npm project
+  - `npm install express dotenv pg sequelize`
+  2. Add the DB connection string to `.env` file
+  3. Write api to read all notes from db
   - create `index.js`
   - write the `api/notes` for `get` method to read all notes from DB using `select` query
-  9. use `Sequelize` ORM to rewrite `api/notes`
+- [Using Sequelize ORM]()
+  1. Use `Sequelize` ORM to rewrite `api/notes` `get` method
   - create a `Model` for `Note`
   - use the `Note` model to get all notes from DB
-  10. add api to create a single note with simple error handling
-- [Additional notes on relational database](https://youtu.be/XiIvn-XMCdQ)
-  1. creating database tables automatically using the `Sequelize` model
-  2. add api to read a single note
-  3. add api to modify a note
-  4. printing the objects returned by `Sequelize` to the console
+  2. Add api to create a single note with simple error handling
+  - remember to use middleware to correctly read json data sent to server
+  - note the difference between `create` and `build`
+  3. Call the single note creation api
+- [Additional notes on relational database]()
+  1. Creating database tables automatically using the `Sequelize` model
+  2. Add api to read a single note
+  3. Add api to modify a note
+  4. Printing the objects returned by `Sequelize` to the console
   - using `toJSON`
   - using `JSON.stringify`
 
