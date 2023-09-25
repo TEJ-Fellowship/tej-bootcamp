@@ -1589,7 +1589,7 @@ drop table notes;
 **_LECTURE-VIDEO:_**
 
 - [Setup the relational database]()
-  1. Create a Postgres DB in render
+  1. Create a Postgres DB in [render](https://dashboard.render.com/)
   2. Install `Postgresql` extension by Chris Kolkman to connect to the database
   - make sure to correctly setup ssl
   3. Use the `Postgresql` extension
