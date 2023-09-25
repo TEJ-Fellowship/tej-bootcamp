@@ -1634,52 +1634,56 @@ drop table notes;
 
 **_WE-WILL-LEARN:_**
 
-- user management in sequelize
-- joining data from two tables in sequelize
-- using query parameters in REST API
+- User management in sequelize
+- Joining data from two tables in sequelize
+- Using query parameters in REST API
 
 **_LECTURE-VIDEO:_**
 
-- [Refactoring the code](https://youtu.be/B4oTY6X4ZNo)
-  1. start with `util` directory
+- [Refactoring the code]()
+  1. Start with `util` directory
   - create `config.js` to read configurations from environment
   - create `db.js` to put DB boilerplate code
-  2. refactor models
+  2. Refactor route handling to controllers
+  - move notes routes to `controllers/notes.js`
+  - modify `index.js` to use the notes controller for all `/api/notes` requests
+  3. Refactor models
   - move `Note` model to `models/note.js`
   - create `models/index.js` to centralize all models related code
-  3. refactor route handling to controllers
-  - move notes routes to `controllers/notes.js`
-  4. modify `index.js`
-  - remove imports that are not required
-  - add `app.use(express.json())`
-  5. refactor notes controller
+  4. Move db connection code to `util/db.js` file
+  - add a function to test the db connection, then call it at before starting app
+  5. Refactor notes controller
   - put repetitive code to middleware
   - call middleware in the routes where required
-- [Create user management](https://youtu.be/oy27SQg7BCQ)
-  1. create `User` model
+- [Create user management]()
+  1. Create `User` model
   - create `models/user.js` for `User` model
   - include the `User` model to `models/index.js`
-  2. create routes for user management
+  2. Create routes for user management
   - create `controllers/users.js`
   - create `controllers/login.js`
   - add `SECRET` in `.env` and `util/config.js`
   - npm install jsonwebtoken
   - include the routes in `index.js`
-  3. add relation between `User` and `Note`
+  3. Add relation between `User` and `Note`
   - in `models/index.js` add the foreign key from `User` to `Note`
-  4. modify note post route to also insert logged in userId
+  4. Modify note post route to also insert logged in userId
   - in `controllers/notes.js`, add `tokenExtractor` middleware
   - user `tokenExtractor` to decode the the userId from token
   - include the userId while inserting a new note into the DB
-  5. use `REST Client` to test login and note creation using token
-  - create `requests/my_requests.rest` file
-  - include request to create user
+  5. Use `REST Client` to test login and note creation using token
+  - create user from the `REST Client`
   - login with user
   - create note
-- [Cleaning up & more queries](https://youtu.be/73czM86pILc)
-  1. modify get notes to return the full user
-  2. modify get users to return notes created by user
-  3. modify get notes to use query parameters to fine tune sequelize query
+- [Cleaning up & more queries]()
+  1. Modify get notes to return the full user
+  2. Modify get users to return notes created by user
+  3. Modify get notes to use query parameters to fine tune sequelize query
+  - include the `important` field in the api call
+  - include the option to show all results when `important` is not specified in the query
+  - modify `Note` model to not allow null for `important`
+  - include searching text inside `content field`
+  - exclude `where` clause when not required
 
 **_TO-DO:_**
 
