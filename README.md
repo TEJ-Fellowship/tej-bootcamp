@@ -1655,7 +1655,7 @@ drop table notes;
   5. Refactor notes controller
   - put repetitive code to middleware
   - call middleware in the routes where required
-- [Create user management]()
+- [Create user login]()
   1. Create `User` model
   - create `models/user.js` for `User` model
   - include the `User` model to `models/index.js`
@@ -1665,16 +1665,18 @@ drop table notes;
   - add `SECRET` in `.env` and `util/config.js`
   - npm install jsonwebtoken
   - include the routes in `index.js`
-  3. Add relation between `User` and `Note`
+  3. Use `REST Client` to test login
+  - create user from the `REST Client`
+  - login with user and get token
+- [Add user to note]()
+  1. Add relation between `User` and `Note`
   - in `models/index.js` add the foreign key from `User` to `Note`
-  4. Modify note post route to also insert logged in userId
+  2. Modify note post route to also insert logged in userId
   - in `controllers/notes.js`, add `tokenExtractor` middleware
   - use `tokenExtractor` to decode the the userId from token
   - include the userId while inserting a new note into the DB
-  5. Use `REST Client` to test login and note creation using token
-  - create user from the `REST Client`
-  - login with user
-  - create note
+  3. Use `REST Client` to create note using token
+  - call api to create note by passing token and note object
 - [Cleaning up & more queries]()
   1. Modify get notes to return the full user
   2. Modify get users to return notes created by user
