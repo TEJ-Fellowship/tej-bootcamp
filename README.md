@@ -1668,7 +1668,7 @@ drop table notes;
   3. Use `REST Client` to test login
   - create user from the `REST Client`
   - login with user and get token
-- [Add user to note]()
+- [Add user to note](https://youtu.be/4dHCCbllNbc?t=894)
   1. Add relation between `User` and `Note`
   - in `models/index.js` add the foreign key from `User` to `Note`
   2. Modify note post route to also insert logged in userId
