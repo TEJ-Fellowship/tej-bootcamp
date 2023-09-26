@@ -1651,7 +1651,7 @@ drop table notes;
   - move `Note` model to `models/note.js`
   - create `models/index.js` to centralize all models related code
   4. Move db connection code to `util/db.js` file
-  - add a function to test the db connection, then call it at before starting app
+  - add a function to test the db connection, then call it before starting app
   5. Refactor notes controller
   - put repetitive code to middleware
   - call middleware in the routes where required
@@ -1669,7 +1669,7 @@ drop table notes;
   - in `models/index.js` add the foreign key from `User` to `Note`
   4. Modify note post route to also insert logged in userId
   - in `controllers/notes.js`, add `tokenExtractor` middleware
-  - user `tokenExtractor` to decode the the userId from token
+  - use `tokenExtractor` to decode the the userId from token
   - include the userId while inserting a new note into the DB
   5. Use `REST Client` to test login and note creation using token
   - create user from the `REST Client`
@@ -1682,7 +1682,7 @@ drop table notes;
   - include the `important` field in the api call
   - include the option to show all results when `important` is not specified in the query
   - modify `Note` model to not allow null for `important`
-  - include searching text inside `content field`
+  - include searching text inside `content` field
   - exclude `where` clause when not required
 
 **_TO-DO:_**
