@@ -28,6 +28,4 @@ Note.init(
   }
 );
 
-Note.sync();
-
 module.exports = Note;
