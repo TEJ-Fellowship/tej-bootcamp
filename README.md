@@ -1701,39 +1701,39 @@ drop table notes;
 
 **_WE-WILL-LEARN:_**
 
-- how to properly migrate database (create / update database schema)
-- through table, and many-to-many relations
-- other sequelize functionalities
+- How to properly migrate database (create / update database schema)
+- Through table, and many-to-many relations
+- Other sequelize functionalities
 
 **_LECTURE-VIDEO:_**
 
-- [Data migration the proper way](https://youtu.be/prlMOesbfik)
-  1. create the initial data migration script
-  - create the file `migrations/20220909_00_initialize_notes_and_users.js`
-  2. write code to run migrations
+- [Data migration the proper way]()
+  1. Create the initial data migration script
+  - create the file `migrations/20230929_00_initialize_notes_and_users.js`
+  2. Write code to run migrations
   - npm install umzug
   - add migration code to `util/db.js`
   - remove the `sync` code from `models/index.js`
-  3. run the first migration
+  3. Run the first migration
   - drop all existing tables
   - start the node server
-- [Admin user and user disabling](https://youtu.be/qTSmknqD4UQ)
-  1. create a user
-  2. create a few notes
-  3. stop the server
-  4. create migration file with new fields
-  - create the file `migrations/20220909_01_admin_user_disabling.js`
-  5. make corresponding changes to `models/User`
-  6. start the server
-  7. make changes to loginRouter to disallow logging in for users with `disabled` field set to true
-  8. try logging in with disabled user
+- [Admin user and user disabling]()
+  1. Create a user
+  2. Create a few notes
+  3. Stop the server
+  4. Create migration file with new fields
+  - create the file `migrations/20230929_01_admin_user_disabling.js`
+  5. Make corresponding changes to `models/User`
+  6. Start the server
+  7. Make changes to loginRouter to disallow logging in for users with `disabled` field set to true
+  8. Try logging in with disabled user
   - create a disabled user
   - using REST Client, try logging in with the disabled user vs. a not-disabled user
-  9. create route for admin user to change status of a user
+  9. Create route for admin user to change status of a user
   - make changes in `controllers/users`
   - move `tokenExtractor` from `controllers/notes` to `util/middleware.js`
   - import `tokenExtractor` in both `controllers/users` and `controllers/notes`
-  10. create admin user that can change disabled user to enabled user
+  10. Create admin user that can change disabled user to enabled user
   - convert user 1 to admin
   ```sql
   update users
@@ -1742,52 +1742,47 @@ drop table notes;
   ```
   - login with user 1
   - use token from user 1 to update user 2 to enabled
-  11. create rollback functionality to undo migration
+  11. Create rollback functionality to undo migration
   - modify `util/db` to put rollback function
   - create `util/rollback.js` that calls the rollback function
   - add script in package.json to run the rollback file
-- [Creating many-to-many relationship to allow users to be part of multiple teams](https://youtu.be/JSLG9b16hqY)
-
-  1. create migration for `teams` and `memberships` tables
-  2. make models form `Team` and `Membership` to reflect updated schema
-  3. update `models/index` to define the new relationships
-  4. create some teams
-  5. add users to teams in the membership table
-  6. now change get users route to include teams of the users, and excluding through table data
-  7. understand the object returned by sequelize such as in the code below:
-
+- [Creating many-to-many relationship to allow users to be part of multiple teams]()
+  1. Create migration for `teams` and `memberships` tables in file `migrations/20230929_02_add_teams_and_memberships.js`
+  2. Make models form `Team` and `Membership` to reflect updated schema
+  3. Update `models/index` to define the new relationships
+  4. Create some teams
+  5. Add users to teams in the membership table
+  6. Now change get users route to include teams of the users, and excluding through table data
+  7. Understand the object returned by sequelize such as in the code below:
   ```js
   const user = await User.findByPk(1, {
     include: {
       model: Note,
     },
   });
-
   user.notes.forEach((note) => {
     console.log(note.content);
   });
   ```
-
-  8. creating new return object when required shape is different from object returned by database
-
-- [Revisiting many-to-many relationships](https://youtu.be/8q6XPXAFsos)
-  1. create migration for `user_notes` through table to associate many users with many notes
-  2. create `user_note` model
-  3. modify `models/index` for the many to many relation
-  4. modify get users route to return users' notes and user marked notes
-  5. in the route, add the author of the note
-- [Concluding remarks](https://youtu.be/v0HzpF5iHp4)
-  1. lazy fetch based on query parameter
-  - modify get user so that it fetches the user's teams only if the query parameter `teams` is set in the request
+  8. Creating new return object when required shape is different from object returned by database
+- [Revisiting many-to-many relationships]()
+  1. Create migration for `user_notes` through table to associate many users with many notes
+  2. Create `userNote` model
+  3. Modify `models/index` for the many to many relation
+  4. Modify get users route to return users' notes and user marked notes
+  5. In the route, add the author of the note
+- [Concluding remarks]()
+  1. Lazy fetch based on query parameter
+  - Modify get user so that it fetches the user's teams only if the query parameter `teams` is set in the request
     - note how `getTeams` method is generated by sequelize based on defined relationships
-  2. defining default scopes for model
+  2. Defining default scopes for model
   - in `User` model, exclude disabled users by default
   - also define `admin` scope
   - includ admin scope in sequelize query with `User.scope('admin').findAll()`
-  3. adding methods to sequelize models
+  3. Adding methods to sequelize models
   - add instance method `numberOfNotes`
   - add class method `with_notes`
-  4. repeatability of models and migrations
+  4. Repeatability of models and migrations
   - generating migration and model using sequelize command line tool
 
 **_TO-DO:_**
