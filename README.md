@@ -1707,7 +1707,7 @@ drop table notes;
 
 **_LECTURE-VIDEO:_**
 
-- [Data migration the proper way]()
+- [Data migration the proper way](https://youtu.be/V10LVTJY1dA)
   1. Create the initial data migration script
   - create the file `migrations/20230929_00_initialize_notes_and_users.js`
   2. Write code to run migrations
