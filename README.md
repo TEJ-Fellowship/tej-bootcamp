@@ -1792,7 +1792,53 @@ drop table notes;
 - [13.24](https://fullstackopen.com/en/part13/migrations_many_to_many_relationships#task-13-24)
 
 </details>
+</details>
 
+---
+
+## [PART 9: TypeScript](https://fullstackopen.com/en/part9)
+
+<details><summary><h3 style="display:inline">Chapters</h3></summary>
+<details><summary>Part 9-a: Background and introduction</summary>
+
+- [Part 9-a: Background and introduction](https://fullstackopen.com/en/part9/background_and_introduction)
+
+**_WE-WILL-LEARN:_**
+
+- What is `static code analysis`
+- Compile-time type checking
+- Code-level documentation
+
+**_LECTURE-VIDEO:_**
+
+- []()
+  1.
+- []()
+
+**_TO-DO:_**
+
+Nothing to do!
+
+</details>
+<details><summary>Part 9-b: First steps with TypeScript</summary>
+
+- [Part 9-b: First steps with TypeScript](https://fullstackopen.com/en/part9/first_steps_with_type_script)
+
+**_WE-WILL-LEARN:_**
+
+**_LECTURE-VIDEO:_**
+
+- [Setting up TypeScript tooling for Node project]()
+  1.
+- []()
+
+**_TO-DO:_**
+
+- [9.1-9.3](https://fullstackopen.com/en/part9/first_steps_with_type_script#exercises-9-1-9-3)
+- [9.4-9.5](https://fullstackopen.com/en/part9/first_steps_with_type_script#exercises-9-4-9-5)
+- [9.6-9.7](https://fullstackopen.com/en/part9/first_steps_with_type_script#exercises-9-6-9-7)
+
+</details>
 </details>
 
 ---
