@@ -1805,15 +1805,25 @@ drop table notes;
 
 **_WE-WILL-LEARN:_**
 
-- What is `static code analysis`
-- Compile-time type checking
-- Code-level documentation
-
 **_LECTURE-VIDEO:_**
 
-- []()
-  1.
-- []()
+- [Main principles]()
+  1. Typed superset over JavaScript
+  - Compiles to plain JavaScript
+  - Type annotations
+    - input type of function
+    - output type of function
+  - Typing
+    - explicit typing
+    - inferred type
+  2. Lifecycle of TypeScript
+  3. Why to use TypeScript
+  - type checking
+  - static code analysis
+  - code level documentation
+  4. What TypeScript does not do
+  - external libraries with no types
+  - runtime validations
 
 **_TO-DO:_**
 
@@ -1829,8 +1839,57 @@ Nothing to do!
 **_LECTURE-VIDEO:_**
 
 - [Setting up TypeScript tooling for Node project]()
-  1.
-- []()
+  1. Manual setup
+  - create folder
+  - create npm project `npm init -y`
+  - install libraries `npm install --save-dev ts-node typescript`
+  - add script inside package.json
+  2. Create our first TypeScript function, with plain JavaScript
+  - create a file `multiplier.ts`
+  - run it with `npm run ts-node -- multiplier.ts`
+  3. Let's use TypeScript
+  - give input types for function parameters
+  4. Create custom type
+  - create union type
+  - see type suggestion
+  - try using a not accepted argument
+  5. Add return type
+  6. Throw error when required
+  - catch the error without putting any type
+  - catch the error as `unknown`
+    - then requires Type narrowing to access error.message
+- [Putting TypeScript in Express server]()
+  1. Change `tsconfig.json`
+  2. Configure script
+  3. Create `index.ts` file
+  4. Run it
+  - change config to make it work
+  - change back config
+  5. Types for express
+  - convert `require` to `import`
+  - add required types to make code work
+    - `npm install --save-dev @types/express`
+  6. Other config related errors
+  7. Install ts-node-dev
+  - `npm install --save-dev ts-node-dev`
+  - add package.json script
+- [Add api endpoint for calculate]()
+  1. Add code for `/calculate` endpoint
+  - export and import the `multiplicator` function
+  - use it in the api
+  2. Difference between explicit and implicit `any`
+  3. Disallow explicit `any`
+  - `npm install --save-dev eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser`
+  - configure `.eslintrc`
+  - add script to `package.json`
+  4. Setup more eslint rules
+  - modify `.eslintrc`
+  - fix the unsafe `any` issues
+  - do some code level validation to sanitize data
+  5. Using type assertion
+  - import type `Operation`
+  - use it to assert the `op` that is posted to `calculate` api
+  - we can now remove the eslint warning, but this could cause runtime errors
 
 **_TO-DO:_**
 
