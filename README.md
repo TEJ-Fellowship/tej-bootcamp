@@ -1898,6 +1898,35 @@ Nothing to do!
 - [9.6-9.7](https://fullstackopen.com/en/part9/first_steps_with_type_script#exercises-9-6-9-7)
 
 </details>
+<details><summary>Part 9-c: Typing an Express app</summary>
+
+- [Part 9-c: Typing an Express app](https://fullstackopen.com/en/part9/typing_an_express_app)
+
+**_WE-WILL-LEARN:_**
+
+**_LECTURE-VIDEO:_**
+
+- [Setting up production grade project]()
+  1. Initialize a `vite` project using TypeScript
+  - `npm create vite`
+  - give the name `flight_diary`
+  - choose `Vanilla` framework
+  - choose `TypeScript` variant
+  - `cd flight_diary`
+  - `npm i`
+  2. [Customize to our needs]()
+  - install required additional packages
+  - create `.eslintrc`
+- [Start coding]()
+  1. Put `index.ts`
+
+**_TO-DO:_**
+
+- [9.8-9.9](https://fullstackopen.com/en/part9/typing_an_express_app#exercises-9-8-9-9)
+- [9.10-9.11](https://fullstackopen.com/en/part9/typing_an_express_app#exercises-9-10-9-11)
+- [9.12-9.13](https://fullstackopen.com/en/part9/typing_an_express_app#exercises-9-12-9-13)
+
+</details>
 </details>
 
 ---
