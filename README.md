@@ -1807,7 +1807,7 @@ drop table notes;
 
 **_LECTURE-VIDEO:_**
 
-- [Main principles]()
+- [Main principles](https://youtu.be/I0IYtP-IXsM)
   1. Typed superset over JavaScript
   - Compiles to plain JavaScript
   - Type annotations
@@ -1838,7 +1838,7 @@ Nothing to do!
 
 **_LECTURE-VIDEO:_**
 
-- [Setting up TypeScript tooling for Node project]()
+- [Setting up TypeScript tooling for Node project](https://youtu.be/4DMU8QNwREg)
   1. Manual setup
   - create folder
   - create npm project `npm init -y`
@@ -1858,7 +1858,7 @@ Nothing to do!
   - catch the error without putting any type
   - catch the error as `unknown`
     - then requires Type narrowing to access error.message
-- [Putting TypeScript in Express server]()
+- [Putting TypeScript in Express server](https://youtu.be/e5l_FuOZtFo)
   1. Change `tsconfig.json`
   2. Configure script
   3. Create `index.ts` file
@@ -1873,7 +1873,7 @@ Nothing to do!
   7. Install ts-node-dev
   - `npm install --save-dev ts-node-dev`
   - add package.json script
-- [Add api endpoint for calculate]()
+- [Add api endpoint for calculate](https://youtu.be/njfKRYLZ5_A)
   1. Add code for `/calculate` endpoint
   - export and import the `multiplicator` function
   - use it in the api
