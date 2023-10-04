@@ -1907,18 +1907,75 @@ Nothing to do!
 **_LECTURE-VIDEO:_**
 
 - [Setting up production grade project]()
-  1. Initialize a `vite` project using TypeScript
-  - `npm create vite`
-  - give the name `flight_diary`
-  - choose `Vanilla` framework
-  - choose `TypeScript` variant
+  1. Initialize a project using TypeScript
+  - create directory `flight_diary`
   - `cd flight_diary`
-  - `npm i`
-  2. [Customize to our needs]()
+  - `npm init -y`
+  - `npm install typescript --save-dev`
+  - add script run typescript
+  - create tsconfig.json by initializing typescript
+  2. Customize to our needs
+  - configure tsconfig for our needs
   - install required additional packages
   - create `.eslintrc`
+  - install and configure ts-node-dev for dev
+- [Get a basic node server working]()
+  1. Create `index.ts`
+  2. Build the project
+  3. Eslint ignore the js files
+  4. Create and run script from the compiled `build` folder
 - [Start coding]()
-  1. Put `index.ts`
+  1. Create a directory structure
+  2. Make a new `diaries` route
+  - create `diaries.ts` inside `routes` folder
+  - call it from index.ts
+  3. Serve the data
+  - store the data in `data/entries.json`
+  - create `src/services/diaryService.ts` to manipulate the data
+  - configure `resolveJsonModule` in tsconfig
+  4. Create and use `types`
+  - create file `src/types.ts`
+  - add `Weather`, `Visibility` types
+  - add `DiaryEntry` interface
+  - use our type in diaryService
+  - do type assertion for diaryData
+  5. Convert the json data directly to typed data
+  - create file `data/entries.ts` and export typed data
+  - use typed data directly into service
+  6. Defining optional fields in types
+  7. Utility types
+  - using `Pick` and `Omit` to choose or remove from object types
+  - create `NonSensitiveDiaryEntry` from `DiaryEntry` type by omitting `comment` field
+  - use `NonSensitiveDiaryEntry` for the service `getNonSensitiveEntries`
+    - there is an issue!
+    - modify to manually remove sensitive data
+  8. Complete the routes
+- [Adding functionalities]()
+  1. Fetching one specific diary entry
+  - Add api for specific id
+    - fix the problem for potential `undefined` value
+  2. Adding a new diary
+  - convert argument to object
+  - use utility type to define new diary entry without the `id` field
+  - ignore error in post
+  - parse json object in api
+  3. Convert the incoming post data to typed data
+  - define function `toNewDiaryEntry` in `utils.ts`
+  - use it in the api
+  - remove the ignore error from routes/diaries.ts
+  - set the object param to `unknown`
+  4. Check the incoming fields using `type guard`
+  - check comment field
+  - check date field
+  - weather
+    - use Enum
+    - also make changes to `data/entries.ts`
+    - need to assert the `NewDiaryEntry` as `DiaryEntry`
+  - visibility
+    - use Enum
+  5. Complete the `toNewDiaryEntry` function
+  - we can remove the existence check because if `in` operator
+  6. Test the new diary entry api
 
 **_TO-DO:_**
 
