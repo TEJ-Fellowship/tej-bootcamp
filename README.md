@@ -1906,7 +1906,7 @@ Nothing to do!
 
 **_LECTURE-VIDEO:_**
 
-- [Setting up production grade project]()
+- [Setting up production grade project](https://youtu.be/kLgqYlmeC6w)
   1. Initialize a project using TypeScript
   - create directory `flight_diary`
   - `cd flight_diary`
@@ -1924,7 +1924,7 @@ Nothing to do!
   - Build the project
   - Eslint ignore the js files
   - Create and run script from the compiled `build` folder
-- [Start coding]()
+- [Start coding](https://youtu.be/QaxskzqgyeI)
   1. Create a directory structure
   2. Make a new `diaries` route
   - create `diaries.ts` inside `routes` folder
@@ -1950,7 +1950,7 @@ Nothing to do!
     - there is an issue!
     - modify to manually remove sensitive data
   8. Complete the routes
-- [Adding functionalities]()
+- [Adding functionalities](https://youtu.be/Xst_MRjhAfQ)
   1. Fetching one specific diary entry
   - Add api for specific id
     - fix the problem for potential `undefined` value
