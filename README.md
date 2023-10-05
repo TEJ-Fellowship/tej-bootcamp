@@ -1984,6 +1984,79 @@ Nothing to do!
 - [9.12-9.13](https://fullstackopen.com/en/part9/typing_an_express_app#exercises-9-12-9-13)
 
 </details>
+<details><summary>Part 9-d: React with types</summary>
+
+- [Part 9-d: React with types](https://fullstackopen.com/en/part9/react_with_types)
+
+**_WE-WILL-LEARN:_**
+
+- TypeScript will help us catch the following errors:
+  - trying to pass an extra/unwanted prop to a component
+  - forgetting to pass a required prop to a component
+  - passing a prop with the wrong type to a component
+
+**_LECTURE-VIDEO:_**
+
+- [Create React App with TypeScript]()
+  1. Create `my-app` with `create-react-app` using TypeScript template
+  - `npx create-react-app my-app --template typescript`
+  2. Modify default app
+  - in `tsconfig.json`, turn off `allowJs`
+  - create `.eslintrc`
+  - add script to run linting
+  3. Examining a React component
+  - delete all files inside `src` folder
+  - delete all except `index.html` in `public` folder
+  - create `index.tsx` in `src` folder
+  - types are defined for component as in a regular function
+  - we can remove the return type in component
+  - type assertion for `document.getElementById`
+- [Deeper type usage]()
+  1. Create types
+  - create file `types.ts` in `src` folder
+  - add the required interfaces
+  - create a union type
+  2. Use types in `App.tsx`
+  - create `App.tsx`
+    - import types
+    - return something
+  - play around with `kind`
+    - TypeScript implicitly narrows the type based on the `kind`
+  - use it in `index.tsx`
+  - refactor the types
+    - create a base
+    - `extend` the base
+  3. Discriminated union - type narrowing of union type based on literal attribute
+  - write jsx to show CourseParts
+  - show name and exerciseCount
+  - use ternary for type narrowing
+  4. Exhaustive type checking to make sure all union types have been used
+- [React app with state]()
+  1. Create a new App-note.tsx with the note code
+  - the first `useState` infers the type `string`
+  - the second `useState` is not able to infer the type
+    - lets explicitly put the type
+  2. Add code to initialize some data, and show it in jsx
+  3. Add function to create new note
+  - put a form with controlled input
+  - add `onSubmit` for the form
+    - fix the type error for event
+  4. Communicating with the server
+  - start the json server from part6/redux-notes
+  - install axios
+  - get the initial notes from rest api
+  - set the generics type for `axios.get` method
+  5. Connect the add note to server
+  6. A note about defining object types
+  - interface vs type
+
+**_TO-DO:_**
+
+- [9.14](https://fullstackopen.com/en/part9/react_with_types#exercise-9-14)
+- [9.15](https://fullstackopen.com/en/part9/react_with_types#exercise-9-15)
+- [9.16-9.19](https://fullstackopen.com/en/part9/react_with_types#exercises-9-16-9-19)
+
+</details>
 </details>
 
 ---
