@@ -1919,11 +1919,11 @@ Nothing to do!
   - install required additional packages
   - create `.eslintrc`
   - install and configure ts-node-dev for dev
-- [Get a basic node server working]()
-  1. Create `index.ts`
-  2. Build the project
-  3. Eslint ignore the js files
-  4. Create and run script from the compiled `build` folder
+  3. Get a basic node server working
+  - Create `index.ts`
+  - Build the project
+  - Eslint ignore the js files
+  - Create and run script from the compiled `build` folder
 - [Start coding]()
   1. Create a directory structure
   2. Make a new `diaries` route
@@ -1974,7 +1974,7 @@ Nothing to do!
   - visibility
     - use Enum
   5. Complete the `toNewDiaryEntry` function
-  - we can remove the existence check because if `in` operator
+  - we can remove the existence check because of the `in` operator
   6. Test the new diary entry api
 
 **_TO-DO:_**
