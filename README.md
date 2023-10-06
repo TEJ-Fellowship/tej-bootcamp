@@ -2014,7 +2014,7 @@ Nothing to do!
   - types are defined for component as in a regular function
   - we can remove the return type in component
   - type assertion for `document.getElementById`
-- [Deeper type usage]()
+- [Deeper type usage](https://youtu.be/LBYN0ED4zec)
   1. Create types
   - create file `types.ts` in `src` folder
   - add the required interfaces
@@ -2034,7 +2034,7 @@ Nothing to do!
   - show name and exerciseCount
   - use ternary for type narrowing
   4. Exhaustive type checking to make sure all union types have been used
-- [React app with state]()
+- [React app with state](https://youtu.be/SAIVWSU_LTQ)
   1. Create a new App-note.tsx
   - the first `useState` infers the type `string`
   - the second `useState` is not able to infer the type
