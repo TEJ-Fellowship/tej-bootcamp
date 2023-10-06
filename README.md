@@ -1994,6 +1994,9 @@ Nothing to do!
   - trying to pass an extra/unwanted prop to a component
   - forgetting to pass a required prop to a component
   - passing a prop with the wrong type to a component
+- Useful resources
+  - [React TypeScript cheatsheet](https://react-typescript-cheatsheet.netlify.app/)
+  - [UseState generics detail](https://codewithstyle.info/Using-React-useState-hook-with-TypeScript/)
 
 **_LECTURE-VIDEO:_**
 
@@ -2016,23 +2019,23 @@ Nothing to do!
   - create file `types.ts` in `src` folder
   - add the required interfaces
   - create a union type
-  2. Use types in `App.tsx`
-  - create `App.tsx`
-    - import types
-    - return something
-  - play around with `kind`
-    - TypeScript implicitly narrows the type based on the `kind`
-  - use it in `index.tsx`
   - refactor the types
     - create a base
     - `extend` the base
+  2. Use types in `App.tsx`
+  - create `App.tsx`
+    - import types
+    - return null for now
+    - export App
+  - play around with `kind`
+    - TypeScript implicitly narrows the type based on the `kind`
   3. Discriminated union - type narrowing of union type based on literal attribute
   - write jsx to show CourseParts
   - show name and exerciseCount
   - use ternary for type narrowing
   4. Exhaustive type checking to make sure all union types have been used
 - [React app with state]()
-  1. Create a new App-note.tsx with the note code
+  1. Create a new App-note.tsx
   - the first `useState` infers the type `string`
   - the second `useState` is not able to infer the type
     - lets explicitly put the type
