@@ -2060,6 +2060,33 @@ Nothing to do!
 - [9.16-9.19](https://fullstackopen.com/en/part9/react_with_types#exercises-9-16-9-19)
 
 </details>
+<details><summary>Part 9-e: Grande finale: Patientor</summary>
+
+- [Part 9-e: Grande finale: Patientor](https://fullstackopen.com/en/part9/grande_finale_patientor)
+
+**_WE-WILL-LEARN:_**
+
+**_LECTURE-VIDEO:_**
+
+- [Working with an existing project]()
+  1. Clone and run an existing frontend project
+  - `https://github.com/fullstack-hy2020/patientor.git`
+  - cd patientor
+  - rm -rf .git
+  - npm i
+  - npm run dev
+  2. Run existing backend project
+  - cd pat-bak
+  - npm run dev
+  3.
+- []()
+
+**_TO-DO:_**
+
+- [9.20-9.21](https://fullstackopen.com/en/part9/grande_finale_patientor#exercises-9-20-9-21)
+- [9.22-9.29](https://fullstackopen.com/en/part9/grande_finale_patientor#exercises-9-22-9-29)
+
+</details>
 </details>
 
 ---
