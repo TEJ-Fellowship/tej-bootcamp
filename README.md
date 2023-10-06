@@ -2000,7 +2000,7 @@ Nothing to do!
 
 **_LECTURE-VIDEO:_**
 
-- [Create React App with TypeScript]()
+- [Create React App with TypeScript](https://youtu.be/x1NuR5xOYtA)
   1. Create `my-app` with `create-react-app` using TypeScript template
   - `npx create-react-app my-app --template typescript`
   2. Modify default app
