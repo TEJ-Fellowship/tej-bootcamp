@@ -2076,7 +2076,7 @@ Nothing to do!
   - npm i
   - npm run dev
   2. Run existing backend project
-  - cd pat-bak
+  - cd patientor-backend
   - npm run dev
   3.
 - []()
