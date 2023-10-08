@@ -2078,7 +2078,13 @@ Nothing to do!
   2. Run existing backend project
   - cd patientor-backend
   - npm run dev
-  3.
+  3. Serve the expanded patients data
+  - copy the [expanded data set](https://github.com/fullstack-hy2020/misc/blob/master/patients-full.ts)
+  - create the required types for entry
+    - start with a common type, refer to `code` from `Diagnose` type for `diagnosisCodes`
+    - extend it
+    - creat a union type
+    - understanding and using `UnionOmit`
 - []()
 
 **_TO-DO:_**
