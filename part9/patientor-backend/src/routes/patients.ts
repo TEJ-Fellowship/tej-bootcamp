@@ -1,6 +1,5 @@
 import express from "express";
 import diaryService from "../services/patientService";
-import { v1 as uuid } from "uuid";
 
 const router = express.Router();
 
@@ -21,7 +20,7 @@ router.get("/", (_req, res) => {
 router.post("/", (req, res) => {
   try {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-    const addedEntry = diaryService.addDiary({ ...req.body, id: uuid() });
+    const addedEntry = diaryService.addDiary({ ...req.body });
     res.json(addedEntry);
   } catch (error: unknown) {
     let errorMessage = "Something went wrong.";

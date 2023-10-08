@@ -1,5 +1,6 @@
 import diaryData from "../../data/patients";
-import { Patient } from "../types";
+import { Patient, PatientWithoutId } from "../types";
+import { v1 as uuid } from "uuid";
 
 const getEntries = () => {
   return diaryData;
@@ -19,9 +20,10 @@ const getEntries = () => {
 //   return entry;
 // };
 
-const addDiary = (entry: Patient) => {
-  const newDiaryEntry = {
+const addDiary = (entry: PatientWithoutId) => {
+  const newDiaryEntry: Patient = {
     ...entry,
+    id: uuid(),
   };
 
   diaryData.push(newDiaryEntry);

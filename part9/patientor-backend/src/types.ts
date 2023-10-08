@@ -39,3 +39,5 @@ export interface Patient {
 export type NonSensitiveDiaryEntry = Omit<DiaryEntry, "comment">;
 
 export type NewDiaryEntry = Omit<DiaryEntry, "id">;
+
+export type PatientWithoutId = Omit<Patient, "id">;
