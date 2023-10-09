@@ -2068,7 +2068,7 @@ Nothing to do!
 
 **_LECTURE-VIDEO:_**
 
-- [Working with an existing project]()
+- [Working with an existing project](https://youtu.be/MF9G6IXxlVw)
   1. Clone and run an existing frontend project
   - `https://github.com/fullstack-hy2020/patientor.git`
   - cd patientor
@@ -2085,7 +2085,6 @@ Nothing to do!
     - extend it
     - creat a union type
     - understanding and using `UnionOmit`
-- []()
 
 **_TO-DO:_**
 
