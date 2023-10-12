@@ -2314,8 +2314,53 @@ The senior phase will focus on alrogithms and projects
 
 <details>
 <summary><h3 style="display:inline">Days</h3></summary>
+
+<details><summary>Day 1</summary>
+
+[Grace Shopper](./e-commerce/grace_shopper.pdf)
+
+**_WE-WILL-LEARN:_**
+
+- Getting started with e-commerce project
+
+**_WEB APP DESIGN_**
+
+1. requirements, user stories
+
+- As a `<persona>`, I want to `<do something>` so that `<reason>`
+  - example: as a `phonebook owner`, I want to see all of my contacts, so that I can see their phone number
+
+2. implementation detail
+
+- How you will actually fulfill a user story
+- Split each story into specific, bite-size tasks (implementation detail)
+  - Should always serve a user story
+- examples:
+  - an Express route on the backend
+    (GET `/api/contacts`) should serve up the name,
+    phone number of all the contacts from our Postgres database. access should be restricted to only the owner of the contact.
+  - a React component on the frontend should call `/api/contacts` on first load, save it on redux, and use contacts from redux to display them on the screen
+
+3. models
+
+- list all the different models you will need, e.g. `users`, `contacts`
+- write down all the fields for the models
+- draw connections between models, e.g. one-to-one, one-to-many etc
+
+4. wireframes
+
+- rough mockups for all the frontend screens
+
+**_TO-DO:_**
+
+- gather user stories
+- models
+- implementation details
+- wireframes
+
+</details>
 <details>
-<summary>Day 1</summary>
+<summary>Day 2</summary>
 
 **_WE-WILL-LEARN:_**
 
@@ -2371,55 +2416,10 @@ The senior phase will focus on alrogithms and projects
 1. constants are dropped
 1. worst case is usually the way we measure
 
-**_WEB APP DESIGN_**
-
-1. requirements, user stories
-
-- As a `<persona>`, I want to `<do something>` so that `<reason>`
-  - example: as a `phonebook owner`, I want to see all of my contacts, so that I can see their phone number
-
-2. implementation detail
-
-- How you will actually fulfill a user story
-- Split each story into specific, bite-size tasks (implementation detail)
-  - Should always serve a user story
-- examples:
-  - an Express route on the backend
-    (GET `/api/contacts`) should serve up the name,
-    phone number of all the contacts from our Postgres database. access should be restricted to only the owner of the contact.
-  - a React component on the frontend should call `/api/contacts` on first load, save it on redux, and use contacts from redux to display them on the screen
-
-3. models
-
-- list all the different models you will need, e.g. `users`, `contacts`
-- write down all the fields for the models
-- draw connections between models, e.g. one-to-one, one-to-many etc
-
-4. wireframes
-
-- rough mockups for all the frontend screens
-
 **_TO-DO:_**
 
 - REACTO interview problems
 - Web app design for Blogslist
-
-</details>
-
-<details><summary>Day 2</summary>
-
-[Grace Shopper](./e-commerce/grace_shopper.pdf)
-
-**_WE-WILL-LEARN:_**
-
-- Getting started with e-commerce project
-
-**_TO-DO:_**
-
-- gather user stories
-- models
-- implementation details
-- wireframes
 
 </details>
 
