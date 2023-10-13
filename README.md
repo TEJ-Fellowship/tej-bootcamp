@@ -1,6 +1,7 @@
 # 🔥 TEJ Bootcamp
 
 ### Make a few changes
+And link to an issue
 
 ## 💚 Junior Phase
 
