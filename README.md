@@ -1,5 +1,7 @@
 # 🔥 TEJ Bootcamp
 
+### Make a few changes
+
 ## 💚 Junior Phase
 
 The junior phase will comprise of 10 sections, with each section taking roughly 1 week of classes.
