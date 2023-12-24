@@ -19,6 +19,10 @@
 1. start from the big components
 1. design the smaller components independently, without worrying how they will fit into the bigger picture
 
+### 3. tricks
+
+1. define different behavior based on break-points using classes
+
 ---
 
 ### Tools
