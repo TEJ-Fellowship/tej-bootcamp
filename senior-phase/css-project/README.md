@@ -9,6 +9,7 @@
 3. colors
 4. fonts
 5. constants
+6. break-points
 
 ### 2. process
 
