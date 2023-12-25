@@ -215,6 +215,9 @@ li {
 .padding-right-4 {
   padding-right: calc(4 * var(--h-spacing-unit));
 }
+.bg-gray {
+  background-color: var(--lighter-grey);
+}
 /* End: general */
 /* Start: Flex */
 .flex-container {
@@ -223,7 +226,53 @@ li {
 .justify-content-space-between {
   justify-content: space-between;
 }
+.justify-content-space-around {
+  justify-content: space-around;
+}
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+.lesson-part {
+  flex-basis: 80%;
+  margin: auto;
+  padding: var(--h-spacing-unit);
+}
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
+/* medium */
+@media only screen and (min-width: 480px) {
+  .lesson-part {
+    flex-basis: 40%;
+    margin: unset;
+  }
+  .padding-right-4-medium {
+    padding-right: calc(4 * var(--h-spacing-unit));
+  }
+  .padding-left-4-medium {
+    padding-left: calc(4 * var(--h-spacing-unit));
+  }
+}
+/* large */
+@media only screen and (min-width: 768px) {
+}
+/* hd */
+@media only screen and (min-width: 1024px) {
+  .lesson-part {
+    flex-basis: 30%;
+  }
+}
+/* menu full screen height */
+@media only screen and (min-width: 1162px) {
+}
+/* uhd */
+@media only screen and (min-width: 1536px) {
+}
 /* Endx: Flex */
+
+/* Start: Grid */
+
+/* End: Grid */
 
 /* BEGIN: TEMPLATE */
 /* small */
