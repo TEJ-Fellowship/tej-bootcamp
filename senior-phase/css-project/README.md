@@ -8,7 +8,7 @@
 2. globals
 3. colors
 4. fonts
-5. constants
+5. constants (tokens)
 6. break-points
 
 ### 2. process
