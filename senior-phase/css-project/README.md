@@ -8,8 +8,10 @@
 2. globals
 3. colors
 4. fonts
-5. constants
+5. constants (tokens)
 6. break-points
+
+note: you can get started with the `css-presets` branch to get a starter stylesheet with resets, globals, tokens and break-points
 
 ### 2. process
 
