@@ -1,0 +1,20 @@
+/* Start: VARIABLES */
+:root {
+  --primary: #e4232a;
+  --secondary: #5271ff;
+  --lightest-grey: #f0f0f0;
+  --lighter-grey: #dbdbdb;
+  --h4-grey: #717171;
+  --site-grey: #383838;
+  --footer-grey: #222222;
+
+  /* Fonts */
+  --Primary-font: Decalo-bold;
+  --Secondary-font: Roboto;
+
+  /* Spacings */
+  --h-spacing-unit: 0.5rem;
+  --v-spacing-unit: 0.5rem;
+  --wrapper-max-width: 1300px;
+}
+/* End: VARIABLES */
