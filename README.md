@@ -14,6 +14,11 @@ The junior phase will comprise of 10 sections, with each section taking roughly 
 - [git basics](https://git-scm.com/book/en/v2)
 - [React project starter kit](https://github.com/TEJ-Fellowship/react-start-kit)
 
+### Junior Phase Schedule
+
+- You can use this <a href="https://docs.google.com/spreadsheets/d/13IWu48jcdKJnNBHTXIRGEg-uO8L2p5z1M3Kj98RfPyg/copy" target="_blank">spreadsheet</a> to track your bootcamp progress.
+  Click the link to make a copy, then enter your start date and expected study hours per week in the Timeline sheet. As you finish each course, update the Curriculum Data sheet with your completion date on the "Actual End Date" column. This will automatically revise the "Calculated End Date" column estimates for when you'll complete the bootcamp courses.
+
 ---
 
 ## [PART 0: Fundamentals of web apps](https://fullstackopen.com/en/part0/fundamentals_of_web_apps)
