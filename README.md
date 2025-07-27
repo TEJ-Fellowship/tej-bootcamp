@@ -82,8 +82,8 @@ pure react, modern react dev setup, component, state, event handler
 
 **_TO-STUDY:_**
 
-- [Complete Intro to React v8: Pure react](https://react-v8.holt.courses/lessons/no-frills-react/pure-react)
-- [Complete Intro to React v8: JS tools](https://react-v8.holt.courses/lessons/js-tools/npm)
+- [Complete Intro to React v9: Pure react](https://react-v9.holt.courses/lessons/no-frills-react/react-without-a-build-step)
+- [Complete Intro to React v9: JS tools](https://react-v9.holt.courses/lessons/tools/npm)
 - [PART 1-a: Intro to React](https://fullstackopen.com/en/part1/introduction_to_react)
 
 **_LECTURE-VIDEO:_**
