@@ -1,15 +1,24 @@
-let SayHello = (props) => {
-  return React.createElement("h1", { id: "myId" }, `Hello ${props.firstName}`);
+const react = document.getElementById("root");
+const reactRoot = ReactDOM.createRoot(react);
+
+const SayHello = (props) => {
+  return React.createElement(
+    "p",
+    { class: "anjanaClass" },
+    `Hello ${props.name}`
+  );
 };
-let App = () => {
-  return React.createElement("div", {}, [
-    React.createElement(SayHello, { firstName: "Rushil" }),
-    React.createElement(SayHello, { firstName: "Sushil" }),
-    React.createElement(SayHello, { firstName: "Liza" }),
+
+const App = () => {
+  const myDiv = React.createElement("div", {}, [
+    React.createElement("h1", { class: "anjanaClass" }, "Hello world"),
+
+    React.createElement(SayHello, { name: "Anu" }),
+    React.createElement(SayHello, { name: "Mahesh" }),
+    React.createElement(SayHello, { name: "Manoj" }),
   ]);
+
+  return myDiv;
 };
 
-let container = document.getElementById("root");
-let root = ReactDOM.createRoot(container);
-
-root.render(React.createElement(App));
+reactRoot.render(React.createElement(App));
