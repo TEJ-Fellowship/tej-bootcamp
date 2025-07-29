@@ -88,7 +88,7 @@ pure react, modern react dev setup, component, state, event handler
 
 **_LECTURE-VIDEO:_**
 
-- [Pure react](https://youtu.be/gjPQSF1GvRk)
+- [Pure react](https://youtu.be/kQoh4DCg6As)
   1. Create folder structure and files
   - create folder `pure-react`, then `src` inside it
   2. Create `index.html` inside `src`
@@ -103,14 +103,14 @@ pure react, modern react dev setup, component, state, event handler
   - install Dev prettier, eslint, vite
   - setup config for prettier, eslint, and vite
   - install react, react-dom
-- [Convert pure react to dev environment running from vite](https://youtu.be/JXvofCk2_gM?t=1552)
+- [Convert pure react to dev environment running from vite create tool](https://youtu.be/QaJerBcNqew)
   1. Use `Vite` tool to creat new React project
   ```
   npm create vite@latest introdemo -- --template react
   ```
   2. Move pure react code to this project
   3. Build React Components
-- [Using JSX](https://youtu.be/eG7UPaLh5WQ)
+- [Using JSX](https://youtu.be/gbTQkrG8SEM)
   1. Move components `App` and `Hello` to individual files
   - remember to import and export required things
   - make sure to start component name with `Capital`
@@ -131,7 +131,7 @@ _Instructions for the `workshops` shown in the `LECTURE-VIDEO`s_
    - watch the lecture-video (if required)
    - read the material (if required)
    - then put today's workshop inside the `part1` folder
-   - refer to source code from lecture in [`part1-a` branch](https://github.com/TEJ-Fellowship/tej-bootcamp/tree/part1-a/part1/pure-react) if needed
+   - refer to source code from lecture in [`part1-a` branch](https://github.com/TEJ-Fellowship/tej-bootcamp/tree/part1-a/part1/pure-react/src) if needed
    - continue future workshops under appropriate folder structures
 
 **_TO-DO:_**
@@ -142,11 +142,9 @@ _Instructions for TO-DO_
 
 1. In the `fullstackopen` repository, create a folder called `part1` inside `fullstackopen`
 2. Create folder called `courseinfo` inside of `part1` to put your code for exercise 1.1-1.2
-   - You can create `courseinfo` project either by using `vite`, as we did for the class today. You can clone this [starter kit](https://github.com/TEJ-Fellowship/react-start-kit)
-   - Or you can create `courseinfo` project using `create-react-app` as described in the [`introduction to react`](https://fullstackopen.com/en/part1/introduction_to_react) section of the course
+   - You can create `courseinfo` project by using `npm create vite`, as we did for the class today
 
-_note-1_: If you are cloning the starter kit, delete the `.git` directory inside the clone.
-_note-2_: See this [example exercise repository](https://github.com/fullstack-hy2020/example-submission-repository) for folder structure. Further details can be found with the [exercise instructions](https://fullstackopen.com/en/part1/introduction_to_react#exercises-1-1-1-2)
+_note-1_: See this [example exercise repository](https://github.com/fullstack-hy2020/example-submission-repository) for folder structure. Further details can be found with the [exercise instructions](https://fullstackopen.com/en/part1/introduction_to_react#exercises-1-1-1-2)
 
 </details>
 
