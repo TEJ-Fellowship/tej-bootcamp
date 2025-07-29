@@ -95,7 +95,7 @@ pure react, modern react dev setup, component, state, event handler
   - add script tag for React, ReactDOM, and index.js
   3. Create `index.js` inside `src`
   - use `ReactDOM.createRoot`, `React.createElement`, and `render` to create web application using pure react
-- [Tooling with npm, prettier, eslint, vite](https://youtu.be/JXvofCk2_gM)
+- (Not required for 2025)[Tooling with npm, prettier, eslint, vite](https://youtu.be/JXvofCk2_gM)
   1. Create folder structure and files
   - create folder `tooling`, then copy `src` from `pure-react`
   2. Toolings
@@ -104,9 +104,12 @@ pure react, modern react dev setup, component, state, event handler
   - setup config for prettier, eslint, and vite
   - install react, react-dom
 - [Convert pure react to dev environment running from vite](https://youtu.be/JXvofCk2_gM?t=1552)
-  1. Move react and react-dom libraries to index.js
-  2. Use `type="module"` in index.html
-  3. Create vite scripts in package.json for `dev`, `build`, and `preview`
+  1. Use `Vite` tool to creat new React project
+  ```
+  npm create vite@latest introdemo -- --template react
+  ```
+  2. Move pure react code to this project
+  3. Build React Components
 - [Using JSX](https://youtu.be/eG7UPaLh5WQ)
   1. Move components `App` and `Hello` to individual files
   - remember to import and export required things
@@ -114,11 +117,8 @@ pure react, modern react dev setup, component, state, event handler
   2. Convert `React.createElement` to JSX
   - rename all files with JSX to `.jsx` extension from `.js`
   - remove the imports that are not required for JSX
-  3. Configure eslint to understand react and JSX
-  - `npm i -D eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react`
-  - update eslint config
-  4. Please read [Some notes](https://fullstackopen.com/en/part1/introduction_to_react#some-notes) section for common errors to avoid
-  5. What can you [render](https://fullstackopen.com/en/part1/introduction_to_react#do-not-render-objects) in JSX?
+  3. Please read [Some notes](https://fullstackopen.com/en/part1/introduction_to_react#some-notes) section for common errors to avoid
+  4. What can you [render](https://fullstackopen.com/en/part1/introduction_to_react#do-not-render-objects) in JSX?
 
 _Instructions for the `workshops` shown in the `LECTURE-VIDEO`s_
 
