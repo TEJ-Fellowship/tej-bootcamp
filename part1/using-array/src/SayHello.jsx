@@ -1,12 +1,9 @@
-let SayHello = ({ person }) => {
-  //   return React.createElement("h1", { id: "myId" }, `Hello ${props.firstName}`);
+const SayHello = ({ person }) => {
+  function getFullName() {
+    return `${person.firstName} ${person.lastName}`;
+  }
 
-  // const getFullName = () => {
-  //   return `${person.firstName} ${person.lastName}`;
-  // };
-  const getFullName = () => `${person.firstName} ${person.lastName}`;
-
-  return <h1 id="myID">Hello {getFullName()}</h1>;
+  return <p>Hello {getFullName()}</p>;
 };
 
 export default SayHello;

@@ -1,34 +1,12 @@
-# Starting template for ReactJS projects
+# React + Vite
 
-- clone this repository
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-```
-git clone https://github.com/TEJ-Fellowship/react-start-kit.git
-```
+Currently, two official plugins are available:
 
-- rename the folder `react-start-kit` to the name of your project
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-```
-mv react-start-kit your-project-name
-```
+## Expanding the ESLint configuration
 
-- remove the .git folder inside the `react-start-kit` folder
-
-```
-cd your-project-name
-rm -rf .git
-```
-
-- if you need a git repository for your project, you can create it by running the command `git init`
-
-```
-git init
-```
-
-Or, you can use the create-react-app function
-
-```
-npx create-react-app your-project-name
-cd your-project-name
-npm start
-```
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
