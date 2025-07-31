@@ -234,13 +234,13 @@ _Instructions for TO-DO_
   - convert the counter to a state using `useState`
   - update the state from the `onClick` event handler
   2. Refactor button to it's own component
-  - create the `increate` counter
+  - create the `increase` counter
   - create the `decrease` counter
   - create the `reset` counter
 
 **_TO-DO:_**
 
-- [1.6-1.14](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14)
+- [1.6-1.10](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14)
 
 </details>
 
@@ -283,7 +283,7 @@ _Instructions for TO-DO_
 
 **_TO-DO:_**
 
-- [1.6-1.14](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14)
+- [1.11-1.14](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14)
 
 </details>
 
