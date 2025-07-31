@@ -1,5 +1,5 @@
-const Display = ({ counter }) => {
-  return <h1>{counter}</h1>;
-};
+const Display = ({ counter }) => (
+  <div>Counter value in the display component is {counter}</div>
+);
 
 export default Display;
