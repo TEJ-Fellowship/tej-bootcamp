@@ -218,26 +218,25 @@ _Instructions for TO-DO_
 
 **_LECTURE-VIDEO:_**
 
-- [Component manual re-render](https://youtu.be/-GH2Qj9n-Mg)
-  1. Create a react project that updates the count
+- [React event handling with vanilla JS DOM manipulation]()
+  1. Create a react counter app
   - create project `counter-app` inside `part1`
-  - create component `App` and jsx file `index.jsx`
-  2. Update the count in some set interval
-  - use `setInterval` to update count, and also call the render manually to re-render the app
+  - create component `App.jsx` and jsx file `main.jsx`
+  2. Add a button to increase the count
+  - add button element
+  - include an `onClick` event handler to the button. The event handler has to be a function, not function execution!
+  3. Update the DOM display using vanilla JS
+  - handle the DOM update in the div
+  - create a new div to display count that doesn't have the DOM handling
+  - create a child component to display count
 - [React state](https://youtu.be/RC-4xZIKqpo)
   1. Use `useState` hook to make a stateful component inside `App` component
   - convert the counter to a state using `useState`
-  - use `setTimeout` to call a function after 1 second that changes the value of `counter` state
-  - remove the manual call to render
-- [React event handling](https://youtu.be/oeQ3M53rQVQ)
-  1. add a button to increase the count
-  - add button element
-  - include an `onClick` event handler to the button. The event handler has to be a function, not function execution!
-  2. Refactor components for display and button
-  - refactor `Display` component
-    - call `Display` from `App` and also pass it the counter state
-  - refactor `Button` component
-    - call it for plus, minus, and zero by passing appropriate event handlers
+  - update the state from the `onClick` event handler
+  2. Refactor button to it's own component
+  - create the `increate` counter
+  - create the `decrease` counter
+  - create the `reset` counter
 
 **_TO-DO:_**
 
