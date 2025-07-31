@@ -229,7 +229,7 @@ _Instructions for TO-DO_
   - handle the DOM update in the div
   - create a new div to display count that doesn't have the DOM handling
   - create a child component to display count
-- [React state](https://youtu.be/RC-4xZIKqpo)
+- [React state](https://youtu.be/CmiHMk69fTA)
   1. Use `useState` hook to make a stateful component inside `App` component
   - convert the counter to a state using `useState`
   - update the state from the `onClick` event handler
