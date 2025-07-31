@@ -218,7 +218,7 @@ _Instructions for TO-DO_
 
 **_LECTURE-VIDEO:_**
 
-- [React event handling with vanilla JS DOM manipulation]()
+- [React event handling with vanilla JS DOM manipulation](https://youtu.be/CCqtYow4vkM)
   1. Create a react counter app
   - create project `counter-app` inside `part1`
   - create component `App.jsx` and jsx file `main.jsx`
