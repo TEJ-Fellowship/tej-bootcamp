@@ -257,7 +257,7 @@ _Instructions for TO-DO_
 
 **_LECTURE-VIDEO:_**
 
-- [Using object, array in state](https://youtu.be/FBLdF4rpba4)
+- [Using object, array in state](https://youtu.be/NE_Ja2kqxLU)
   1. Create a copy of `counter-app` in `part1` directory
   - first delete `node_modules` folder from `counter-app`
   - `cp -r counter-app double-counter`
@@ -265,16 +265,17 @@ _Instructions for TO-DO_
   - put the state of the left and right counter in an object
   - put the state of click history in an array
   - lets put the total number of clicks in a state
-- [Conditional rendering in component](https://youtu.be/5AdVOjQMX2A)
-  1. Create a new `History` component that shows the click history
-  2. Conditionally show the history only when there is history
-  - otherwise, show another message
-- [React debugging, and notes on hooks](https://youtu.be/ExDd_g4rMkY)
-  1. Do the following for debugging
+- [React debugging, and notes on hooks](https://youtu.be/MNAu9roavJo)
+  1. Put total number of clicks in state
+  2. Do the following for debugging
   - console.log
   - debugger
   - [React developer tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
-  2. Rules of hooks (useState, useEffect etc.)
+- [Conditional rendering in component](https://youtu.be/q6wPAsfaItc)
+  1. Create a new `History` component that shows the click history
+  2. Conditionally show the history only when there is history
+  - otherwise, show another message
+  3. Rules of hooks (useState, useEffect etc.)
   - only call hooks inside functional components
   - do not call hooks from
     - inside of a loop
