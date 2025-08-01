@@ -1,50 +1,46 @@
 import { useState } from "react";
-import MyButton from "./MyButton";
-import History from "./History";
+import Button from "./Button";
+import Display from "./Display";
 
-const App = () => {
-  let initialState = {
-    left: 0,
-    right: 0,
-  };
-  // let [left, setLeft] = useState(1);
-  // let [right, setRight] = useState(1);
-  let [clicks, setClicks] = useState(initialState);
-  let [clickHistory, setHistory] = useState([]);
-  let [totalClicks, setTotal] = useState(0);
+function App() {
+  const [counter, setCounter] = useState({ left: 0, right: 0 });
+  const [clickHistory, setClickHistory] = useState([]);
+  const [totalClicks, setTotalClicks] = useState(0);
 
-  const increaseByOneLeft = () => {
-    let newLeft = clicks.left + 1;
-    let newState = {
-      left: newLeft,
-      right: clicks.right,
-    };
-    // console.log(clicks);
-    setClicks(newState);
-    // console.log(clicks);
-    setHistory(clickHistory.concat("L"));
-    setTotal(newLeft + clicks.right);
-    //["R", "L"]
-  };
+  function leftClick() {
+    // console.log("counter before adding value", counter);
+    // counter.left = counter.left + 1;
+    let newCounter = { ...counter };
+    newCounter.left = newCounter.left + 1;
+    setCounter(newCounter);
+    setClickHistory([...clickHistory, "L"]);
+    setTotalClicks(totalClicks + 1);
 
-  const increaseByOneRight = () => {
-    let newRight = clicks.right + 1;
-    setClicks({ left: clicks.left, right: newRight });
-    let newLength = clickHistory.length + 1;
-    setHistory([...clickHistory, "R"]);
-    setTotal(newLength);
-  };
+    // console.log("counter after adding value", counter);
+  }
+
+  function rightClick() {
+    console.log("counter before setCounter", counter);
+    setCounter({ ...counter, right: counter.right + 1 });
+    console.log("counter after setCounter", counter);
+
+    setClickHistory([...clickHistory, "R"]);
+    setTotalClicks(totalClicks + 1);
+  }
 
   return (
-    <div>
-      {clicks.left}
-      <MyButton someFunction={increaseByOneLeft} text={"left"} />
-      {clicks.right}
-      <MyButton someFunction={increaseByOneRight} text={"right"} />
-      <History history={clickHistory} />
-      <div>total clicks: {totalClicks}</div>
-    </div>
+    <>
+      <div>
+        {counter.left}
+        <Button onClickFunc={leftClick} label="left count" />
+        <Button label="right count" onClickFunc={rightClick} />
+        {counter.right}
+      </div>
+      <div>The history of clicks is {clickHistory.join("-")}</div>
+      {/* <div>The total clicks are {totalClicks}</div> */}
+      <Display total={totalClicks} />
+    </>
   );
-};
+}
 
 export default App;
