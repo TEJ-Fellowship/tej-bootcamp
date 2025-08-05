@@ -1,5 +1,16 @@
-function App() {
-  return <>Hello</>;
+import Note from "./components/Note";
+
+function App({ notes }) {
+  return (
+    <div>
+      <h1>My notes</h1>
+      <ul>
+        {notes.map((note) => (
+          <Note key={note.id} note={note} />
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default App;
