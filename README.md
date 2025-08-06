@@ -366,7 +366,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Adding a controlled HTML input component to add notes](https://youtu.be/gMdffc85U2M)
+- [Adding a controlled HTML input component to add notes](https://youtu.be/cWaXNZVQViU)
   1. Create a state to keep track of notes array
   2. Add a form in JSX to add a note
   3. Put an `onSubmit` event handler to the form
@@ -375,7 +375,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   - use the state as the input `value`
   - add an `onChange` event handler on the input
   5. Complete `onSubmit` to add new note to notes array
-- [Filtering displayed notes](https://youtu.be/YJhQ_6zGgA8)
+- [Filtering displayed notes](https://youtu.be/4e0Hznf_gMI)
   1. Add state to keep track of `showAll`
   2. Add a `notesToShow` variable to keep notes to show based on `showAll` state
   - if `showAll` is true, then `notesToShow` is same as `notes`
@@ -404,7 +404,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Setting up json-server as our backend server](https://youtu.be/jM5vB4hX8_8)
+- [Setting up json-server as our backend server](https://youtu.be/pej9mqHiAxY)
   1. Create the `db.json` file with array of notes
   2. Install `json-server` as dev dependency
   ```
@@ -417,10 +417,10 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   4. Include json-server start command in package.json scripts
   5. view the output on web browser
   - if required, install the [JSONVue](https://chrome.google.com/webstore/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc) extension
-- [Understanding the useEffect hook](https://youtu.be/b_8Wz08L_Oo)
+- [Understanding the useEffect hook](https://youtu.be/2VimXu7CTDc)
   1. in App.jsx, create a `useEffect` hook so that it is only called on first render
   2. update the `useEffect` hook so that it executes each time the `showAll` state changes
-- [Using Axios in frontend to access data from backend](https://youtu.be/87ZVR9K9M70)
+- [Using Axios in frontend to access data from backend](https://youtu.be/A33Nk2idvUo)
   1. Install axios as dependency
   ```
   npm install axios
