@@ -1,10 +1,17 @@
 import Note from "./components/Note";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function App(props) {
-  const [notes, setNotes] = useState(props.notes);
+function App() {
+  const [notes, setNotes] = useState([]);
   const [newNote, setNewNote] = useState("Type something..");
   const [showAll, setShowAll] = useState(true);
+
+  useEffect(function () {
+    axios.get("http://localhost:3001/notes").then((response) => {
+      setNotes(response.data);
+    });
+  }, []);
 
   const showingNotes = showAll
     ? notes
@@ -14,7 +21,7 @@ function App(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("logging", event.target);
+    // console.log("logging", event.target);
     const obj = {
       id: notes[notes.length - 1].id + 1,
       content: newNote,
