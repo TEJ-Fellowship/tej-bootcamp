@@ -2,8 +2,8 @@
   "notes": [
     {
       "id": "1",
-      "content": "HTML is not easy",
-      "important": true
+      "content": "HTML is really hard",
+      "important": false
     },
     {
       "id": "2",
@@ -14,7 +14,37 @@
       "id": "3",
       "content": "GET and POST are the most important methods of HTTP protocol",
       "important": true
+    },
+    {
+      "id": "a90e",
+      "content": "Is Ganesh correct?",
+      "important": true
+    },
+    {
+      "id": "cde9",
+      "content": "Lets try once more",
+      "important": false
+    },
+    {
+      "id": "2602",
+      "content": "ldld",
+      "important": false
+    },
+    {
+      "id": "837d",
+      "content": "One more note",
+      "important": true
+    },
+    {
+      "id": "65c0",
+      "content": "does Anjana's code work?",
+      "important": false
     }
   ],
-  "students": [{ "id": 1, "name": "Bijay" }]
+  "students": [
+    {
+      "id": "1",
+      "name": "Bijay"
+    }
+  ]
 }

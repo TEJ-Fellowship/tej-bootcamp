@@ -1,6 +1,7 @@
 import Note from "./components/Note";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import notesServices from "./services/notes";
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -8,8 +9,8 @@ function App() {
   const [showAll, setShowAll] = useState(true);
 
   useEffect(function () {
-    axios.get("http://localhost:3001/notes").then((response) => {
-      setNotes(response.data);
+    notesServices.getAll().then((data) => {
+      setNotes(data);
     });
   }, []);
 
@@ -23,11 +24,15 @@ function App() {
     event.preventDefault();
     // console.log("logging", event.target);
     const obj = {
-      id: notes[notes.length - 1].id + 1,
       content: newNote,
       important: Math.random() < 0.5,
     };
-    setNotes(notes.concat(obj));
+    notesServices.create(obj).then((data) => {
+      setNotes(notes.concat(data));
+    });
+    // axios.post("http://localhost:3001/notes", obj).then((response) => {
+    //   setNotes(notes.concat(response.data));
+    // });
     setNewNote("");
   }
 
@@ -39,6 +44,37 @@ function App() {
     setShowAll(!showAll);
   }
 
+  function toggleImportant(id) {
+    const currentNote = notes.find((note) => note.id === id);
+    const currentNoteCopy = {
+      ...currentNote,
+      important: !currentNote.important,
+    };
+
+    notesServices
+      .update(id, currentNoteCopy)
+      .then((data) => {
+        const updatedNotes = notes.map((note) =>
+          note.id === id ? data : note
+        );
+        setNotes(updatedNotes);
+      })
+      .catch((error) => {
+        console.log(error);
+        alert(`the note with id ${id} does not exist`);
+        setNotes(notes.filter((note) => note.id !== id));
+      });
+
+    // axios
+    //   .put(`http://localhost:3001/notes/${id}`, currentNoteCopy)
+    //   .then((response) => {
+    //     const updatedNotes = notes.map((note) =>
+    //       note.id !== id ? note : response.data
+    //     );
+    //     setNotes(updatedNotes);
+    //   });
+  }
+
   return (
     <div>
       <h1>My notes</h1>
@@ -47,7 +83,13 @@ function App() {
       </button>
       <ul>
         {showingNotes.map((note) => (
-          <Note key={note.id} note={note} />
+          <Note
+            key={note.id}
+            note={note}
+            updateNote={() => {
+              toggleImportant(note.id);
+            }}
+          />
         ))}
       </ul>
       <form onSubmit={handleSubmit}>
