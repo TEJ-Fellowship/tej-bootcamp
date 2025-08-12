@@ -1,12 +1,14 @@
 import Note from "./components/Note";
 import { useState, useEffect } from "react";
-import axios from "axios";
 import notesServices from "./services/notes";
+import Notification from "./components/Notification";
+import Footer from "./components/Footer";
 
 function App() {
   const [notes, setNotes] = useState([]);
   const [newNote, setNewNote] = useState("Type something..");
   const [showAll, setShowAll] = useState(true);
+  const [errorMessage, setErrorMessage] = useState(null);
 
   useEffect(function () {
     notesServices.getAll().then((data) => {
@@ -60,8 +62,9 @@ function App() {
         setNotes(updatedNotes);
       })
       .catch((error) => {
-        console.log(error);
-        alert(`the note with id ${id} does not exist`);
+        // alert(`the note with id ${id} does not exist`);
+        setErrorMessage(`the note with id ${id} does not exist`);
+        setTimeout(() => setErrorMessage(null), 5000);
         setNotes(notes.filter((note) => note.id !== id));
       });
 
@@ -78,6 +81,7 @@ function App() {
   return (
     <div>
       <h1>My notes</h1>
+      <Notification message={errorMessage} />
       <button onClick={changeShowState}>
         Show {showAll ? "important" : "all"}{" "}
       </button>
@@ -93,9 +97,14 @@ function App() {
         ))}
       </ul>
       <form onSubmit={handleSubmit}>
-        <input value={newNote} onChange={handleChange} />
+        <input
+          value={newNote}
+          onChange={handleChange}
+          onClick={() => setNewNote("")}
+        />
         <button>submit</button>
       </form>
+      <Footer />
     </div>
   );
 }

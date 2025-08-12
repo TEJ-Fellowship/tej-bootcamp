@@ -1,5 +1,5 @@
 const Note = ({ note, updateNote }) => (
-  <li>
+  <li className="note">
     {note.content}{" "}
     <button onClick={updateNote}>{String(note.important)}</button>
   </li>
