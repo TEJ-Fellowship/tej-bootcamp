@@ -104,7 +104,7 @@ pure react, modern react dev setup, component, state, event handler
   - setup config for prettier, eslint, and vite
   - install react, react-dom
 - [Convert pure react to dev environment running from vite create tool](https://youtu.be/QaJerBcNqew)
-  1. Use `Vite` tool to creat new React project
+  1. Use `Vite` tool to create new React project
   ```
   npm create vite@latest introdemo -- --template react
   ```
@@ -586,8 +586,8 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 - [Using express for serving on the '/api/notes' route for a 'get' method request](https://youtu.be/QgC5oSEB_Tc)
   1. Install `express` library
   - modify code to use express library
-  2. Modify to express route to server array of notes on `/api/notes` url for `get` request
-  3. Install nodemon as dev dependency to run node server by hot reload on code changes
+  2. Modify to express route to serve array of notes on `/api/notes` url for `get` request
+  3. Use `--watch` flag to run node server by hot reload on code changes
 - [Side note on REST and JSON](https://youtu.be/GlanBqAtPj8)
 - [Creating the '/api/notes/:id' route for a 'get' method request](https://youtu.be/CPMkmR6eSIU)
   1. Create a new get route at `/api/notes/:id`
@@ -610,7 +610,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   4. Respond with status 201 created and return the newly created note object
 - [Creating middleware](https://youtu.be/wPZRiwHlz4Y)
   1. Create a middleware at the top of the express server to log method, path, and body
-  2. Creat a middleware at the end of the express server (just before app.listen) to send a 404 not found to all paths that are not handled by the app
+  2. Create a middleware at the end of the express server (just before app.listen) to send a 404 not found to all paths that are not handled by the app
 
 **_TO-DO:_**
 
@@ -2086,7 +2086,7 @@ Nothing to do!
   - create the required types for entry
     - start with a common type, refer to `code` from `Diagnose` type for `diagnosisCodes`
     - extend it
-    - creat a union type
+    - create a union type
     - understanding and using `UnionOmit`
 
 **_TO-DO:_**
