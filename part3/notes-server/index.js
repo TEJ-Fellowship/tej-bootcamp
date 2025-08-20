@@ -1,15 +1,18 @@
+// --- Imports & Config ---
 const express = require("express");
 const cors = require("cors");
+require("dotenv").config();
+const mongoose = require("mongoose");
+const Note = require("./models/note");
+
 const app = express();
+
+// --- Middleware (general setup) ---
+app.use(express.static("dist"));
 app.use(express.json());
 app.use(cors());
-app.use(express.static("dist"));
 
-const unknownEndpoint = (request, response) => {
-  response.status(404).send({ error: "unknown endpoint" });
-};
-
-// app.use(unknownEndpoint);
+// --- Custom Logger Middleware ---
 const requestLogger = (request, response, next) => {
   console.log("Method:", request.method);
   console.log("Path:  ", request.path);
@@ -17,73 +20,82 @@ const requestLogger = (request, response, next) => {
   console.log("---");
   next();
 };
-
 app.use(requestLogger);
 
-let notes = [
-  {
-    id: "1",
-    content: "HTML is easy",
-    important: true,
-  },
-  {
-    id: "2",
-    content: "Browser can execute only JavaScript",
-    important: false,
-  },
-  {
-    id: "3",
-    content: "GET and POST are the most important methods of HTTP protocol",
-    important: true,
-  },
-];
+// --- DB Connection ---
+const url = process.env.MONGODB_URL;
+mongoose
+  .connect(url)
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((err) => console.error("Error connecting to MongoDB:", err.message));
 
-// const app = http.createServer((request, response) => {
-//   response.writeHead(200, { "Content-Type": "application/json" });
-//   response.end(JSON.stringify(notes));
-// });
-
-app.get("/api/notes", (request, response) => {
-  console.log("you are calling get for all notes");
-  response.json(notes);
+// --- Routes ---
+app.get("/api/notes", (request, response, next) => {
+  Note.find({})
+    .then((notes) => response.status(200).json(notes))
+    .catch((error) => next(error));
 });
 
-app.get("/api/notes/:noteid", (request, response) => {
+app.get("/api/notes/:noteid", (request, response, next) => {
   const myId = request.params.noteid;
-  const myNote = notes.find((note) => note.id === myId);
-
-  if (myNote) {
-    response.json(myNote);
-  } else {
-    response.status(404).end();
-  }
+  Note.findById(myId)
+    .then((myNote) => {
+      if (myNote) {
+        response.json(myNote);
+      } else {
+        response.status(404).send({ error: `No note found with id: ${myId}` });
+      }
+    })
+    .catch((error) => next(error));
 });
 
-app.delete("/api/notes/:noteid", (request, response) => {
+app.post("/api/notes", (request, response, next) => {
+  const body = request.body;
+
+  if (!body.content) {
+    return response.status(400).json({ error: "content missing" });
+  }
+
+  const note = new Note({
+    content: body.content,
+    important: body.important || false,
+  });
+
+  note
+    .save()
+    .then((savedNote) => response.status(201).json(savedNote))
+    .catch((error) => next(error));
+});
+
+app.delete("/api/notes/:noteid", (request, response, next) => {
   const myId = request.params.noteid;
-  notes = notes.filter((note) => note.id !== myId);
 
-  response.status(204).end();
+  Note.findByIdAndDelete(myId)
+    .then(() => response.status(204).end())
+    .catch((error) => next(error));
 });
 
-app.post("/api/notes", (request, response) => {
-  const note = request.body;
-  note.id = String(notes.length + 1);
-  if (!note.content) {
-    return response.status(400).json({
-      error: "content missing",
-    });
+// --- Unknown Endpoint Middleware ---
+const unknownEndpoint = (request, response) => {
+  response.status(404).send({ error: "unknown endpoint" });
+};
+app.use(unknownEndpoint);
+
+// --- Error Handler Middleware ---
+const errorHandler = (error, request, response, next) => {
+  console.error(error.message);
+
+  if (error.name === "CastError") {
+    return response.status(400).send({ error: "malformatted id" });
   }
-  console.log("our note is", note);
-  const myNote = {
-    content: note.content,
-    important: note.important || false,
-    id: String(notes.length + 1),
-  };
-  notes.push(myNote);
-  response.status(201).json(myNote);
-});
 
-const PORT = process.env.PORT ? process.env.PORT : 3001;
-app.listen(PORT);
-console.log(`Server running on port ${PORT}`);
+  // If not handled, forward to Express’s default handler
+  next(error);
+};
+app.use(errorHandler);
+
+// --- Server ---
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
