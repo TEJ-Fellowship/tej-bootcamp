@@ -17,8 +17,6 @@ const requestLogger = (request, response, next) => {
 
 app.use(requestLogger);
 
-let notes = [];
-
 app.get("/api/notes", (request, response, next) => {
   Note.find({})
     .then((result) => {
