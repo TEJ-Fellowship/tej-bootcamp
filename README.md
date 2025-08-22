@@ -757,15 +757,13 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Mongoose schema validation](https://youtu.be/F5vLQqKuCBo)
+- [Mongoose schema validation](https://youtu.be/-X8hM0NjX1c)
   1. Create a mongoose schema validation for `content` field in noteSchema
   2. In the note post route, catch the error in note.save
   3. Put the error handler in the error handling middleware
   4. Catch and display the error in the notes react app
-- [Mongoose schema validation while updating](https://youtu.be/Zfmzodtq-5k)
-  1. In the note update route, configure it to also throw schema validation errors
-  2. Why schema based validation is better than logical error handling in code
-- [Linting setup and configurations](https://youtu.be/SXLCt7Zzx8A)
+- [Deploying database setup to Render](https://youtu.be/CdmdELOuWqs)
+- [Linting setup and configurations](https://youtu.be/ivLDpYyUphA)
   1. Install eslint as a dev dependency
   2. Setup config file for eslint
   - change env `browser` to `node`
