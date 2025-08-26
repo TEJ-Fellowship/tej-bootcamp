@@ -839,12 +839,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
     - no port required
     - using supertest methods for test
   - checking length of notes
-    - using jest methods
   - checking content of one note
-  3. Setup the code according to instructions in fullstackopen if timeout type errors seen in console
-  - include a teardown
-  - add Jest timeout
-  - set bufferTimeoutMS
 - [Setting up test environment](https://youtu.be/sqwPSl1NJCs)
   1. [Set up NODE_ENV for different environments](https://fullstackopen.com/en/part4/testing_the_backend#test-environment)
   - set up cross-env, if required for windows
@@ -869,7 +864,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
   - refactor tests to use helper functions
   3. Refactor notesRouter.post to use async / await syntax
   - run test to make sure code is still working after refactoring
-  - put try / catch block for error handling
+  - put try / catch block for error handling (not required for Express version 5 onwards)
   4. [Continue refactoring notesRouter.get single note, and notesRouter.delete routes to use async/await](https://fullstackopen.com/en/part4/testing_the_backend#error-handling-and-async-await)
 - [Optimizing the beforeEach function](https://youtu.be/aiLU5CLCz1s)
   1. [Use Promise.all to await for an array of promises to resolve](https://fullstackopen.com/en/part4/testing_the_backend#optimizing-the-before-each-function)
