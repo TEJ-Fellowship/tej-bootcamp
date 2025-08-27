@@ -1,27 +1,32 @@
 const Note = require("../model/note");
 const notesRouter = require("express").Router();
+const User = require("../model/user");
 
 notesRouter.get("/", async (request, response, next) => {
-  const result = await Note.find({});
+  const result = await Note.find({}).populate("user", { username: 1, name: 1 });
   response.status(200).send(result);
 });
 
 notesRouter.post("/", async (request, response, next) => {
   const body = request.body;
-
-  if (!body.content) {
-    return response.status(400).json({ error: "content missing" });
-  }
-
-  const note = new Note({
-    content: body.content,
-    important: body.important || false,
-  });
-
   try {
-    const result = await note.save();
+    // if (!body.content) {
+    //   return response.status(400).json({ error: "content missing" });
+    // }
 
-    response.status(201).json(result);
+    const user = await User.findById(body.userId);
+
+    const note = new Note({
+      content: body.content,
+      important: body.important || false,
+      user: user.id,
+    });
+
+    const savedNote = await note.save();
+
+    user.notes = user.notes.concat(savedNote.id);
+    await user.save();
+    response.status(201).json(savedNote);
   } catch (error) {
     next(error);
   }
