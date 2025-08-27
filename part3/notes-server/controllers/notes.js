@@ -16,6 +16,12 @@ notesRouter.post("/", async (request, response, next) => {
 
     const user = await User.findById(body.userId);
 
+    if (!user) {
+      return response
+        .status(400)
+        .json({ error: "userId missing or not valid" });
+    }
+
     const note = new Note({
       content: body.content,
       important: body.important || false,
