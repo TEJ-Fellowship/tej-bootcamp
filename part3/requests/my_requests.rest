@@ -7,12 +7,11 @@ GET http://localhost:3001/api/notes/64cfb0b3acf6c111fe8a5b58
 ###
 POST http://localhost:3001/api/notes/
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InByYWJlc2gzIiwiaWQiOiI2NGQ1Y2E1YWExMzliYTIzZTA4NGY0MmEiLCJpYXQiOjE2OTE5OTExMjcsImV4cCI6MTY5MTk5MTE1N30.SyMx4BdHGlSOUbPdbDJ6AIUmIGGxtGithkwdU7KgqKA
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InByYWJlc2gzIiwiaWQiOiI2OGFkZDQzNmJiNzcxMzZiYmQwYzFhZDAiLCJpYXQiOjE3NTYyODc2NzUsImV4cCI6MTc1NjI4Nzc5NX0.2nSjg4sMkJ33LhdRp0xKUP8Hx4JU5JI2da7aP_Cdc5w
 
 {
-    "content": "note creation using token",
-    "important": false,
-    "userId": "64d5ca5aa139ba23e084f42a"
+    "content": "note creation1 using token",
+    "important": true
 }
 
 ###

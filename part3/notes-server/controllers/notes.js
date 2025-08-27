@@ -60,18 +60,21 @@ const getTokenFrom = (request) => {
 };
 
 app.post("/", async (request, response, next) => {
-  const body = request.body;
-
+  console.log("token:", getTokenFrom(request));
+  const { content, important } = request.body;
   try {
     const decodedToken = jwt.verify(getTokenFrom(request), process.env.SECRET);
+    console.log("decodedToken", decodedToken);
     if (!decodedToken.id) {
       return response.status(401).json({ error: "token invalid" });
     }
+
     const user = await User.findById(decodedToken.id);
+    console.log("user details from DB: ", user);
 
     const note = new Note({
-      content: body.content,
-      important: body.important || false,
+      content: content,
+      important: important || false,
       user: user._id,
     });
     const savedNote = await note.save();
