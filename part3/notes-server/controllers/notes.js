@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const Note = require("../model/note");
 const notesRouter = require("express").Router();
 const User = require("../model/user");
@@ -15,7 +16,6 @@ notesRouter.post("/", async (request, response, next) => {
     // }
 
     const user = await User.findById(body.userId);
-
     if (!user) {
       return response
         .status(400)
