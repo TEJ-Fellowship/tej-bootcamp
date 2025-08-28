@@ -1,21 +1,31 @@
+/* eslint-disable no-unused-vars */
 const Note = require("../model/note");
 const notesRouter = require("express").Router();
 const User = require("../model/user");
+const jwt = require("jsonwebtoken");
 
 notesRouter.get("/", async (request, response, next) => {
   const result = await Note.find({}).populate("user", { username: 1, name: 1 });
   response.status(200).send(result);
 });
 
+const getTokenFrom = (request) => {
+  const authorization = request.get("authorization");
+  console.log("authorization header: ", authorization);
+  if (authorization && authorization.startsWith("Bearer ")) {
+    const token = authorization.replace("Bearer ", "");
+    return token;
+  }
+  return null;
+};
 notesRouter.post("/", async (request, response, next) => {
   const body = request.body;
   try {
-    // if (!body.content) {
-    //   return response.status(400).json({ error: "content missing" });
-    // }
+    const decodedToken = jwt.verify(getTokenFrom(request), process.env.SECRET);
+    console.log("Decoded Token:", decodedToken);
 
-    const user = await User.findById(body.userId);
-
+    const user = await User.findById(decodedToken.id);
+    console.log("user from DB: ", user);
     if (!user) {
       return response
         .status(400)
@@ -25,9 +35,10 @@ notesRouter.post("/", async (request, response, next) => {
     const note = new Note({
       content: body.content,
       important: body.important || false,
-      user: user.id,
+      user: user._id,
     });
 
+    console.log("notes:", note);
     const savedNote = await note.save();
 
     user.notes = user.notes.concat(savedNote.id);

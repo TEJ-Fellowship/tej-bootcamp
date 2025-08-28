@@ -31,9 +31,8 @@ xxxxx.yyyyy.zzzzz
 
 ```json
 {
-  "sub": "1234567890",
-  "name": "John Doe",
-  "admin": true,
+  "username": "mahesh",
+  "id": "68af2507bae50ff44d80f0dd",
   "iat": 1516239022
 }
 ```

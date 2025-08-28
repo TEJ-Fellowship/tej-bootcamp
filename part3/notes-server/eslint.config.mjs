@@ -15,17 +15,17 @@ export default [
       "@stylistic/js": stylisticJs,
     },
     rules: {
-      "@stylistic/js/indent": ["error", 2],
-      // "@stylistic/js/linebreak-style": ["error", "unix"],
-      "@stylistic/js/quotes": ["error", "double"],
-      "@stylistic/js/semi": ["error", "always"],
-      eqeqeq: "error",
-      "no-trailing-spaces": "error",
-      "object-curly-spacing": ["error", "always"],
-      "arrow-spacing": ["error", { before: true, after: true }],
-      "no-console": "off",
-      "no-unused-vars": "error", // Show error for unused variables
-      "no-undef": "error", // Show error for undefined variables
+      // "@stylistic/js/indent": ["error", 2],
+      // // "@stylistic/js/linebreak-style": ["error", "unix"],
+      // "@stylistic/js/quotes": ["error", "double"],
+      // "@stylistic/js/semi": ["error", "always"],
+      // eqeqeq: "error",
+      // "no-trailing-spaces": "error",
+      // "object-curly-spacing": ["error", "always"],
+      // "arrow-spacing": ["error", { before: true, after: true }],
+      // "no-console": "off",
+      // "no-unused-vars": "error", // Show error for unused variables
+      // "no-undef": "error", // Show error for undefined variables
     },
   },
   {
