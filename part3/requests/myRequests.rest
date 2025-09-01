@@ -8,3 +8,13 @@ content-type: application/json
     "content": "note creation with error handling",
     "myField": "something totally random"
 }
+
+###
+post http://localhost:3001/api/users
+content-type: application/json
+
+{
+    "username": "manoj1",
+    "password": "manoj123",
+    "name": "Manoj Rai"
+}
