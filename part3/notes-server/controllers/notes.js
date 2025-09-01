@@ -1,20 +1,38 @@
+/* eslint-disable no-unused-vars */
+const { get } = require("mongoose");
 const Note = require("../model/note");
 const notesRouter = require("express").Router();
 const User = require("../model/user");
+const jwt = require("jsonwebtoken");
 
 notesRouter.get("/", async (request, response, next) => {
   const result = await Note.find({}).populate("user", { username: 1, name: 1 });
   response.status(200).send(result);
 });
 
+const getTokenFrom = (request) => {
+  const authorization = request.get("Authorization");
+  console.log("Authorization header:", authorization);
+  if (authorization && authorization.startsWith("Bearer ")) {
+    const token = authorization.replace("Bearer ", "");
+    return token;
+  }
+  return null;
+};
+
 notesRouter.post("/", async (request, response, next) => {
   const body = request.body;
   try {
-    // if (!body.content) {
-    //   return response.status(400).json({ error: "content missing" });
-    // }
-
-    const user = await User.findById(body.userId);
+    console.log("Extracted Token:", getTokenFrom(request));
+    const decodedToken = jwt.verify(getTokenFrom(request), process.env.SECRET);
+    console.log("\nDecoded Token:", decodedToken);
+    const user = await User.findById(decodedToken.id);
+    console.log("Our user:", user);
+    if (!user) {
+      return response
+        .status(400)
+        .json({ error: "userId missing or not valid" });
+    }
 
     const note = new Note({
       content: body.content,
