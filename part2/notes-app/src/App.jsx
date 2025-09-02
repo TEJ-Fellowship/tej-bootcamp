@@ -1,24 +1,31 @@
 import Note from "./components/Note";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import notesServices from "./services/notes";
 import loginServices from "./services/login";
 import Notification from "./components/Notification";
 import Footer from "./components/Footer";
+import LoginForm from "./components/LoginForm";
+import Togglable from "./components/Togglable";
+import NotesForm from "./components/NotesForm";
 
 function App() {
   const [notes, setNotes] = useState([]);
-  const [newNote, setNewNote] = useState("Type something..");
   const [showAll, setShowAll] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [user, setUser] = useState(null);
+  const noteFormRef = useRef();
 
   useEffect(function () {
     notesServices.getAll().then((data) => {
       setNotes(data);
     });
-    setUser(JSON.parse(window.localStorage.getItem("myAuth")));
+    const newUser = JSON.parse(window.localStorage.getItem("myAuth"));
+    setUser(newUser);
+    if (newUser && newUser.token) {
+      notesServices.setToken(newUser.token);
+    }
   }, []);
 
   const showingNotes = showAll
@@ -27,25 +34,12 @@ function App() {
         return note.important === true;
       });
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    // console.log("logging", event.target);
-    const obj = {
-      content: newNote,
-      important: Math.random() < 0.5,
-    };
+  const createNote = (obj) => {
+    noteFormRef.current.toggleVisibility();
     notesServices.create(obj).then((data) => {
       setNotes(notes.concat(data));
     });
-    // axios.post("http://localhost:3001/notes", obj).then((response) => {
-    //   setNotes(notes.concat(response.data));
-    // });
-    setNewNote("");
-  }
-
-  function handleChange(event) {
-    setNewNote(event.target.value);
-  }
+  };
 
   function changeShowState() {
     setShowAll(!showAll);
@@ -91,47 +85,27 @@ function App() {
     window.localStorage.setItem("myAuth", JSON.stringify(myUser));
   }
 
-  function loginForm() {
+  const loginForm = () => {
     return (
       <>
-        <h2>Login</h2>
-        <form onSubmit={handleLogin}>
-          <div>
-            <label>
-              username
-              <input
-                type="text"
-                value={username}
-                onChange={({ target }) => setUsername(target.value)}
-              />
-            </label>
-          </div>
-          <div>
-            <label>
-              password
-              <input
-                type="password"
-                value={password}
-                onChange={({ target }) => setPassword(target.value)}
-              />
-            </label>
-          </div>
-          <button type="submit">login</button>
-        </form>
+        <Togglable buttonLabel="Login Toggle">
+          <LoginForm
+            username={username}
+            password={password}
+            handleUsernameChange={({ target }) => setUsername(target.value)}
+            handlePasswordChange={({ target }) => setPassword(target.value)}
+            handleSubmit={handleLogin}
+          />
+        </Togglable>
       </>
     );
-  }
+  };
 
   function notesForm() {
     return (
-      <form onSubmit={handleSubmit}>
-        <input
-          value={newNote}
-          onChange={handleChange}
-          onClick={() => setNewNote("")}
-        />
-        <button>submit</button>
-      </form>
+      <Togglable buttonLabel="new note" ref={noteFormRef}>
+        <NotesForm createNote={createNote} />
+      </Togglable>
     );
   }
 
