@@ -894,10 +894,10 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
 
 **_LECTURE-VIDEO:_**
 
-- [Setting up Mongo DB for Note to User relationship](https://youtu.be/aJopS8jIt4E)
+- [Setting up Mongo DB for Note to User relationship](https://youtu.be/B9qyJV5Tcdg)
   1. [Set up Mongoose schema for `User`](https://fullstackopen.com/en/part4/user_administration#mongoose-schema-for-users)
   2. Modify `Note` Mongoose schema to refer to `User` who created the Note
-- [Creating users](https://youtu.be/9_SDwFCVtXY)
+- [Creating users](https://youtu.be/7UGnvkRn6SY)
   1. [Install bcrypt library to create one-way hash of the password](https://fullstackopen.com/en/part4/user_administration#creating-users)
   2. Create new router for `users` that handles REST api requests related to `users`
   - create `users` router
@@ -914,7 +914,7 @@ You can refer to the workshop code solutions [here](https://github.com/fullstack
     - use `mongoose-unique-validator` library to validate for unique username
   - running the test should now pass
   5. In `users` router, write route handler for GET method for all users
-- [Update new note creation to include user that created the note](https://youtu.be/RBPNYbZUqaA)
+- [Update new note creation to include user that created the note](https://youtu.be/qVG1n3QWLwQ)
   1. [Update route handler for POST method for new note](https://fullstackopen.com/en/part4/user_administration#creating-a-new-note)
   - include user.\_id in the created note's `user` field
   - append the newly created note.\_id to the user's `notes` field
@@ -1010,15 +1010,15 @@ Nothing!!
 
 **_LECTURE-VIDEO:_**
 
-- [Using props.children to create a generic Togglable component to control visibility of components](https://youtu.be/MDLTmK0UVqM)
+- [Using props.children to create a generic Togglable component to control visibility of components](https://youtu.be/XVWqRcRnK6I)
   1. [Move login form to it's own component, LoginForm](https://fullstackopen.com/en/part5/props_children_and_proptypes#displaying-the-login-form-only-when-appropriate)
   2. [Move the `Togglable` logic into it's own component, Togglable](https://fullstackopen.com/en/part5/props_children_and_proptypes#the-components-children-aka-props-children)
   - please note how `props.children` is being used
   3. Modify `App.js > loginForm()` function to call `LoginForm` component within the `Togglable` component to make login form togglable
-- [Move the Note adding form (`NoteForm`) into it's own component](https://youtu.be/EuDDEBnmdlk)
+- [Move the Note adding form (`NoteForm`) into it's own component](https://youtu.be/8zIS8YCKSkc)
   1. Now use the `Togglable` component to toggle visibility of `NoteForm`
   2. [Move new note related state to the `NoteForm` component](https://fullstackopen.com/en/part5/props_children_and_proptypes#state-of-the-forms)
-- [Using useRef, forwardRef, and useImperativeHandle](https://youtu.be/JMOma6lzZPQ)
+- [Using useRef, forwardRef, and useImperativeHandle](https://youtu.be/8Kn3dIpqp6c)
   1. [Use useRef, forwardRef, and useImperativeHandle to pass functions from inner component to outer component](https://fullstackopen.com/en/part5/props_children_and_proptypes#references-to-components-with-ref)
   2. [A note on creating instances of the same component](https://fullstackopen.com/en/part5/props_children_and_proptypes#one-point-about-components)
 - [Using prop-types and eslint](https://youtu.be/kay7tfStpjc)
