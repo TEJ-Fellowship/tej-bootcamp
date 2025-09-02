@@ -1,6 +1,6 @@
 const Note = ({ note, updateNote }) => (
   <li className="note">
-    {note.content}{" "}
+    Your awesome note: {note.content}{" "}
     <button onClick={updateNote}>{String(note.important)}</button>
   </li>
 );
