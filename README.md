@@ -1015,21 +1015,19 @@ Nothing!!
   2. [Move the `Togglable` logic into it's own component, Togglable](https://fullstackopen.com/en/part5/props_children_and_proptypes#the-components-children-aka-props-children)
   - please note how `props.children` is being used
   3. Modify `App.js > loginForm()` function to call `LoginForm` component within the `Togglable` component to make login form togglable
-- [Move the Note adding form (`NoteForm`) into it's own component](https://youtu.be/8zIS8YCKSkc)
+- [Move the Note adding form (`NoteForm`) into it's own component](https://youtu.be/aPz-1UnaR78)
   1. Now use the `Togglable` component to toggle visibility of `NoteForm`
   2. [Move new note related state to the `NoteForm` component](https://fullstackopen.com/en/part5/props_children_and_proptypes#state-of-the-forms)
-- [Using useRef, forwardRef, and useImperativeHandle](https://youtu.be/8Kn3dIpqp6c)
+- [Using useRef, forwardRef, and useImperativeHandle](https://youtu.be/a-W2_i9ZZc4)
   1. [Use useRef, forwardRef, and useImperativeHandle to pass functions from inner component to outer component](https://fullstackopen.com/en/part5/props_children_and_proptypes#references-to-components-with-ref)
   2. [A note on creating instances of the same component](https://fullstackopen.com/en/part5/props_children_and_proptypes#one-point-about-components)
 - [Using prop-types and eslint](https://youtu.be/kay7tfStpjc)
-  1. [Use the prop-types package to declare mandatory props and their data type](https://fullstackopen.com/en/part5/props_children_and_proptypes#prop-types)
-  - declare mandatory props in the `Togglable` and `LoginForm` components
-  2. [Configure eslint to ignore test related errors](https://fullstackopen.com/en/part5/props_children_and_proptypes#e-slint)
+
+  1. [Configure eslint to ignore test related errors](https://fullstackopen.com/en/part5/props_children_and_proptypes#e-slint)
+
   - install the package eslint-plugin-jest as dev dependency
   - create eslint config file, either `.eslintrc.json` (copy from our previous vite repo) or `.eslintrc.js` (from this workshop)
   - add `jest` related env, plugins entries
-  3. Create `.eslintignore` file to ignore files where eslint should not check
-  4. Give a displayName to the `Togglable` component
 
 **_TO-DO:_**
 
@@ -1064,7 +1062,7 @@ We will learn unit testing a React component. We will learn to test:
   - in vite.config.js
   2. Make sure `Note` component has className `note`, so that we can select by it
   3. [Write Note component test in the file src/components/Note.test.js](https://fullstackopen.com/en/part5/testing_react_apps#searching-for-content-in-a-component)
-  4. Run the test. 
+  4. Run the test.
   5. Modify the test to also check by selecting the element by class name in the rendered container
   6. [Use `screen.debug()` to see html output of render and of screen.getByText](https://fullstackopen.com/en/part5/testing_react_apps#debugging-tests)
 - [Clicking buttons in test](https://youtu.be/ks52vA7xIsE)
