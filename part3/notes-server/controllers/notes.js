@@ -71,4 +71,16 @@ notesRouter.delete("/:noteid", (request, response) => {
   });
 });
 
+notesRouter.put("/:noteid", async (request, response) => {
+  const body = request.body;
+
+  const id = request.params.noteid;
+
+  const note = await Note.findById(id);
+  note.important = Boolean(body.important);
+
+  await note.save();
+  response.status(200).json(note);
+});
+
 module.exports = notesRouter;
