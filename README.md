@@ -1145,21 +1145,20 @@ We will learn unit testing a React component. We will learn to test:
   - loginWith
   - createNote
   3. Refactoring the url
-- [Note importance change revisited]()
-  1. Create three notes
 - [Test development and debugging]()
-  1. Debug why the previous test fails
+  1. Create two notes
+  2. Debug why the previous test fails
   - put `page.pause()`
   - run `npm test -- -g'one of those can be made nonimportant' --debug`
-  2. Fix the bug
+  3. Fix the bug
   - add `await page.getByText(content).waitFor()`
-  3. Create visual trace
+  4. Create visual trace
   - add `--trace on`
   - using the 'locator'
-  4. Using test generator
+  5. Using test generator
   - `npx playwright codegen http://localhost:5173/`
-  5. Using vscode extension
-  6. [Go through the course material](https://fullstackopen.com/en/part5/end_to_end_testing_playwright#test-development-and-debugging)
+  6. Using vscode extension
+  7. [Go through the course material](https://fullstackopen.com/en/part5/end_to_end_testing_playwright#test-development-and-debugging)
   - the up to date code versions can be found here
 
 **_TO-DO:_**
