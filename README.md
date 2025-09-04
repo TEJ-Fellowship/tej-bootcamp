@@ -1102,7 +1102,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Initial setup for Playwright]()
+- [Initial setup for Playwright](https://youtu.be/qOoFpsyDRvU)
   1. Initialize new project inside `part3/playwright`
   - `npm init playwright@latest`
   - remove unsupported browsers from config
@@ -1111,32 +1111,32 @@ We will learn unit testing a React component. We will learn to test:
   - run the example tests
   - look at the example test report
   - running test in ui `npm run test -- --ui`
-- [Testing our own code]()
+- [Testing our own code](https://youtu.be/rSf4pCmjabE)
   - add node server start for `test` env
   - create first set of tests for our code in `playwright/tests` folder
   - run the tests
   - modify script to only run on one browser
   - add describe block
   - reduce waiting time, and run one at a time
-- [Writing to a form]()
+- [Writing to a form](https://youtu.be/sB27ZHR-3MA)
   1. Login user
   - add test case for login
   - run test in ui mode
   - type the username and password in the login form by selecting label
   2. Test initialization
   - adding `beforeEach` for common scripts
-- [Testing new note creation]()
-  1. Only logged-in users can create new notes, so we add logging in to the application in beforeEach block
-  2. Give adding note input an id to avoid test failing if there is more than one input
-  3. Each test starts a fresh browser state, as if a new browser window was opened
-- [Controlling the state of the database]()
+  3. Testing new note creation
+  - only logged-in users can create new notes, so we add logging in to the application in beforeEach block
+  - give adding note input an id to avoid test failing if there is more than one input
+  - each test starts a fresh browser state, as if a new browser window was opened
+- [Controlling the state of the database](https://youtu.be/tDKyn7rR9-g)
   1. Challenge with E2E tests is that they do not have access to the database
   2. [Create API endpoints to the backend for the test](https://fullstackopen.com/en/part5/end_to_end_testing_playwright#controlling-the-state-of-the-database)
   - create a new router for the tests `testing` at backend
   - add it to the backend only if the application is run on test-mode
   3. In the `beforeEach` block, empty the database and create a user
   4. Write the test for changing the importance of notes
-- [Make a test to ensure that a login attempt fails if the password is wrong]()
+  5. Make a test to ensure that a login attempt fails if the password is wrong
   - check error mesage
   - you can also check css
 - [Refactoring the test codes]()
