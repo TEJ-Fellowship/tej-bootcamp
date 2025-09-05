@@ -1139,13 +1139,13 @@ We will learn unit testing a React component. We will learn to test:
   5. Make a test to ensure that a login attempt fails if the password is wrong
   - check error mesage
   - you can also check css
-- [Refactoring the test codes]()
+- [Refactoring the test codes](https://youtu.be/-TyGnnIYxSk)
   1. Running test one by one with `only`
   2. Adding helper functions
   - loginWith
   - createNote
   3. Refactoring the url
-- [Test development and debugging]()
+- [Test development and debugging](https://youtu.be/oC-TblL_VP8)
   1. Create two notes
   2. Debug why the previous test fails
   - put `page.pause()`
