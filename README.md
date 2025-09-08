@@ -1209,7 +1209,7 @@ We will learn unit testing a React component. We will learn to test:
   - use `store.dispatch(action)` to modify the store (like calling `setState`)
     - `action` is an object with `type` key, and `payload` key
   - use `store.getState()` to get the store (like the `state`)
-  <!-- - use `store.subscribe(React Component)` to rerender component when store changes -->
+  - use `store.subscribe(function)` to rerender component when store changes
   3. Add functionality to toggle importance using Test Driven Development method
   - setup test environment
     - install required packages
