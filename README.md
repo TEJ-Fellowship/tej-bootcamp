@@ -1184,46 +1184,45 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Create a counter app that uses redux](https://youtu.be/PwaIfWc0Idw)
+- [Create a counter app that uses redux]()
   1. Setup the application
-  - clone the [react starter repo](https://github.com/TEJ-Fellowship/react-start-kit)
-  - rename to redux-counter
+  - create a new Vite app `redux-counter` inside the `part6` folder
+  ```
+  npm create vite@latest redux-counter -- --template react
+  ```
   - cd redux-counter
-  - rm -rf .git
-  - npm i redux
-  2. Create a simple counter app using useState in index.js (we won't be using App.jsx yet)
+  - install `redux` library with `npm i redux`
+  2. Create a simple counter app in main.jsx (we won't be using App.jsx yet)
   - create a reducer, `counterReducer` in this case. the reducer does the work similar to `setState`
   - create a store, by using `createStore` and passing it the reducer
   - use `store.getState()` to get the store (like the `state`)
   - use `store.dispatch(action)` to modify the store (like calling `setState`)
     - `action` is an object with `type` key, and optionally `data` key
   - use `store.subscribe(React Component)` to rerender component when store changes
-- [Create a note app that uses redux](https://youtu.be/5ypUAitqbjQ)
+- [Create a note app that uses redux]()
   1. Setup the application
-  - clone the [react starter repo](https://github.com/TEJ-Fellowship/react-start-kit)
-  - rename to redux-note
-  - cd redux-counter
-  - rm -rf .git
-  - npm i redux
-  2. Setup redux in index.jsx for note app
+  - create a new Vite app `redux-notes` inside the `part6` folder
+  - install `redux` library
+  2. Setup redux in App.jsx for note app
   - create a reducer, `noteReducer` in this case. the reducer does the work similar to `setState`
   - create a store, by using `createStore` and passing it the reducer
-  - use `store.getState()` to get the store (like the `state`)
   - use `store.dispatch(action)` to modify the store (like calling `setState`)
-    - `action` is an object with `type` key, and `data` key
-  - use `store.subscribe(React Component)` to rerender component when store changes
+    - `action` is an object with `type` key, and `payload` key
+  - use `store.getState()` to get the store (like the `state`)
+  <!-- - use `store.subscribe(React Component)` to rerender component when store changes -->
   3. Add functionality to toggle importance using Test Driven Development method
   - setup test environment
     - install required packages
     - configure .babelrc file
     - add test script to package.json
-    - add jest environment to .eslintrc.json
+    - add jest environment to eslint.config.js
     - add `deep-freeze` library to test for immutability
   - move the `noteReducer` to its own file at reducers/noteReducer.js
     - export store and the reducer
   - in the test file `noteReducer.test.js`, put test case for adding a new post
   - add another test to toggle the `important` field
-- [Add functionality to add new note](https://youtu.be/y7WYvEL27-U)
+  - use spread syntax for adding new note
+- [Add functionality to add new note]()
   1. Add form to add note
   2. Add `onSubmit` handler that calls `store.dispatch` for adding note
   3. Add frontend for toggling
@@ -1232,13 +1231,13 @@ We will learn unit testing a React component. We will learn to test:
   4. Write action creators for adding note, and toggling importance
   - write an `action creator` called `toggleImportanceOf` that creates the action to dispatch for toggling importance
   - write an `action creator` called `createNote` that creates the action to dispatch for adding note
-- [Refactor note app to use Provider](https://youtu.be/qezPIuply_M)
+- [Refactor note app to use Provider]()
   1. Put the reducer in the `reducers/noteReducer.js` file
   2. Also move the action creators to `reducers/noteReducer.js`
   3. Move the app component to `App.js`
   4. npm install react-redux
-  5. Modify the store related code in `index.js`, pass the store to `Provider` and wrap the `App` with it
-  - in `index.js` import `Provider`
+  5. Modify the store related code in `main.jsx`, pass the store to `Provider` and wrap the `App` with it
+  - in `main.jsx` import `Provider`
   - wrap `App` with `Provider` with `store`
   6. Modify `App` to read `store` from `Provider`
   - `useSelector` to get access to the `store`
