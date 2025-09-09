@@ -1184,7 +1184,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Create a counter app that uses redux]()
+- [Create a counter app that uses redux](https://youtu.be/6QSLupphPaE)
   1. Setup the application
   - create a new Vite app `redux-counter` inside the `part6` folder
   ```
@@ -1199,7 +1199,7 @@ We will learn unit testing a React component. We will learn to test:
   - use `store.dispatch(action)` to modify the store (like calling `setState`)
     - `action` is an object with `type` key, and optionally `data` key
   - use `store.subscribe(React Component)` to rerender component when store changes
-- [Create a note app that uses redux]()
+- [Create a note app that uses redux](https://youtu.be/rrPay4BFJgc)
   1. Setup the application
   - create a new Vite app `redux-notes` inside the `part6` folder
   - install `redux` library
@@ -1222,7 +1222,7 @@ We will learn unit testing a React component. We will learn to test:
   - in the test file `noteReducer.test.js`, put test case for adding a new post
   - add another test to toggle the `important` field
   - use spread syntax for adding new note
-- [Add functionality to add new note]()
+- [Add functionality to add new note](https://youtu.be/G1DpCnBYhOo)
   1. Add form to add note
   2. Add `onSubmit` handler that calls `store.dispatch` for adding note
   3. Add frontend for toggling
@@ -1231,7 +1231,7 @@ We will learn unit testing a React component. We will learn to test:
   4. Write action creators for adding note, and toggling importance
   - write an `action creator` called `toggleImportanceOf` that creates the action to dispatch for toggling importance
   - write an `action creator` called `createNote` that creates the action to dispatch for adding note
-- [Refactor note app to use Provider]()
+- [Refactor note app to use Provider](https://youtu.be/nY_DFePmyUU)
   1. Put the reducer in the `reducers/noteReducer.js` file
   2. Also move the action creators to `reducers/noteReducer.js`
   3. Move the app component to `App.js`
