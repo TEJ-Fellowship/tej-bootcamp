@@ -1249,6 +1249,7 @@ We will learn unit testing a React component. We will learn to test:
 
 - [6.1-6.2](https://fullstackopen.com/en/part6/flux_architecture_and_redux#exercises-6-1-6-2)
 - [6.3-6.8](https://fullstackopen.com/en/part6/flux_architecture_and_redux#exercises-6-3-6-8)
+- [Try Quiz !](https://tinyurl.com/part6a-quiz)
 
 </details>
 
