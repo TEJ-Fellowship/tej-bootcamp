@@ -2,7 +2,7 @@ import React from "react";
 import { toggleImportanceOf } from "../reducers/noteReducer";
 import { useDispatch, useSelector } from "react-redux";
 
-const Notes = () => {
+const Notes = ({ filter }) => {
   const dispatch = useDispatch();
   const notes = useSelector((state) => state);
   return (

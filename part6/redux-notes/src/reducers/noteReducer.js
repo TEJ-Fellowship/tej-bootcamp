@@ -19,7 +19,6 @@ const noteReducer = (state = initialState, action) => {
     );
     return newState;
   }
-
   return state;
 };
 
