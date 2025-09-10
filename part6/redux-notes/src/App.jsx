@@ -1,7 +1,6 @@
 import NewNote from "./components/NewNote";
 // import "./App.css";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
 import Notes from "./components/Notes";
 
 const App = () => {
