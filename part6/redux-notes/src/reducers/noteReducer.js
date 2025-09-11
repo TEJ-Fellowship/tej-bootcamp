@@ -1,6 +1,11 @@
+const initialState = [
+  { content: "reducer defines how state works", important: true, id: 1 },
+  { content: "state of store can contain any data", important: false, id: 2 },
+];
+
 const generateId = () => Number((Math.random() * 1000000).toFixed(0));
 
-const noteReducer = (state = [], action) => {
+const noteReducer = (state = initialState, action) => {
   if (action.type === "NEW_NOTE") {
     // state.push(action.payload);
     let newState = [...state, action.payload];
@@ -18,6 +23,7 @@ const noteReducer = (state = [], action) => {
   return state;
 };
 
+//action creator
 export const createNote = (content) => {
   return {
     type: "NEW_NOTE",
