@@ -1320,7 +1320,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Getting notes from the backend while using Redux](https://youtu.be/pFkuyboDFRc)
+- [Getting notes from the backend while using Redux]()
   1. Create `db.json` file in root folder, and put some data
   2. Install and run json server
   - npm install json-server --save-dev
@@ -1334,12 +1334,12 @@ We will learn unit testing a React component. We will learn to test:
   - in `noteReducer` add an action to append a single note
   - in `noteReducer` add an action to set all the notes
   - in `App`, create a `useEffect` to load the initial data from json-server
-- [Storing a note to the backend while using Redux](https://youtu.be/lhZK3HTNz-w)
+- [Storing a note to the backend while using Redux]()
   1. When creating note, add functionality to also add the new note to backend
   - in `services/notes.js`, add function to create note in backend
   - in `NoteForm` component, modify to call the service to backend
   2. You can also change the `toggle importance` functionality to also update backend
-- [Using thunk to move server connection logic to Redux action creator](https://youtu.be/R3LuH9FCt5I)
+- [Using thunk to move server connection logic to Redux action creator]()
   1. Modify the initial notes loading functionality to move server communication to a `thunk`
   - change `App` useEffect to just dispatching return value of `initializeNotes` action creator
   - in `noteReducer`, create a new thunk `initializeNotes` that will:
@@ -1352,8 +1352,8 @@ We will learn unit testing a React component. We will learn to test:
     2. then dispatch the new note to Redux store
   3. Refactor Redux store creation
   - create `store.js` in root folder
-  - move all Redux store creation code from `index.js` to `store.js`
-  - in `index.js` import the store to pass to `App`
+  - move all Redux store creation code from `main.jsx` to `store.js`
+  - in `main.jsx` import the store to pass to `App`
 
 **_TO-DO:_**
 
