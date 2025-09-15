@@ -2,13 +2,78 @@
   "notes": [
     {
       "content": "the app state is in redux store",
-      "important": true,
+      "important": false,
       "id": "1"
     },
     {
       "content": "state changes are made with actions",
       "important": false,
       "id": "2"
+    },
+    {
+      "id": "26df",
+      "content": "component dispatches action",
+      "important": true
+    },
+    {
+      "id": "93a4",
+      "content": "slice provides state,action, reducer as an object",
+      "important": true
+    },
+    {
+      "id": "baae",
+      "content": "slice provides state,action, reducer as an object",
+      "important": true
+    },
+    {
+      "id": "4934",
+      "content": "component dispatches action",
+      "important": true
+    },
+    {
+      "id": "34df",
+      "content": "action reaches reducers",
+      "important": true
+    },
+    {
+      "id": "479c",
+      "content": "our new notes ",
+      "important": true
+    },
+    {
+      "id": "5db0",
+      "content": "new note",
+      "important": true
+    },
+    {
+      "id": "90fc",
+      "content": "new note",
+      "important": true
+    },
+    {
+      "id": "27f1",
+      "content": "component dispatches action",
+      "important": true
+    },
+    {
+      "id": "1f18",
+      "content": "component dispatches action",
+      "important": true
+    },
+    {
+      "id": "e1e6",
+      "content": "action reaches reducers",
+      "important": true
+    },
+    {
+      "id": "926e",
+      "content": "component dispatches action",
+      "important": false
+    },
+    {
+      "id": "4771",
+      "content": "component dispatches action",
+      "important": true
     }
   ]
 }
