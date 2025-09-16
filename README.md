@@ -1370,7 +1370,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Using React Query](https://youtu.be/Izocvi0Ht20)
+- [Using React Query](https://youtu.be/Izocvi0Ht20)  | [new video1](https://youtu.be/MeN2qC9P10w)
   1. Setup for using React Query
   - `npm install @tanstack/react-query`
   - setup `index.jsx` to use React Query
@@ -1378,7 +1378,7 @@ We will learn unit testing a React component. We will learn to test:
   - start json-server
   - use `useQuery`
   3. Refactor the server call to it's own `requests` file
-- [Adding new note via React Query](https://youtu.be/nJbh4MZ3D54)
+- [Adding new note via React Query](https://youtu.be/nJbh4MZ3D54) | [new video2](https://youtu.be/eWeytMT6VgI)
   1. Add function `createNote` in `requests` to post note to server
   2. In `App` add `useMutation` code for adding new note
   - call the `mutate` method to post the new note to server via React Query
@@ -1386,7 +1386,7 @@ We will learn unit testing a React component. We will learn to test:
   3. Add functionality to toggle importance
   - add toggle function to call server in `requests`
   - add mutation code in `App` when note is toggled
-- [Optimize React Query code to minimize calls to server](https://youtu.be/UfsE4VyC0BU)
+- [Optimize React Query code to minimize calls to server](https://youtu.be/UfsE4VyC0BU) | [new video3](https://youtu.be/XDCjOxIiX4g)
   1. Modify `onSuccess` of new note creation to manually add new note to React Query state
   - add `newNote` parameter to callback function of `onSuccess`
   - getQueryData for `notes` (queryKey has to be an array)
