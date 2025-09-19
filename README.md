@@ -1433,7 +1433,10 @@ We will learn unit testing a React component. We will learn to test:
 **_LECTURE-VIDEO:_**
 
 - [Implement react router](https://youtu.be/pOjABPs9NeU)
-  1. Create new project `react-router` using [react-start-kit](https://github.com/TEJ-Fellowship/react-start-kit)
+  1. Create a new Vite app `react-router` inside the `part7` folder
+  ```
+  npm create vite@latest react-router -- --template react
+  ```
   2. Create simple SPA with menu
   3. Install react router
   4. Write code to use simple react router
