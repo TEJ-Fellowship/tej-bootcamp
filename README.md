@@ -1370,7 +1370,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Using React Query](https://youtu.be/Izocvi0Ht20)  | [new video1](https://youtu.be/MeN2qC9P10w)
+- [Using React Query](https://youtu.be/Izocvi0Ht20) | [new video1](https://youtu.be/MeN2qC9P10w)
   1. Setup for using React Query
   - `npm install @tanstack/react-query`
   - setup `index.jsx` to use React Query
@@ -1432,7 +1432,7 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Implement react router](https://youtu.be/pOjABPs9NeU)
+- [Implement react router](https://youtu.be/wADEwszUuKE)
   1. Create a new Vite app `react-router` inside the `part7` folder
   ```
   npm create vite@latest react-router -- --template react
@@ -1443,7 +1443,7 @@ We will learn unit testing a React component. We will learn to test:
   - use `BrowserRouter` to encapsulate all code that will use router
   - create `Link` for the required links
   - use `Routes` and `Route` to handle the links to components
-- [Add parameterized route and useParams to read the parameter](https://youtu.be/PGKinr_tn24)
+- [Add parameterized route and useParams to read the parameter](https://youtu.be/vCssFNgGqk8)
   1. Show notes
   - create a `Notes.jsx` component to show all notes
   - hardcode `notes` array with some notes in `App.jsx` and pass as props to `Notes.jsx`
@@ -1451,7 +1451,8 @@ We will learn unit testing a React component. We will learn to test:
   - update `Notes` component that creates `Link` to individual notes based on id
   - create a new `Route` to handle `note/:id` route
   - create `Note` component with `useParams` that will display individual note
-- [Add useNavigate to programmatically navigate to a url](https://youtu.be/yU5aDVDj9II)
+- [Add useNavigate to programmatically navigate to a url (202507 simple version)](https://youtu.be/H9fdTrDXzLI)
+- [Add useNavigate to programmatically navigate to a url (202305 full version)](https://youtu.be/yU5aDVDj9II)
   1. Create `login` route
   - create a `user` useState to keep track of logged in user
   - if no `user` state, then show link to `login` that is a link to `login` route
@@ -1462,11 +1463,11 @@ We will learn unit testing a React component. We will learn to test:
   - create a login form that takes a username and sets it to `user` state
   - use `useNavigate` to navigate to `/` route after logging in
   - in `App.jsx` use `Navigate` component in `users` route to conditionally redirect to `login` route when not logged in
-- [Use `useMatch` for better parameterized route](https://youtu.be/PuxP8vk0ZP4)
+- [Use `useMatch` for better parameterized route](https://youtu.be/2uUDr1IqyB4)
   1. Move `BrowserRouter` component to `index`
   2. In `App`, use `useMatch` to get the `notes/:id` parameter to find the note
   3. Pass and read the single `note` object to the `Note` component
-- [Build and deploy the react router app to node server](https://youtu.be/CPqpOFMA8WY)
+- [Build and deploy the react router app to node server](https://youtu.be/Gw_dOKOMBTg)
 
 **_TO-DO:_**
 
