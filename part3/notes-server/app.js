@@ -12,7 +12,7 @@ const config = require("./utils/config");
 app.use(middleware.requestLogger);
 app.use(express.json());
 app.use(cors());
-// app.use(express.static("dist"));
+app.use(express.static("dist"));
 
 mongoose
   .connect(config.MONGODB_URL)

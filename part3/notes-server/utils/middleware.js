@@ -1,3 +1,5 @@
+const path = require("node:path");
+
 const logger = require("./logger");
 
 const requestLogger = (request, response, next) => {
@@ -9,7 +11,8 @@ const requestLogger = (request, response, next) => {
 };
 
 const unknownEndpoint = (request, response) => {
-  response.status(404).send({ error: "unknown endpoint" });
+  // response.status(404).send({ error: "unknown endpoint" });
+  response.sendFile(path.join(__dirname, "../dist/index.html"));
 };
 
 const errorHandler = (error, request, response, next) => {
