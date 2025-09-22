@@ -1487,13 +1487,13 @@ We will learn unit testing a React component. We will learn to test:
 
 **_LECTURE-VIDEO:_**
 
-- [Create custom hook for counter application](https://youtu.be/cQoUv8cx8M8)
+- [Create custom hook for counter application](https://youtu.be/hGDyVYAwUvI)
   1. Create new project using [react-start-kit](https://github.com/TEJ-Fellowship/react-start-kit)
   2. Create simple counter application
   3. Move counter logic to custom hook `useCounter` in `hooks` folder
   - make sure the name of custom hook always starts with `use`
   4. Use `useCounter` for two different counters in the same `App` component
-- [Using custom hook for forms](https://youtu.be/ZLgN00Fr_zg)
+- [Using custom hook for forms](https://youtu.be/d_rzUHRNxp0)
   1. Create an App with forms
   2. Create `useField` custom hook in `hooks` folder
   3. Use it in a form field
