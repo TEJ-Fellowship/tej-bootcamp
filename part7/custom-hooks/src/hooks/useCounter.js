@@ -1,25 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const useCounter = (initialValue = 0) => {
-  const [value, setValue] = useState(initialValue);
+const useCounter = (initialvalue = 0) => {
+  const [counter, setCounter] = useState(initialvalue);
 
-  const increase = () => {
-    setValue(value + 1);
+  useEffect(() => {
+    console.log("This is useCounter");
+  }, []);
+
+  const handleMinus = () => {
+    setCounter(counter - 1);
   };
-
-  const decrease = () => {
-    setValue(value - 1);
+  const handlePlus = () => {
+    setCounter(counter + 1);
   };
-
-  const zero = () => {
-    setValue(0);
+  const handleReset = () => {
+    setCounter(0);
   };
 
   return {
-    value,
-    increase,
-    decrease,
-    zero,
+    counter,
+    handleMinus,
+    handlePlus,
+    handleReset,
   };
 };
 

@@ -1,9 +1,10 @@
+import { useState } from "react";
 import useField from "./hooks/useField";
 
-const FormApp = () => {
+const FormField = () => {
   const name = useField("text");
   const born = useField("date");
-  const height = useField("number");
+  const height = useField("height");
 
   return (
     <div>
@@ -24,4 +25,4 @@ const FormApp = () => {
   );
 };
 
-export default FormApp;
+export default FormField;
