@@ -1591,15 +1591,15 @@ drop table notes;
 
 **_LECTURE-VIDEO:_**
 
-- [Setup the relational database](https://youtu.be/idA_eY8Y1nY)
+- [Setup the relational database](https://youtu.be/RAHJL-b9tpA)
   1. Create a Postgres DB in [render](https://dashboard.render.com/)
-  2. Install `Postgresql` extension by Chris Kolkman to connect to the database
+  2. Install `Postgresql` extension by `Database Client` to connect to the database
   - make sure to correctly setup ssl
   3. Use the `Postgresql` extension
   - create table `notes` in the database using the extension
   - insert a few rows into the table
   - check the table and the inserted rows with the extension
-- [Create notes-server to connect to relational database](https://youtu.be/vNOznwlG2Ps)
+- [Create notes-server to connect to relational database](https://youtu.be/oSNn53Q1Whw)
   1. Create `part13/notes-server`
   - make the folder `notes-server`
   - `npm init -y` to create a new npm project
@@ -1608,7 +1608,7 @@ drop table notes;
   3. Write api to read all notes from db
   - create `index.js`
   - write the `api/notes` for `get` method to read all notes from DB using `select` query
-- [Using Sequelize ORM](https://youtu.be/Bjdy0WCvJiw)
+- [Using Sequelize ORM](https://youtu.be/ePhf1wFKeU8)
   1. Use `Sequelize` ORM to rewrite `api/notes` `get` method
   - create a `Model` for `Note`
   - use the `Note` model to get all notes from DB
@@ -1616,7 +1616,7 @@ drop table notes;
   - remember to use middleware to correctly read json data sent to server
   - note the difference between `create` and `build`
   3. Call the single note creation api
-- [Additional notes on relational database](https://youtu.be/6BwW2USXL5E)
+- [Additional notes on relational database](https://youtu.be/kTL1Z9zYzRE)
   1. Creating database tables automatically using the `Sequelize` model
   2. Add api to read a single note
   3. Add api to modify a note

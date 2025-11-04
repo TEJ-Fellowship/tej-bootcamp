@@ -1,0 +1,16 @@
+post http://localhost:3001/api/notes
+content-type: application/json
+
+{
+    "content": "note creation with error handling again"
+}
+
+###
+put http://localhost:3001/api/notes/2
+content-type: application/json
+
+{
+    "important": false
+}
+
+###
