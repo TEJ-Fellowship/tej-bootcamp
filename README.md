@@ -1593,7 +1593,7 @@ drop table notes;
 
 - [Setup the relational database](https://youtu.be/idA_eY8Y1nY)
   1. Create a Postgres DB in [render](https://dashboard.render.com/)
-  2. Install `Postgresql` extension by Chris Kolkman to connect to the database
+  2. Install `Postgresql` extension by `Database Client` to connect to the database
   - make sure to correctly setup ssl
   3. Use the `Postgresql` extension
   - create table `notes` in the database using the extension
