@@ -1,6 +1,6 @@
 post http://localhost:3001/api/notes
 content-type: application/json
-# authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5Tbm93IiwiaWQiOjEsImlhdCI6MTc2MjI4MDE0M30._4rHVNtp31cIprRnezsl3RDFwO1bpTC4JkdFEYJK684
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJpbml0YSIsImlkIjoxLCJpYXQiOjE3NjIzMjAzODB9.gdKpOa7-B_Iu2MO7em7UIz9FIfBwgQ6MwzqN_L8klh4
 
 {
     "content": "note creation with error handling again with user in token"
