@@ -1643,7 +1643,7 @@ drop table notes;
 
 **_LECTURE-VIDEO:_**
 
-- [Refactoring the code](https://youtu.be/lJV20vTJCss)
+- [Refactoring the code](https://youtu.be/ras9v-u2eRw)
   1. Start with `util` directory
   - create `config.js` to read configurations from environment
   - create `db.js` to put DB boilerplate code
@@ -1658,7 +1658,7 @@ drop table notes;
   5. Refactor notes controller
   - put repetitive code to middleware
   - call middleware in the routes where required
-- [Create user login](https://youtu.be/4dHCCbllNbc)
+- [Create user login](https://youtu.be/bM0eh7lvDXs)
   1. Create `User` model
   - create `models/user.js` for `User` model
   - include the `User` model to `models/index.js`
@@ -1671,7 +1671,7 @@ drop table notes;
   3. Use `REST Client` to test login
   - create user from the `REST Client`
   - login with user and get token
-- [Add user to note](https://youtu.be/4dHCCbllNbc?t=894)
+- [Add user to note](https://youtu.be/TzmNJajLGhU)
   1. Add relation between `User` and `Note`
   - in `models/index.js` add the foreign key from `User` to `Note`
   2. Modify note post route to also insert logged in userId
@@ -1680,7 +1680,7 @@ drop table notes;
   - include the userId while inserting a new note into the DB
   3. Use `REST Client` to create note using token
   - call api to create note by passing token and note object
-- [Cleaning up & more queries](https://youtu.be/giN9wR9Km4I)
+- [Cleaning up & more queries](https://youtu.be/jQyJ2OwF6yE)
   1. Modify get notes to return the full user
   2. Modify get users to return notes created by user
   3. Modify get notes to use query parameters to fine tune sequelize query
