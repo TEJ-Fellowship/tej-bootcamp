@@ -19,8 +19,8 @@ post http://localhost:3001/api/users
 content-type: application/json
 
 {
-    "username": "matti",
-    "name": "Matti Snow"
+    "username": "binita",
+    "name": "Binita Hamal"
 }
 
 ###
@@ -28,7 +28,7 @@ post http://localhost:3001/api/login
 content-type: application/json
 
 {
-    "username": "johnSnow",
+    "username": "binita",
     "password": "secret"
 }
 
